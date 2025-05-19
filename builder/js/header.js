@@ -1,14 +1,8 @@
-// 현재 화면 상태를 저장하는 변수
 let isMobile = false;
-// 모바일 메뉴 상태를 저장하는 변수
 let isMobileMenuOpen = false;
 
-// 화면 크기 감지 함수
-const isMobileScreen = () => {
-  return window.innerWidth < 768;
-};
+const isMobileScreen = () => window.innerWidth < 768;
 
-// 모바일 메뉴 토글 함수
 const toggleMobileMenu = () => {
   const mobileMenuContainer = document.querySelector(".header-mobile-menu");
   const menuIcon = document.querySelector(".header-mb-menu-icon");
@@ -23,69 +17,101 @@ const toggleMobileMenu = () => {
   }
 };
 
-// 모바일 헤더 요소 생성 함수
+const enableMobileNavDropdowns = () => {
+  const navItems = document.querySelectorAll(".header-nav-item");
+
+  navItems.forEach((item) => {
+    const link = item.querySelector(".header-nav-link");
+    const submenu = item.querySelector(".sub-nav-list");
+
+    // 이벤트 중복 방지
+    link.onclick = null;
+
+    if (isMobile && submenu) {
+      link.addEventListener("click", (e) => {
+        e.preventDefault(); // a 태그 이동 방지
+
+        const isExpanded = item.classList.contains("expanded");
+
+        // 모두 닫기 (하나만 열리게 하려면)
+        document.querySelectorAll(".header-nav-item.expanded").forEach((el) => {
+          el.classList.remove("expanded");
+          el.style.height = ""; // 높이 초기화
+        });
+
+        if (!isExpanded) {
+          const itemHeight = 60; // 기본 nav 항목 높이
+          const subLinkHeight = 50; // sub-nav 링크 하나당 높이
+          const subLinkCount = submenu.querySelectorAll("a").length;
+
+          const totalHeight = itemHeight + subLinkCount * subLinkHeight;
+
+          item.classList.add("expanded");
+          item.style.height = `${totalHeight}px`;
+        }
+      });
+    }
+  });
+};
+
 const createMobileHeader = () => {
   const header = document.getElementById("header");
 
-  // 기존 요소들 선택
+  // 이미 모바일 메뉴가 있다면 초기화 방지
+  if (header.querySelector(".header-mobile-menu")) return;
+
   const nav = header.querySelector(".header-nav");
   const btnSection = header.querySelector(".header-btn-section");
 
-  // 모바일 메뉴 컨테이너 생성
   const mobileMenuContainer = document.createElement("div");
   mobileMenuContainer.className = "header-mobile-menu";
 
-  // 모바일 메뉴 버튼 생성
   const mbmenu = document.createElement("button");
   mbmenu.className = "header-mb-menu";
   mbmenu.innerHTML = `
     <img src="./assets/header/menu.svg" alt="menu" class="header-mb-menu-icon">
   `;
-
-  // 모바일 메뉴 버튼 클릭 이벤트 추가
   mbmenu.addEventListener("click", toggleMobileMenu);
 
-  // 요소들 재배치
+  // 기존 요소 분리해서 모바일 메뉴 안으로 이동
   if (nav) {
     nav.remove();
     mobileMenuContainer.appendChild(nav);
   }
+
   if (btnSection) {
     btnSection.remove();
     mobileMenuContainer.appendChild(btnSection);
   }
 
-  // 헤더에 요소들 추가
   header.appendChild(mbmenu);
   header.appendChild(mobileMenuContainer);
 };
 
-// 데스크톱 헤더 요소 생성 함수
 const createDesktopHeader = () => {
   const header = document.getElementById("header");
 
-  // 모바일 메뉴 상태 초기화
   isMobileMenuOpen = false;
 
-  // 모바일 메뉴 관련 요소들 제거
   const mbmenu = header.querySelector(".header-mb-menu");
   const mobileMenuContainer = header.querySelector(".header-mobile-menu");
+
   if (mbmenu) mbmenu.remove();
+
   if (mobileMenuContainer) {
-    // 모바일 메뉴 컨테이너에서 요소들을 다시 헤더로 이동
     const nav = mobileMenuContainer.querySelector(".header-nav");
     const btnSection = mobileMenuContainer.querySelector(".header-btn-section");
 
+    const logo = header.querySelector(".header-logo");
+
     if (nav) {
       nav.remove();
-      header.insertBefore(
-        nav,
-        header.querySelector(".header-logo").nextSibling
-      );
+      header.insertBefore(nav, logo.nextSibling); // 로고 다음에 nav 삽입
     }
+
     if (btnSection) {
       btnSection.remove();
-      header.appendChild(btnSection);
+      header.appendChild(btnSection); // 제일 끝에 버튼 삽입
     }
 
     mobileMenuContainer.remove();
@@ -94,43 +120,26 @@ const createDesktopHeader = () => {
 
 const changeMbHeader = () => {
   if (isMobile) {
-    // 모바일 화면일 때 요소 재배치
     createMobileHeader();
+    enableMobileNavDropdowns();
   } else {
-    // 데스크톱 화면일 때 요소 원위치
     createDesktopHeader();
   }
 };
 
-// 화면 상태 업데이트 함수
 const updateScreenState = () => {
   const newState = isMobileScreen();
 
-  // 상태가 변경되었을 때만 실행
   if (newState !== isMobile) {
     isMobile = newState;
-
-    if (isMobile) {
-      // 모바일로 변경될 때만 실행될 로직
-      console.log("모바일 화면으로 변경되었습니다");
-      changeMbHeader();
-    } else {
-      // 데스크톱으로 변경될 때만 실행될 로직
-      console.log("데스크톱 화면으로 변경되었습니다");
-      changeMbHeader();
-    }
+    console.log(
+      isMobile ? "모바일 화면으로 변경됨" : "데스크톱 화면으로 변경됨"
+    );
+    changeMbHeader();
   }
 
   return isMobile;
 };
 
-// 화면 크기 변경 이벤트 리스너
-const handleResize = () => {
-  updateScreenState();
-};
-
-// 초기 로드 시 실행
-window.addEventListener("load", handleResize);
-
-// 화면 크기 변경 시 실행
-window.addEventListener("resize", handleResize);
+window.addEventListener("load", updateScreenState);
+window.addEventListener("resize", updateScreenState);

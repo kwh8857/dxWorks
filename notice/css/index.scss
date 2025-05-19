@@ -1,0 +1,329 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pretendard", sans-serif;
+    overflow: hidden;
+
+    p {
+        padding: 0;
+    }
+}
+
+button,
+a,
+label {
+    padding: unset;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    border: none;
+    cursor: pointer;
+    background-color: unset;
+    color: black;
+    text-decoration: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        opacity: 0.7;
+        transition: 0.2s ease-in-out;
+    }
+}
+
+.notice-page {
+    width: 100%;
+    height: 100%;
+
+    .banner-section {
+        width: 100%;
+        height: 259px;
+        background-color: black;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        .banner-wrapper {
+            width: 1080px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .banner-title-box {
+                .banner-title {
+                    font-size: 45px;
+                    color: white;
+                    font-weight: 700;
+                }
+            }
+
+            .banner-img-box {
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+
+    .notice-lists-section {
+        width: 100%;
+        height: 100%;
+        margin-top: 33px;
+
+        .notice-lists-wrapper {
+            width: 1080px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+
+            .notice-search-form {
+                .notice-input-box {
+                    position: relative;
+                    display: flex;
+                    justify-content: end;
+
+                    .search-input {
+                        width: 316px;
+                        height: 56px;
+                        border-radius: 4.22px;
+                        padding: 16px 14px;
+                        box-sizing: border-box;
+                        border: 1px solid #DBDBDB;
+                    }
+
+                    .search-input::placeholder {
+                        font-size: 14px;
+                        color: #DBDBDB;
+                    }
+
+                    .search-img {
+                        position: absolute;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+
+            .lists-top-box {
+                margin-top: 36px;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 2px solid #DBDBDB;
+
+                .lists-left-box {
+                    width: 76px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .lists-left-text {
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
+                }
+
+                .lists-right-box {
+                    width: 155px;
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 54px;
+                    box-sizing: border-box;
+
+                    .lists-right-text {
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            .lists-box {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                .list-box {
+                    border-bottom: 1px solid #DBDBDB;
+                    padding: 21px 0px;
+                    box-sizing: border-box;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .list-left-box {
+                        display: flex;
+                        align-items: center;
+                        gap: 12px; 
+
+                        .list-number {
+                            flex-shrink: 0;
+                            width: 40px; 
+                            font-size: 14px;
+                            font-weight: 700;
+                        }
+
+                        .list-title {
+                            flex: 1;
+                            font-size: 14px;
+                            font-weight: 700;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+
+                    .list-right-box {
+                        width: 155px;
+                        justify-content: space-between;
+                        display: flex;
+                        align-items: center;
+
+                        .list-author {
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+
+                        .list-date {
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: #949494;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .pagination-section {
+        width: 1080px;
+        margin: 0 auto;
+        margin-top: 42px;
+
+        .pagination-btn-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 4px;
+
+            .number-btn {
+                width: 29px;
+                height: 29px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 2px;
+                border: 1px solid #D9D9D9;
+
+                .number {
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: #949494;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1439px) and (min-width: 768px) {
+    .notice-page {
+        .banner-section {
+            .banner-wrapper {
+                width: 100%;
+                margin: unset;
+                justify-content: center;
+
+                .banner-title-box {
+                    z-index: 1;
+                }
+            }
+        }
+
+        .notice-lists-section {
+            .notice-lists-wrapper {
+                width: 688px;
+                box-sizing: border-box;
+            }
+        }
+        .pagination-section{
+            width: 688px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .notice-page {
+        .banner-section {
+            .banner-wrapper {
+                width: 100%;
+                margin: unset;
+                justify-content: center;
+
+                .banner-title-box {
+                    z-index: 1;
+                }
+
+                .banner-img-box{
+                    width: 384px;
+                    bottom:0;
+                    img{
+                        width: auto;
+                    }
+                }
+            }
+        }
+
+        .notice-lists-section {
+            .notice-lists-wrapper {
+                width: 320px;
+                box-sizing: border-box;
+
+                .notice-search-form {
+                    .search-input-box {
+                        .search-input {
+                            width: 320px;
+                            height: 50px;
+                        }
+
+                        .search-img {
+                            position: absolute;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                }
+                .lists-top-box{
+                    .lists-left-box{
+                        width: 59px;
+                    }
+                    .lists-right-box{
+                        width: auto;
+                        .lists-right-text:nth-child(1){
+                            display: none;
+                        }
+                    }
+                }
+                .lists-box{
+                    .list-box{
+                        .list-left-box{
+                            gap: 0;
+                            .list-title{
+                                width: 109px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+                        }
+                        .list-right-box{
+                            width: auto;
+                            .list-author{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .pagination-section{
+            width: 320px;
+        }
+    }
+}

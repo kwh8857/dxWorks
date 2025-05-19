@@ -110,6 +110,9 @@ label:hover {
           box-sizing: border-box;
   border: 1px solid #DBDBDB;
 }
+.event-page .event-lists-section .event-lists-wrapper .event-search-form .event-input-box .search-input:focus {
+  outline: none;
+}
 .event-page .event-lists-section .event-lists-wrapper .event-search-form .event-input-box .search-input::-webkit-input-placeholder {
   font-size: 14px;
   color: #DBDBDB;

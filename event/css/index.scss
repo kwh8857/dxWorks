@@ -91,6 +91,10 @@ label {
                         padding: 16px 14px;
                         box-sizing: border-box;
                         border: 1px solid #DBDBDB;
+
+                        &:focus {
+                            outline: none;
+                        }
                     }
 
                     .search-input::placeholder {

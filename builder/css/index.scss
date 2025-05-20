@@ -55,9 +55,10 @@ label {
 
   .header-nav {
     .header-nav-list {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(4, 190px);
       align-items: center;
-      gap: 32px;
+      // gap: 32px;
       padding: unset;
 
       .header-nav-item {
@@ -78,20 +79,21 @@ label {
         }
 
         .sub-nav-list {
+          width: 100%;
           // display: none;
           display: flex;
           top: 100%;
-          left: -50%;
+          left: 0;
           background-color: black;
           flex-direction: column;
           position: absolute;
 
           .sub-nav-link {
-
+width: 100%;
             // width: 209px;
             height: 50px;
             color: white;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 700;
             display: flex;
             align-items: center;
@@ -143,7 +145,7 @@ label {
 
   width: 100%;
   height: 100vh;
-  padding: 80px 0;
+  padding-top: 80px;
   box-sizing: border-box;
 
   .builder-ledger-builder-section {
@@ -541,6 +543,298 @@ label {
     }
 
   }
+  .builder-slide-section{
+    padding: 156px 0 158px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    .builder-slide-tag{
+      font-size: 24px;
+      font-weight: 700;
+      color: #0095FF;
+    }
+    .builder-slide-title{
+      font-size: 45px;
+      font-weight: 700; 
+      line-height: 140%;
+      margin: 4px 0 8px;
+      color: black;
+      text-align: center;
+    }
+    .builder-slide-desc{
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%;
+      color: black;
+      text-align: center;
+    }
+    .builder-slide-list{
+      width: 100vw;
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(4, 368px);
+      column-gap: 16px;
+      overflow-y: hidden;
+      padding: 0 20px;
+      box-sizing: border-box;
+      justify-content: center;
+      -ms-overflow-style: none; /* IE, Edge */
+      scrollbar-width: none; /* Firefox */
+      &::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+      }
+ .builder-slide-list-item{
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 45px 30px;
+  box-sizing: border-box;
+  row-gap: 2px;
+  height: 465px;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 60%, rgba(0,0,0,0.4) 100%);
+    border-radius: 10px;
+    z-index: 1;
+  }
+
+  
+  .builder-slide-list-item-title{
+    position: relative;
+    z-index: 2;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+  }
+  .builder-slide-list-item-desc{
+    position: relative;
+    z-index: 2;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 150%;
+    color: white;
+    width: 274px;
+  }
+  .builder-slide-list-item-img{
+    position: absolute;
+    top: -5%;
+    left: 0;
+    width: 100%;
+    height: 106%;
+  }
+}
+
+    }
+    
+  }
+  .builder-nav-contract-section{
+    width: 100%;
+    height: 477px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+background-image: image-set(
+  url(../assets/builder/contract-nav-img.png) 1x,
+  url(../assets/builder/contract-nav-img@2x.png) 2x, 
+  url(../assets/builder/contract-nav-img@3x.png) 3x
+);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+    .builder-nav-contract-content{
+
+      width: 1215px;
+
+      .builder-nav-contract-title{
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 140%;
+        color: white;
+      }
+      .builder-nav-contract-btn{
+        margin-top: 24px;
+        width: 181px;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        border: solid 1px white;
+
+      }
+    }
+  }
+  .builder-faq-section{
+    width: 100%;
+    min-height: 1000px;
+    box-sizing: border-box;
+padding: 110px 0 169px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    .builder-faq-content{
+      width: 1215px;
+
+      .builder-faq-tag{
+        font-size: 24px;
+        font-weight: 700;
+        color: #0095FF;
+      }
+      .builder-faq-title{
+        font-size: 45px;
+        font-weight: 700;
+        color: black;
+        margin: 4px 0 43px;
+      }
+      .builder-faq-search{
+        width: 460px;
+        height: 50px;
+        border: 1px solid #DBDBDB;
+        padding: 0 16px 0 18px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 20px;
+        input{
+          width: 100%;
+          // height: 100%;
+          border: none;
+          outline: none;
+        }
+        
+    }
+    .builder-faq-list{
+      width: 100%;
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr;
+
+      .builder-faq-list-item{
+        width: 100%;
+      max-height: 64px;
+      overflow: hidden;
+        // height: 64px;
+        .builder-faq-list-item-title-wrapper{
+          width: 100%;
+          height: 64px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: solid 1px #DBDBDB;
+          .builder-faq-list-item-title-section{
+            display: flex;
+            align-items: center;
+            column-gap: 8px;
+             .builder-faq-list-item-title{
+              font-size: 14px;
+              font-weight: 400;
+              color: black;
+             }
+            }
+          }
+          .builder-faq-list-item-content{
+  width: 100%;
+  background-color: #F5F6F8;
+  line-height: 180%;
+  font-size: 16px;
+  font-weight: 400;
+  overflow: hidden;
+  padding: 20px; /* 항상 유지 */
+  box-sizing: border-box;
+          }
+      }
+      &>.active{
+       transition: max-height 0.3s ease;
+       max-height: 1000px;
+       .builder-faq-list-item-title-wrapper{
+        
+        .builder-faq-list-item-btn{
+          transform: rotate(180deg);
+          transition: transform 0.2s ease;
+        }
+       }
+      }
+    }
+  }
+}
+}
+
+.footer-section{
+  width: 100%;
+  height: 373px;
+  background-color: #1A1B23;
+  padding: 56px;
+  box-sizing: border-box;
+  color: #ABB3BA;
+  .footer-nav-list{
+    margin: 27px 0 12px;
+    display: flex;
+align-items: center;
+padding-bottom: 12px;
+column-gap: 25px;
+border-bottom: solid 1px #44464F;
+
+    .footer-nav-list-item{
+      font-size: 14px;
+      font-weight: 400;
+      color: #ABB3BA;
+    }
+  }
+  .footer-content-container{
+    margin-bottom: 40px;
+    .footer-content-list{
+      display: flex;
+      column-gap: 32px;
+      .footer-content-list-col{
+display: flex;
+flex-direction: column;
+row-gap: 6px;
+        .footer-content-list-item{
+          display: flex;
+          align-items: center;
+          column-gap: 16px;
+          font-size: 13px;
+          .footer-content-list-item-title{
+            width: 80px;
+            font-weight: 700;
+          }
+          .footer-content-list-item-desc{
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+  .footer-bottom-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  .footer-bottom-text{
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .footer-bottom-sns-list{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+  }
+  }
 }
 
 @media screen and (max-width: 1440px) {
@@ -553,12 +847,17 @@ label {
 
     .header-nav {
       .header-nav-list {
-        gap: 16px;
+        grid-template-columns: repeat(4, 110px);
 
         .header-nav-item {
           .header-nav-link {
-            font-size: 15px;
+            font-size: 14px;
           }
+                      .sub-nav-list {
+.sub-nav-link{
+  font-size: 12px;
+}
+            }
         }
       }
     }
@@ -697,26 +996,115 @@ label {
         }
       }
     }
+     .builder-slide-section{
+    padding: 200px 0 ;
+    .builder-slide-list{
+      margin-top: 62px;
+ justify-content: flex-start;
+ .builder-slide-list-item{
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 45px 30px;
+  box-sizing: border-box;
+  row-gap: 2px;
+  height: 465px;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 60%, rgba(0,0,0,0.4) 100%);
+    border-radius: 10px;
+    z-index: 1;
+  }
+
+  
+  .builder-slide-list-item-title{
+    position: relative;
+    z-index: 2;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+  }
+  .builder-slide-list-item-desc{
+    position: relative;
+    z-index: 2;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 150%;
+    color: white;
+    width: 274px;
+  }
+  .builder-slide-list-item-img{
+    position: absolute;
+    top: -5%;
+    left: 0;
+    width: 100%;
+    height: 106%;
+  }
+}
+
+    }
+    
+  }
+    .builder-nav-contract-section{
+
+    .builder-nav-contract-content{
+
+      width: 670px;
+
+      .builder-nav-contract-title{
+text-align: center;
+margin-bottom: 24px;
+      }
+      .builder-nav-contract-btn{
+margin: 0 auto;
+
+      }
+    }
+  }
+    .builder-faq-section{
+padding: 140px 0 ;
+min-height: 1100px;
+    .builder-faq-content{
+      width: 720px;
+
+      .builder-faq-tag{
+        text-align: center;
+      }
+      .builder-faq-title{
+        text-align: center;
+      }
+      .builder-faq-search{
+       margin: 0 auto;
+    }
+  }
+}
+
+  }
+  .footer-section{
+    height: 357px;
+    padding: 38px;
   }
 }
 
 
 @media screen and (min-width: 769px) {
-  .header-nav-item:hover {
+ .header-section{
+
+  .header-nav{
+    .header-nav-list{
+        .header-nav-item:hover {
     overflow: visible;
 
-    .sub-nav-list {
-      display: flex;
 
-      .sub-nav-link {
-        width: 209px;
-        height: 50px;
-        color: white;
-        font-size: 18px;
-        font-weight: 700;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+          }
       }
     }
   }
@@ -1025,8 +1413,117 @@ label {
       }
 
     }
+     .builder-slide-section{
+    padding: 180px 0;
+    .builder-slide-tag{
+      font-size: 18px;
+    }
+    .builder-slide-title{
+      font-size: 30px;
+      margin: 8px 0;
+    }
+    .builder-slide-list{
+      margin-top: 24px;
+      grid-template-columns: repeat(4, 320px);
+ column-gap: 10px;
+ overflow-y: hidden;
+ justify-content: flex-start;
+ .builder-slide-list-item{
+  padding: 16px;
+  height: 404px;
+  
+  .builder-slide-list-item-title{
+    font-size: 24px;
+  }
+  .builder-slide-list-item-desc{
+    font-size: 16px;
+    width: 240px;
   }
 
+}
+
+    }
+    
+  }
+  .builder-nav-contract-section{
+    height: 420px;
+background-image: image-set(
+  url(../assets/builder/contract-nav-img-mb.png) 1x,
+  url(../assets/builder/contract-nav-img-mb@2x.png) 2x, 
+  url(../assets/builder/contract-nav-img-mb@3x.png) 3x
+);
+
+    .builder-nav-contract-content{
+
+      width: 280px;
+
+      .builder-nav-contract-title{
+        font-size: 30px;
+      }
+
+    }
+  }
+    .builder-faq-section{
+    height: fit-content;
+padding: 100px 0 ;
+    .builder-faq-content{
+      width: 320px;
+
+      .builder-faq-tag{
+        font-size: 18px;
+      }
+      .builder-faq-title{
+        font-size: 30px;
+        margin: 4px 0 32px;
+      }
+      .builder-faq-search{
+        width: 100%;
+        padding: 0 12px ;
+        column-gap: 10px;
+
+        
+    }
+    
+  }
+}
+  }
+
+  .footer-section{
+  height: 467px;
+  padding: 20px;
+  .footer-nav-list{
+    margin: 24px 0 12px;
+column-gap: 16px;
+
+  }
+  .footer-content-container{
+    margin-bottom: 28px;
+    .footer-content-list{
+      flex-direction: column;
+      .footer-content-list-col{
+display: flex;
+flex-direction: column;
+row-gap: 6px;
+        .footer-content-list-item{
+          font-size: 12px;
+          .footer-content-list-item-title{
+            width: 78px;
+            white-space: nowrap;
+          }
+          .footer-content-list-item-desc{
+            font-weight: 400;
+            flex: 1;
+          }
+        }
+      }
+    }
+  }
+  .footer-bottom-wrapper{
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    row-gap: 10px;
+  }
+}
   .mb-br {
     display: block;
   }

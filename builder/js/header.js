@@ -27,32 +27,52 @@ const enableMobileNavDropdowns = () => {
     // 이벤트 중복 방지
     link.onclick = null;
 
-    if (isMobile && submenu) {
-      link.addEventListener("click", (e) => {
-        e.preventDefault(); // a 태그 이동 방지
+if (isMobile && submenu) {
+  if (!link.dataset.bound) {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
 
-        const isExpanded = item.classList.contains("expanded");
+      const isExpanded = item.classList.contains("expanded");
 
-        // 모두 닫기 (하나만 열리게 하려면)
-        document.querySelectorAll(".header-nav-item.expanded").forEach((el) => {
-          el.classList.remove("expanded");
-          el.style.height = ""; // 높이 초기화
-        });
-
-        if (!isExpanded) {
-          const itemHeight = 60; // 기본 nav 항목 높이
-          const subLinkHeight = 50; // sub-nav 링크 하나당 높이
-          const subLinkCount = submenu.querySelectorAll("a").length;
-
-          const totalHeight = itemHeight + subLinkCount * subLinkHeight;
-
-          item.classList.add("expanded");
-          item.style.height = `${totalHeight}px`;
-        }
+      document.querySelectorAll(".header-nav-item.expanded").forEach((el) => {
+        el.classList.remove("expanded");
+        el.style.height = "";
       });
-    }
+
+      if (!isExpanded) {
+        const itemHeight = 60;
+        const subLinkHeight = 50;
+        const subLinkCount = submenu.querySelectorAll("a").length;
+
+        const totalHeight = itemHeight + subLinkCount * subLinkHeight;
+        item.classList.add("expanded");
+        item.style.height = `${totalHeight}px`;
+      }
+    });
+
+    link.dataset.bound = "true"; // 플래그 설정
+  }
+}
+
   });
 };
+
+const disableMobileNavDropdowns = () => {
+  const navItems = document.querySelectorAll(".header-nav-item");
+
+  navItems.forEach((item) => {
+    const link = item.querySelector(".header-nav-link");
+
+    // 기존 이벤트 제거
+    const newLink = link.cloneNode(true);
+    link.parentNode.replaceChild(newLink, link);
+
+    // 스타일도 초기화 (중복 방지)
+    item.classList.remove("expanded");
+    item.style.height = "";
+  });
+};
+
 
 const createMobileHeader = () => {
   const header = document.getElementById("header");
@@ -90,7 +110,6 @@ const createMobileHeader = () => {
 
 const createDesktopHeader = () => {
   const header = document.getElementById("header");
-
   isMobileMenuOpen = false;
 
   const mbmenu = header.querySelector(".header-mb-menu");
@@ -101,22 +120,30 @@ const createDesktopHeader = () => {
   if (mobileMenuContainer) {
     const nav = mobileMenuContainer.querySelector(".header-nav");
     const btnSection = mobileMenuContainer.querySelector(".header-btn-section");
-
     const logo = header.querySelector(".header-logo");
+
+    // 💡 이 부분 추가: height 초기화 및 expanded 클래스 제거
+    if (nav) {
+      nav.querySelectorAll(".header-nav-item").forEach((item) => {
+        item.classList.remove("expanded");
+        item.style.height = "";
+      });
+    }
 
     if (nav) {
       nav.remove();
-      header.insertBefore(nav, logo.nextSibling); // 로고 다음에 nav 삽입
+      header.insertBefore(nav, logo.nextSibling);
     }
 
     if (btnSection) {
       btnSection.remove();
-      header.appendChild(btnSection); // 제일 끝에 버튼 삽입
+      header.appendChild(btnSection);
     }
 
     mobileMenuContainer.remove();
   }
 };
+
 
 const changeMbHeader = () => {
   if (isMobile) {
@@ -124,6 +151,7 @@ const changeMbHeader = () => {
     enableMobileNavDropdowns();
   } else {
     createDesktopHeader();
+    disableMobileNavDropdowns();
   }
 };
 

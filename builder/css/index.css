@@ -761,7 +761,7 @@ label:hover {
 }
 .builder-page .builder-faq-section {
   width: 100%;
-  min-height: 1000px;
+  min-height: 1200px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 110px 0 169px;
@@ -826,6 +826,8 @@ label:hover {
   width: 100%;
   max-height: 64px;
   overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-in-out;
+  transition: max-height 0.2s ease-in-out;
 }
 .builder-page .builder-faq-section .builder-faq-content .builder-faq-list .builder-faq-list-item .builder-faq-list-item-title-wrapper {
   width: 100%;
@@ -869,8 +871,6 @@ label:hover {
           box-sizing: border-box;
 }
 .builder-page .builder-faq-section .builder-faq-content .builder-faq-list > .active {
-  -webkit-transition: max-height 0.3s ease;
-  transition: max-height 0.3s ease;
   max-height: 1000px;
 }
 .builder-page .builder-faq-section .builder-faq-content .builder-faq-list > .active .builder-faq-list-item-title-wrapper .builder-faq-list-item-btn {

@@ -7,19 +7,19 @@ body {
   font-family: "Pretendard", sans-serif;
   background-color: black;
 }
-html p,
-body p {
-  padding: 0;
-  margin: 0;
-}
 html h2,
-body h2 {
+html ul,
+html p,
+body h2,
+body ul,
+body p {
   padding: 0;
   margin: 0;
 }
 html li,
 body li {
   outline: none;
+  list-style: none;
 }
 html a,
 body a {
@@ -215,8 +215,15 @@ label:hover {
   display: -ms-flexbox;
   display: flex;
 }
+.mission-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list:nth-child(1) {
+  border-bottom: 2px solid #0095FF;
+}
 .mission-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list {
   width: 209px;
+  text-align: center;
+  padding-bottom: 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .mission-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list a {
   font-size: 18px;
@@ -225,6 +232,7 @@ label:hover {
 }
 .mission-page .mission-section1 {
   width: 1254px;
+  height: 800px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -294,5 +302,339 @@ label:hover {
   right: -93px;
 }
 .mission-page .mission-section2 {
-  margin-top: 69px;
+  margin-top: 150px;
+  position: relative;
+  padding-bottom: 126px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.mission-page .mission-section2 .gradient-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  height: 384px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(60, 106, 178, 0)), color-stop(50%, rgba(60, 106, 178, 0.5)), to(rgba(60, 106, 178, 0)));
+  background: linear-gradient(to bottom, rgba(60, 106, 178, 0) 0%, rgba(60, 106, 178, 0.5) 50%, rgba(60, 106, 178, 0) 100%);
+  -webkit-filter: blur(12px);
+          filter: blur(12px);
+  z-index: 0;
+  pointer-events: none;
+}
+.mission-page .mission-section2 .text-box {
+  width: 100%;
+  position: relative;
+  z-index: 999;
+}
+.mission-page .mission-section2 .text-box .text {
+  position: relative;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 140%;
+  color: white;
+}
+.mission-page .mission-section2 .text-box .text span {
+  color: #0095FF;
+}
+.mission-page .mission-section2 .img-wrapper {
+  width: 1200px;
+  margin-top: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  row-gap: 24px;
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
+}
+.mission-page .mission-section2 .img-wrapper .card {
+  width: 555px;
+  height: 403px;
+  border-radius: 8px;
+  border: 1px solid #5C6770;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0px 4px 20px rgba(41, 91, 255, 0.6);
+          box-shadow: 0px 4px 20px rgba(41, 91, 255, 0.6);
+}
+.mission-page .mission-section2 .img-wrapper .card .card-content {
+  height: 161px;
+  padding: 26px 29px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 12px;
+}
+.mission-page .mission-section2 .img-wrapper .card .card-content .title {
+  font-size: 26px;
+  font-weight: 700;
+}
+.mission-page .mission-section2 .img-wrapper .card .card-content .sub-title {
+  font-weight: 400;
+  line-height: 140%;
+  white-space: pre-line;
+}
+.mission-page .mission-section3 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 297px;
+}
+.mission-page .mission-section3 .mission-top-banner-box {
+  width: 100%;
+  height: 403px;
+  background-image: url("../assets/section3/bg-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.mission-page .mission-section3 .mission-top-banner-box .banner-title {
+  font-size: 100px;
+  font-weight: 700;
+  background: -webkit-gradient(linear, left top, right top, from(#3CB8B7), to(#0095FF));
+  background: linear-gradient(90deg, #3CB8B7 0%, #0095FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* for Firefox */
+  color: transparent;
+}
+.mission-page .mission-section3 .mission-top-banner-box .banner-sub-title {
+  font-size: 34px;
+  font-weight: 700;
+  color: white;
+}
+.mission-page .mission-section3 .blockchan-info-wrapper {
+  padding-top: 69px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 125px;
+}
+.mission-page .mission-section3 .blockchan-info-wrapper .blockchan-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.mission-page .mission-section3 .blockchan-info-wrapper .blockchan-card .left-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 12px;
+  color: white;
+}
+.mission-page .mission-section3 .blockchan-info-wrapper .blockchan-card .left-card .card-title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 140%;
+  white-space: pre-line;
+}
+.mission-page .mission-section3 .blockchan-info-wrapper .blockchan-card .left-card .card-sub-title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  white-space: pre-line;
+  line-height: 150%;
+}
+.mission-page .mission-section3 .blockchan-info-wrapper .blockchan-card:nth-child(2) .left-card {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+.mission-page .mission-section4 {
+  width: 100%;
+  height: 507px;
+  background-image: url("../assets/section4/bg-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.mission-page .mission-section4 .text-box {
+  width: 1126px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 16px;
+}
+.mission-page .mission-section4 .text-box .top-text {
+  color: #0095FF;
+  font-size: 24px;
+  font-weight: 700;
+}
+.mission-page .mission-section4 .text-box .middle-text {
+  font-size: 34px;
+  font-weight: 700;
+  white-space: pre-line;
+  line-height: 140%;
+  color: white;
+}
+.mission-page .mission-section4 .text-box .middle-text span {
+  color: #0095FF;
+}
+.mission-page .mission-section4 .text-box .careers {
+  width: 181px;
+  height: 52px;
+  color: white;
+  border: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1439px) and (min-width: 768px) {
+  .mission-page .menu-bar-section .menu-lists-wrapper {
+    width: 684px;
+    margin-top: 70px;
+  }
+  .mission-page .menu-bar-section .menu-lists-wrapper .menu-list {
+    width: 112px;
+  }
+  .mission-page .mission-section1 {
+    width: 684px;
+    margin-top: 80px;
+  }
+  .mission-page .mission-section1 .text-wrapper {
+    z-index: 999;
+  }
+  .mission-page .mission-section1 .img1 {
+    width: 184px;
+    height: 133px;
+    left: 120px;
+  }
+  .mission-page .mission-section1 .img2 {
+    width: 244px;
+    height: 194px;
+    top: 70px;
+  }
+  .mission-page .mission-section1 .img3 {
+    width: 245px;
+    height: 199px;
+    left: 40px;
+    top: 620px;
+  }
+  .mission-page .mission-section1 .img4 {
+    width: 275px;
+    height: 218px;
+    top: 650px;
+    right: 30px;
+  }
+  .mission-page .mission-section2 {
+    margin-top: 260px;
+  }
+  .mission-page .mission-section2 .img-wrapper {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mission-page .mission-section3 .mission-top-banner-box .banner-title {
+    width: 677px;
+    text-align: center;
+  }
+  .mission-page .mission-section3 .blockchan-info-wrapper {
+    width: 720px;
+    margin: 0 auto;
+  }
+  .mission-page .mission-section3 .blockchan-info-wrapper .blockchan-card .right-card img {
+    width: 270px;
+    height: 333px;
+  }
+  .mission-page .mission-section4 .text-box {
+    width: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mission-page .mission-section4 .text-box .middle-text {
+    text-align: center;
+  }
 }

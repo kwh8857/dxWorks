@@ -1,0 +1,456 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pretendard", sans-serif;
+
+    p {
+        padding: 0;
+        margin: 0;
+    }
+
+    h2 {
+        padding: 0;
+        margin: 0;
+    }
+
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+
+input:focus {
+    outline: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+button,
+a,
+label {
+    padding: unset;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    border: none;
+    cursor: pointer;
+    background-color: unset;
+    color: black;
+    text-decoration: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        opacity: 0.7;
+        transition: 0.2s ease-in-out;
+    }
+}
+
+.contactus-page {
+    padding-bottom: 127px;
+
+    .banner-section {
+        width: 100%;
+        height: 259px;
+        background-color: black;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        .banner-wrapper {
+            width: 1080px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .banner-title-box {
+                .banner-title {
+                    font-size: 45px;
+                    color: white;
+                    font-weight: 700;
+                }
+            }
+
+            .banner-img-box {
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+
+    .contactus-section {
+        height: 569px;
+        background-color: #F5F6F8;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .contactus-wrapper {
+            width: 1080px;
+            padding-top: 18px;
+
+            .title-box {
+                padding-bottom: 16px;
+                box-sizing: border-box;
+                display: flex;
+                align-items: end;
+                column-gap: 9px;
+                border-bottom: 1px solid #363840;
+
+                .title {
+                    font-size: 26px;
+                }
+
+                .sub-title {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #0095FF;
+                }
+            }
+
+            .info-wrapper {
+                display: flex;
+                flex-direction: column;
+                row-gap: 16px;
+                box-sizing: border-box;
+                padding-top: 18px;
+
+                .input-title {
+                    width: 80px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    display: flex;
+                    align-items: center;
+                    column-gap: 3px;
+
+                    .star {
+                        display: block;
+                        color: #0095FF;
+                    }
+                }
+
+                .input-box {
+                    display: flex;
+                    column-gap: 16px;
+
+                    .input {
+                        width: 165px;
+                        height: 35px;
+                        border: 1px solid #DBDBDB;
+                        border-radius: 4px;
+
+                        padding: 0px 8px;
+                        box-sizing: border-box;
+                    }
+
+                    .uploaded {
+                        border: 1px solid #66BFFF;
+                        background-color: #99D5FF;
+                        color: white;
+                        font-weight: 400;
+                    }
+
+                    .title-input {
+                        width: 510px;
+                    }
+
+                    .textarea-title {
+                        align-items: start;
+                    }
+
+                    .number-input-box {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 6px;
+
+                        span {
+                            color: #888888;
+                        }
+
+                        .number-input:nth-child(1) {
+                            width: 55px;
+                        }
+
+                        .number-input {
+                            width: 80px;
+                        }
+                    }
+
+                    .textarea-box {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 4px;
+
+                        .content-input {
+                            width: 100%;
+                            height: 90px;
+                            resize: none;
+                            padding: 8px 8px;
+                        }
+
+                        .text-length {
+                            margin-left: auto;
+                            font-size: 13px;
+                            font-weight: 400;
+                            color: #888888;
+                        }
+                    }
+
+                    .file-upload-btn {
+                        width: 100px;
+                        height: 35px;
+                        background-color: #DBDBDB;
+                        font-size: 14px;
+                        font-weight: 700;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .terms-section {
+        width: 1080px;
+        margin: 0 auto;
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+
+        .title {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .terms-box {
+            width: 100%;
+            height: 188px;
+            background-color: #FBFBFB;
+            border: 1px solid #DCD6D6;
+            padding: 32px 20px;
+            box-sizing: border-box;
+            overflow: hidden;
+            overflow-y: scroll;
+
+            .terms-title {
+                font-size: 18px;
+                font-weight: 700;
+                color: #222222;
+                border-bottom: 1px solid #C3C3C3;
+                padding-bottom: 10px;
+                box-sizing: border-box;
+            }
+
+            .terms-text {
+                line-height: 150%;
+                font-size: 14px;
+                color: #54585A;
+                white-space: pre-line;
+            }
+
+        }
+
+        .terms-check-box {
+            display: flex;
+            align-items: center;
+            column-gap: 9px;
+            margin-left: auto;
+
+            .box {
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+                border-radius: 4px;
+                border: 1px solid black;
+            }
+
+            .checked {
+                background-color: #0095FF;
+                border: 1px solid #0095FF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .terms-check-text {
+                font-size: 16px;
+                font-weight: 700;
+
+                .star {
+                    color: #0095FF;
+                }
+            }
+        }
+    }
+
+    .receipt-btn-section {
+        display: flex;
+        width: 1080px;
+        margin: 0 auto;
+        padding-top: 122px;
+        box-sizing: border-box;
+        column-gap: 14px;
+        justify-content: center;
+
+        .btn {
+            width: 208px;
+            height: 52px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .cancel-btn {
+            background-color: #DBDBDB;
+            color: #363840;
+        }
+
+        .receipt-btn {
+            background-color: #0095FF;
+            color: white;
+        }
+    }
+}
+
+@media screen and (max-width:1439px) and (min-width:768px) {
+    .contactus-page {
+        .banner-section {
+            .banner-wrapper {
+                width: 100%;
+                margin: unset;
+                justify-content: center;
+
+                .banner-title-box {
+                    z-index: 1;
+                }
+            }
+        }
+
+        .contactus-section {
+            .contactus-wrapper {
+                width: 688px;
+            }
+        }
+
+        .terms-section {
+            width: 688px;
+        }
+
+        .receipt-btn-section {
+            width: 688px;
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .contactus-page {
+        .banner-section {
+            .banner-wrapper {
+                width: 100%;
+                margin: unset;
+                justify-content: center;
+
+                .banner-title-box {
+                    z-index: 1;
+                }
+
+                .banner-img-box {
+                    width: 384px;
+                    bottom: 0;
+
+                    img {
+                        width: auto;
+                    }
+                }
+            }
+        }
+
+        .contactus-section {
+            .contactus-wrapper {
+                width: 320px;
+                ;
+
+                .title-box {
+                    flex-direction: column;
+                    align-items: unset;
+                    row-gap: 4px;
+
+                    .sub-title {
+                        width: 210px;
+                        line-height: 150%;
+                    }
+                }
+
+                .info-wrapper {
+                    .file-input-box {
+                        justify-content: space-between;
+                    }
+
+                    .input-box {
+                        column-gap: unset;
+
+                        .input-title {
+                            width: 60px;
+                        }
+
+                        .file-input {
+                            width: 148px;
+                        }
+
+                        .textarea-title {
+                            width: 60px;
+                        }
+
+                        .textarea-box {
+                            width: auto;
+
+                            .content-input {
+                                width: 260px;
+                            }
+                        }
+
+                        .title-input {
+                            width: 260px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .terms-section {
+            width: 320px;
+
+            .terms-box {
+                height: 288px;
+            }
+
+            .terms-check-box {
+                .terms-check-text {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .receipt-btn-section {
+            width: 320px;
+            padding-top: 67px;
+        }
+    }
+}

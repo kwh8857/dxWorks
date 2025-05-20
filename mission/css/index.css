@@ -145,6 +145,9 @@ label:hover {
   text-align: center;
   line-height: 140%;
 }
+.mission-page .banner-section .banner-text-wrapper .banner-title-box br {
+  display: none;
+}
 .mission-page .banner-section .banner-text-wrapper .banner-title-box span {
   color: #0095FF;
 }
@@ -154,6 +157,9 @@ label:hover {
   line-height: 150%;
   color: #FFFFFF;
   text-align: center;
+}
+.mission-page .banner-section .banner-text-wrapper .banner-sub-title br {
+  display: none;
 }
 .mission-page .banner-section .banner-text-wrapper .mouse-scroll {
   width: 53px;
@@ -277,6 +283,9 @@ label:hover {
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
+}
+.mission-page .mission-section1 .text-wrapper .sub-text p .mb {
+  display: none;
 }
 .mission-page .mission-section1 img {
   position: absolute;
@@ -452,10 +461,16 @@ label:hover {
   /* for Firefox */
   color: transparent;
 }
+.mission-page .mission-section3 .mission-top-banner-box .banner-title br {
+  display: none;
+}
 .mission-page .mission-section3 .mission-top-banner-box .banner-sub-title {
   font-size: 34px;
   font-weight: 700;
   color: white;
+}
+.mission-page .mission-section3 .mission-top-banner-box .banner-sub-title br {
+  display: none;
 }
 .mission-page .mission-section3 .blockchan-info-wrapper {
   padding-top: 69px;
@@ -549,6 +564,9 @@ label:hover {
   line-height: 140%;
   color: white;
 }
+.mission-page .mission-section4 .text-box .middle-text br {
+  display: none;
+}
 .mission-page .mission-section4 .text-box .middle-text span {
   color: #0095FF;
 }
@@ -636,5 +654,200 @@ label:hover {
   }
   .mission-page .mission-section4 .text-box .middle-text {
     text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mission-page {
+    width: 100%;
+  }
+  .mission-page .banner-section {
+    height: 522px;
+  }
+  .mission-page .banner-section .banner-text-wrapper {
+    width: 319px;
+  }
+  .mission-page .banner-section .banner-text-wrapper .banner-title-box {
+    font-size: 26px;
+  }
+  .mission-page .banner-section .banner-text-wrapper .banner-title-box br {
+    display: block;
+  }
+  .mission-page .banner-section .banner-text-wrapper .banner-sub-title {
+    font-size: 14px;
+  }
+  .mission-page .banner-section .banner-text-wrapper .banner-sub-title br {
+    display: block;
+  }
+  .mission-page .banner-section .banner-text-wrapper .mouse-scroll {
+    display: none;
+  }
+  .mission-page .menu-bar-section {
+    width: 100%;
+    border-bottom: unset;
+  }
+  .mission-page .menu-bar-section .menu-lists-wrapper {
+    width: 100%;
+    margin: 0;
+  }
+  .mission-page .menu-bar-section .menu-lists-wrapper .menu-lists {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 29px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mission-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list {
+    width: 100%;
+    padding-bottom: 0px;
+  }
+  .mission-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list:nth-child(1) {
+    border-bottom: 1px solid #8F9AA3;
+    padding-bottom: 12px;
+  }
+  .mission-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list:nth-child(1) a {
+    border-bottom: 2px solid #0095FF;
+    padding-bottom: 12px;
+  }
+  .mission-page .mission-section1 {
+    width: 470px;
+  }
+  .mission-page .mission-section1 .text-wrapper {
+    z-index: 999;
+    padding-top: 344px;
+  }
+  .mission-page .mission-section1 .text-wrapper .title-text {
+    font-size: 26px;
+  }
+  .mission-page .mission-section1 .text-wrapper .sub-text p {
+    font-size: 14px;
+  }
+  .mission-page .mission-section1 .text-wrapper .sub-text p .pc {
+    display: none;
+  }
+  .mission-page .mission-section1 .text-wrapper .sub-text p .mb {
+    display: block;
+  }
+  .mission-page .mission-section1 .img1 {
+    width: 188px;
+    height: 133px;
+    top: 250px;
+    left: 0;
+  }
+  .mission-page .mission-section1 .img2 {
+    width: 244px;
+    height: 191px;
+    top: 115px;
+    right: 0px;
+  }
+  .mission-page .mission-section1 .img3 {
+    width: 165px;
+    height: 135px;
+    top: 630px;
+    left: 75px;
+  }
+  .mission-page .mission-section1 .img4 {
+    width: 186px;
+    height: 148px;
+    top: 689px;
+    right: 75px;
+  }
+  .mission-page .mission-section2 {
+    margin-top: 180px;
+  }
+  .mission-page .mission-section2 .img-wrapper {
+    width: auto;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mission-page .mission-section2 .img-wrapper .card {
+    width: 320px;
+    height: 403px;
+  }
+  .mission-page .mission-section2 .img-wrapper .card img {
+    height: 242px;
+  }
+  .mission-page .mission-section2 .img-wrapper .card .card-content {
+    height: auto;
+    padding: 16px;
+    padding-top: 38px;
+  }
+  .mission-page .mission-section2 .img-wrapper .card .card-content .sub-title {
+    font-size: 14px;
+    white-space: unset;
+  }
+  .mission-page .mission-section3 .mission-top-banner-box .banner-title {
+    text-align: center;
+    font-size: 50px;
+  }
+  .mission-page .mission-section3 .mission-top-banner-box .banner-title br {
+    display: block;
+  }
+  .mission-page .mission-section3 .mission-top-banner-box .banner-sub-title {
+    font-size: 24px;
+    text-align: center;
+    line-height: 150%;
+  }
+  .mission-page .mission-section3 .mission-top-banner-box .banner-sub-title br {
+    display: block;
+  }
+  .mission-page .mission-section3 .blockchan-info-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mission-page .mission-section3 .blockchan-info-wrapper .blockchan-card {
+    width: 320px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 22px;
+  }
+  .mission-page .mission-section3 .blockchan-info-wrapper .blockchan-card .left-card {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .mission-page .mission-section3 .blockchan-info-wrapper .blockchan-card .left-card .card-sub-title {
+    white-space: unset;
+  }
+  .mission-page .mission-section3 .blockchan-info-wrapper .blockchan-card .right-card {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .mission-page .mission-section3 .blockchan-info-wrapper .blockchan-card .right-card img {
+    width: 320px;
+  }
+  .mission-page .mission-section4 .text-box {
+    width: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 24px;
+  }
+  .mission-page .mission-section4 .text-box .top-text {
+    font-size: 18px;
+  }
+  .mission-page .mission-section4 .text-box .middle-text {
+    text-align: center;
+    font-size: 26px;
+    white-space: unset;
+  }
+  .mission-page .mission-section4 .text-box .middle-text br {
+    display: block;
+  }
+  .mission-page .mission-section4 .text-box .careers {
+    width: 181px;
+    height: 51px;
+    font-size: 18px;
   }
 }

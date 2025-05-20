@@ -107,6 +107,10 @@ label {
                 text-align: center;
                 line-height: 140%;
 
+                br {
+                    display: none;
+                }
+
                 span {
                     color: #0095FF
                 }
@@ -118,6 +122,10 @@ label {
                 line-height: 150%;
                 color: #FFFFFF;
                 text-align: center;
+
+                br {
+                    display: none;
+                }
             }
 
             .mouse-scroll {
@@ -226,6 +234,10 @@ label {
                 text-align: center;
 
                 p {
+                    .mb {
+                        display: none;
+                    }
+
                     color: white;
                     font-weight: 400;
                     font-size: 18px;
@@ -378,6 +390,9 @@ label {
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
+                br{
+                    display: none;
+                }
                 /* for Firefox */
                 color: transparent;
             }
@@ -386,6 +401,9 @@ label {
                 font-size: 34px;
                 font-weight: 700;
                 color: white;
+                br{
+                    display: none;
+                }
             }
         }
 
@@ -463,7 +481,9 @@ label {
                 white-space: pre-line;
                 line-height: 140%;
                 color: white;
-
+                br{
+                    display: none;
+                }
                 span {
                     color: #0095FF;
                 }
@@ -551,12 +571,217 @@ label {
 
             .blockchan-info-wrapper {
                 width: 720px;
-                margin:0 auto;
-                .blockchan-card{
-                    .right-card{
-                        img{
+                margin: 0 auto;
+
+                .blockchan-card {
+                    .right-card {
+                        img {
                             width: 270px;
                             height: 333px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mission-section4 {
+            .text-box {
+                width: auto;
+                align-items: center;
+
+                .middle-text {
+                    text-align: center;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .mission-page {
+        width: 100%;
+
+        .banner-section {
+            height: 522px;
+
+            .banner-text-wrapper {
+                width: 319px;
+
+                .banner-title-box {
+                    font-size: 26px;
+
+                    br {
+                        display: block;
+                    }
+                }
+
+                .banner-sub-title {
+                    font-size: 14px;
+
+                    br {
+                        display: block;
+                    }
+                }
+
+                .mouse-scroll {
+                    display: none;
+                }
+            }
+        }
+
+        .menu-bar-section {
+            width: 100%;
+            border-bottom: unset;
+
+            .menu-lists-wrapper {
+                width: 100%;
+                margin: 0;
+
+                .menu-lists {
+                    flex-direction: column;
+                    row-gap: 29px;
+                    align-items: center;
+
+                    .menu-list {
+                        width: 100%;
+                        padding-bottom: 0px;
+
+                        // width: 110px;
+                        a {}
+                    }
+
+                    .menu-list:nth-child(1) {
+                        border-bottom: 1px solid #8F9AA3;
+                        padding-bottom: 12px;
+
+                        a {
+                            border-bottom: 2px solid #0095FF;
+                            padding-bottom: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mission-section1 {
+            width: 470px;
+
+            .text-wrapper {
+                z-index: 999;
+                padding-top: 344px;
+                ;
+
+                .title-text {
+                    font-size: 26px;
+                }
+
+                .sub-text {
+
+                    p {
+                        .pc {
+                            display: none;
+                        }
+
+                        .mb {
+                            display: block;
+                        }
+
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .img1 {
+                width: 188px;
+                height: 133px;
+                top: 250px;
+                left: 0;
+            }
+
+            .img2 {
+                width: 244px;
+                height: 191px;
+                top: 115px;
+                right: 0px;
+            }
+
+            .img3 {
+                width: 165px;
+                height: 135px;
+                top: 630px;
+                ;
+                left: 75px;
+            }
+
+            .img4 {
+                width: 186px;
+                height: 148px;
+                top: 689px;
+                right: 75px;
+            }
+
+        }
+
+        .mission-section2 {
+            margin-top: 180px;
+
+            .img-wrapper {
+                width: auto;
+                flex-wrap: nowrap;
+                flex-direction: column;
+                .card {
+                    width: 320px;
+                    height: 403px;
+                    img{
+                        height:242px;
+                    }
+                    .card-content{
+                        height: auto;
+                        padding:16px;
+                        padding-top: 38px;
+                        .sub-title{
+                            font-size: 14px;
+                            white-space: unset;
+                        }
+                    }
+                }
+            }
+        }
+        .mission-section3{
+            .mission-top-banner-box{
+                .banner-title{
+                    text-align: center;
+                    font-size: 50px;
+                    br{
+                        display: block;
+                    }
+                }
+                .banner-sub-title{
+                    font-size: 24px;
+                    text-align: center;
+                    line-height: 150%;
+                    br{
+                        display: block;
+                    }
+                }
+            }
+            .blockchan-info-wrapper{
+                flex-direction: column;
+                .blockchan-card{
+                    width: 320px;
+                    flex-direction: column;
+                    row-gap: 22px;
+                    .left-card{
+                        order:2;
+                        .card-sub-title{
+                            white-space: unset;
+                        }
+                    }
+                    .right-card{
+                        order: 1;
+                        img{
+                            width: 320px;
                         }
                     }
                 }
@@ -566,11 +791,24 @@ label {
             .text-box{
                 width: auto;
                 align-items: center;
+                row-gap: 24px;
+                .top-text{
+                    font-size: 18px;
+                }
                 .middle-text{
                     text-align: center;
+                    font-size: 26px;
+                    white-space: unset;
+                    br{
+                        display: block;
+                    }
+                }
+                .careers{
+                    width: 181px;
+                    height:51px;
+                    font-size: 18px;
                 }
             }
-            
         }
     }
 }

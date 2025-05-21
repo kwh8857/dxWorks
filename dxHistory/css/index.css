@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Pretendard", sans-serif;
   overflow: hidden;
 }
@@ -72,7 +72,7 @@ a,
 label {
   padding: unset;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-appearance: none;
   border: none;
   cursor: pointer;
@@ -112,14 +112,9 @@ label:hover {
   text-align: center;
   padding-bottom: 12px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
-.dx-history-page
-  .menu-bar-section
-  .menu-lists-wrapper
-  .menu-lists
-  .menu-list
-  a {
+.dx-history-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list a {
   font-size: 18px;
   font-weight: 700;
   color: white;
@@ -390,19 +385,15 @@ label:hover {
   .dx-history-page .menu-bar-section .menu-lists-wrapper .menu-lists {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     row-gap: 29px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     padding-bottom: 15px;
   }
-  .dx-history-page
-    .menu-bar-section
-    .menu-lists-wrapper
-    .menu-lists
-    .menu-list {
+  .dx-history-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list {
     width: 100%;
     padding-bottom: 0px;
   }

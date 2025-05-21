@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Pretendard", sans-serif;
   background-color: black;
 }
@@ -47,7 +47,7 @@ a,
 label {
   padding: unset;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-appearance: none;
   border: none;
   cursor: pointer;
@@ -71,30 +71,30 @@ label:hover {
 @-webkit-keyframes scroll-spin {
   0% {
     -webkit-transform: translateY(-100px);
-    transform: translateY(-100px);
+            transform: translateY(-100px);
   }
   50% {
     -webkit-transform: translateY(0);
-    transform: translateY(0);
+            transform: translateY(0);
   }
   100% {
     -webkit-transform: translateY(100px);
-    transform: translateY(100px);
+            transform: translateY(100px);
   }
 }
 
 @keyframes scroll-spin {
   0% {
     -webkit-transform: translateY(-100px);
-    transform: translateY(-100px);
+            transform: translateY(-100px);
   }
   50% {
     -webkit-transform: translateY(0);
-    transform: translateY(0);
+            transform: translateY(0);
   }
   100% {
     -webkit-transform: translateY(100px);
-    transform: translateY(100px);
+            transform: translateY(100px);
   }
 }
 .mission-page {
@@ -103,8 +103,8 @@ label:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .mission-page .banner-section {
   height: 753px;
@@ -114,11 +114,11 @@ label:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-image: url("../assets/banner/banner-img.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -131,12 +131,12 @@ label:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   row-gap: 17px;
   padding-top: 212px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 .mission-page .banner-section .banner-text-wrapper .banner-title-box {
   color: white;
@@ -149,13 +149,13 @@ label:hover {
   display: none;
 }
 .mission-page .banner-section .banner-text-wrapper .banner-title-box span {
-  color: #0095ff;
+  color: #0095FF;
 }
 .mission-page .banner-section .banner-text-wrapper .banner-sub-title {
   font-size: 18px;
   font-weight: 400;
   line-height: 150%;
-  color: #ffffff;
+  color: #FFFFFF;
   text-align: center;
 }
 .mission-page .banner-section .banner-text-wrapper .banner-sub-title br {
@@ -170,43 +170,34 @@ label:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   z-index: 999;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   row-gap: 5px;
   background-color: #1d1f22;
   position: absolute;
   bottom: 241px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   color: white;
 }
-.mission-page
-  .banner-section
-  .banner-text-wrapper
-  .mouse-scroll
-  .mouse-scroll-img-box {
+.mission-page .banner-section .banner-text-wrapper .mouse-scroll .mouse-scroll-img-box {
   overflow: hidden;
 }
-.mission-page
-  .banner-section
-  .banner-text-wrapper
-  .mouse-scroll
-  .mouse-scroll-img-box
-  .mouse-scroll-img {
+.mission-page .banner-section .banner-text-wrapper .mouse-scroll .mouse-scroll-img-box .mouse-scroll-img {
   -webkit-animation: scroll-spin 1.5s ease-in-out infinite;
-  animation: scroll-spin 1.5s ease-in-out infinite;
+          animation: scroll-spin 1.5s ease-in-out infinite;
 }
 .mission-page .banner-section .banner-text-wrapper .mouse-scroll .scroll-text {
   font-size: 10px;
-  color: #f5f6f8;
+  color: #F5F6F8;
   font-family: "Montserrat", sans-serif;
 }
 .mission-page .banner-section .banner-logo-img {
@@ -218,7 +209,7 @@ label:hover {
   bottom: 0;
 }
 .mission-page .menu-bar-section {
-  border-bottom: 1px solid #8f9aa3;
+  border-bottom: 1px solid #8F9AA3;
 }
 .mission-page .menu-bar-section .menu-lists-wrapper {
   width: 1254px;
@@ -230,19 +221,15 @@ label:hover {
   display: -ms-flexbox;
   display: flex;
 }
-.mission-page
-  .menu-bar-section
-  .menu-lists-wrapper
-  .menu-lists
-  .menu-list:nth-child(1) {
-  border-bottom: 2px solid #0095ff;
+.mission-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list:nth-child(1) {
+  border-bottom: 2px solid #0095FF;
 }
 .mission-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list {
   width: 209px;
   text-align: center;
   padding-bottom: 12px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 .mission-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list a {
   font-size: 18px;
@@ -257,8 +244,8 @@ label:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
 }
 .mission-page .mission-section1 .text-wrapper {
@@ -268,8 +255,8 @@ label:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   row-gap: 24px;
 }
 .mission-page .mission-section1 .text-wrapper .title-text {
@@ -286,8 +273,8 @@ label:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   row-gap: 20px;
   text-align: center;
 }
@@ -328,45 +315,33 @@ label:hover {
   position: relative;
   padding-bottom: 126px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .mission-page .mission-section2 .gradient-line {
   position: absolute;
   top: 50%;
   left: 0;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 100%;
   height: 384px;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(rgba(60, 106, 178, 0)),
-    color-stop(50%, rgba(60, 106, 178, 0.5)),
-    to(rgba(60, 106, 178, 0))
-  );
-  background: linear-gradient(
-    to bottom,
-    rgba(60, 106, 178, 0) 0%,
-    rgba(60, 106, 178, 0.5) 50%,
-    rgba(60, 106, 178, 0) 100%
-  );
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(60, 106, 178, 0)), color-stop(50%, rgba(60, 106, 178, 0.5)), to(rgba(60, 106, 178, 0)));
+  background: linear-gradient(to bottom, rgba(60, 106, 178, 0) 0%, rgba(60, 106, 178, 0.5) 50%, rgba(60, 106, 178, 0) 100%);
   -webkit-filter: blur(12px);
-  filter: blur(12px);
+          filter: blur(12px);
   z-index: 0;
   pointer-events: none;
 }
@@ -384,7 +359,7 @@ label:hover {
   color: white;
 }
 .mission-page .mission-section2 .text-box .text span {
-  color: #0095ff;
+  color: #0095FF;
 }
 .mission-page .mission-section2 .img-wrapper {
   width: 1200px;
@@ -393,32 +368,32 @@ label:hover {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   row-gap: 24px;
   -webkit-column-gap: 16px;
-  -moz-column-gap: 16px;
-  column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
 }
 .mission-page .mission-section2 .img-wrapper .card {
   width: 555px;
   height: 403px;
   border-radius: 8px;
-  border: 1px solid #5c6770;
+  border: 1px solid #5C6770;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-shadow: 0px 4px 20px rgba(41, 91, 255, 0.6);
-  box-shadow: 0px 4px 20px rgba(41, 91, 255, 0.6);
+          box-shadow: 0px 4px 20px rgba(41, 91, 255, 0.6);
 }
 .mission-page .mission-section2 .img-wrapper .card .card-content {
   height: 161px;
@@ -429,8 +404,8 @@ label:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   row-gap: 12px;
 }
 .mission-page .mission-section2 .img-wrapper .card .card-content .title {
@@ -449,8 +424,8 @@ label:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-bottom: 297px;
 }
 .mission-page .mission-section3 .mission-top-banner-box {
@@ -465,27 +440,21 @@ label:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   row-gap: 10px;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .mission-page .mission-section3 .mission-top-banner-box .banner-title {
   font-size: 100px;
   font-weight: 700;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#3cb8b7),
-    to(#0095ff)
-  );
-  background: linear-gradient(90deg, #3cb8b7 0%, #0095ff 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#3CB8B7), to(#0095FF));
+  background: linear-gradient(90deg, #3CB8B7 0%, #0095FF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -510,11 +479,11 @@ label:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   row-gap: 125px;
 }
 .mission-page .mission-section3 .blockchan-info-wrapper .blockchan-card {
@@ -522,58 +491,40 @@ label:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 40px;
-  -moz-column-gap: 40px;
-  column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.mission-page
-  .mission-section3
-  .blockchan-info-wrapper
-  .blockchan-card
-  .left-card {
+.mission-page .mission-section3 .blockchan-info-wrapper .blockchan-card .left-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   row-gap: 12px;
   color: white;
 }
-.mission-page
-  .mission-section3
-  .blockchan-info-wrapper
-  .blockchan-card
-  .left-card
-  .card-title {
+.mission-page .mission-section3 .blockchan-info-wrapper .blockchan-card .left-card .card-title {
   font-size: 26px;
   font-weight: 700;
   line-height: 140%;
   white-space: pre-line;
 }
-.mission-page
-  .mission-section3
-  .blockchan-info-wrapper
-  .blockchan-card
-  .left-card
-  .card-sub-title {
+.mission-page .mission-section3 .blockchan-info-wrapper .blockchan-card .left-card .card-sub-title {
   font-size: 14px;
   font-weight: 400;
   line-height: 140%;
   white-space: pre-line;
   line-height: 150%;
 }
-.mission-page
-  .mission-section3
-  .blockchan-info-wrapper
-  .blockchan-card:nth-child(2)
-  .left-card {
+.mission-page .mission-section3 .blockchan-info-wrapper .blockchan-card:nth-child(2) .left-card {
   -webkit-box-ordinal-group: 3;
-  -ms-flex-order: 2;
-  order: 2;
+      -ms-flex-order: 2;
+          order: 2;
 }
 .mission-page .mission-section4 {
   width: 100%;
@@ -586,8 +537,8 @@ label:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .mission-page .mission-section4 .text-box {
   width: 1126px;
@@ -597,12 +548,12 @@ label:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   row-gap: 16px;
 }
 .mission-page .mission-section4 .text-box .top-text {
-  color: #0095ff;
+  color: #0095FF;
   font-size: 24px;
   font-weight: 700;
 }
@@ -617,7 +568,7 @@ label:hover {
   display: none;
 }
 .mission-page .mission-section4 .text-box .middle-text span {
-  color: #0095ff;
+  color: #0095FF;
 }
 .mission-page .mission-section4 .text-box .careers {
   width: 181px;
@@ -628,11 +579,11 @@ label:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 1440px) and (min-width: 768px) {
@@ -677,11 +628,11 @@ label:hover {
   }
   .mission-page .mission-section2 .img-wrapper {
     -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .mission-page .mission-section3 .mission-top-banner-box .banner-title {
     width: 677px;
@@ -691,20 +642,15 @@ label:hover {
     width: 720px;
     margin: 0 auto;
   }
-  .mission-page
-    .mission-section3
-    .blockchan-info-wrapper
-    .blockchan-card
-    .right-card
-    img {
+  .mission-page .mission-section3 .blockchan-info-wrapper .blockchan-card .right-card img {
     width: 270px;
     height: 333px;
   }
   .mission-page .mission-section4 .text-box {
     width: auto;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .mission-page .mission-section4 .text-box .middle-text {
     text-align: center;
@@ -746,32 +692,23 @@ label:hover {
   .mission-page .menu-bar-section .menu-lists-wrapper .menu-lists {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     row-gap: 29px;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .mission-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list {
     width: 100%;
     padding-bottom: 0px;
   }
-  .mission-page
-    .menu-bar-section
-    .menu-lists-wrapper
-    .menu-lists
-    .menu-list:nth-child(1) {
-    border-bottom: 1px solid #8f9aa3;
+  .mission-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list:nth-child(1) {
+    border-bottom: 1px solid #8F9AA3;
     padding-bottom: 12px;
   }
-  .mission-page
-    .menu-bar-section
-    .menu-lists-wrapper
-    .menu-lists
-    .menu-list:nth-child(1)
-    a {
-    border-bottom: 2px solid #0095ff;
+  .mission-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list:nth-child(1) a {
+    border-bottom: 2px solid #0095FF;
     padding-bottom: 12px;
   }
   .mission-page .mission-section1 {
@@ -823,11 +760,11 @@ label:hover {
   .mission-page .mission-section2 .img-wrapper {
     width: auto;
     -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .mission-page .mission-section2 .img-wrapper .card {
     width: 320px;
@@ -863,56 +800,38 @@ label:hover {
   .mission-page .mission-section3 .blockchan-info-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .mission-page .mission-section3 .blockchan-info-wrapper .blockchan-card {
     width: 320px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     row-gap: 22px;
   }
-  .mission-page
-    .mission-section3
-    .blockchan-info-wrapper
-    .blockchan-card
-    .left-card {
+  .mission-page .mission-section3 .blockchan-info-wrapper .blockchan-card .left-card {
     -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
+        -ms-flex-order: 2;
+            order: 2;
   }
-  .mission-page
-    .mission-section3
-    .blockchan-info-wrapper
-    .blockchan-card
-    .left-card
-    .card-sub-title {
+  .mission-page .mission-section3 .blockchan-info-wrapper .blockchan-card .left-card .card-sub-title {
     white-space: unset;
   }
-  .mission-page
-    .mission-section3
-    .blockchan-info-wrapper
-    .blockchan-card
-    .right-card {
+  .mission-page .mission-section3 .blockchan-info-wrapper .blockchan-card .right-card {
     -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
+        -ms-flex-order: 1;
+            order: 1;
   }
-  .mission-page
-    .mission-section3
-    .blockchan-info-wrapper
-    .blockchan-card
-    .right-card
-    img {
+  .mission-page .mission-section3 .blockchan-info-wrapper .blockchan-card .right-card img {
     width: 320px;
   }
   .mission-page .mission-section4 .text-box {
     width: auto;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     row-gap: 24px;
   }
   .mission-page .mission-section4 .text-box .top-text {

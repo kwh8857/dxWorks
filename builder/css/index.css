@@ -565,7 +565,7 @@ label:hover {
       -ms-flex-pack: center;
           justify-content: center;
   border-bottom-right-radius: 5px;
-  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   position: relative;
   z-index: 2;
 }
@@ -764,7 +764,7 @@ label:hover {
 }
 .builder-page .builder-faq-section {
   width: 100%;
-  min-height: 1200px;
+  min-height: 1000px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 110px 0 169px;

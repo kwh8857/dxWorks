@@ -4,6 +4,13 @@ const requiredCheckBox = document.querySelector(".required-terms .box");
 const optionalCheckBox = document.querySelector(".optional-terms .box");
 const fileInput = document.getElementById("file");
 const fileNameInput = document.querySelector(".file-input");
+const receiptBtn = document.querySelector(".receipt-btn");
+
+// 체크박스 상태를 저장할 객체
+const checkBoxState = {
+  required: false,
+  optional: false,
+};
 
 function handleTextChange(e) {
   const { value } = e.target;
@@ -12,7 +19,11 @@ function handleTextChange(e) {
 
 function handleCheckboxClick(e) {
   const checkBox = e.currentTarget;
+  const isRequired = checkBox.closest(".required-terms") !== null;
+
   checkBox.classList.toggle("checked");
+  checkBoxState[isRequired ? "required" : "optional"] =
+    checkBox.classList.contains("checked");
 
   const existingImg = checkBox.querySelector("img");
 
@@ -43,6 +54,13 @@ function handleImgFileChange(e) {
   }
 }
 
+function handleReceiptClick() {
+  if (!checkBoxState.required) {
+    alert("필수 동의 항목에 체크해주세요.");
+    return;
+  }
+}
+
 // 내용 text 길이
 textArea.addEventListener("input", handleTextChange);
 
@@ -52,3 +70,6 @@ optionalCheckBox.addEventListener("click", handleCheckboxClick);
 
 // 이미지 선택
 fileInput.addEventListener("change", handleImgFileChange);
+
+// 접수하기 버튼 클릭
+receiptBtn.addEventListener("click", handleReceiptClick);

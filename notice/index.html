@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>공지사항</title>
+    <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+    <main class="notice-page">
+        <section class="banner-section">
+            <div class="banner-wrapper">
+                <div class="banner-title-box">
+                    <p class="banner-title">공지사항</p>
+                </div>
+                <div class="banner-img-box">
+                    <img src="./assets/banner-img.png" srcset="
+                            ./assets/banner-img@2x.png 2x,
+                            ./assets/banner-img@3x.png 3x
+                          " alt="notice-banner-img">
+                </div>
+            </div>
+        </section>
+        <section class="notice-lists-section">
+            <div class="notice-lists-wrapper">
+                <form onsubmit="" class="notice-search-form">
+                    <div class="notice-input-box">
+                        <input type="text" name="" onchange="" class="search-input" placeholder="검색하기">
+                        <img src="./assets/glass.svg" class="search-img" alt="">
+                    </div>
+                </form>
+                <div class="lists-top-box">
+                    <div class="lists-left-box">
+                        <p class="lists-left-text">번호</p>
+                        <p class="lists-left-text">제목</p>
+                    </div>
+                    <div class="lists-right-box">
+                        <p class="lists-right-text">글쓴이</p>
+                        <p class="lists-right-text">일자</p>
+                    </div>
+                </div>
+                <div class="lists-box">
+                    <div class="list-box">
+                        <div class="list-left-box">
+                            <p class="list-number">10</p>
+                            <p class="list-title">2025년 추석연휴 고객센터 휴무 안내123123123</p>
+                        </div>
+                        <div class="list-right-box">
+                            <p class="list-author">관리자</p>
+                            <p class="list-date">2025-01-01</p>
+                        </div>
+                    </div>
+                    <div class="list-box">
+                        <div class="list-left-box">
+                            <p class="list-number">9</p>
+                            <p class="list-title">2025년 추석연휴 고객센터 휴무 안내</p>
+                        </div>
+                        <div class="list-right-box">
+                            <p class="list-author">관리자</p>
+                            <p class="list-date">2025-01-01</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pagination-section">
+            <div class="pagination-btn-wrapper">
+                <button class="arrow-btn">
+                    <img src="./assets/left-arrow.svg" alt="left-arrow">
+                </button>
+                <button class="number-btn">
+                    <p class="number">1</p>
+                </button>
+                <button class="number-btn">
+                    <p class="number">2</p>
+                </button>
+                <button class="number-btn">
+                    <p class="number">3</p>
+                </button>
+                <button class="number-btn">
+                    <p class="number">4</p>
+                </button>
+                <button class="number-btn">
+                    <p class="number">5</p>
+                </button>
+                <button class="arrow-btn">
+                    <img src="./assets/right-arrow.svg" alt="right-arrow">
+                </button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

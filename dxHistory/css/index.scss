@@ -92,7 +92,6 @@ label {
 
 .dx-history-page {
     .menu-bar-section {
-        border-bottom: 1px solid #8F9AA3;
 
         .menu-lists-wrapper {
             width: 1254px;
@@ -102,7 +101,8 @@ label {
             .menu-lists {
                 display: flex;
 
-                .menu-list:nth-child(1) {
+                .menu-list:nth-child(2) {
+                    border-bottom: 1px solid #8F9AA3;
                     border-bottom: 2px solid #0095FF;
                 }
 
@@ -125,6 +125,11 @@ label {
     .banner-section {
         width: 100%;
         height: 537px;
+        img{
+            background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+        }
     }
 
     .dx-history-section {
@@ -204,6 +209,7 @@ label {
 
                     .arrow {
                         transition: all .2s ease-in-out;
+                        cursor: pointer;
                     }
 
                     .active-arrow {
@@ -322,7 +328,6 @@ label {
                 }
             }
         }
-
         .section3 {
             .text-box {
                 width: auto;
@@ -332,6 +337,12 @@ label {
                     text-align: center;
                 }
             }
+        }
+        .dx-history-section{
+            width: 720px;
+            row-gap: 64px;
+            flex-direction: column;
+            align-items: unset;
         }
     }
 }
@@ -350,13 +361,13 @@ label {
                     flex-direction: column;
                     row-gap: 29px;
                     align-items: center;
-
+                    padding-bottom: 15px;
                     .menu-list {
                         width: 100%;
                         padding-bottom: 0px;
                     }
 
-                    .menu-list:nth-child(1) {
+                    .menu-list:nth-child(2) {
                         border-bottom: 1px solid #8F9AA3;
                         padding-bottom: 12px;
 
@@ -368,7 +379,26 @@ label {
                 }
             }
         }
-
+        .dx-history-section{
+            width: 320px;
+                row-gap: 64px;
+                flex-direction: column;
+                align-items: unset;
+                top: -250px;
+                .right-box{
+                    width: 320px;
+                    .history-card{
+                        .history-info-wrapper{
+                            .history-info-box{
+                                .info-text{
+                                    white-space: unset;
+                                    width: 287px;
+                                }
+                            }
+                        }
+                    }
+                }
+        }
         .section3 {
             .text-box {
                 width: auto;

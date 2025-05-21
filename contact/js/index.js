@@ -1,14 +1,17 @@
 const textArea = document.querySelector(".content-input");
 const textCount = document.querySelector(".text-count");
-const checkBox = document.querySelector(".box");
+const requiredCheckBox = document.querySelector(".required-terms .box");
+const optionalCheckBox = document.querySelector(".optional-terms .box");
 const fileInput = document.getElementById("file");
 const fileNameInput = document.querySelector(".file-input");
+
 function handleTextChange(e) {
   const { value } = e.target;
   textCount.textContent = value.length;
 }
 
-function handleCheckboxClick() {
+function handleCheckboxClick(e) {
+  const checkBox = e.currentTarget;
   checkBox.classList.toggle("checked");
 
   const existingImg = checkBox.querySelector("img");
@@ -44,7 +47,8 @@ function handleImgFileChange(e) {
 textArea.addEventListener("input", handleTextChange);
 
 // 체크박스 클릭,해제
-checkBox.addEventListener("click", handleCheckboxClick);
+requiredCheckBox.addEventListener("click", handleCheckboxClick);
+optionalCheckBox.addEventListener("click", handleCheckboxClick);
 
 // 이미지 선택
 fileInput.addEventListener("change", handleImgFileChange);

@@ -888,7 +888,6 @@ label:hover {
 
 .footer-section {
   width: 100%;
-  height: 373px;
   background-color: #1A1B23;
   padding: 56px;
   -webkit-box-sizing: border-box;
@@ -1197,7 +1196,6 @@ label:hover {
     margin: 0 auto;
   }
   .footer-section {
-    height: 357px;
     padding: 38px;
   }
 }
@@ -1533,7 +1531,6 @@ label:hover {
             column-gap: 10px;
   }
   .footer-section {
-    height: 467px;
     padding: 20px;
   }
   .footer-section .footer-nav-list {

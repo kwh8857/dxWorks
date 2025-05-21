@@ -1053,43 +1053,34 @@ label:hover {
     -webkit-transform: translateX(-40px);
             transform: translateX(-40px);
   }
-  .badge-page .badge-slogan-section .badge-slogan-section-content-wrapper .badge-slogan-section-img-section .badge-slogan-section-img-desc {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 150%;
-    color: white;
-    text-align: right;
-    -webkit-transform: translate(-130px, -30px);
-            transform: translate(-130px, -30px);
-  }
-  .badge-page .badge-tech-section {
+  .badge-tech-section {
     padding: 200px 0;
   }
-  .badge-page .badge-tech-section .badge-tech-section-content-wrapper {
+  .badge-tech-section .badge-tech-section-content-wrapper {
     margin-top: 64px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .badge-page .badge-tech-section .badge-tech-section-content-wrapper .badge-tech-section-content-plus {
+  .badge-tech-section .badge-tech-section-content-wrapper .badge-tech-section-content-plus {
     margin: 77px 0 46px;
   }
-  .badge-page .badge-product-section {
+  .badge-product-section {
     padding-bottom: 200px;
   }
-  .badge-page .badge-product-section .badge-product-container {
+  .badge-product-section .badge-product-container {
     max-width: 720px;
   }
-  .badge-page .badge-product-section .badge-product-container .badge-product-section-tag {
+  .badge-product-section .badge-product-container .badge-product-section-tag {
     font-size: 24px;
     font-weight: 700;
     color: #00CD0E;
   }
-  .badge-page .badge-product-section .badge-product-container .badge-product-section-title {
+  .badge-product-section .badge-product-container .badge-product-section-title {
     margin: 4px 0 32px;
   }
-  .badge-page .badge-product-section .badge-product-container .badge-product-info-list {
+  .badge-product-section .badge-product-container .badge-product-info-list {
     width: 100%;
     margin-top: 129px;
     display: grid;
@@ -1097,16 +1088,16 @@ label:hover {
     grid-template-rows: repeat(4, 315px);
     gap: 22px;
   }
-  .badge-page .badge-slide-section {
+  .badge-slide-section {
     padding: 200px 0;
   }
-  .badge-page .badge-slide-section .badge-slide-list {
+  .badge-slide-section .badge-slide-list {
     margin-top: 62px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  .badge-page .badge-slide-section .badge-slide-list .badge-slide-list-item {
+  .badge-slide-section .badge-slide-list .badge-slide-list-item {
     overflow: hidden;
     position: relative;
     border-radius: 10px;
@@ -1126,7 +1117,7 @@ label:hover {
     row-gap: 2px;
     height: 465px;
   }
-  .badge-page .badge-slide-section .badge-slide-list .badge-slide-list-item::before {
+  .badge-slide-section .badge-slide-list .badge-slide-list-item::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -1138,14 +1129,14 @@ label:hover {
     border-radius: 10px;
     z-index: 1;
   }
-  .badge-page .badge-slide-section .badge-slide-list .badge-slide-list-item .badge-slide-list-item-title {
+  .badge-slide-section .badge-slide-list .badge-slide-list-item .badge-slide-list-item-title {
     position: relative;
     z-index: 2;
     font-size: 30px;
     font-weight: 700;
     color: white;
   }
-  .badge-page .badge-slide-section .badge-slide-list .badge-slide-list-item .badge-slide-list-item-desc {
+  .badge-slide-section .badge-slide-list .badge-slide-list-item .badge-slide-list-item-desc {
     position: relative;
     z-index: 2;
     font-size: 18px;
@@ -1154,44 +1145,45 @@ label:hover {
     color: white;
     width: 274px;
   }
-  .badge-page .badge-slide-section .badge-slide-list .badge-slide-list-item .badge-slide-list-item-img {
+  .badge-slide-section .badge-slide-list .badge-slide-list-item .badge-slide-list-item-img {
     position: absolute;
     top: -5%;
     left: 0;
     width: 100%;
     height: 106%;
   }
-  .badge-page .badge-nav-contract-section .badge-nav-contract-content {
+  .badge-nav-contract-section .badge-nav-contract-content {
     width: 670px;
   }
-  .badge-page .badge-nav-contract-section .badge-nav-contract-content .badge-nav-contract-title {
+  .badge-nav-contract-section .badge-nav-contract-content .badge-nav-contract-title {
     text-align: center;
     margin-bottom: 24px;
   }
-  .badge-page .badge-nav-contract-section .badge-nav-contract-content .badge-nav-contract-btn {
+  .badge-nav-contract-section .badge-nav-contract-content .badge-nav-contract-btn {
     margin: 0 auto;
   }
-  .badge-page .badge-faq-section {
+  .badge-faq-section {
     padding: 140px 0;
     min-height: 1100px;
   }
-  .badge-page .badge-faq-section .badge-faq-content {
+  .badge-faq-section .badge-faq-content {
     width: 720px;
   }
-  .badge-page .badge-faq-section .badge-faq-content .badge-faq-tag {
+  .badge-faq-section .badge-faq-content .badge-faq-tag {
     text-align: center;
   }
-  .badge-page .badge-faq-section .badge-faq-content .badge-faq-title {
+  .badge-faq-section .badge-faq-content .badge-faq-title {
     text-align: center;
   }
-  .badge-page .badge-faq-section .badge-faq-content .badge-faq-search {
+  .badge-faq-section .badge-faq-content .badge-faq-search {
     margin: 0 auto;
   }
-  .footer-section {
-    height: 357px;
-    padding: 38px;
-  }
 }
+.footer-section {
+  height: 357px;
+  padding: 38px;
+}
+
 @media screen and (min-width: 768px) {
   .header-section .header-nav .header-nav-list .header-nav-item:hover {
     overflow: visible;
@@ -1359,15 +1351,6 @@ label:hover {
   .badge-page .badge-slogan-section .badge-slogan-section-content-wrapper .badge-slogan-section-img-section .badge-slogan-section-img-wrapper > img:nth-child(2) {
     -webkit-transform: translateY(-70px);
             transform: translateY(-70px);
-  }
-  .badge-page .badge-slogan-section .badge-slogan-section-content-wrapper .badge-slogan-section-img-section .badge-slogan-section-img-desc {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 150%;
-    color: white;
-    text-align: center;
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
   }
   .badge-page .badge-tech-section {
     padding: 180px 0 264px;

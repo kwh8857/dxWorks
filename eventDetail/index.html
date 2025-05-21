@@ -1,13 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/header.js"></script>
     <title>이벤트 상세</title>
 </head>
 
 <body>
+    <header class="header-section" id="header">
+        <a href="/main" class="header-logo">
+            <img src="./assets/header/logo.png" srcset="./assets/header/logo@2x.png 2x, ./assets/header/logo@3x.png 3x"
+                alt="logo">
+        </a>
+        <nav class="header-nav">
+            <ul class="header-nav-list">
+                <li class="header-nav-item">
+                    <a href="#" class="header-nav-link">PLATFORM</a>
+                    <div class="sub-nav-list">
+                        <a href="/badge" class="sub-nav-link">Digital Badge</a>
+                        <a href="/id" class="sub-nav-link">Digital ID</a>
+                    </div>
+                </li>
+                <li class="header-nav-item">
+                    <a href="#" class="header-nav-link">PRODUCT</a>
+                    <div class="sub-nav-list">
+                        <a href="/builder" class="sub-nav-link">DX Ledger Builder</a>
+                        <a href="/did" class="sub-nav-link">DX Ledger DID</a>
+                        <a href="/wallet" class="sub-nav-link">DX Ledger Wallet</a>
+                        <a href="/ledgerbadge" class="sub-nav-link">DX Ledger Badge</a>
+                    </div>
+                </li>
+                <li class="header-nav-item">
+                    <a href="#" class="header-nav-link">DX INSIGNT</a>
+                    <div class="sub-nav-list">
+                        <a href="/notice" class="sub-nav-link">공지사항</a>
+                        <a href="/event" class="sub-nav-link">이벤트</a>
+                        <a href="/contact" class="sub-nav-link">문의하기</a>
+                    </div>
+                </li>
+                <li class="header-nav-item">
+                    <a href="#" class="header-nav-link">COMPANY</a>
+                    <div class="sub-nav-list">
+                        <a href="/notice" class="sub-nav-link">미션, 핵심가치</a>
+                        <a href="/event" class="sub-nav-link">DX 연혁</a>
+                        <a href="/certification" class="sub-nav-link">인증 및 수상</a>
+                        <a href="/ip" class="sub-nav-link">지적재산권</a>
+                        <a href="/culture" class="sub-nav-link">일하는 문화</a>
+                        <a href="/location" class="sub-nav-link">오시는 길</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-btn-section">
+            <a class="header-btn-item" href="./case">성공사례</a>
+            <hr />
+            <a class="header-btn-item" href="./contact">문의하기</a>
+            <hr />
+            <button class="header-btn-item">
+                <img src="./assets/header/earth.svg" alt="language" class="header-lang-icon">
+            </button>
+        </div>
+    </header>
     <main class="event-detail-page">
         <section class="event-detail-top-section">
             <p class="title">2025년 추석연휴 고객센터 휴무 안내</p>
@@ -30,7 +86,7 @@
             <img class="content-img" src="./assets/test.png" alt="img">
         </section>
         <section class="btn-section">
-            <button class="btn">목록으로</button>
+            <a class="btn" href="/event">목록으로</a>
         </section>
     </main>
 </body>

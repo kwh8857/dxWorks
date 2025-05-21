@@ -1,8 +1,8 @@
 const textArea = document.querySelector(".content-input");
 const textCount = document.querySelector(".text-count");
 const checkBox = document.querySelector(".box");
-const fileInput = document.getElementById("file"); 
-const fileNameInput = document.querySelector(".file-input"); 
+const fileInput = document.getElementById("file");
+const fileNameInput = document.querySelector(".file-input");
 function handleTextChange(e) {
   const { value } = e.target;
   textCount.textContent = value.length;

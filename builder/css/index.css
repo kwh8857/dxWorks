@@ -649,11 +649,14 @@ label:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-overflow-style: none; /* IE, Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE, Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 .builder-page .builder-slide-section .builder-slide-list::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+  display: none;
+  /* Chrome, Safari, Opera */
 }
 .builder-page .builder-slide-section .builder-slide-list .builder-slide-list-item {
   overflow: hidden;
@@ -866,7 +869,8 @@ label:hover {
   font-size: 16px;
   font-weight: 400;
   overflow: hidden;
-  padding: 20px; /* 항상 유지 */
+  padding: 20px;
+  /* 항상 유지 */
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1197,7 +1201,7 @@ label:hover {
     padding: 38px;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .header-section .header-nav .header-nav-list .header-nav-item:hover {
     overflow: visible;
   }

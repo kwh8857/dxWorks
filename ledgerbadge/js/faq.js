@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const faqItems = document.querySelectorAll(".builder-faq-list-item");
+  const faqItems = document.querySelectorAll(".badge-faq-list-item");
 
   faqItems.forEach((item) => {
-    const button = item.querySelector(".builder-faq-list-item-title-wrapper");
+    const button = item.querySelector(".badge-faq-list-item-title-wrapper");
 
     button.addEventListener("click", () => {
       const isActive = item.classList.contains("active");

@@ -636,6 +636,7 @@ label:hover {
 }
 .builder-page .builder-slide-section .builder-slide-list {
   width: 100vw;
+  max-width: 1560px;
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(4, 368px);
@@ -646,9 +647,6 @@ label:hover {
   padding: 0 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -ms-overflow-style: none;
   /* IE, Edge */
   scrollbar-width: none;

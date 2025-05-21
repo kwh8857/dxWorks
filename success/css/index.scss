@@ -1,12 +1,14 @@
+html{
+}
 html,
 body {
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Pretendard",
         sans-serif;
-    overflow: hidden;
-
+    // overflow: hidden;
     h2,
     ul,
     p {
@@ -32,7 +34,7 @@ main {
     box-sizing: border-box;
     overflow-x: hidden;
     background-color: black;
-
+    scroll-behavior: smooth;
     /* 스크롤바 스타일 설정 */
     &::-webkit-scrollbar {
         width: 8px;
@@ -293,9 +295,10 @@ label {
             width: 100%;
             border-bottom: 1px solid #44464F;
             display: flex;
-                color: white;
+                
                 justify-content: center;
                 column-gap: 120px;
+                
                 p:nth-child(1){
                     border-bottom:2px solid #0095FF;
                     font-weight: 700;
@@ -303,8 +306,12 @@ label {
                 p {
                 padding-bottom: 12px;
                     font-weight: 400;
+                    a{
+                        color:white;
+                    }
                 }
         }
+        
     }
     .rbd-section{
         padding-top: 118px;

@@ -1,12 +1,12 @@
 @charset "UTF-8";
 html,
 body {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Pretendard", sans-serif;
-  overflow: hidden;
 }
 html h2,
 html ul,
@@ -35,6 +35,7 @@ main {
           box-sizing: border-box;
   overflow-x: hidden;
   background-color: black;
+  scroll-behavior: smooth;
   /* 스크롤바 스타일 설정 */
 }
 main::-webkit-scrollbar {
@@ -339,7 +340,6 @@ label:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: white;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -354,6 +354,9 @@ label:hover {
 .success-page .section1 .menu-wrapper p {
   padding-bottom: 12px;
   font-weight: 400;
+}
+.success-page .section1 .menu-wrapper p a {
+  color: white;
 }
 .success-page .rbd-section {
   padding-top: 118px;

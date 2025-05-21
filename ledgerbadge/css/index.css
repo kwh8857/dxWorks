@@ -320,6 +320,83 @@ label:hover {
   -webkit-transform: translateX(20px);
           transform: translateX(20px);
 }
+.badge-page .badge-type-section {
+  padding: 180px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.badge-page .badge-type-section .badge-type-section-title {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 140%;
+  color: white;
+}
+.badge-page .badge-type-section .badge-type-etech-img {
+  margin: 24px 0 48px;
+}
+.badge-page .badge-type-section .badge-type-list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.badge-page .badge-type-section .badge-type-list .badge-type-list-item {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.badge-page .badge-type-section .badge-type-list .badge-type-list-item .badge-type-list-item-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.badge-page .badge-type-section .badge-type-list .badge-type-list-item .badge-type-list-item-content .badge-type-list-item-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+.badge-page .badge-type-section .badge-type-list .badge-type-list-item .badge-type-list-item-content .badge-type-list-item-desc {
+  margin-top: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(171, 179, 186);
+  line-height: 150%;
+  text-align: center;
+}
+.badge-page .badge-type-section .badge-type-list-item-hr {
+  position: absolute;
+  top: 160px;
+  width: 850px;
+  border-top: dashed 1px white;
+  border-bottom: unset;
+}
 .badge-page .badge-product-section {
   padding-bottom: 126px;
   position: relative;
@@ -935,6 +1012,47 @@ label:hover {
     -webkit-transform: translateX(-80px);
             transform: translateX(-80px);
   }
+  .badge-page .badge-type-section {
+    padding: 200px 0;
+  }
+  .badge-page .badge-type-section .badge-type-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .badge-page .badge-type-section .badge-type-list .badge-type-list-item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-column-gap: 34px;
+       -moz-column-gap: 34px;
+            column-gap: 34px;
+  }
+  .badge-page .badge-type-section .badge-type-list .badge-type-list-item .badge-type-list-item-content {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .badge-page .badge-type-section .badge-type-list .badge-type-list-item .badge-type-list-item-content .badge-type-list-item-desc {
+    text-align: left;
+  }
+  .badge-page .badge-type-section .badge-type-list .badge-type-list-item-hr {
+    position: absolute;
+    top: 120px;
+    left: 164px;
+    width: 1px;
+    height: 800px;
+    border-left: dashed 1px white;
+    border-right: unset;
+  }
   .badge-page .badge-product-section {
     padding-bottom: 200px;
   }
@@ -1218,6 +1336,64 @@ label:hover {
   .badge-page .badge-slogan-section .badge-slogan-section-content-wrapper .badge-slogan-section-img-section .badge-slogan-section-img-wrapper > img:nth-child(3) {
     -webkit-transform: translateY(-140px);
             transform: translateY(-140px);
+  }
+  .badge-page .badge-type-section {
+    padding: 180px 0;
+  }
+  .badge-page .badge-type-section .badge-type-section-title {
+    font-size: 30px;
+  }
+  .badge-page .badge-type-section .badge-type-etech-img {
+    margin: 35px 0 52px;
+    width: 228px;
+  }
+  .badge-page .badge-type-section .badge-type-list {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .badge-page .badge-type-section .badge-type-list .badge-type-list-item {
+    position: relative;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .badge-page .badge-type-section .badge-type-list .badge-type-list-item .badge-type-list-item-img {
+    width: 280px;
+  }
+  .badge-page .badge-type-section .badge-type-list .badge-type-list-item .badge-type-list-item-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .badge-page .badge-type-section .badge-type-list .badge-type-list-item .badge-type-list-item-content .badge-type-list-item-title {
+    font-size: 24px;
+  }
+  .badge-page .badge-type-section .badge-type-list .badge-type-list-item .badge-type-list-item-content .badge-type-list-item-desc {
+    font-size: 14px;
+    text-align: center;
+  }
+  .badge-page .badge-type-section .badge-type-list-item-hr {
+    display: none;
   }
   .badge-page .badge-product-section {
     padding-bottom: 180px;

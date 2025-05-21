@@ -311,6 +311,68 @@ label {
   }
 
 
+  .badge-type-section {
+    padding: 180px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .badge-type-section-title {
+      font-size: 45px;
+      font-weight: 700;
+      line-height: 140%;
+      color: white;
+    }
+
+    .badge-type-etech-img {
+      margin: 24px 0 48px;
+    }
+
+    .badge-type-list {
+      position: relative;
+      display: flex;
+      justify-content: center;
+
+      .badge-type-list-item {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .badge-type-list-item-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .badge-type-list-item-title {
+            font-size: 30px;
+            font-weight: 700;
+            color: white;
+          }
+
+          .badge-type-list-item-desc {
+            margin-top: 4px;
+            font-size: 18px;
+            font-weight: 400;
+            color: rgba(171, 179, 186, 1);
+            line-height: 150%;
+            text-align: center;
+          }
+        }
+      }
+
+    }
+
+    .badge-type-list-item-hr {
+      position: absolute;
+      top: 160px;
+      width: 850px;
+      // height: 1px;
+      border-top: dashed 1px white;
+      border-bottom: unset;
+    }
+  }
 
   .badge-product-section {
     padding-bottom: 126px;
@@ -889,7 +951,41 @@ label {
       }
     }
 
+    .badge-type-section {
+      padding: 200px 0;
 
+
+      .badge-type-list {
+        flex-direction: column;
+
+        .badge-type-list-item {
+          flex-direction: row;
+          align-items: center;
+          justify-content: unset;
+          column-gap: 34px;
+
+          .badge-type-list-item-content {
+            align-items: flex-start;
+
+            .badge-type-list-item-desc {
+              text-align: left;
+            }
+          }
+
+        }
+
+        .badge-type-list-item-hr {
+          position: absolute;
+          top: 120px;
+          left: 164px;
+          width: 1px;
+          height: 800px;
+          border-left: dashed 1px white;
+          border-right: unset;
+
+        }
+      }
+    }
 
     .badge-product-section {
       padding-bottom: 200px;
@@ -1231,6 +1327,57 @@ label {
 
 
         }
+      }
+    }
+
+    .badge-type-section {
+      padding: 180px 0;
+
+      .badge-type-section-title {
+        font-size: 30px;
+      }
+
+      .badge-type-etech-img {
+        margin: 35px 0 52px;
+        width: 228px;
+      }
+
+      .badge-type-list {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        .badge-type-list-item {
+          position: relative;
+          z-index: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .badge-type-list-item-img {
+            width: 280px;
+          }
+
+          .badge-type-list-item-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .badge-type-list-item-title {
+              font-size: 24px;
+            }
+
+            .badge-type-list-item-desc {
+              font-size: 14px;
+              text-align: center;
+            }
+          }
+        }
+
+      }
+
+      .badge-type-list-item-hr {
+        display: none;
       }
     }
 

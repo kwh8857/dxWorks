@@ -241,10 +241,10 @@ label {
                     }
 
                     .event-content-box {
+                        position: relative;
                         width: 100%;
                         height: 98px;
-                        padding-top: 19px;
-                        padding-left: 24px;
+                        padding: 19px 24px;
                         background-color: #F5F6F8;
                         box-sizing: border-box;
                         display: flex;
@@ -260,6 +260,20 @@ label {
                         .content {
                             font-size: 16px;
                             font-weight: 700;
+
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            /* 최대 줄 수 */
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            word-break: break-word;
+                        }
+
+                        .file-icon {
+                            position: absolute;
+                            bottom: 19px;
+                            right: 19px;
                         }
                     }
                 }
@@ -597,13 +611,14 @@ label {
 
         .event-lists-section {
             .event-lists-wrapper {
-                width: 320px;
+                width: 100%;
                 box-sizing: border-box;
+                padding: 0 20px;
 
                 .event-search-form {
-                    .search-input-box {
+                    .event-input-box {
                         .search-input {
-                            width: 320px;
+                            width: 100%;
                             height: 50px;
                         }
 
@@ -619,7 +634,7 @@ label {
                     gap: 10px;
 
                     .event-card-box {
-                        width: 320px;
+                        width: 100%;
                         height: 288px;
 
                         .event-img {
@@ -628,8 +643,6 @@ label {
 
                         .event-content-box {
                             height: 95px;
-                            padding-top: 18px;
-                            padding-left: 22px;
                         }
                     }
                 }

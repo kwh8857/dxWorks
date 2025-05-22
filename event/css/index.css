@@ -291,10 +291,10 @@ label:hover {
   height: 200px;
 }
 .event-page .event-lists-section .event-lists-wrapper .event-card-wrapper .event-card-box .event-content-box {
+  position: relative;
   width: 100%;
   height: 98px;
-  padding-top: 19px;
-  padding-left: 24px;
+  padding: 19px 24px;
   background-color: #F5F6F8;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -315,6 +315,18 @@ label:hover {
 .event-page .event-lists-section .event-lists-wrapper .event-card-wrapper .event-card-box .event-content-box .content {
   font-size: 16px;
   font-weight: 700;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* 최대 줄 수 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+.event-page .event-lists-section .event-lists-wrapper .event-card-wrapper .event-card-box .event-content-box .file-icon {
+  position: absolute;
+  bottom: 19px;
+  right: 19px;
 }
 .event-page .pagination-section {
   width: 1080px;
@@ -661,15 +673,16 @@ label:hover {
     width: auto;
   }
   .event-page .event-lists-section .event-lists-wrapper {
-    width: 320px;
+    width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    padding: 0 20px;
   }
-  .event-page .event-lists-section .event-lists-wrapper .event-search-form .search-input-box .search-input {
-    width: 320px;
+  .event-page .event-lists-section .event-lists-wrapper .event-search-form .event-input-box .search-input {
+    width: 100%;
     height: 50px;
   }
-  .event-page .event-lists-section .event-lists-wrapper .event-search-form .search-input-box .search-img {
+  .event-page .event-lists-section .event-lists-wrapper .event-search-form .event-input-box .search-img {
     position: absolute;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -679,7 +692,7 @@ label:hover {
     gap: 10px;
   }
   .event-page .event-lists-section .event-lists-wrapper .event-card-wrapper .event-card-box {
-    width: 320px;
+    width: 100%;
     height: 288px;
   }
   .event-page .event-lists-section .event-lists-wrapper .event-card-wrapper .event-card-box .event-img {
@@ -687,8 +700,6 @@ label:hover {
   }
   .event-page .event-lists-section .event-lists-wrapper .event-card-wrapper .event-card-box .event-content-box {
     height: 95px;
-    padding-top: 18px;
-    padding-left: 22px;
   }
   .event-page .pagination-section {
     width: 320px;

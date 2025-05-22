@@ -1,7 +1,7 @@
 let isMobile = false;
 let isMobileMenuOpen = false;
 
-const isMobileScreen = () => window.innerWidth < 768;
+const isMobileScreen = () => window.innerWidth <= 768;
 
 const toggleMobileMenu = () => {
   const mobileMenuContainer = document.querySelector(".header-mobile-menu");
@@ -27,33 +27,34 @@ const enableMobileNavDropdowns = () => {
     // 이벤트 중복 방지
     link.onclick = null;
 
-if (isMobile && submenu) {
-  if (!link.dataset.bound) {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
+    if (isMobile && submenu) {
+      if (!link.dataset.bound) {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
 
-      const isExpanded = item.classList.contains("expanded");
+          const isExpanded = item.classList.contains("expanded");
 
-      document.querySelectorAll(".header-nav-item.expanded").forEach((el) => {
-        el.classList.remove("expanded");
-        el.style.height = "";
-      });
+          document
+            .querySelectorAll(".header-nav-item.expanded")
+            .forEach((el) => {
+              el.classList.remove("expanded");
+              el.style.height = "";
+            });
 
-      if (!isExpanded) {
-        const itemHeight = 60;
-        const subLinkHeight = 50;
-        const subLinkCount = submenu.querySelectorAll("a").length;
+          if (!isExpanded) {
+            const itemHeight = 60;
+            const subLinkHeight = 50;
+            const subLinkCount = submenu.querySelectorAll("a").length;
 
-        const totalHeight = itemHeight + subLinkCount * subLinkHeight;
-        item.classList.add("expanded");
-        item.style.height = `${totalHeight}px`;
+            const totalHeight = itemHeight + subLinkCount * subLinkHeight;
+            item.classList.add("expanded");
+            item.style.height = `${totalHeight}px`;
+          }
+        });
+
+        link.dataset.bound = "true"; // 플래그 설정
       }
-    });
-
-    link.dataset.bound = "true"; // 플래그 설정
-  }
-}
-
+    }
   });
 };
 
@@ -72,7 +73,6 @@ const disableMobileNavDropdowns = () => {
     item.style.height = "";
   });
 };
-
 
 const createMobileHeader = () => {
   const header = document.getElementById("header");
@@ -143,7 +143,6 @@ const createDesktopHeader = () => {
     mobileMenuContainer.remove();
   }
 };
-
 
 const changeMbHeader = () => {
   if (isMobile) {

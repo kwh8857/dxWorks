@@ -1,7 +1,7 @@
 let isMobile = false;
 let isMobileMenuOpen = false;
 
-const isMobileScreen = () => window.innerWidth < 768;
+const isMobileScreen = () => window.innerWidth <= 768;
 
 const toggleMobileMenu = () => {
   const mobileMenuContainer = document.querySelector(".header-mobile-menu");

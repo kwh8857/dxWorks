@@ -1,0 +1,1706 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pretendard", sans-serif;
+  background-color: black;
+  overflow: hidden;
+}
+
+button,
+a,
+label {
+  padding: unset;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  border: none;
+  cursor: pointer;
+  background-color: unset;
+  color: black;
+  text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    opacity: 0.7;
+    transition: 0.2s ease-in-out;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scroll-spin {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(100px);
+  }
+}
+
+/** 공통 헤더 **/
+.header-section {
+  z-index: 200;
+  background-color: black;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 56px;
+  box-sizing: border-box;
+
+  .header-logo {
+    width: 178px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .header-nav {
+    .header-nav-list {
+      display: grid;
+      grid-template-columns: repeat(4, 190px);
+      align-items: center;
+      // gap: 32px;
+      padding: unset;
+
+      .header-nav-item {
+        position: relative;
+        display: grid;
+        height: 80px;
+        overflow: hidden;
+
+        .header-nav-link {
+          color: white;
+          font-size: 18px;
+          font-weight: 700;
+          height: 80px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+        }
+
+        .sub-nav-list {
+          width: 100%;
+          // display: none;
+          display: flex;
+          top: 100%;
+          left: 0;
+          background-color: black;
+          flex-direction: column;
+          position: absolute;
+
+          .sub-nav-link {
+            width: 100%;
+            // width: 209px;
+            height: 50px;
+            color: white;
+            font-size: 16px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+
+    }
+  }
+
+  .header-btn-section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    .header-btn-item {
+      color: white;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    &>hr {
+      height: 16px;
+      background-color: white;
+    }
+  }
+}
+
+.badge-page {
+  overflow-x: hidden;
+
+  /* 스크롤바 스타일 설정 */
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #333;
+    /* 스크롤바 색상 */
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #000;
+    /* 트랙 배경색 */
+  }
+
+  width: 100%;
+  height: 100vh;
+  padding-top: 80px;
+  box-sizing: border-box;
+
+  .badge-digital-badge-section {
+    background-color: black;
+    width: 100%;
+    height: 1070px;
+
+    .badge-digital-badge-top {
+      position: relative;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .gradient-line {
+        position: absolute;
+        top: 45%;
+        /* 가운데 정렬 */
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 120px;
+        background: linear-gradient(to bottom,
+            rgba(0, 195, 255, 0) 0%,
+            rgba(0, 195, 255, 0.6) 50%,
+            rgba(0, 195, 255, 0) 100%);
+        filter: blur(10px);
+        z-index: 1;
+        pointer-events: none;
+      }
+
+      .badge-digital-badge-top-back-img {
+        position: absolute;
+        top: 49px;
+        z-index: 2;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -30px;
+          left: 0;
+          width: 100%;
+          height: 300px;
+          background: linear-gradient(to bottom,
+              rgba(0, 0, 0, 0) 0%,
+              rgba(0, 0, 0, 0.6) 40%,
+              rgba(0, 0, 0, 1) 80%,
+              rgba(0, 0, 0, 1) 100%);
+          pointer-events: none;
+          z-index: 2;
+          will-change: opacity,
+            transform;
+          mix-blend-mode: normal;
+          /* or unset */
+        }
+      }
+
+      .badge-digital-badge-top-content {
+        position: relative;
+        z-index: 10;
+        text-align: center;
+        justify-self: flex-end;
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .badge-digital-badge-tag {
+          font-size: 24px;
+          font-weight: 700;
+          color: white;
+        }
+
+        .badge-digital-badge-title {
+          font-size: 45px;
+          font-weight: 700;
+          line-height: 140%;
+          margin: 16px 0;
+          color: white;
+
+          .title-color {
+            color: #00C3FF;
+          }
+        }
+
+        .badge-digital-badge-desc {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 150%;
+          color: #ABB3BA;
+        }
+
+        .badge-digital-badge-top-download-btn {
+          width: 181px;
+          height: 52px;
+          color: white;
+          font-size: 18px;
+          font-weight: 700;
+          border: solid 1px white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 24px 0 50px;
+        }
+
+        .badge-scroll-section {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          row-gap: 5px;
+          background-color: rgba(255, 255, 255, 0.1);
+          border-radius: 40%;
+          width: 53px;
+          height: 78px;
+
+          .badge-scroll-section-img {
+            overflow: hidden;
+
+            .scroll-img {
+              animation: scroll-spin 1.5s ease-in-out infinite;
+            }
+          }
+
+          .badge-scroll-section-text {
+            color: white;
+            font-size: 10px;
+            font-weight: 400;
+            font-family: "Montserrat", sans-serif;
+          }
+        }
+
+      }
+    }
+
+    .badge-digital-badge-bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 16px;
+      padding: 76px 0 109px;
+
+      .badge-digital-badge-bottom-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .badge-digital-badge-bottom-tag {
+          font-size: 24px;
+          font-weight: bold;
+          color: #00C3FF;
+        }
+
+        .badge-digital-badge-bottom-title {
+          font-size: 34px;
+          color: white;
+          font-weight: bold;
+          margin: 11px 0 16px;
+        }
+
+        .badge-digital-badge-bottom-desc {
+          font-size: 16px;
+          font-weight: 300;
+          color: white;
+          line-height: 150%;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .badge-why-section {
+    padding: 156px 0 274px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 48px;
+
+    .badge-why-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .badge-why-tag {
+        font-size: 24px;
+        font-weight: 700;
+        color: #00C3FF;
+      }
+
+      .badge-why-title {
+        font-size: 45px;
+        font-weight: 300;
+        line-height: 140%;
+        color: white;
+      }
+
+
+    }
+  }
+
+  .badge-solution-section {
+    padding-bottom: 178px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 41px;
+    position: relative;
+
+    .badge-solution-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      row-gap: 8px;
+
+      .badge-solution-tag {
+        font-size: 24px;
+        font-weight: 700;
+        color: #00C3FF;
+      }
+
+      .badge-solution-title {
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 140%;
+        color: white;
+
+        .title-color {
+          color: #00C3FF;
+        }
+      }
+
+      .badge-solution-desc {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 150%;
+        color: #ABB3BA;
+      }
+    }
+
+
+    .badge-solution-img {
+      position: relative;
+      z-index: 10;
+    }
+
+    .gradient-line {
+      position: absolute;
+      bottom: 30%;
+      /* 가운데 정렬 */
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%;
+      height: 120px;
+      background: linear-gradient(to bottom,
+          rgba(0, 195, 255, 0) 0%,
+          rgba(0, 195, 255, 0.6) 50%,
+          rgba(0, 195, 255, 0) 100%);
+      filter: blur(10px);
+      z-index: 1;
+      pointer-events: none;
+    }
+  }
+
+
+  .badge-product-section {
+    padding-bottom: 179px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .badge-product-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 12px;
+
+      .badge-product-tag {
+        font-size: 24px;
+        font-weight: 700;
+        color: #00C3FF;
+      }
+
+      .badge-product-title {
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 140%;
+        color: white;
+        text-align: center;
+      }
+
+    }
+  }
+
+  .badge-detail-section {
+    padding: 167px 0 180px;
+    display: flex;
+    background-color: #F5F6F8;
+    justify-content: center;
+
+    .badge-detail-content {
+      width: 450px;
+
+      .badge-detail-tag {
+        font-size: 24px;
+        font-weight: 700;
+        color: #00C3FF;
+        margin-bottom: 12px;
+      }
+
+      .badge-detail-title {
+        white-space: pre-line;
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 140%;
+        color: black;
+      }
+
+      .badge-detail-btn-list {
+        margin: 61px 0 37px;
+        display: grid;
+        row-gap: 18px;
+        grid-template-columns: 257px;
+
+        .badge-detail-btn-item {
+          width: 100%;
+          height: 58px;
+          background-color: white;
+          border-radius: 10px;
+          font-size: 20px;
+          font-weight: 700;
+          color: black;
+          border-radius: 50px;
+          box-shadow: 0px 1.75px 17.46px rgba(0, 0, 0, 0.13);
+        }
+
+        .detail-active-btn {
+          background-color: #00C3FF;
+          color: white;
+        }
+
+      }
+
+      .badge-detail-desc {
+        display: flex;
+        flex-direction: column;
+        row-gap: 4px;
+
+        .badge-detail-desc-title {
+          font-size: 24px;
+          font-weight: 700;
+          color: #00C3FF;
+        }
+
+        .badge-detail-desc-text {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 150%;
+          color: black;
+        }
+      }
+
+
+    }
+
+    .detail-img-wrapper {
+      width: 940px;
+      position: relative;
+
+      .badge-detail-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        height: auto;
+        z-index: 0;
+      }
+
+      .now-detail-img {
+        animation: fadeIn 0.3s ease-in-out forwards;
+        z-index: 1;
+      }
+    }
+  }
+
+  .badge-point-section {
+    padding: 137px 0 187px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: white;
+
+    .badge-point-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .badge-point-tag {
+        font-size: 24px;
+        font-weight: 700;
+        color: #00C3FF;
+        margin-bottom: 4px;
+      }
+
+      .badge-point-title {
+        font-size: 45px;
+        font-weight: 700;
+        color: black;
+      }
+
+      .badge-point-list {
+        display: grid;
+        grid-template-columns: repeat(2, 600px);
+        gap: 16px;
+        margin-top: 32px;
+
+        .badge-point-item {
+          display: flex;
+          align-items: center;
+          column-gap: 16px;
+          background-color: #1A1B23;
+          border-radius: 10px;
+          padding: 26px 28px;
+          box-sizing: border-box;
+
+
+          .badge-point-item-content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 4px;
+
+            .badge-point-item-title {
+              font-size: 24px;
+              font-weight: 700;
+              color: #00C3FF;
+            }
+
+            .badge-point-item-desc {
+              font-size: 18px;
+              font-weight: 300;
+              line-height: 150%;
+              color: white;
+            }
+
+          }
+        }
+      }
+
+
+    }
+  }
+
+  .badge-interview-section {
+    padding: 106px 0 107px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F5F6F8;
+
+    .badge-interview-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .badge-interview-tag {
+        font-size: 24px;
+        font-weight: 700;
+        color: #00C3FF;
+      }
+
+      .badge-interview-title {
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 140%;
+        color: black;
+        text-align: center;
+      }
+
+      .badge-interview-wrapper {
+        margin-top: 32px;
+        display: flex;
+        align-items: center;
+        column-gap: 48px;
+
+        &>button {
+          width: 45px;
+          height: 45px;
+        }
+
+        .badge-interview-btn-next {
+          transform: scale(-1);
+        }
+
+
+        .badge-interview-list-container {
+          display: flex;
+          overflow: hidden;
+          height: 519px;
+          width: 1031px;
+
+          .badge-interview-list {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            will-change: transform;
+
+            .badge-interview-item {
+              min-width: 100%;
+              flex-shrink: 0;
+            }
+          }
+        }
+
+      }
+
+      .badge-interview-page {
+        margin-top: 43px;
+        display: grid;
+        align-items: center;
+        column-gap: 16px;
+        grid-template-columns: repeat(3, 13px);
+
+        .badge-interview-page-item {
+          width: 13px;
+          height: 13px;
+          background-color: #D9D9D9;
+          border-radius: 50%;
+        }
+
+        .active-page-item {
+          background-color: #00C3FF;
+        }
+      }
+    }
+  }
+
+  .badge-nav-contract-section {
+    width: 100%;
+    height: 477px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: image-set(url(../assets/badge/contract-nav-img.png) 1x,
+        url(../assets/badge/contract-nav-img@2x.png) 2x,
+        url(../assets/badge/contract-nav-img@3x.png) 3x);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .badge-nav-contract-content {
+
+      width: 1215px;
+
+      .badge-nav-contract-title {
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 140%;
+        color: white;
+      }
+
+      .badge-nav-contract-btn {
+        margin-top: 24px;
+        width: 181px;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        border: solid 1px white;
+
+      }
+    }
+  }
+
+  .badge-faq-section {
+    width: 100%;
+    min-height: 1000px;
+    box-sizing: border-box;
+    padding: 110px 0 169px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+
+    .badge-faq-content {
+      width: 1215px;
+
+      .badge-faq-tag {
+        font-size: 24px;
+        font-weight: 700;
+        color: #00C3FF;
+      }
+
+      .badge-faq-title {
+        font-size: 45px;
+        font-weight: 700;
+        color: black;
+        margin: 4px 0 43px;
+      }
+
+      .badge-faq-search {
+        width: 460px;
+        height: 50px;
+        border: 1px solid #DBDBDB;
+        padding: 0 16px 0 18px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 20px;
+
+        input {
+          width: 100%;
+          // height: 100%;
+          border: none;
+          outline: none;
+        }
+
+      }
+
+      .badge-faq-list {
+        width: 100%;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        .badge-faq-list-item {
+          width: 100%;
+          max-height: 64px;
+          overflow: hidden;
+          transition: max-height 0.2s ease-in-out;
+
+          // height: 64px;
+          .badge-faq-list-item-title-wrapper {
+            width: 100%;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: solid 1px #DBDBDB;
+
+            .badge-faq-list-item-title-section {
+              display: flex;
+              align-items: center;
+              column-gap: 8px;
+
+              .badge-faq-list-item-title {
+                font-size: 14px;
+                font-weight: 400;
+                color: black;
+              }
+            }
+          }
+
+          .badge-faq-list-item-content {
+            width: 100%;
+            background-color: #F5F6F8;
+            line-height: 180%;
+            font-size: 16px;
+            font-weight: 400;
+            overflow: hidden;
+            padding: 20px;
+            /* 항상 유지 */
+            box-sizing: border-box;
+          }
+        }
+
+        &>.active {
+          max-height: 1000px;
+
+          .badge-faq-list-item-title-wrapper {
+
+            .badge-faq-list-item-btn {
+              transform: rotate(180deg);
+              transition: transform 0.2s ease;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-section {
+  width: 100%;
+  height: 373px;
+  background-color: #1A1B23;
+  padding: 56px;
+  box-sizing: border-box;
+  color: #ABB3BA;
+
+  .footer-nav-list {
+    margin: 27px 0 12px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 12px;
+    column-gap: 25px;
+    border-bottom: solid 1px #44464F;
+
+    .footer-nav-list-item {
+      font-size: 14px;
+      font-weight: 400;
+      color: #ABB3BA;
+    }
+  }
+
+  .footer-content-container {
+    margin-bottom: 40px;
+
+    .footer-content-list {
+      display: flex;
+      column-gap: 32px;
+
+      .footer-content-list-col {
+        display: flex;
+        flex-direction: column;
+        row-gap: 6px;
+
+        .footer-content-list-item {
+          display: flex;
+          align-items: center;
+          column-gap: 16px;
+          font-size: 13px;
+
+          .footer-content-list-item-title {
+            width: 80px;
+            font-weight: 700;
+          }
+
+          .footer-content-list-item-desc {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .footer-bottom-text {
+      font-size: 13px;
+      font-weight: 400;
+    }
+
+    .footer-bottom-sns-list {
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .header-section {
+    padding: 0 20px;
+
+    .header-logo {
+      width: 120px;
+    }
+
+    .header-nav {
+      .header-nav-list {
+        grid-template-columns: repeat(4, 110px);
+
+        .header-nav-item {
+          .header-nav-link {
+            font-size: 14px;
+          }
+
+          .sub-nav-list {
+            .sub-nav-link {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+
+    .header-btn-section {
+      gap: 8px;
+    }
+  }
+
+  .badge-page {
+    .badge-digital-badge-section {
+
+      height: 930px;
+
+      .badge-digital-badge-top {
+
+        .gradient-line {
+          top: 30%;
+
+        }
+
+        .badge-digital-badge-top-back-img {
+          position: absolute;
+          top: -8%;
+          z-index: 2;
+
+
+        }
+
+        .badge-digital-badge-top-content {
+          position: relative;
+          z-index: 10;
+          text-align: center;
+          justify-self: flex-end;
+          margin-top: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .badge-digital-badge-tag {
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+          }
+
+          .badge-digital-badge-title {
+            font-size: 45px;
+            font-weight: 700;
+            line-height: 140%;
+            margin: 16px 0;
+            color: white;
+
+            .title-color {
+              color: #00C3FF;
+            }
+          }
+
+          .badge-digital-badge-desc {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 150%;
+            color: #ABB3BA;
+          }
+
+          .badge-digital-badge-top-download-btn {
+            width: 181px;
+            height: 52px;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            border: solid 1px white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 24px 0 50px;
+          }
+
+          .badge-scroll-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            row-gap: 5px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 40%;
+            width: 53px;
+            height: 78px;
+
+            .badge-scroll-section-img {
+              overflow: hidden;
+
+              .scroll-img {
+                animation: scroll-spin 1.5s ease-in-out infinite;
+              }
+            }
+
+            .badge-scroll-section-text {
+              color: white;
+              font-size: 10px;
+              font-weight: 400;
+              font-family: "Montserrat", sans-serif;
+            }
+          }
+
+        }
+      }
+
+
+    }
+
+    .badge-detail-section {
+      padding: 186px 0 156px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .badge-detail-content {
+        width: 710px;
+        text-align: center;
+
+        .badge-detail-title {
+          white-space: normal;
+
+          &>br {
+            display: none;
+          }
+        }
+
+        .badge-detail-btn-list {
+          margin: 32px 0 48px;
+          column-gap: 16px;
+          grid-template-columns: 200px 207px 200px;
+          justify-content: center;
+
+          .badge-detail-btn-item {
+            font-size: 18px;
+          }
+
+
+        }
+
+        .badge-detail-desc {
+          display: flex;
+          flex-direction: column;
+          row-gap: 4px;
+
+          .badge-detail-desc-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #00C3FF;
+          }
+
+          .badge-detail-desc-text {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 150%;
+            color: black;
+          }
+        }
+
+
+      }
+
+      .detail-img-wrapper {
+        width: 720px;
+        height: 502px;
+      }
+    }
+
+    .badge-point-section {
+      padding: 186px 0 220px;
+
+      .badge-point-content {
+        .badge-point-list {
+          grid-template-columns: 600px;
+          gap: 8px;
+
+        }
+
+
+      }
+    }
+
+    .badge-interview-section {
+      padding: 186px 0 172px;
+
+
+      .badge-interview-content {
+
+        .badge-interview-wrapper {
+          margin-top: 32px;
+          display: flex;
+          align-items: center;
+          column-gap: 48px;
+
+
+          .badge-interview-list-container {
+            height: 644px;
+            width: 580px;
+
+          }
+
+        }
+
+        .badge-interview-page {
+          margin-top: 32px;
+          grid-template-columns: repeat(3, 12px);
+
+          .badge-interview-page-item {
+            width: 12px;
+            height: 12px;
+
+          }
+
+        }
+      }
+    }
+
+    .badge-nav-contract-section {
+
+      .badge-nav-contract-content {
+
+        width: 700px;
+
+        .badge-nav-contract-title {
+          text-align: center;
+          margin-bottom: 24px;
+        }
+
+        .badge-nav-contract-btn {
+          margin: 0 auto;
+
+        }
+      }
+    }
+
+    .badge-faq-section {
+      padding: 140px 0;
+      min-height: 1100px;
+
+      .badge-faq-content {
+        width: 720px;
+
+        .badge-faq-tag {
+          text-align: center;
+        }
+
+        .badge-faq-title {
+          text-align: center;
+        }
+
+        .badge-faq-search {
+          margin: 0 auto;
+        }
+      }
+    }
+
+  }
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .header-section {
+
+    .header-nav {
+      .header-nav-list {
+        .header-nav-item:hover {
+          overflow: visible;
+
+
+        }
+      }
+    }
+  }
+
+  #badge-container {
+    display: none;
+  }
+
+  .mb-br,
+  .badge-product-info-item-img-mb {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-section {
+    .header-logo {
+      width: 120px;
+    }
+
+    &>.header-nav,
+    &>.header-btn-section {
+      display: none;
+    }
+
+    .header-mobile-menu {
+      position: fixed;
+      right: -100%;
+      top: 80px;
+      background-color: black;
+      width: 100%;
+      height: calc(100% - 80px);
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-sizing: border-box;
+      padding-bottom: 40px;
+      transition: right 0.2s ease-in-out;
+      overflow-x: hidden;
+
+      .header-nav {
+        .header-nav-list {
+          display: grid;
+          grid-template-columns: 1fr;
+          align-items: center;
+          justify-content: center;
+          gap: 1px;
+
+          .header-nav-item {
+            text-align: center;
+            display: grid;
+            height: 60px;
+            transition: height 0.2s ease-in-out;
+            width: 100%;
+
+            .header-nav-link {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 60px;
+              width: 100%;
+            }
+
+            .sub-nav-list {
+              position: unset;
+              background-color: #1A1B23;
+
+              .sub-nav-link {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+
+      .header-btn-section {
+        width: fit-content;
+        display: flex;
+        gap: 16px;
+        margin: 0 auto;
+      }
+    }
+
+    .active-mobile-menu {
+      right: 0;
+    }
+  }
+
+  .badge-page {
+    .badge-digital-badge-section {
+      height: 800px;
+
+      .badge-digital-badge-top {
+
+        .gradient-line {
+          top: 20%;
+
+        }
+
+        .badge-digital-badge-top-back-img {
+          top: 0;
+
+          &>img {
+            width: 520px;
+          }
+
+          &::after {
+
+            height: 200px;
+          }
+        }
+
+        .badge-digital-badge-top-content {
+
+          .badge-digital-badge-tag {
+            font-size: 16px;
+          }
+
+          .badge-digital-badge-title {
+            font-size: 30px;
+            margin: 8px 0 20px;
+
+          }
+
+          .badge-digital-badge-desc {
+            font-size: 14px;
+          }
+
+
+
+        }
+      }
+
+      .badge-digital-badge-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 16px;
+        padding: 76px 0 109px;
+
+        .badge-digital-badge-bottom-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .badge-digital-badge-bottom-tag {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00C3FF;
+          }
+
+          .badge-digital-badge-bottom-title {
+            font-size: 34px;
+            color: white;
+            font-weight: bold;
+            margin: 11px 0 16px;
+          }
+
+          .badge-digital-badge-bottom-desc {
+            font-size: 16px;
+            font-weight: 300;
+            color: white;
+            line-height: 150%;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .badge-why-section {
+      padding: 186px 0;
+      row-gap: 24px;
+
+      .badge-why-content {
+        .badge-why-tag {
+          font-size: 18px;
+
+        }
+
+        .badge-why-title {
+          font-size: 30px;
+        }
+
+
+      }
+    }
+
+    .badge-solution-section {
+      padding-bottom: 186px;
+
+      .badge-solution-content {
+        .badge-solution-tag {
+          font-size: 18px;
+        }
+
+        .badge-solution-title {
+          font-size: 30px;
+        }
+
+        .badge-solution-desc {
+          font-size: 14px;
+        }
+      }
+
+    }
+
+    .badge-product-section {
+      .badge-product-content {
+        .badge-product-tag {
+          font-size: 18px;
+        }
+
+        .badge-product-title {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .badge-detail-section {
+      padding: 177px 20px;
+      width: 100%;
+      height: 1069px;
+      box-sizing: border-box;
+      align-items: center;
+      justify-content: unset;
+      row-gap: 16px;
+
+      .badge-detail-content {
+        width: 230px;
+
+        .badge-detail-tag {
+          font-size: 18px;
+          font-weight: 700;
+          color: #00C3FF;
+          margin-bottom: 8px;
+        }
+
+        .badge-detail-desc {
+          row-gap: 16px;
+
+          .badge-detail-desc-title {
+            font-size: 30px;
+            font-weight: 700;
+            color: black;
+            line-height: 140%;
+            white-space: pre-line;
+          }
+
+          .badge-detail-desc-text {
+            font-size: 16px;
+
+          }
+        }
+
+
+      }
+
+      .detail-img-wrapper {
+        width: calc(100% - 40px);
+        height: unset;
+      }
+    }
+
+    .badge-detail-section:nth-child(2) {
+      background-color: white;
+    }
+
+    #badge-section-template {
+      display: none;
+    }
+
+    .badge-point-section {
+      padding: 106px 0 137px;
+
+
+      .badge-point-content {
+
+
+        .badge-point-tag {
+          font-size: 18px;
+          margin-bottom: 8px;
+        }
+
+        .badge-point-title {
+          font-size: 30px;
+        }
+
+        .badge-point-list {
+          grid-template-columns: 320px;
+          gap: 8px;
+          margin-top: 16px;
+
+          .badge-point-item {
+            background-color: #1A1B23;
+            border-radius: 10px;
+            padding: 16px 4px 19px 16px;
+            position: relative;
+
+            .badge-point-item-img {
+              position: absolute;
+              top: 16px;
+              left: 16px;
+              width: 45px;
+            }
+
+            .badge-point-item-content {
+              display: flex;
+              flex-direction: column;
+              row-gap: 15px;
+              padding-top: 8px;
+
+              .badge-point-item-title {
+                padding-left: 52px;
+              }
+
+              .badge-point-item-desc {
+                font-size: 14px;
+              }
+
+            }
+          }
+        }
+
+
+      }
+    }
+
+    .badge-interview-section {
+      padding: 106px 0 107px;
+
+      .badge-interview-content {
+        .badge-interview-tag {
+          font-size: 18px;
+
+        }
+
+        .badge-interview-title {
+          font-size: 30px;
+
+        }
+
+        .badge-interview-wrapper {
+          margin-top: 24px;
+
+
+          &>button {
+            display: none;
+          }
+
+
+          .badge-interview-list-container {
+            display: flex;
+            justify-content: flex-start;
+            overflow: scroll;
+            height: 439px;
+            width: 100vw;
+            padding: 0 20px;
+            box-sizing: border-box;
+
+
+
+
+            .badge-interview-list {
+              // display: flex;
+              // transition: transform 0.5s ease-in-out;
+              // will-change: transform;
+              transform: unset !important;
+              column-gap: 8px;
+
+              .badge-interview-item {
+                min-width: fit-content;
+                flex-shrink: unset;
+              }
+            }
+          }
+
+        }
+
+        .badge-interview-page {
+          margin-top: 32px;
+
+        }
+      }
+    }
+
+    .badge-nav-contract-section {
+      height: 420px;
+      background-image: image-set(url(../assets/badge/contract-nav-img-mb.png) 1x,
+          url(../assets/badge/contract-nav-img-mb@2x.png) 2x,
+          url(../assets/badge/contract-nav-img-mb@3x.png) 3x);
+
+      .badge-nav-contract-content {
+
+        width: 280px;
+
+        .badge-nav-contract-title {
+          font-size: 30px;
+        }
+
+      }
+    }
+
+    .badge-faq-section {
+      height: fit-content;
+      padding: 100px 0;
+
+      .badge-faq-content {
+        width: 320px;
+
+        .badge-faq-tag {
+          font-size: 18px;
+        }
+
+        .badge-faq-title {
+          font-size: 30px;
+          margin: 4px 0 32px;
+        }
+
+        .badge-faq-search {
+          width: 100%;
+          padding: 0 12px;
+          column-gap: 10px;
+
+
+        }
+
+      }
+    }
+  }
+
+  .footer-section {
+    height: 467px;
+    padding: 20px;
+
+    .footer-nav-list {
+      margin: 24px 0 12px;
+      column-gap: 16px;
+
+    }
+
+    .footer-content-container {
+      margin-bottom: 28px;
+
+      .footer-content-list {
+        flex-direction: column;
+
+        .footer-content-list-col {
+          display: flex;
+          flex-direction: column;
+          row-gap: 6px;
+
+          .footer-content-list-item {
+            font-size: 12px;
+
+            .footer-content-list-item-title {
+              width: 78px;
+              white-space: nowrap;
+            }
+
+            .footer-content-list-item-desc {
+              font-weight: 400;
+              flex: 1;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-bottom-wrapper {
+      align-items: flex-start;
+      flex-direction: column-reverse;
+      row-gap: 10px;
+    }
+  }
+
+  .mb-br {
+    display: block;
+  }
+}

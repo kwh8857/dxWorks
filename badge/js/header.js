@@ -161,9 +161,10 @@ const changeMbHeader = () => {
   }
 };
 
-const updateScreenState = () => {
+const updateScreenState = (isLoadEvent = false) => {
   const newState = isMobileScreen();
-  if (newState !== isMobile) {
+
+  if (newState !== isMobile || isLoadEvent) {
     isMobile = newState;
     changeMbHeader();
   }
@@ -171,5 +172,5 @@ const updateScreenState = () => {
   return isMobile;
 };
 
-window.addEventListener("load", changeMbHeader());
-window.addEventListener("resize", updateScreenState);
+window.addEventListener("load", () => updateScreenState(true));
+window.addEventListener("resize", () => updateScreenState(false));

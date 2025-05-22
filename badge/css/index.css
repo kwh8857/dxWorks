@@ -1636,6 +1636,14 @@ label:hover {
     padding: 0 20px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+  .badge-page .badge-interview-section .badge-interview-content .badge-interview-wrapper .badge-interview-list-container::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
   }
   .badge-page .badge-interview-section .badge-interview-content .badge-interview-wrapper .badge-interview-list-container .badge-interview-list {
     -webkit-transform: unset !important;

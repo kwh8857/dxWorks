@@ -233,6 +233,9 @@ label:hover {
   height: 537px;
   background-image: -webkit-image-set(url(../assets/banner/banner-img.png) 1x, url(../assets/banner/banner-img@2x.png) 2x, url(../assets/banner/banner-img@3x.png) 3x);
   background-image: image-set(url(../assets/banner/banner-img.png) 1x, url(../assets/banner/banner-img@2x.png) 2x, url(../assets/banner/banner-img@3x.png) 3x);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .work-culture-page .card-section {
   width: 1200px;
@@ -294,6 +297,8 @@ label:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -336,6 +341,14 @@ label:hover {
   font-weight: 700;
   color: white;
   font-weight: 700;
+}
+.work-culture-page .section2 .title-wrapper .section2-title .mb {
+  display: none;
+}
+.work-culture-page .section2 .title-wrapper img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .work-culture-page .section2 .section2-info-wrapper {
   margin-top: 124px;
@@ -400,6 +413,9 @@ label:hover {
   height: 304px;
   background-image: -webkit-image-set(url(../assets/employment/employment.png) 1x, url(../assets/employment/employment@2x.png) 2x, url(../assets/employment/employment@3x.png) 3x);
   background-image: image-set(url(../assets/employment/employment.png) 1x, url(../assets/employment/employment@2x.png) 2x, url(../assets/employment/employment@3x.png) 3x);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -427,6 +443,9 @@ label:hover {
 .work-culture-page .employment-section .employment-link-box .center-text {
   font-size: 34px;
   font-weight: 700;
+}
+.work-culture-page .employment-section .employment-link-box .center-text br {
+  display: none;
 }
 .work-culture-page .employment-section .employment-link-box .link-btn {
   background-color: white;
@@ -565,6 +584,65 @@ label:hover {
   }
   .work-culture-page .menu-bar-section .menu-lists-wrapper .menu-list {
     width: 112px;
+  }
+  .work-culture-page .card-section {
+    width: 720px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 48px;
+    top: -250px;
+  }
+  .work-culture-page .card-section .right-box {
+    width: 720px;
+  }
+  .work-culture-page .card-section .right-box .card {
+    width: 352px;
+    height: 242px;
+  }
+  .work-culture-page .section2 {
+    width: 720px;
+  }
+  .work-culture-page .section2 .title-wrapper {
+    width: 100%;
+    row-gap: 28px;
+  }
+  .work-culture-page .section2 .title-wrapper .section2-title {
+    font-size: 34px;
+  }
+  .work-culture-page .section2 .title-wrapper img {
+    width: 100%;
+    height: 346px;
+  }
+  .work-culture-page .section2 .section2-info-wrapper {
+    margin-top: 164px;
+    row-gap: 109px;
+  }
+  .work-culture-page .section2 .section2-info-wrapper .section2-info-card {
+    -webkit-column-gap: unset;
+       -moz-column-gap: unset;
+            column-gap: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 24px;
+  }
+  .work-culture-page .section2 .section2-info-wrapper .section2-info-card img {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .work-culture-page .section2 .section2-info-wrapper .section2-info-card .info-text-box {
+    width: 100%;
+    -webkit-column-gap: unset;
+       -moz-column-gap: unset;
+            column-gap: unset;
+  }
+  .work-culture-page .employment-section .employment-link-box {
+    width: 720px;
   }
   .footer-section {
     padding: 38px;
@@ -766,6 +844,103 @@ label:hover {
   .work-culture-page .menu-bar-section .arrow.rotate {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
+  }
+  .work-culture-page .banneer-section {
+    background-image: -webkit-image-set(url(../assets/banner/banner-img-mb.png) 1x, url(../assets/banner/banner-img-mb@2x.png) 2x, url(../assets/banner/banner-img-mb@3x.png) 3x);
+    background-image: image-set(url(../assets/banner/banner-img-mb.png) 1x, url(../assets/banner/banner-img-mb@2x.png) 2x, url(../assets/banner/banner-img-mb@3x.png) 3x);
+  }
+  .work-culture-page .card-section {
+    width: auto;
+    row-gap: 71px;
+  }
+  .work-culture-page .card-section .left-box {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    text-align: center;
+  }
+  .work-culture-page .card-section .left-box .center-text {
+    font-size: 26px;
+    line-height: 140%;
+  }
+  .work-culture-page .card-section .left-box .bottom-text {
+    line-height: 150%;
+  }
+  .work-culture-page .card-section .right-box {
+    width: 100%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .work-culture-page .card-section .right-box .card {
+    width: 100%;
+    height: 100%;
+    padding: 16px 16px;
+  }
+  .work-culture-page .section2 {
+    width: auto;
+  }
+  .work-culture-page .section2 .title-wrapper img {
+    height: auto;
+  }
+  .work-culture-page .section2 .title-wrapper .section2-title {
+    font-size: 26px;
+    line-height: 150%;
+  }
+  .work-culture-page .section2 .title-wrapper .section2-title .pc {
+    display: none;
+  }
+  .work-culture-page .section2 .title-wrapper .section2-title .mb {
+    display: block;
+  }
+  .work-culture-page .section2 .section2-info-wrapper .section2-info-card img {
+    height: auto;
+  }
+  .work-culture-page .section2 .section2-info-wrapper .section2-info-card .info-text-box .info-title {
+    font-size: 18px;
+  }
+  .work-culture-page .section2 .section2-info-wrapper .section2-info-card .info-text-box .info-lists .info-list {
+    font-size: 14px;
+  }
+  .work-culture-page .employment-section {
+    height: 507px;
+    background-image: -webkit-image-set(url(../assets/employment/employment-mb.png) 1x, url(../assets/employment/employment-mb@2x.png) 2x, url(../assets/employment/employment-mb@3x.png) 3x);
+    background-image: image-set(url(../assets/employment/employment-mb.png) 1x, url(../assets/employment/employment-mb@2x.png) 2x, url(../assets/employment/employment-mb@3x.png) 3x);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .work-culture-page .employment-section .employment-link-box {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .work-culture-page .employment-section .employment-link-box .top-text {
+    font-size: 18px;
+  }
+  .work-culture-page .employment-section .employment-link-box .center-text {
+    font-size: 26px;
+  }
+  .work-culture-page .employment-section .employment-link-box .center-text br {
+    display: block;
+  }
+  .work-culture-page .employment-section .employment-link-box .link-btn {
+    width: 181px;
+    height: 52px;
+    font-size: 18px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .work-culture-page .employment-section .employment-link-box .link-btn img {
+    display: none;
   }
   .footer-section {
     padding: 20px;

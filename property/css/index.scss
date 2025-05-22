@@ -30,8 +30,8 @@ main {
     height: 100vh;
     padding-top: 80px;
     box-sizing: border-box;
-    overflow-x: hidden;
-
+    overflow-x: hidden; 
+background-color: black;
     /* 스크롤바 스타일 설정 */
     &::-webkit-scrollbar {
         width: 8px;
@@ -218,7 +218,7 @@ label {
     .property-section {
         padding-top: 35px;
         padding-bottom: 59px;
-
+        background-color: white;
         .property-wrapper {
             width: 1200px;
             margin: 0 auto;
@@ -327,14 +327,49 @@ label {
             }
         }
     }
-
+        .menu-bar-section {
+            border-bottom: 1px solid #8F9AA3;
+            background-color: black;
+            .menu-lists-wrapper {
+                width: 1254px;
+                margin: 0 auto;
+                margin-top: 40px;
+    
+                .menu-lists {
+                    display: flex;
+    
+                    img {
+                        display: none;
+                    }
+    
+                    .menu-list:nth-child(4) {
+                        border-bottom: 2px solid #0095FF;
+    
+    
+                    }
+    
+                    .menu-list {
+                        width: 209px;
+                        text-align: center;
+                        padding-bottom: 12px;
+                        box-sizing: border-box;
+    
+                        a {
+                            font-size: 18px;
+                            font-weight: 700;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
     .pagination-btn-section {
-        width: 1200px;
-        margin: 0 auto;
         padding-bottom: 116px;
         box-sizing: border-box;
-
+        background-color: white;
         .pagination-btn-box {
+        width: 1200px;
+        margin: 0 auto;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -366,7 +401,6 @@ label {
 }
 
 .footer-section {
-    margin-top: 100px;
     width: 100%;
     background-color: #1A1B23;
     padding: 56px;
@@ -478,6 +512,16 @@ label {
                 text-align: center;
             }
         }
+                .menu-bar-section {
+                    .menu-lists-wrapper {
+                        width: 684px;
+                        margin-top: 70px;
+        
+                        .menu-list {
+                            width: 112px;
+                        }
+                    }
+                }
         .property-section {
             padding-top: 44px;
 
@@ -510,8 +554,10 @@ label {
         }
 
         .pagination-btn-section {
+           .pagination-btn-box{
             width: 688px;
-            padding-bottom: 102px;
+                padding-bottom: 102px;
+           }
         }
     }
 
@@ -647,6 +693,67 @@ label {
                     }
                 }
             }
+                        .menu-bar-section {
+                            width: 100%;
+                            position: fixed;
+                            top: 80px;
+                            background-color: black;
+                            padding: unset;
+                            box-sizing: border-box;
+                            z-index: 1000;
+                            border-bottom: unset;
+            
+                            .menu-lists-wrapper {
+                                width: 100%;
+                                overflow: hidden;
+            
+                                .menu-lists {
+                                    display: flex;
+                                    flex-direction: column;
+                                    row-gap: 29px;
+                                    align-items: center;
+                                    max-height: 500px;
+                                    transition: max-height 0.4s ease;
+            
+                                    &.closed {
+                                        max-height: 52px;
+                                    }
+            
+                                    .menu-list {
+                                        width: 100%;
+            
+                                        &:nth-child(1) {
+                                            position: relative;
+                                            padding-bottom: 12px;
+                                            border-bottom: unset;
+            
+                                            .arrow {
+                                                display: block;
+                                                position: absolute;
+                                                top: -5px;
+                                                right: 8px;
+                                            }
+                                        }
+            
+                                        &:nth-child(4) {
+                                            border-bottom: unset;
+            
+                                            a {
+                                                color: #0095FF;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+            
+                            .arrow {
+                                transition: transform 0.3s ease;
+                                cursor: pointer;
+            
+                                &.rotate {
+                                    transform: rotate(180deg);
+                                }
+                            }   }
         .property-section{
             .property-wrapper{
                 width: 320px;
@@ -683,7 +790,9 @@ label {
             }
         }
         .pagination-btn-section{
-            width: 320px;
+            .pagination-btn-box{
+                width: 320px;
+            }
         }
     }
     .footer-section {

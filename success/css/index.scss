@@ -321,7 +321,11 @@ label {
                     color: white;
                 }
             }
-                        
+
+            p.active {
+                font-weight: 700;
+                border-bottom: 2px solid #0095FF;
+            }
         }
 
     }

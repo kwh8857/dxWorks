@@ -365,6 +365,10 @@ label:hover {
 .success-page .section1 .menu-wrapper p a {
   color: white;
 }
+.success-page .section1 .menu-wrapper p.active {
+  font-weight: 700;
+  border-bottom: 2px solid #0095FF;
+}
 .success-page .rbd-section {
   padding-top: 118px;
   -webkit-box-sizing: border-box;

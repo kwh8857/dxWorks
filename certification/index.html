@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <script src="./js/index.js" defer></script>
     <script src="./js/header.js" defer></script>
 </head>
+
 <body>
     <header class="header-section" id="header">
         <a href="/main" class="header-logo">
@@ -66,17 +68,38 @@
     <main class="certification-page">
         <section class="menu-bar-section">
             <div class="menu-lists-wrapper">
-                <ul class="menu-lists closed">
+                <ul class="menu-lists desktop-menu">
                     <li class="menu-list">
                         <a href="../mission/index.html">미션, 핵심가치</a>
-                        <img class="arrow" src="./assets/menu/arrow.svg" alt="">
                     </li>
                     <li class="menu-list">
                         <a href="../dxHistory/index.html">DX 연혁</a>
                     </li>
-                    <li class="menu-list">
+                    <li class="menu-list now-list">
                         <a href="../certification/index.html">인증 및 수상</a>
                     </li>
+                    <li class="menu-list">
+                        <a href="../property/index.html">지적재산권</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="../workCulture/index.html">일하는 문화</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="../location/index.html">오시는 길</a>
+                    </li>
+                </ul>
+                <ul class="menu-lists mb-menu closed">
+                    <li class="menu-list now-list">
+                        <a href="../certification/index.html">인증 및 수상</a>
+                        <img class="arrow" src="./assets/menu/arrow.svg" alt="">
+                    </li>
+                    <li class="menu-list">
+                        <a href="../mission/index.html">미션, 핵심가치</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="../dxHistory/index.html">DX 연혁</a>
+                    </li>
+
                     <li class="menu-list">
                         <a href="../property/index.html">지적재산권</a>
                     </li>
@@ -95,16 +118,13 @@
         <section class="certification-section">
             <div class="left-box">
                 <p class="top-text">인증 및 수상</p>
-                <p class="middle-text">신뢰할 수 있는<br/>전문성 있는 기업,<br/>디엑스웍스</p>
-                <p class="bottom-text">디엑스웍스는 디지털 혁신(DX)<br/>블록체인+X 기술로 디지털 신뢰 사회 실현의<br/>역사를 새롭게 쓰고 있습니다.</p>
+                <p class="middle-text">신뢰할 수 있는<br />전문성 있는 기업,<br />디엑스웍스</p>
+                <p class="bottom-text">디엑스웍스는 디지털 혁신(DX)<br />블록체인+X 기술로 디지털 신뢰 사회 실현의<br />역사를 새롭게 쓰고 있습니다.</p>
             </div>
             <div class="right-box">
                 <div class="certification-card">
-                    <img 
-                        src="./assets/certification/img1.png"
-                        srcset="./assets/certification/img1@2x.png 2x,
-                        ./assets/certification/img1@3x.png 3x," 
-                        alt="certification">
+                    <img src="./assets/certification/img1.png" srcset="./assets/certification/img1@2x.png 2x,
+                        ./assets/certification/img1@3x.png 3x," alt="certification">
                     <div class="text-box">
                         <p class="color-text">인정/인증</p>
                         <p class="text">기업부설연구소 인정서</p>
@@ -248,13 +268,14 @@
                         </div>
                     </div>
                 </div>
-        
+
             </div>
             <div class="footer-bottom-wrapper">
                 <div class="footer-bottom-text">Copyright ⓒ 2025 DX Works All Rights Reserved.</div>
                 <div class="footer-bottom-sns-list">
                     <a href="#" class="footer-bottom-sns-list-item">
-                        <img src="./assets/footer/instagram.svg" alt="instagram" class="footer-bottom-sns-list-item-icon">
+                        <img src="./assets/footer/instagram.svg" alt="instagram"
+                            class="footer-bottom-sns-list-item-icon">
                     </a>
                     <a href="#" class="footer-bottom-sns-list-item">
                         <img src="./assets/footer/facebook.svg" alt="facebook" class="footer-bottom-sns-list-item-icon">
@@ -267,4 +288,5 @@
         </footer>
     </main>
 </body>
+
 </html>

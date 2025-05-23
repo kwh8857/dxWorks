@@ -1,20 +1,22 @@
-const arrows = document.querySelectorAll(".arrow");
+const arrows = document.querySelectorAll(".history-menu");
 
 function openHistoryCard(infoWrapper, arrow, menu) {
+  console.log(arrow);
   arrow.classList.add("active-arrow");
   infoWrapper.classList.add("show");
   menu.classList.add("hide-border");
 }
 
 function closeHistoryCard(infoWrapper, arrow, menu) {
+  console.log(arrow);
   arrow.classList.remove("active-arrow");
   infoWrapper.classList.remove("show");
   menu.classList.remove("hide-border");
 }
 
 function handleArrowClicked(e) {
-  const clickedArrow = e.currentTarget;
-  const clickedCard = clickedArrow.closest(".history-card");
+  const clickedCard = e.currentTarget.closest(".history-card");
+  const clickedArrow = clickedCard.querySelector(".arrow"); // ✅ arrow 따로 찾기
   const clickedInfoWrapper = clickedCard.querySelector(".history-info-wrapper");
   const clickedMenu = clickedCard.querySelector(".history-menu");
 
@@ -36,12 +38,11 @@ arrows.forEach((arrow) => {
   arrow.addEventListener("click", handleArrowClicked);
 });
 
-
 document.addEventListener("DOMContentLoaded", initMenuToggle);
 
 function initMenuToggle() {
   const arrow = document.querySelector(".arrow");
-  const menuLists = document.querySelector(".menu-lists");
+  const menuLists = document.querySelector(".mb-menu");
 
   if (!arrow || !menuLists) return;
 

@@ -31,7 +31,6 @@ main {
   width: 100%;
   height: 100vh;
   padding-top: 80px;
-  padding-bottom: 100px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: black;
@@ -200,35 +199,48 @@ label:hover {
 }
 
 .certification-page .menu-bar-section {
+  position: sticky;
+  top: 0;
+  background-color: black;
   border-bottom: 1px solid #8F9AA3;
+  z-index: 10;
 }
 .certification-page .menu-bar-section .menu-lists-wrapper {
   width: 1254px;
   margin: 0 auto;
-  margin-top: 40px;
 }
 .certification-page .menu-bar-section .menu-lists-wrapper .menu-lists {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.certification-page .menu-bar-section .menu-lists-wrapper .menu-lists img {
-  display: none;
-}
-.certification-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list:nth-child(3) {
-  border-bottom: 2px solid #0095FF;
-}
 .certification-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list {
   width: 209px;
   text-align: center;
-  padding-bottom: 12px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  height: 50px;
+}
+.certification-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list img {
+  display: none;
 }
 .certification-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list a {
+  height: 100%;
   font-size: 18px;
   font-weight: 700;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.certification-page .menu-bar-section .menu-lists-wrapper .menu-lists .now-list {
+  border-bottom: 2px solid #0095FF;
 }
 .certification-page .certification-section {
   width: 1200px;
@@ -371,7 +383,6 @@ label:hover {
 }
 
 .footer-section {
-  margin-top: 100px;
   width: 100%;
   background-color: #1A1B23;
   padding: 56px;
@@ -486,7 +497,6 @@ label:hover {
   }
   .certification-page .menu-bar-section .menu-lists-wrapper {
     width: 684px;
-    margin-top: 70px;
   }
   .certification-page .menu-bar-section .menu-lists-wrapper .menu-list {
     width: 112px;
@@ -666,26 +676,21 @@ label:hover {
     padding: unset;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    z-index: 1000;
+    z-index: 100;
     border-bottom: unset;
   }
   .certification-page .menu-bar-section .menu-lists-wrapper {
     width: 100%;
     overflow: hidden;
+    margin-top: unset;
   }
   .certification-page .menu-bar-section .menu-lists-wrapper .menu-lists {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    row-gap: 29px;
+    display: grid;
+    row-gap: 12px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    max-height: 500px;
+    max-height: 520px;
     -webkit-transition: max-height 0.4s ease;
     transition: max-height 0.4s ease;
   }
@@ -693,6 +698,7 @@ label:hover {
     max-height: 52px;
   }
   .certification-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list {
+    height: 52px;
     width: 100%;
   }
   .certification-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list:nth-child(1) {
@@ -700,17 +706,17 @@ label:hover {
     padding-bottom: 12px;
     border-bottom: unset;
   }
+  .certification-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list:nth-child(1) a {
+    color: #0095FF;
+  }
   .certification-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list:nth-child(1) .arrow {
     display: block;
     position: absolute;
-    top: -5px;
+    top: 6px;
     right: 8px;
   }
-  .certification-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list:nth-child(3) {
-    border-bottom: unset;
-  }
-  .certification-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list:nth-child(3) a {
-    color: #0095FF;
+  .certification-page .menu-bar-section .menu-lists-wrapper .closed .menu-list:nth-child(1) a {
+    color: white;
   }
   .certification-page .menu-bar-section .arrow {
     -webkit-transition: -webkit-transform 0.3s ease;
@@ -718,10 +724,15 @@ label:hover {
     transition: transform 0.3s ease;
     transition: transform 0.3s ease, -webkit-transform 0.3s ease;
     cursor: pointer;
-  }
-  .certification-page .menu-bar-section .arrow.rotate {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
+  }
+  .certification-page .menu-bar-section .arrow.rotate {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  .certification-page .desktop-menu {
+    display: none !important;
   }
   .certification-page .certification-section {
     width: 320px;
@@ -828,5 +839,17 @@ label:hover {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     row-gap: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-section .header-nav .header-nav-list .header-nav-item:hover {
+    overflow: visible;
+  }
+  #badge-container {
+    display: none;
+  }
+  .mb-menu,
+  .mb-br {
+    display: none !important;
   }
 }

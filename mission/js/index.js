@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", initMenuToggle);
 
 function initMenuToggle() {
   const arrow = document.querySelector(".arrow");
-  const menuLists = document.querySelector(".menu-lists");
+  const menuLists = document.querySelector(".mb-menu");
 
   if (!arrow || !menuLists) return;
 

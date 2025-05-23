@@ -24,6 +24,9 @@ body {
     }
 
 }
+.cont{
+    display: none;
+}
 
 main {
     width: 100%;
@@ -270,8 +273,7 @@ label {
                 .map-info-box {
                     display: flex;
                     flex-direction: column;
-                    width: 100%;
-
+                    width: 572px;
                     .info-title {
                         font-size: 26px;
                         padding-bottom: 14px;
@@ -480,7 +482,30 @@ label {
                 }
             }
         }
-
+                #daumRoughmapContainer1747978801926 {
+                    width: 100% !important;
+                    max-width: 100%;
+                    height: auto !important;
+                }
+        
+                #daumRoughmapContainer1747978801926 .root_daum_roughmap_landing {
+                    width: 100% !important;         }
+                #daumRoughmapContainer1747978437077 {
+                    width: 100% !important;
+                    max-width: 100%;
+                    height: auto !important;
+                }
+        
+                #daumRoughmapContainer1747978437077 .root_daum_roughmap_landing {
+                    width: 100% !important;         }
+                #daumRoughmapContainer1747978845759 {
+                    width: 100% !important;
+                    max-width: 100%;
+                    height: auto !important;
+                }
+        
+                #daumRoughmapContainer1747978845759 .root_daum_roughmap_landing {
+                    width: 100% !important;         }
         .map-section {
             width: 720px;
 
@@ -495,6 +520,7 @@ label {
                 .map-box{
                     flex-direction: column;
                     .map-info-box{
+                        width: 100%;
                         margin-top: 16px;
                         .info-box{
                             .address-copy-box {
@@ -691,6 +717,16 @@ label {
         .map-section{
             width: auto;
             margin-top: 150px;
+            padding:0px 20px;
+            box-sizing: border-box;
+
+            .map-wrapper{
+                .map-box{
+                    .map-info-box{
+                        width: 100%;
+                    }
+                }
+            }
             .map-title-box{
                 width: 100%;
                 margin-top: 0px;
@@ -705,6 +741,7 @@ label {
                         display: none;
                     }
                 }
+                
             }
             .map-wrapper{
                 .map-info-box{

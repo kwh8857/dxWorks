@@ -182,6 +182,7 @@ label {
 
 @media screen and (max-width:767px) {
     .modal-wrapper{
+        padding:16px 16px;
         .top-section{
             .top-title{
                 font-size: 13px;
@@ -197,12 +198,19 @@ label {
         }
         .modal-info-card{
             padding:16px 16px;
+            .info-text-box{
+                .info-text-title{
+                        width: 45px;
+                        flex-shrink: 0;
+                }
+            }
         }
         .modal-content-box{
             .content-box{
                 column-gap: 8px;
                 .bold-text{
                     width: 68px;
+                    flex-shrink: 0;
                 }
             }
         }

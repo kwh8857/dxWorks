@@ -232,6 +232,9 @@ label:hover {
 }
 
 @media screen and (max-width: 767px) {
+  .modal-wrapper {
+    padding: 16px 16px;
+  }
   .modal-wrapper .top-section .top-title {
     font-size: 13px;
   }
@@ -244,6 +247,11 @@ label:hover {
   .modal-wrapper .modal-info-card {
     padding: 16px 16px;
   }
+  .modal-wrapper .modal-info-card .info-text-box .info-text-title {
+    width: 45px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
   .modal-wrapper .modal-content-box .content-box {
     -webkit-column-gap: 8px;
        -moz-column-gap: 8px;
@@ -251,6 +259,8 @@ label:hover {
   }
   .modal-wrapper .modal-content-box .content-box .bold-text {
     width: 68px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
   }
   .modal-wrapper .modal-description-box {
     margin-top: 32px;

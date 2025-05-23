@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
     <title>오시는길</title>
-    <script src="./js/header.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/header.js" ></script>
+    <script src="./js/index.js" ></script>
 </head>
 
 <body>
@@ -124,10 +124,26 @@
             </div>
             <div class="map-wrapper">
                 <div class="map-box">
-                    <img src="./assets/map/map1.png" srcset="
-                                            ./assets/map/map1@2x.png 2x,
-                                            ./assets/map/map2@3x.png 3x
-                                        " alt="">
+                    <!-- * 카카오맵 - 지도퍼가기 -->
+                    <!-- 1. 지도 노드 -->
+                    <div id="daumRoughmapContainer1747978437077" class="root_daum_roughmap root_daum_roughmap_landing "></div>
+                    
+                    <!--
+                    	2. 설치 스크립트
+                    	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                    -->
+                    <script charset="UTF-8" class="daum_roughmap_loader_script"
+                        src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                    
+                    <!-- 3. 실행 스크립트 -->
+                    <script charset="UTF-8">
+                        new daum.roughmap.Lander({
+                            "timestamp": "1747978437077",
+                            "key": "2o5ac",
+                            "mapWidth": "595",
+                            "mapHeight": "259"
+                        }).render();
+                    </script>
                     <div class="map-info-box">
                         <p class="info-title">대구 본사</p>
                         <div class="info-box">
@@ -164,10 +180,26 @@
 
                 </div>
                 <div class="map-box">
-                    <img src="./assets/map/map2.png" srcset="
-                                                            ./assets/map/map2@2x.png 2x,
-                                                            ./assets/map/map2@3x.png 3x
-                                                        " alt="">
+                    <!-- * 카카오맵 - 지도퍼가기 -->
+                    <!-- 1. 지도 노드 -->
+                    <div id="daumRoughmapContainer1747978801926" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                    
+                    <!--
+                    	2. 설치 스크립트
+                    	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                    -->
+                    <script charset="UTF-8" class="daum_roughmap_loader_script"
+                        src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                    
+                    <!-- 3. 실행 스크립트 -->
+                    <script charset="UTF-8">
+                        new daum.roughmap.Lander({
+                            "timestamp": "1747978801926",
+                            "key": "2o5an",
+                            "mapWidth": "595",
+                            "mapHeight": "259"
+                        }).render();
+                    </script>
                     <div class="map-info-box">
                         <p class="info-title">대구 플랫폼랩(기업부설연구소)</p>
                         <div class="info-box">
@@ -204,10 +236,26 @@
 
                 </div>
                 <div class="map-box">
-                    <img src="./assets/map/map3.png" srcset="
-                                                                            ./assets/map/map3@2x.png 2x,
-                                                                            ./assets/map/map3@3x.png 3x
-                                                                        " alt="">
+                    <!-- * 카카오맵 - 지도퍼가기 -->
+                    <!-- 1. 지도 노드 -->
+                    <div id="daumRoughmapContainer1747978845759" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                    
+                    <!--
+                    	2. 설치 스크립트
+                    	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                    -->
+                    <script charset="UTF-8" class="daum_roughmap_loader_script"
+                        src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                    
+                    <!-- 3. 실행 스크립트 -->
+                    <script charset="UTF-8">
+                        new daum.roughmap.Lander({
+                            "timestamp": "1747978845759",
+                            "key": "2o5ao",
+                            "mapWidth": "595",
+                            "mapHeight": "259"
+                        }).render();
+                    </script>
                     <div class="map-info-box">
                         <p class="info-title">서울 서비스랩</p>
                         <div class="info-box">

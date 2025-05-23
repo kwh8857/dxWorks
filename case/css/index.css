@@ -540,6 +540,8 @@ label:hover {
   background-color: black;
   border-radius: 10px;
   overflow-x: hidden;
+  -webkit-box-shadow: 0px 4px 20px rgba(41, 91, 255, 0.6);
+          box-shadow: 0px 4px 20px rgba(41, 91, 255, 0.6);
   /* 스크롤바 스타일 설정 */
 }
 .modal .modal-content::-webkit-scrollbar {

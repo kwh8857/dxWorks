@@ -538,7 +538,7 @@ label {
     }
 
     .detail-img-wrapper {
-      width: 940px;
+      width: 750px;
       position: relative;
 
       .id-detail-img {
@@ -626,88 +626,6 @@ label {
     }
   }
 
-  .id-interview-section {
-    padding: 106px 0 107px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #F5F6F8;
-
-    .id-interview-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      .id-interview-tag {
-        font-size: 24px;
-        font-weight: 700;
-        color: #A245FF;
-      }
-
-      .id-interview-title {
-        font-size: 45px;
-        font-weight: 700;
-        line-height: 140%;
-        color: black;
-        text-align: center;
-      }
-
-      .id-interview-wrapper {
-        margin-top: 32px;
-        display: flex;
-        align-items: center;
-        column-gap: 48px;
-
-        &>button {
-          width: 45px;
-          height: 45px;
-        }
-
-        .id-interview-btn-next {
-          transform: scale(-1);
-        }
-
-
-        .id-interview-list-container {
-          display: flex;
-          overflow: hidden;
-          height: 519px;
-          width: 1031px;
-
-          .id-interview-list {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-            will-change: transform;
-
-            .id-interview-item {
-              min-width: 100%;
-              flex-shrink: 0;
-            }
-          }
-        }
-
-      }
-
-      .id-interview-page {
-        margin-top: 43px;
-        display: grid;
-        align-items: center;
-        column-gap: 16px;
-        grid-template-columns: repeat(3, 13px);
-
-        .id-interview-page-item {
-          width: 13px;
-          height: 13px;
-          background-color: #D9D9D9;
-          border-radius: 50%;
-        }
-
-        .active-page-item {
-          background-color: #A245FF;
-        }
-      }
-    }
-  }
 
   .id-effect-section {
     padding: 109px 0 158px;
@@ -1203,33 +1121,7 @@ label {
       }
     }
 
-    .id-interview-section {
-      padding: 186px 0 172px;
 
-      .id-interview-content {
-        .id-interview-wrapper {
-          margin-top: 32px;
-          display: flex;
-          align-items: center;
-          column-gap: 48px;
-
-          .id-interview-list-container {
-            height: 644px;
-            width: 580px;
-          }
-        }
-
-        .id-interview-page {
-          margin-top: 32px;
-          grid-template-columns: repeat(3, 12px);
-
-          .id-interview-page-item {
-            width: 12px;
-            height: 12px;
-          }
-        }
-      }
-    }
 
     .id-effect-section {
       padding: 186px 0 222px;
@@ -1517,7 +1409,7 @@ label {
     .id-detail-section {
       padding: 177px 20px;
       width: 100%;
-      height: 1069px;
+      height: 944px;
       box-sizing: border-box;
       align-items: center;
       justify-content: unset;
@@ -1555,6 +1447,15 @@ label {
         height: unset;
       }
     }
+
+    .id-detail-section:nth-child(2) {
+      background-color: white;
+    }
+
+    #id-section-template {
+      display: none;
+    }
+
 
     .id-point-section {
       padding: 106px 0 137px;
@@ -1606,57 +1507,7 @@ label {
       }
     }
 
-    .id-interview-section {
-      padding: 106px 0 107px;
 
-      .id-interview-content {
-        .id-interview-tag {
-          font-size: 18px;
-        }
-
-        .id-interview-title {
-          font-size: 30px;
-        }
-
-        .id-interview-wrapper {
-          margin-top: 24px;
-
-          &>button {
-            display: none;
-          }
-
-          .id-interview-list-container {
-            display: flex;
-            justify-content: flex-start;
-            overflow: scroll;
-            height: 439px;
-            width: 100vw;
-            padding: 0 20px;
-            box-sizing: border-box;
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-
-            &::-webkit-scrollbar {
-              display: none;
-            }
-
-            .id-interview-list {
-              transform: unset !important;
-              column-gap: 8px;
-
-              .id-interview-item {
-                min-width: fit-content;
-                flex-shrink: unset;
-              }
-            }
-          }
-        }
-
-        .id-interview-page {
-          margin-top: 32px;
-        }
-      }
-    }
 
     .id-effect-section {
       padding: 104px 0 117px;

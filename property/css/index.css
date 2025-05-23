@@ -1000,9 +1000,6 @@ label:hover {
   .header-section .header-nav .header-nav-list .header-nav-item:hover {
     overflow: visible;
   }
-  #badge-container {
-    display: none;
-  }
   .mb-menu,
   .mb-br {
     display: none !important;

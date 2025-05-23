@@ -6,20 +6,20 @@ const imgList = document.querySelectorAll(".id-detail-img");
 
 const data = [
   {
-    title: `이력 관리에서부터
-    다양한 동기부여까지,
-    유연한 디지털 이력증명`,
-    descTitle: "블록체인 기반의 \n 분산화 디지털 증빙",
+    title: `하나의ID로 다양한
+서비스에 연결되는
+유연한 디지털 신원인증`,
+    descTitle: "안전한 신원 인증과 위변조 방지",
     descText:
-      "블록체인에 디지털배지 기초정보 및 발행정보를 기록하여 <br />유통되는 디지털배지의 신뢰성 확보",
-    btn: "신뢰할 수 있는 이력 관리",
+      "개인 정보를 보호하고, 위·변조 없이<br /> 신원을 인증할 수 있습니다.",
+    btn: "신뢰 기반 인증",
   },
   {
     title: "손쉬운 배지 등록, \n 손쉬운 관리를 통해 \n   편안한 이력공유",
     descTitle: "직관적인 인터페이스로 편리한 추가",
     descText:
       "배지 직접추가, 임포트를 통한 배지 등록 및 <br /> 타기관 배지 등록 가능 (URL,SNS,HTML 카드)",
-    btn: "손쉬운 이력 공유",
+    btn: "모바일 중심 사용성",
   },
   {
     title: `단순 문자가 아닌 뱃지로
@@ -28,7 +28,7 @@ const data = [
     descTitle: "시각화되는 요소로 성취감 확대",
     descText:
       "시각적이고 검증이 가능하며 <br /> 휴대가 가능한 성과로 학습자의 동기를 부여합니다.",
-    btn: "학습 동기부여 확대",
+    btn: "유연한 시스템 연동",
   },
 ];
 
@@ -98,8 +98,6 @@ const template = document.getElementById("id-section-template");
 // 모바일용 렌더링
 export function renderMobileView() {
   container.innerHTML = "";
-  console.log("모바일뷰");
-  console.log(container);
   data.forEach((item, index) => {
     const section = document.createElement("section");
     section.className = "id-detail-section";

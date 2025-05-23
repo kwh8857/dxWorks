@@ -36,12 +36,11 @@ arrows.forEach((arrow) => {
   arrow.addEventListener("click", handleArrowClicked);
 });
 
-
 document.addEventListener("DOMContentLoaded", initMenuToggle);
 
 function initMenuToggle() {
   const arrow = document.querySelector(".arrow");
-  const menuLists = document.querySelector(".menu-lists");
+  const menuLists = document.querySelector(".mb-menu");
 
   if (!arrow || !menuLists) return;
 
@@ -56,7 +55,6 @@ function toggleMenu(arrow, menuLists) {
   arrow.classList.toggle("rotate");
   menuLists.classList.toggle("closed");
 }
-
 
 document.addEventListener("DOMContentLoaded", () => {
   const copyButtons = document.querySelectorAll(".address-copy-box");

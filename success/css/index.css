@@ -767,6 +767,9 @@ label:hover {
   .header-section .active-mobile-menu {
     right: 0;
   }
+  .success-page .rbd-section {
+    padding-top: 80px;
+  }
   .success-page .card-wrapper {
     width: 100%;
     -ms-flex-wrap: nowrap;

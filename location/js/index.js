@@ -56,3 +56,19 @@ function toggleMenu(arrow, menuLists) {
   arrow.classList.toggle("rotate");
   menuLists.classList.toggle("closed");
 }
+
+
+// window.addEventListener("DOMContentLoaded", () => {
+//   const container = document.getElementById("map");
+//   const options = {
+//     center: new kakao.maps.LatLng(35.8714354, 128.601445),
+//     level: 3,
+//   };
+
+//   const map = new kakao.maps.Map(container, options);
+
+//   const marker = new kakao.maps.Marker({
+//     position: new kakao.maps.LatLng(35.8714354, 128.601445),
+//     map: map,
+//   });
+// });

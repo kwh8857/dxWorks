@@ -27,6 +27,10 @@ body a {
   text-decoration: none;
 }
 
+.cont {
+  display: none;
+}
+
 main {
   width: 100%;
   height: 100vh;
@@ -299,7 +303,7 @@ label:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  width: 572px;
 }
 .location-page .map-section .map-wrapper .map-box .map-info-box .info-title {
   font-size: 26px;
@@ -534,6 +538,30 @@ label:hover {
   .location-page .menu-bar-section .menu-lists-wrapper .menu-list {
     width: 112px;
   }
+  .location-page #daumRoughmapContainer1747978801926 {
+    width: 100% !important;
+    max-width: 100%;
+    height: auto !important;
+  }
+  .location-page #daumRoughmapContainer1747978801926 .root_daum_roughmap_landing {
+    width: 100% !important;
+  }
+  .location-page #daumRoughmapContainer1747978437077 {
+    width: 100% !important;
+    max-width: 100%;
+    height: auto !important;
+  }
+  .location-page #daumRoughmapContainer1747978437077 .root_daum_roughmap_landing {
+    width: 100% !important;
+  }
+  .location-page #daumRoughmapContainer1747978845759 {
+    width: 100% !important;
+    max-width: 100%;
+    height: auto !important;
+  }
+  .location-page #daumRoughmapContainer1747978845759 .root_daum_roughmap_landing {
+    width: 100% !important;
+  }
   .location-page .map-section {
     width: 720px;
   }
@@ -547,6 +575,7 @@ label:hover {
             flex-direction: column;
   }
   .location-page .map-section .map-wrapper .map-box .map-info-box {
+    width: 100%;
     margin-top: 16px;
   }
   .location-page .map-section .map-wrapper .map-box .map-info-box .info-box .address-copy-box {
@@ -756,6 +785,12 @@ label:hover {
   .location-page .map-section {
     width: auto;
     margin-top: 150px;
+    padding: 0px 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .location-page .map-section .map-wrapper .map-box .map-info-box {
+    width: 100%;
   }
   .location-page .map-section .map-title-box {
     width: 100%;

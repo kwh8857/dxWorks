@@ -60,10 +60,8 @@ function toggleMenu(arrow, menuLists) {
 
 document.addEventListener("DOMContentLoaded", () => {
   const copyButtons = document.querySelectorAll(".address-copy-box");
-
   copyButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      // 가장 가까운 .info-box 안에서 custom-title이 '주소'인 요소 찾기
       const infoBox = button.closest(".info-box");
 
       const addressBox = Array.from(
@@ -72,7 +70,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const title = box.querySelector(".custom-title")?.textContent.trim();
         return title === "주소";
       });
-
       const addressText =
         addressBox?.querySelector(".custom-content")?.textContent;
 
@@ -83,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
             alert("주소가 복사되었습니다!");
           })
           .catch((err) => {
-            console.error("복사 실패:", err);
+            console.error(err);
           });
       }
     });

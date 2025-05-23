@@ -58,17 +58,34 @@ function toggleMenu(arrow, menuLists) {
 }
 
 
-// window.addEventListener("DOMContentLoaded", () => {
-//   const container = document.getElementById("map");
-//   const options = {
-//     center: new kakao.maps.LatLng(35.8714354, 128.601445),
-//     level: 3,
-//   };
+document.addEventListener("DOMContentLoaded", () => {
+  const copyButtons = document.querySelectorAll(".address-copy-box");
 
-//   const map = new kakao.maps.Map(container, options);
+  copyButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      // 가장 가까운 .info-box 안에서 custom-title이 '주소'인 요소 찾기
+      const infoBox = button.closest(".info-box");
 
-//   const marker = new kakao.maps.Marker({
-//     position: new kakao.maps.LatLng(35.8714354, 128.601445),
-//     map: map,
-//   });
-// });
+      const addressBox = Array.from(
+        infoBox.querySelectorAll(".custom-box")
+      ).find((box) => {
+        const title = box.querySelector(".custom-title")?.textContent.trim();
+        return title === "주소";
+      });
+
+      const addressText =
+        addressBox?.querySelector(".custom-content")?.textContent;
+
+      if (addressText) {
+        navigator.clipboard
+          .writeText(addressText)
+          .then(() => {
+            alert("주소가 복사되었습니다!");
+          })
+          .catch((err) => {
+            console.error("복사 실패:", err);
+          });
+      }
+    });
+  });
+});

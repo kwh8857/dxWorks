@@ -184,34 +184,41 @@ label {
 }
 .certification-page {
     .menu-bar-section {
-        .menu-lists-wrapper {
-            width: 1254px;
-            margin: 0 auto;
-            margin-top: 40px;
-
-            .menu-lists {
-                display: flex;
-
-                .menu-list:nth-child(3) {
-                    border-bottom: 1px solid #8F9AA3;
-                    border-bottom: 2px solid #0095FF;
-                }
-
-                .menu-list {
-                    width: 209px;
-                    text-align: center;
-                    padding-bottom: 12px;
-                    box-sizing: border-box;
-
-                    a {
-                        font-size: 18px;
-                        font-weight: 700;
-                        color: white;
+            border-bottom: 1px solid #8F9AA3;
+    
+            .menu-lists-wrapper {
+                width: 1254px;
+                margin: 0 auto;
+                margin-top: 40px;
+    
+                .menu-lists {
+                    display: flex;
+    
+                    img {
+                        display: none;
+                    }
+    
+                    .menu-list:nth-child(3) {
+                        border-bottom: 2px solid #0095FF;
+    
+    
+                    }
+    
+                    .menu-list {
+                        width: 209px;
+                        text-align: center;
+                        padding-bottom: 12px;
+                        box-sizing: border-box;
+    
+                        a {
+                            font-size: 18px;
+                            font-weight: 700;
+                            color: white;
+                        }
                     }
                 }
             }
         }
-    }
 
     .certification-section {
         width: 1200px;
@@ -598,36 +605,67 @@ label {
 
     .certification-page {
         .menu-bar-section {
-            width: 100%;
-            border-bottom: unset;
-
-            .menu-lists-wrapper {
                 width: 100%;
-                margin: 0;
-
-                .menu-lists {
-                    flex-direction: column;
-                    row-gap: 29px;
-                    align-items: center;
-                    padding-bottom: 15px;
-
-                    .menu-list {
-                        width: 100%;
-                        padding-bottom: 0px;
-                    }
-
-                    .menu-list:nth-child(3) {
-                        border-bottom: 1px solid #8F9AA3;
-                        padding-bottom: 12px;
-
-                        a {
-                            border-bottom: 2px solid #0095FF;
-                            padding-bottom: 12px;
+                position: fixed;
+                top: 80px;
+                background-color: black;
+                padding: unset;
+                box-sizing: border-box;
+                z-index: 1000;
+                border-bottom: unset;
+        
+                .menu-lists-wrapper {
+                    width: 100%;
+                    overflow: hidden;
+        
+                    .menu-lists {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 29px;
+                        align-items: center;
+                        max-height: 500px;
+                        transition: max-height 0.4s ease;
+        
+                        &.closed {
+                            max-height: 52px;
+                        }
+        
+                        .menu-list {
+                            width: 100%;
+        
+                            &:nth-child(1) {
+                                position: relative;
+                                padding-bottom: 12px;
+                                border-bottom: unset;
+        
+                                .arrow {
+                                    display: block;
+                                    position: absolute;
+                                    top: -5px;
+                                    right: 8px;
+                                }
+                            }
+        
+                            &:nth-child(3) {
+                                border-bottom: unset;
+        
+                                a {
+                                    color: #0095FF;
+                                }
+                            }
                         }
                     }
                 }
+        
+                .arrow {
+                    transition: transform 0.3s ease;
+                    cursor: pointer;
+        
+                    &.rotate {
+                        transform: rotate(180deg);
+                    }
+                }
             }
-        }
         .certification-section{
             width: 320px;
             flex-direction: column;

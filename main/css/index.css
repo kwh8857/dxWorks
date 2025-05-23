@@ -363,11 +363,7 @@ label:hover {
 .main-page .section2 .section2-title-box .right-title .title-text {
   font-size: 18px;
   font-weight: 400;
-  white-space: pre-line;
   line-height: 150%;
-}
-.main-page .section2 .section2-title-box .right-title .title-text br {
-  display: none;
 }
 .main-page .section2 .section2-title-box .right-title .width-dx-box {
   width: 181px;
@@ -392,9 +388,6 @@ label:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-column-gap: 28px;
      -moz-column-gap: 28px;
           column-gap: 28px;
@@ -430,6 +423,7 @@ label:hover {
 .main-page .section3 .section3-left-box .center-text {
   font-size: 14px;
   font-weight: 400;
+  line-height: 150%;
 }
 .main-page .section3 .section3-left-box .works-box {
   width: 181px;
@@ -534,8 +528,8 @@ label:hover {
   padding: 94px 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: -webkit-gradient(linear, left top, left bottom, from(#1A1B23), to(#000000));
-  background: linear-gradient(to bottom, #1A1B23 0%, #000000 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#1A1B23), to(#000000));
+  background: linear-gradient(to top, #1A1B23 0%, #000000 100%);
 }
 .main-page .section4 .section4-title {
   color: white;
@@ -561,7 +555,7 @@ label:hover {
 .main-page .section4 .btn-box .btn {
   width: 181px;
   height: 52px;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 700;
   border: 1px solid white;
   display: -webkit-box;
@@ -814,6 +808,9 @@ label:hover {
   .header-section .header-btn-section {
     gap: 8px;
   }
+  .main-page .pc-br {
+    display: none;
+  }
   .main-page .section1 {
     height: 690px;
   }
@@ -868,13 +865,29 @@ label:hover {
   }
   .main-page .section3 .section3-right-box {
     width: 100%;
-    overflow: scroll;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-column-gap: 16px;
+       -moz-column-gap: 16px;
+            column-gap: 16px;
+  }
+  .main-page .section3 .section3-right-box::-webkit-scrollbar {
+    display: none;
   }
   .main-page .section3 .section3-right-box .box {
     -webkit-box-orient: unset;
     -webkit-box-direction: unset;
         -ms-flex-direction: unset;
             flex-direction: unset;
+    -webkit-column-gap: 16px;
+       -moz-column-gap: 16px;
+            column-gap: 16px;
   }
   .main-page .section3 .section3-right-box .section3-card {
     -webkit-box-flex: 0;
@@ -884,6 +897,9 @@ label:hover {
   .main-page .section3 .section3-right-box .blockchain-card {
     position: unset;
     top: 0;
+  }
+  .main-page .section4 {
+    margin-top: 197px;
   }
   .main-page .section5 .section5-title-box .color-title-text {
     font-size: 24px;
@@ -1199,5 +1215,20 @@ label:hover {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     row-gap: 10px;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .main-page .pc-br {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-section .header-nav .header-nav-list .header-nav-item:hover {
+    overflow: visible;
+  }
+  .mb-menu,
+  .mb-br,
+  .mb {
+    display: none !important;
   }
 }

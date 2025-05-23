@@ -8,8 +8,9 @@ body {
     box-sizing: border-box;
     font-family: "Pretendard",
         sans-serif;
-        overflow:hidden;
     overflow: hidden;
+    overflow: hidden;
+
     h2,
     ul,
     p {
@@ -36,7 +37,7 @@ main {
     overflow-x: hidden;
     background-color: black;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+
     /* 스크롤바 스타일 설정 */
     &::-webkit-scrollbar {
         width: 8px;
@@ -231,6 +232,7 @@ label {
 
                 .bottom-text {
                     font-weight: 400;
+                    line-height: 150%;
                 }
             }
 
@@ -249,6 +251,16 @@ label {
                     font-size: 17px;
                     font-weight: 700;
                     border: 1px solid white;
+                }
+
+                picture {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
                 }
             }
         }
@@ -299,7 +311,8 @@ label {
                 font-weight: 400;
                 text-align: center;
                 line-height: 150%;
-                .mb{
+
+                .mb {
                     display: none;
                 }
             }
@@ -436,6 +449,47 @@ label {
     }
 }
 
+.modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+
+    &.show {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal-content {
+        width: 656px;
+        height: 90vh;
+        background-color: black;
+        border-radius: 10px;
+        overflow-x: hidden;
+
+        /* 스크롤바 스타일 설정 */
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #333;
+            /* 스크롤바 색상 */
+            border-radius: 4px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: #000;
+            /* 트랙 배경색 */
+        }
+    }
+
+}
 
 
 .footer-section {
@@ -673,9 +727,10 @@ label {
     }
 
     .success-page {
-        .rbd-section{
+        .rbd-section {
             padding-top: 80px;
         }
+
         .card-wrapper {
             width: 100%;
             flex-wrap: nowrap;
@@ -686,7 +741,7 @@ label {
             .card {
                 width: 100%;
                 height: auto;
-                padding: 10px 10px;
+                padding: 16px;
                 row-gap: 16px;
 
                 .text-box {
@@ -728,23 +783,29 @@ label {
                 }
             }
         }
-        .section1{
-            height:297px;
-            .section1-text-box{
-                .title{
+
+        .section1 {
+            height: 297px;
+
+            .section1-text-box {
+                .title {
                     font-size: 30px;
                 }
-                .sub-title{
+
+                .sub-title {
                     font-size: 13px;
-                    .mb{
+
+                    .mb {
                         display: block;
                     }
                 }
             }
-            .menu-wrapper{
+
+            .menu-wrapper {
                 column-gap: 24px;
             }
         }
+
         .rbd-section {
             .rdb-title-wrapper {
                 row-gap: 2px;
@@ -755,39 +816,43 @@ label {
 
                 .sub-title {
                     font-size: 13px;
-                    
+
                 }
             }
         }
 
         .block-chain-section {
             padding-top: 100px;
-            .block-chain-wrapper{
+
+            .block-chain-wrapper {
                 .block-title-box {
-                        row-gap: 2px;
-                
-                        .title {
-                            font-size: 26px;
-                        }
-                
-                        .sub-title {
-                            font-size: 13px;
-                        }   }
+                    row-gap: 2px;
+
+                    .title {
+                        font-size: 26px;
+                    }
+
+                    .sub-title {
+                        font-size: 13px;
+                    }
+                }
             }
         }
-        .order-tech-section{
-            padding:0;
-            .ordertech-wrapper{
-                .order-title-box{
+
+        .order-tech-section {
+            padding: 0;
+
+            .ordertech-wrapper {
+                .order-title-box {
                     row-gap: 2px;
-                    
-                        .title {
-                            font-size: 26px;
-                        }
-                    
-                        .sub-title {
-                            font-size: 13px;
-                        }
+
+                    .title {
+                        font-size: 26px;
+                    }
+
+                    .sub-title {
+                        font-size: 13px;
+                    }
                 }
             }
         }
@@ -835,4 +900,39 @@ label {
             row-gap: 10px;
         }
     }
+
+    .modal {
+
+
+        .modal-content {
+            width: 100%;
+            height: 100vh;
+
+        }
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header-section {
+
+        .header-nav {
+            .header-nav-list {
+                .header-nav-item:hover {
+                    overflow: visible;
+
+
+                }
+            }
+        }
+    }
+
+
+    .mb-br {
+        display: none !important;
+    }
+
+    // .pc-br {
+    //     display: block !important;
+    // }
 }

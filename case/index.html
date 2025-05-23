@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="/modal/css/index.css">
     <title>성공사례</title>
-    <script src="./js/header.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/header.js" defer></script>
+    <script src="./js/index.js" defer></script>
+    <script src="./js/modal.js" defer></script>
+
 </head>
 
 <body>
@@ -56,7 +59,7 @@
             </ul>
         </nav>
         <div class="header-btn-section">
-            <a class="header-btn-item" href="./case">성공사례</a>
+            <a class="header-btn-item" href="/case">성공사례</a>
             <hr />
             <a class="header-btn-item" href="/contact">문의하기</a>
             <hr />
@@ -96,26 +99,27 @@
                 <div class="card">
                     <div class="text-box">
                         <p class="top-text">엔터프라이즈 블록체인 플랫폼</p>
-                        <p class="center-text">DX Ledger | 디엑스렛저</p>
+                        <p class="center-text">DX Ledger | 디엑스렛저</p>
                         <p class="bottom-text">초연결·초신뢰 사회구현을 위한 엔터프라이즈 블록체인 플랫폼 개발</p>
                     </div>
                     <div class="img-box">
-                        <a href="" class="show-link">자세히 보기</a>
+                        <button class="show-link" id="/modal/rdb/rdb-dx-redger">자세히 보기</button>
+
                         <picture>
                             <source srcset="
-                                    ./assets/rdb/card1-tb.png 1x,
-                                    ./assets/rdb/card1-tb@2x.png 2x,
-                                    ./assets/rdb/card1-tb@3x.png 3x,
-                                " media="(max-width: 1440px)">
+                                ./assets/rdb/card1-tb.png 1x,
+                                ./assets/rdb/card1-tb@2x.png 2x,
+                                ./assets/rdb/card1-tb@3x.png 3x
+                            " media="(max-width: 1440px)">
                             <source srcset="
-                                                                ./assets/rdb/card1-mb.png 1x,
-                                                                ./assets/rdb/card1-mb@2x.png 2x,
-                                                                ./assets/rdb/card1-mb@3x.png 3x,
-                                                            " media="(max-width: 768px)" alt="card1">
+                                ./assets/rdb/card1-mb.png 1x,
+                                ./assets/rdb/card1-mb@2x.png 2x,
+                                ./assets/rdb/card1-mb@3x.png 3x
+                            " media="(max-width: 768px)" alt="card1">
                             <img src="./assets/rdb/card1.png" srcset="
-                                                        ./assets/rdb/card1@2x.png, 2x,
-                                                        ./assets/rdb/card1@3x.png 3x,
-                                                        " alt="card">
+                                ./assets/rdb/card1@2x.png 2x,
+                                ./assets/rdb/card1@3x.png 3x
+                            " alt="card">
                         </picture>
                     </div>
                 </div>
@@ -126,23 +130,22 @@
                         <p class="bottom-text">블록체인 기반 교육증명 디지털뱃지 서비스 개발</p>
                     </div>
                     <div class="img-box">
-                        <a href="" class="show-link">자세히 보기</a>
+                        <button class="show-link" id="/modal/rdb/rdb-digital-open">자세히 보기</button>
                         <picture>
                             <source srcset="
-                                                                ./assets/rdb/card2-tb.png 1x,
-                                                                ./assets/rdb/card2-tb@2x.png 2x,
-                                                                ./assets/rdb/card2-tb@3x.png 3x,
-                                                            " media="(max-width: 1440px)">
+                                ./assets/rdb/card2-tb.png 1x,
+                                ./assets/rdb/card2-tb@2x.png 2x,
+                                ./assets/rdb/card2-tb@3x.png 3x
+                            " media="(max-width: 1440px)">
                             <source srcset="
-                                                                                            ./assets/rdb/card2-mb.png 1x,
-                                                                                            ./assets/rdb/card2-mb@2x.png 2x,
-                                                                                            ./assets/rdb/card2-mb@3x.png 3x,
-                                                                                        " media="(max-width: 768px)"
-                                alt="card1">
+                                ./assets/rdb/card2-mb.png 1x,
+                                ./assets/rdb/card2-mb@2x.png 2x,
+                                ./assets/rdb/card2-mb@3x.png 3x
+                            " media="(max-width: 768px)" alt="card1">
                             <img src="./assets/rdb/card2.png" srcset="
-                                                                        ./assets/rdb/card2@2x.png, 2x,
-                                                                        ./assets/rdb/card2@3x.png 3x,
-                                                                        " alt="card">
+                                ./assets/rdb/card2@2x.png 2x,
+                                ./assets/rdb/card2@3x.png 3x
+                            " alt="card">
                         </picture>
                     </div>
                 </div>
@@ -153,23 +156,22 @@
                         <p class="bottom-text">블록체인 및 생체인증 기술 활용 공무원 연급수급권 확인시스템 구축</p>
                     </div>
                     <div class="img-box">
-                        <a href="" class="show-link">자세히 보기</a>
+                        <button class="show-link" id="/modal/rdb/rdb-inspection">자세히 보기</button>
                         <picture>
                             <source srcset="
-                                                                                            ./assets/rdb/card3-tb.png 1x,
-                                                                                            ./assets/rdb/card3-tb@2x.png 2x,
-                                                                                            ./assets/rdb/card3-tb@3x.png 3x,
-                                                                                        " media="(max-width: 1440px)">
+                                ./assets/rdb/card3-tb.png 1x,
+                                ./assets/rdb/card3-tb@2x.png 2x,
+                                ./assets/rdb/card3-tb@3x.png 3x
+                            " media="(max-width: 1440px)">
                             <source srcset="
-                                                                                                                        ./assets/rdb/card3-mb.png 1x,
-                                                                                                                        ./assets/rdb/card3-mb@2x.png 2x,
-                                                                                                                        ./assets/rdb/card3-mb@3x.png 3x,
-                                                                                                                    "
-                                media="(max-width: 768px)" alt="card1">
+                                ./assets/rdb/card3-mb.png 1x,
+                                ./assets/rdb/card3-mb@2x.png 2x,
+                                ./assets/rdb/card3-mb@3x.png 3x
+                            " media="(max-width: 768px)" alt="card1">
                             <img src="./assets/rdb/card3.png" srcset="
-                                                                        ./assets/rdb/card3@2x.png, 2x,
-                                                                        ./assets/rdb/card3@3x.png 3x,
-                                                                        " alt="card">
+                                ./assets/rdb/card3@2x.png 2x,
+                                ./assets/rdb/card3@3x.png 3x
+                            " alt="card">
                         </picture>
                     </div>
                 </div>
@@ -177,28 +179,25 @@
                     <div class="text-box">
                         <p class="top-text">블록체인/DID/NFT 기반 수상/이력 등의 증명/진위여부 검증</p>
                         <p class="center-text">디지털 증명 플랫폼</p>
-                        <p class="bottom-text">블록체인 기반 ‘커리어뱅크(CareerBANK)’ 공모전 수상 경력관리 플랫폼</p>
+                        <p class="bottom-text">블록체인 기반 '커리어뱅크(CareerBANK)' 공모전 수상 경력관리 플랫폼</p>
                     </div>
                     <div class="img-box">
-                        <a href="" class="show-link">자세히 보기</a>
+                        <button class="show-link" id="/modal/rdb/rdb-digital-proof">자세히 보기</button>
                         <picture>
                             <source srcset="
-                                                                                                                        ./assets/rdb/card4-tb.png 1x,
-                                                                                                                        ./assets/rdb/card4-tb@2x.png 2x,
-                                                                                                                        ./assets/rdb/card4-tb@3x.png 3x,
-                                                                                                                    "
-                                media="(max-width: 1440px)">
-                            <source
-                                srcset="
-                                                                                                                                                    ./assets/rdb/card4-mb.png 1x,
-                                                                                                                                                    ./assets/rdb/card4-mb@2x.png 2x,
-                                                                                                                                                    ./assets/rdb/card4-mb@3x.png 3x,
-                                                                                                                                                "
-                                media="(max-width: 768px)" alt="card1">
+                                ./assets/rdb/card4-tb.png 1x,
+                                ./assets/rdb/card4-tb@2x.png 2x,
+                                ./assets/rdb/card4-tb@3x.png 3x
+                            " media="(max-width: 1440px)">
+                            <source srcset="
+                                ./assets/rdb/card4-mb.png 1x,
+                                ./assets/rdb/card4-mb@2x.png 2x,
+                                ./assets/rdb/card4-mb@3x.png 3x
+                            " media="(max-width: 768px)" alt="card1">
                             <img src="./assets/rdb/card4.png" srcset="
-                                                                        ./assets/rdb/card4@2x.png, 2x,
-                                                                        ./assets/rdb/card4@3x.png 3x,
-                                                                        " alt="card">
+                                ./assets/rdb/card4@2x.png 2x,
+                                ./assets/rdb/card4@3x.png 3x
+                            " alt="card">
                         </picture>
                     </div>
                 </div>
@@ -209,24 +208,22 @@
                         <p class="bottom-text">디자인주도 문제 해결 능력 배양을 위한 아이데이션 협업시스템 구축, 중소기업 혁신 성장 기여</p>
                     </div>
                     <div class="img-box">
-                        <a href="" class="show-link">자세히 보기</a>
+                        <button class="show-link" id="/modal/rdb/rdb-cooperation">자세히 보기</button>
                         <picture>
                             <source srcset="
-                            ./assets/rdb/card5-tb.png 1x,
-                            ./assets/rdb/card5-tb@2x.png 2x,
-                            ./assets/rdb/card5-tb@3x.png 3x,
-                        " media="(max-width: 1440px)">
-                            <source
-                                srcset="
-                                                                                                                                                    ./assets/rdb/card5-mb.png 1x,
-                                                                                                                                                    ./assets/rdb/card5-mb@2x.png 2x,
-                                                                                                                                                    ./assets/rdb/card5-mb@3x.png 3x,
-                                                                                                                                                "
-                                media="(max-width: 768px)" alt="card1">
+                                ./assets/rdb/card5-tb.png 1x,
+                                ./assets/rdb/card5-tb@2x.png 2x,
+                                ./assets/rdb/card5-tb@3x.png 3x
+                            " media="(max-width: 1440px)">
+                            <source srcset="
+                                ./assets/rdb/card5-mb.png 1x,
+                                ./assets/rdb/card5-mb@2x.png 2x,
+                                ./assets/rdb/card5-mb@3x.png 3x
+                            " media="(max-width: 768px)" alt="card1">
                             <img src="./assets/rdb/card5.png" srcset="
-                                                                        ./assets/rdb/card5@2x.png, 2x,
-                                                                        ./assets/rdb/card5@3x.png 3x,
-                                                                        " alt="card">
+                                ./assets/rdb/card5@2x.png 2x,
+                                ./assets/rdb/card5@3x.png 3x
+                            " alt="card">
                         </picture>
                     </div>
                 </div>
@@ -246,24 +243,22 @@
                             <p class="bottom-text">디지털 배지 국제표준 규격 및 블록체인 기술 적용,<br /> 공공기관 내 디지털 배지 시스템 및 API 연계 개발</p>
                         </div>
                         <div class="img-box">
-                            <a href="" class="show-link">자세히 보기</a>
+                            <button class="show-link" id="/modal/blockchain/blockchain-digital">자세히 보기</button>
                             <picture>
                                 <source srcset="
-                                                            ./assets/blockchain/card1-tb.png 1x,
-                                                            ./assets/blockchain/card1-tb@2x.png 2x,
-                                                            ./assets/blockchain/card1-tb@3x.png 3x,
-                                                        " media="(max-width: 1440px)">
-                                <source
-                                    srcset="
-                                                                                                                                                                                    ./assets/blockchain/card1-mb.png 1x,
-                                                                                                                                                                                    ./assets/blockchain/card1-mb@2x.png 2x,
-                                                                                                                                                                                    ./assets/blockchain/card1-mb@3x.png 3x,
-                                                                                                                                                                                "
-                                    media="(max-width: 768px)" alt="card1">
+                                    ./assets/blockchain/card1-tb.png 1x,
+                                    ./assets/blockchain/card1-tb@2x.png 2x,
+                                    ./assets/blockchain/card1-tb@3x.png 3x
+                                " media="(max-width: 1440px)">
+                                <source srcset="
+                                    ./assets/blockchain/card1-mb.png 1x,
+                                    ./assets/blockchain/card1-mb@2x.png 2x,
+                                    ./assets/blockchain/card1-mb@3x.png 3x
+                                " media="(max-width: 768px)" alt="card1">
                                 <img src="./assets/blockchain/card1.png" srcset="
-                                                                                    ./assets/blockchain/card1@2x.png, 2x,
-                                                                                    ./assets/blockchain/card1@3x.png 3x,
-                                                                                    " alt="card">
+                                    ./assets/blockchain/card1@2x.png 2x,
+                                    ./assets/blockchain/card1@3x.png 3x
+                                " alt="card">
                             </picture>
                         </div>
                     </div>
@@ -274,25 +269,22 @@
                             <p class="bottom-text">블록체인/생체인증 기술 기반 신원증명 서비스 활용<br />객관적이고 공정한 디지털 신상조사 서비스 구현</p>
                         </div>
                         <div class="img-box">
-                            <a href="" class="show-link">자세히 보기</a>
+                            <button class="show-link" id="/modal/blockchain/blockchain-inspection">자세히 보기</button>
                             <picture>
                                 <source srcset="
-                                                                ./assets/blockchain/card2-tb.png 1x,
-                                                                ./assets/blockchain/card2-tb@2x.png 2x,
-                                                                ./assets/blockchain/card2-tb@3x.png 3x,
-                                                            " media="(max-width: 1440px)">
-                                <source
-                                    srcset="
-                                                                                                                                                                                        ./assets/blockchain/card2-mb.png 1x,
-                                                                                                                                                                                        ./assets/blockchain/card2-mb@2x.png 2x,
-                                                                                                                                                                                        ./assets/blockchain/card2-mb@3x.png 3x,
-                                                                                                                                                                                    "
-                                    media="(max-width: 768px)" alt="card1">
+                                    ./assets/blockchain/card2-tb.png 1x,
+                                    ./assets/blockchain/card2-tb@2x.png 2x,
+                                    ./assets/blockchain/card2-tb@3x.png 3x
+                                " media="(max-width: 1440px)">
+                                <source srcset="
+                                    ./assets/blockchain/card2-mb.png 1x,
+                                    ./assets/blockchain/card2-mb@2x.png 2x,
+                                    ./assets/blockchain/card2-mb@3x.png 3x
+                                " media="(max-width: 768px)" alt="card1">
                                 <img src="./assets/blockchain/card2.png" srcset="
-                                                                                                                ./assets/blockchain/card2@2x.png, 2x,
-                                                                                                                ./assets/blockchain/card2@3x.png 3x,
-                                                                                                                "
-                                    alt="card">
+                                    ./assets/blockchain/card2@2x.png 2x,
+                                    ./assets/blockchain/card2@3x.png 3x
+                                " alt="card">
                             </picture>
                         </div>
                     </div>
@@ -313,24 +305,22 @@
                             <p class="bottom-text">디지털 배지 국제표준 규격 및 블록체인 기술 적용,<br /> 공공기관 내 디지털 배지 시스템 및 API 연계 개발</p>
                         </div>
                         <div class="img-box">
-                            <a href="" class="show-link">자세히 보기</a>
+                            <button class="show-link" id="/modal/ordertech/ordertech-data">자세히 보기</button>
                             <picture>
                                 <source srcset="
-                                                                ./assets/ordertech/card1-tb.png 1x,
-                                                                ./assets/ordertech/card1-tb@2x.png 2x,
-                                                                ./assets/ordertech/card1-tb@3x.png 3x,
-                                                            " media="(max-width: 1440px)">
-                                <source
-                                    srcset="
-                                                                                                                                                                                        ./assets/ordertech/card1-mb.png 1x,
-                                                                                                                                                                                        ./assets/ordertech/card1-mb@2x.png 2x,
-                                                                                                                                                                                        ./assets/ordertech/card1-mb@3x.png 3x,
-                                                                                                                                                                                    "
-                                    media="(max-width: 768px)" alt="card1">
+                                    ./assets/ordertech/card1-tb.png 1x,
+                                    ./assets/ordertech/card1-tb@2x.png 2x,
+                                    ./assets/ordertech/card1-tb@3x.png 3x
+                                " media="(max-width: 1440px)">
+                                <source srcset="
+                                    ./assets/ordertech/card1-mb.png 1x,
+                                    ./assets/ordertech/card1-mb@2x.png 2x,
+                                    ./assets/ordertech/card1-mb@3x.png 3x
+                                " media="(max-width: 768px)" alt="card1">
                                 <img src="./assets/ordertech/card1.png" srcset="
-                                                                                            ./assets/ordertech/card1@2x.png, 2x,
-                                                                                            ./assets/ordertech/card1@3x.png 3x,
-                                                                                            " alt="card">
+                                    ./assets/ordertech/card1@2x.png 2x,
+                                    ./assets/ordertech/card1@3x.png 3x
+                                " alt="card">
                             </picture>
                         </div>
                     </div>
@@ -341,24 +331,22 @@
                             <p class="bottom-text">블록체인/생체인증 기술 기반 신원증명 서비스 활용<br />객관적이고 공정한 디지털 신상조사 서비스 구현</p>
                         </div>
                         <div class="img-box">
-                            <a href="" class="show-link">자세히 보기</a>
+                            <button class="show-link" id="/modal/ordertech/ordertech-system">자세히 보기</button>
                             <picture>
                                 <source srcset="
-                                                        ./assets/ordertech/card2-tb.png 1x,
-                                                        ./assets/ordertech/card2-tb@2x.png 2x,
-                                                        ./assets/ordertech/card2-tb@3x.png 3x,
-                                                    " media="(max-width: 1440px)">
-                                <source
-                                    srcset="
-                                                                                                                                                                                ./assets/ordertech/card2-mb.png 1x,
-                                                                                                                                                                                ./assets/ordertech/card2-mb@2x.png 2x,
-                                                                                                                                                                                ./assets/ordertech/card2-mb@3x.png 3x,
-                                                                                                                                                                            "
-                                    media="(max-width: 768px)" alt="card1">
+                                    ./assets/ordertech/card2-tb.png 1x,
+                                    ./assets/ordertech/card2-tb@2x.png 2x,
+                                    ./assets/ordertech/card2-tb@3x.png 3x
+                                " media="(max-width: 1440px)">
+                                <source srcset="
+                                    ./assets/ordertech/card2-mb.png 1x,
+                                    ./assets/ordertech/card2-mb@2x.png 2x,
+                                    ./assets/ordertech/card2-mb@3x.png 3x
+                                " media="(max-width: 768px)" alt="card1">
                                 <img src="./assets/ordertech/card2.png" srcset="
-                                                        ./assets/ordertech/card2@2x.png, 2x,
-                                                        ./assets/ordertech/card2@3x.png 3x,
-                                                        " alt="card">
+                                    ./assets/ordertech/card2@2x.png 2x,
+                                    ./assets/ordertech/card2@3x.png 3x
+                                " alt="card">
                             </picture>
                         </div>
                     </div>
@@ -430,6 +418,13 @@
                 </div>
             </div>
         </footer>
+        <div id="modal" class="modal">
+            <div id="modal-content" class="modal-content">
+                <div class="modal-content-header">
+                    <p class="modal-content-header-title">디엑스렛저</p>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 

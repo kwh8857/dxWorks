@@ -38,7 +38,6 @@ main {
   overflow-x: hidden;
   background-color: black;
   scroll-behavior: smooth;
-  overflow-x: hidden;
   /* 스크롤바 스타일 설정 */
 }
 main::-webkit-scrollbar {
@@ -258,6 +257,7 @@ label:hover {
 }
 .success-page .card-wrapper .card .text-box .bottom-text {
   font-weight: 400;
+  line-height: 150%;
 }
 .success-page .card-wrapper .card .img-box {
   display: -webkit-box;
@@ -285,6 +285,15 @@ label:hover {
   font-size: 17px;
   font-weight: 700;
   border: 1px solid white;
+}
+.success-page .card-wrapper .card .img-box picture {
+  width: 100%;
+}
+.success-page .card-wrapper .card .img-box picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .success-page .section1 {
   display: -webkit-box;
@@ -502,6 +511,48 @@ label:hover {
 .success-page .order-tech-section .ordertech-wrapper .order-title-box .sub-title {
   font-size: 18px;
   font-weight: 400;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+}
+.modal.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.modal .modal-content {
+  width: 656px;
+  height: 90vh;
+  background-color: black;
+  border-radius: 10px;
+  overflow-x: hidden;
+  /* 스크롤바 스타일 설정 */
+}
+.modal .modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+.modal .modal-content::-webkit-scrollbar-thumb {
+  background-color: #333;
+  /* 스크롤바 색상 */
+  border-radius: 4px;
+}
+.modal .modal-content::-webkit-scrollbar-track {
+  background-color: #000;
+  /* 트랙 배경색 */
 }
 
 .footer-section {
@@ -786,7 +837,7 @@ label:hover {
   .success-page .card-wrapper .card {
     width: 100%;
     height: auto;
-    padding: 10px 10px;
+    padding: 16px;
     row-gap: 16px;
   }
   .success-page .card-wrapper .card .text-box {
@@ -917,5 +968,17 @@ label:hover {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     row-gap: 10px;
+  }
+  .modal .modal-content {
+    width: 100%;
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-section .header-nav .header-nav-list .header-nav-item:hover {
+    overflow: visible;
+  }
+  .mb-br {
+    display: none !important;
   }
 }

@@ -68,6 +68,31 @@ label:hover {
   transition: 0.2s ease-in-out;
 }
 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 .modal-wrapper {
   width: 100%;
   padding: 24px 24px;
@@ -80,6 +105,8 @@ label:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-animation: fadeIn 0.2s ease-in-out;
+          animation: fadeIn 0.2s ease-in-out;
 }
 .modal-wrapper .top-section {
   width: 100%;
@@ -96,6 +123,7 @@ label:hover {
 .modal-wrapper .top-section .top-title {
   font-weight: 700;
   color: #0095FF;
+  line-height: 140%;
 }
 .modal-wrapper .modal-title-box {
   display: -webkit-box;
@@ -115,6 +143,7 @@ label:hover {
 }
 .modal-wrapper .modal-title-box .modal-sub-title {
   font-weight: 400;
+  line-height: 140%;
 }
 .modal-wrapper .modal-info-card {
   margin-top: 24px;

@@ -7,6 +7,8 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Pretendard", sans-serif;
+  overflow: hidden;
+  overflow: hidden;
 }
 html h2,
 html ul,
@@ -36,6 +38,7 @@ main {
   overflow-x: hidden;
   background-color: black;
   scroll-behavior: smooth;
+  overflow-x: hidden;
   /* 스크롤바 스타일 설정 */
 }
 main::-webkit-scrollbar {
@@ -680,7 +683,7 @@ label:hover {
     row-gap: 10px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .header-section .header-logo {
     width: 120px;
   }
@@ -803,7 +806,6 @@ label:hover {
   }
   .success-page .card-wrapper .card .img-box img {
     width: 100%;
-    height: 111px;
   }
   .success-page .card-wrapper .card .img-box .show-link {
     width: 100%;

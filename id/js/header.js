@@ -1,5 +1,4 @@
 import { renderMobileView, renderDesktopView } from "./detail.js";
-import { pcInterview, mbInterview } from "./interview.js";
 
 let isMobile = false;
 let isMobileMenuOpen = false;
@@ -152,12 +151,10 @@ const changeMbHeader = () => {
     createMobileHeader();
     enableMobileNavDropdowns();
     renderMobileView();
-    mbInterview();
   } else {
     createDesktopHeader();
     disableMobileNavDropdowns();
     renderDesktopView();
-    pcInterview();
   }
 };
 

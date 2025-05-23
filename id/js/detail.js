@@ -7,7 +7,7 @@ const imgList = document.querySelectorAll(".id-detail-img");
 const data = [
   {
     title: `하나의ID로 다양한
-서비스에 연결되는
+서비스에 연결되는 <br/>
 유연한 디지털 신원인증`,
     descTitle: "안전한 신원 인증과 위변조 방지",
     descText:
@@ -15,19 +15,21 @@ const data = [
     btn: "신뢰 기반 인증",
   },
   {
-    title: "손쉬운 배지 등록, \n 손쉬운 관리를 통해 \n   편안한 이력공유",
-    descTitle: "직관적인 인터페이스로 편리한 추가",
+    title: `하나의ID로 다양한
+서비스에 연결되는 <br/>
+유연한 디지털 신원인증`,
+    descTitle: "간편한 모바일 <br class='mb-br' /> 기반 인증",
     descText:
-      "배지 직접추가, 임포트를 통한 배지 등록 및 <br /> 타기관 배지 등록 가능 (URL,SNS,HTML 카드)",
+      "앱이나 지갑을 통해 <br /> 언제 어디서나 본인 인증이 <br class='mb-br' /> 가능합니다.",
     btn: "모바일 중심 사용성",
   },
   {
-    title: `단순 문자가 아닌 뱃지로
-시각적인 성취감높여
-학습 동기부여 확대`,
-    descTitle: "시각화되는 요소로 성취감 확대",
+    title: `하나의ID로 다양한
+서비스에 연결되는 <br/>
+유연한 디지털 신원인증`,
+    descTitle: "다양한 서비스와의 연동성",
     descText:
-      "시각적이고 검증이 가능하며 <br /> 휴대가 가능한 성과로 학습자의 동기를 부여합니다.",
+      "출입 시스템, 전자서명, 공공 포털 등 <br /> 다양한 환경에서 활용 가능합니다.",
     btn: "유연한 시스템 연동",
   },
 ];
@@ -40,7 +42,7 @@ buttons.forEach((btn, index) => {
 
     // 텍스트 변경
     titleEl.innerText = data[index].title;
-    descTitleEl.textContent = data[index].descTitle;
+    descTitleEl.innerHTML = data[index].descTitle;
     descTextEl.innerHTML = data[index].descText;
 
     // 이미지 변경

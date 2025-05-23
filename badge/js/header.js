@@ -173,4 +173,4 @@ const updateScreenState = (isLoadEvent = false) => {
 };
 
 window.addEventListener("load", () => updateScreenState(true));
-window.addEventListener("resize", () => updateScreenState(false));
+window.addEventListener("resize", () => updateScreenState());

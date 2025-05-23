@@ -18,7 +18,7 @@ export const pcInterview = () => {
   originalSlides = Array.from(slideList.children).filter((el) =>
     el.classList.contains("badge-interview-item")
   );
-  currentIndex = 0;
+  currentIndex = 1;
   const firstClone = slides[0].cloneNode(true);
   const lastClone = slides[slides.length - 1].cloneNode(true);
   slideList.innerHTML = "";

@@ -6,66 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Pretendard&display=swap" rel="stylesheet">
   <title>DXWORKS</title>
+
+  <!-- 공통  -->
+  <link rel="stylesheet" href="/common/header/css/header.css">
+  <link rel="stylesheet" href="/common/footer/css/footer.css">
+  <script type="module" src="/common/js/header.js" defer></script>
+  <script src="/common/js/include.js" defer></script>
+  <!--  -->
   <link rel="stylesheet" href="css/index.css">
-  <script src="js/header.js" defer></script>
   <script src="js/faq.js" defer></script>
 </head>
 
 <body>
-  <header class="header-section" id="header">
-    <a href="/main" class="header-logo">
-      <img src="./assets/header/logo.png" srcset="./assets/header/logo@2x.png 2x, ./assets/header/logo@3x.png 3x"
-        alt="logo">
-    </a>
-    <nav class="header-nav">
-      <ul class="header-nav-list">
-        <li class="header-nav-item">
-          <a href="#" class="header-nav-link">PLATFORM</a>
-          <div class="sub-nav-list">
-            <a href="/badge" class="sub-nav-link">Digital Badge</a>
-            <a href="/id" class="sub-nav-link">Digital ID</a>
-          </div>
-        </li>
-        <li class="header-nav-item">
-          <a href="#" class="header-nav-link">PRODUCT</a>
-          <div class="sub-nav-list">
-            <a href="/builder" class="sub-nav-link">DX Ledger Builder</a>
-            <a href="/did" class="sub-nav-link">DX Ledger DID</a>
-            <a href="/wallet" class="sub-nav-link">DX Ledger Wallet</a>
-            <a href="/ledgerbadge" class="sub-nav-link">DX Ledger Badge</a>
-          </div>
-        </li>
-        <li class="header-nav-item">
-          <a href="#" class="header-nav-link">DX INSIGNT</a>
-          <div class="sub-nav-list">
-            <a href="/notice" class="sub-nav-link">공지사항</a>
-            <a href="/event" class="sub-nav-link">이벤트</a>
-            <a href="/contact" class="sub-nav-link">문의하기</a>
-          </div>
-        </li>
-        <li class="header-nav-item">
-          <a href="#" class="header-nav-link">COMPANY</a>
-          <div class="sub-nav-list">
-            <a href="/notice" class="sub-nav-link">미션, 핵심가치</a>
-            <a href="/event" class="sub-nav-link">DX 연혁</a>
-            <a href="/certification" class="sub-nav-link">인증 및 수상</a>
-            <a href="/ip" class="sub-nav-link">지적재산권</a>
-            <a href="/culture" class="sub-nav-link">일하는 문화</a>
-            <a href="/location" class="sub-nav-link">오시는 길</a>
-          </div>
-        </li>
-      </ul>
-    </nav>
-    <div class="header-btn-section">
-      <a class="header-btn-item" href="/case">성공사례</a>
-      <hr />
-      <a class="header-btn-item" href="/contact">문의하기</a>
-      <hr />
-      <button class="header-btn-item">
-        <img src="./assets/header/earth.svg" alt="language" class="header-lang-icon">
-      </button>
-    </div>
-  </header>
+  <div data-include-path="/common/header/header.html" data-include-replace></div>
   <main class="wallet-page">
     <section class="wallet-ledger-wallet-section">
       <div class="wallet-ledger-wallet-top">
@@ -341,70 +294,7 @@
         </div>
       </div>
     </section>
-    <footer class="footer-section">
-      <img src="./assets/footer/logo.png" srcset="./assets/footer/logo@2x.png 2x, ./assets/footer/logo@3x.png 3x"
-        alt="logo" class="footer-logo">
-      <div class="footer-nav-list">
-        <a href="#" class="footer-nav-list-item">윤리경영</a>
-        <a href="#" class="footer-nav-list-item">개인정보처리방침</a>
-        <a href="./contract" class="footer-nav-list-item">문의하기</a>
-      </div>
-      <div class="footer-content-container">
-        <div class="footer-content-list">
-          <div class="footer-content-list-col">
-            <div class="footer-content-list-item">
-              <div class="footer-content-list-item-title">대표</div>
-              <div class="footer-content-list-item-desc">장후규</div>
-            </div>
-            <div class="footer-content-list-item">
-              <div class="footer-content-list-item-title">사업자등록번호</div>
-              <div class="footer-content-list-item-desc">323-88-02011</div>
-            </div>
-            <div class="footer-content-list-item">
-              <div class="footer-content-list-item-title">대표번호</div>
-              <div class="footer-content-list-item-desc">070-8656-0670</div>
-            </div>
-            <div class="footer-content-list-item">
-              <div class="footer-content-list-item-title">팩스</div>
-              <div class="footer-content-list-item-desc">02-553-7439</div>
-            </div>
-            <div class="footer-content-list-item">
-              <div class="footer-content-list-item-title">이메일</div>
-              <div class="footer-content-list-item-desc">contact@dxworks.kr</div>
-            </div>
-          </div>
-          <div class="footer-content-list-col">
-            <div class="footer-content-list-item">
-              <div class="footer-content-list-item-title">대구본사</div>
-              <div class="footer-content-list-item-desc">대구 동구 경대로 36, 6층</div>
-            </div>
-            <div class="footer-content-list-item">
-              <div class="footer-content-list-item-title">서비스랩</div>
-              <div class="footer-content-list-item-desc">서울 강남구 역삼로17길 54, 3층</div>
-            </div>
-            <div class="footer-content-list-item">
-              <div class="footer-content-list-item-title">플랫폼랩</div>
-              <div class="footer-content-list-item-desc">대구 수성구 유니버시아드로 119 2층 대구블록체인기술혁신지원센터 8호</div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="footer-bottom-wrapper">
-        <div class="footer-bottom-text">Copyright ⓒ 2025 DX Works All Rights Reserved.</div>
-        <div class="footer-bottom-sns-list">
-          <a href="#" class="footer-bottom-sns-list-item">
-            <img src="./assets/footer/instagram.svg" alt="instagram" class="footer-bottom-sns-list-item-icon">
-          </a>
-          <a href="#" class="footer-bottom-sns-list-item">
-            <img src="./assets/footer/facebook.svg" alt="facebook" class="footer-bottom-sns-list-item-icon">
-          </a>
-          <a href="#" class="footer-bottom-sns-list-item">
-            <img src="./assets/footer/linkedin.svg" alt="linkedin" class="footer-bottom-sns-list-item-icon">
-          </a>
-        </div>
-      </div>
-    </footer>
+    <div data-include-path="/common/footer/footer.html" data-include-replace></div>
   </main>
 </body>
 

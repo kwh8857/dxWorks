@@ -1,0 +1,121 @@
+.footer-section {
+  width: 100%;
+  height: 373px;
+  background-color: #1A1B23;
+  padding: 56px;
+  box-sizing: border-box;
+  color: #ABB3BA;
+
+  .footer-nav-list {
+    margin: 27px 0 12px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 12px;
+    column-gap: 25px;
+    border-bottom: solid 1px #44464F;
+
+    .footer-nav-list-item {
+      font-size: 14px;
+      font-weight: 400;
+      color: #ABB3BA;
+    }
+  }
+
+  .footer-content-container {
+    margin-bottom: 40px;
+
+    .footer-content-list {
+      display: flex;
+      column-gap: 32px;
+
+      .footer-content-list-col {
+        display: flex;
+        flex-direction: column;
+        row-gap: 6px;
+
+        .footer-content-list-item {
+          display: flex;
+          align-items: center;
+          column-gap: 16px;
+          font-size: 13px;
+
+          .footer-content-list-item-title {
+            width: 80px;
+            font-weight: 700;
+          }
+
+          .footer-content-list-item-desc {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .footer-bottom-text {
+      font-size: 13px;
+      font-weight: 400;
+    }
+
+    .footer-bottom-sns-list {
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .footer-section {
+    height: 467px;
+    padding: 20px;
+
+    .footer-nav-list {
+      margin: 24px 0 12px;
+      column-gap: 16px;
+    }
+
+    .footer-content-container {
+      margin-bottom: 28px;
+
+      .footer-content-list {
+        flex-direction: column;
+
+        .footer-content-list-col {
+          display: flex;
+          flex-direction: column;
+          row-gap: 6px;
+
+          .footer-content-list-item {
+            font-size: 12px;
+
+            .footer-content-list-item-title {
+              width: 78px;
+              white-space: nowrap;
+            }
+
+            .footer-content-list-item-desc {
+              font-weight: 400;
+              flex: 1;
+            }
+          }
+        }
+      }
+    }
+
+
+    .footer-bottom-wrapper {
+      align-items: flex-start;
+      flex-direction: column-reverse;
+      row-gap: 10px;
+    }
+  }
+
+}

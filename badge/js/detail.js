@@ -98,8 +98,6 @@ const template = document.getElementById("badge-section-template");
 // 모바일용 렌더링
 export function renderMobileView() {
   container.innerHTML = "";
-  console.log("모바일뷰");
-  console.log(container);
   data.forEach((item, index) => {
     const section = document.createElement("section");
     section.className = "badge-detail-section";
@@ -138,3 +136,21 @@ export function renderDesktopView() {
   clone.removeAttribute("id");
   container.appendChild(clone);
 }
+
+window.addEventListener("DOMContentLoaded", () => {
+  const isMobile = window.innerWidth <= 768;
+  if (isMobile) {
+    renderMobileView();
+  } else {
+    renderDesktopView();
+  }
+});
+
+window.addEventListener("resize", () => {
+  const isMobile = window.innerWidth <= 768;
+  if (isMobile) {
+    renderMobileView();
+  } else {
+    renderDesktopView();
+  }
+});

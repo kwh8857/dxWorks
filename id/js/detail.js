@@ -138,3 +138,23 @@ export function renderDesktopView() {
   clone.removeAttribute("id");
   container.appendChild(clone);
 }
+
+cp;
+
+window.addEventListener("DOMContentLoaded", () => {
+  const isMobile = window.innerWidth <= 768;
+  if (isMobile) {
+    renderMobileView();
+  } else {
+    renderDesktopView();
+  }
+});
+
+window.addEventListener("resize", () => {
+  const isMobile = window.innerWidth <= 768;
+  if (isMobile) {
+    renderMobileView();
+  } else {
+    renderDesktopView();
+  }
+});

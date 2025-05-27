@@ -96,50 +96,6 @@ label:hover {
   transition: 0.2s ease-in-out;
 }
 
-.location-page .menu-bar-section {
-  position: sticky;
-  top: 0;
-  background-color: black;
-  border-bottom: 1px solid #8F9AA3;
-  z-index: 50;
-}
-.location-page .menu-bar-section .menu-lists-wrapper {
-  width: 1254px;
-  margin: 0 auto;
-}
-.location-page .menu-bar-section .menu-lists-wrapper .menu-lists {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.location-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list {
-  width: 209px;
-  text-align: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 50px;
-}
-.location-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list img {
-  display: none;
-}
-.location-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list a {
-  height: 100%;
-  font-size: 18px;
-  font-weight: 700;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.location-page .menu-bar-section .menu-lists-wrapper .menu-lists .now-list {
-  border-bottom: 2px solid #0095FF;
-}
 .location-page .banner-section {
   height: 537px;
   background-image: -webkit-image-set(url(../assets/bannner/banner-img.png) 1x, url(../assets/bannner/banner-img@2x.png) 2x, url(../assets/bannner/banner-img@3x.png) 3x);
@@ -327,12 +283,6 @@ label:hover {
 }
 
 @media screen and (max-width: 1440px) {
-  .location-page .menu-bar-section .menu-lists-wrapper {
-    width: 684px;
-  }
-  .location-page .menu-bar-section .menu-lists-wrapper .menu-list {
-    width: 112px;
-  }
   .location-page #daumRoughmapContainer1747978801926 {
     width: 100% !important;
     max-width: 100%;
@@ -380,73 +330,6 @@ label:hover {
 @media screen and (max-width: 767px) {
   .location-page .banner-section {
     height: 300px;
-    margin-top: 50px;
-  }
-  .location-page .menu-bar-section {
-    width: 100%;
-    position: fixed;
-    top: 80px;
-    background-color: black;
-    padding: unset;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    z-index: 100;
-    border-bottom: unset;
-  }
-  .location-page .menu-bar-section .menu-lists-wrapper {
-    width: 100%;
-    overflow: hidden;
-    margin-top: unset;
-  }
-  .location-page .menu-bar-section .menu-lists-wrapper .menu-lists {
-    display: grid;
-    row-gap: 12px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    max-height: 520px;
-    -webkit-transition: max-height 0.4s ease;
-    transition: max-height 0.4s ease;
-  }
-  .location-page .menu-bar-section .menu-lists-wrapper .menu-lists.closed {
-    max-height: 52px;
-  }
-  .location-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list {
-    height: 52px;
-    width: 100%;
-  }
-  .location-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list:nth-child(1) {
-    position: relative;
-    padding-bottom: 12px;
-    border-bottom: unset;
-  }
-  .location-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list:nth-child(1) a {
-    color: #0095FF;
-  }
-  .location-page .menu-bar-section .menu-lists-wrapper .menu-lists .menu-list:nth-child(1) .arrow {
-    display: block;
-    position: absolute;
-    top: 6px;
-    right: 8px;
-  }
-  .location-page .menu-bar-section .menu-lists-wrapper .closed .menu-list:nth-child(1) a {
-    color: white;
-  }
-  .location-page .menu-bar-section .arrow {
-    -webkit-transition: -webkit-transform 0.3s ease;
-    transition: -webkit-transform 0.3s ease;
-    transition: transform 0.3s ease;
-    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-    cursor: pointer;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  .location-page .menu-bar-section .arrow.rotate {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  .location-page .desktop-menu {
-    display: none !important;
   }
   .location-page .map-section {
     width: auto;

@@ -10,10 +10,12 @@ const toggleMobileMenu = () => {
 
   if (isMobileMenuOpen) {
     mobileMenuContainer.classList.add("active-mobile-menu");
-    menuIcon.src = "./assets/header/cancel.svg";
+    menuIcon.src = "/common/header/assets/cancel.svg";
+    menuIcon.alt = "cancel";
   } else {
     mobileMenuContainer.classList.remove("active-mobile-menu");
-    menuIcon.src = "./assets/header/menu.svg";
+    menuIcon.src = "/common/header/assets/menu.svg";
+    menuIcon.alt = "menu";
   }
 };
 

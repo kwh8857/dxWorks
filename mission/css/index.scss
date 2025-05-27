@@ -197,51 +197,7 @@ label {
         }
     }
 
-    .menu-bar-section {
-        position: sticky;
-        top: 0;
-        background-color: black;
-        border-bottom: 1px solid #8F9AA3;
-        z-index: 10;
 
-
-        .menu-lists-wrapper {
-            width: 1254px;
-            margin: 0 auto;
-
-
-            .menu-lists {
-                display: flex;
-
-                .menu-list {
-                    width: 209px;
-                    text-align: center;
-                    // padding-bottom: 12px;
-                    box-sizing: border-box;
-                    height: 50px;
-
-                    img {
-                        display: none;
-                    }
-
-                    a {
-                        height: 100%;
-                        font-size: 18px;
-                        font-weight: 700;
-                        color: white;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                    }
-                }
-
-                .now-list {
-                    border-bottom: 2px solid #0095FF;
-
-                }
-            }
-        }
-    }
 
 
     .mission-section1 {
@@ -552,16 +508,7 @@ label {
 
 
     .mission-page {
-        .menu-bar-section {
-            .menu-lists-wrapper {
-                width: 684px;
-                margin-top: 70px;
 
-                .menu-list {
-                    width: 112px;
-                }
-            }
-        }
 
         .mission-section1 {
             width: 684px;
@@ -681,78 +628,7 @@ label {
             }
         }
 
-        .menu-bar-section {
-            width: 100%;
-            position: fixed;
-            top: 80px;
-            background-color: black;
-            padding: unset;
-            box-sizing: border-box;
-            z-index: 100;
-            border-bottom: unset;
 
-            .menu-lists-wrapper {
-                width: 100%;
-                overflow: hidden;
-                margin-top: unset;
-
-                .menu-lists {
-
-                    display: grid;
-                    row-gap: 12px;
-                    align-items: center;
-                    max-height: 520px;
-                    transition: max-height 0.4s ease;
-
-                    &.closed {
-                        max-height: 52px;
-                    }
-
-                    .menu-list {
-                        height: 52px;
-                        width: 100%;
-
-                    }
-
-                    .now-list {
-                        position: relative;
-                        padding-bottom: 12px;
-                        border-bottom: unset;
-
-                        a {
-                            color: #0095FF;
-                        }
-
-                        .arrow {
-                            display: block;
-                            position: absolute;
-                            top: 6px;
-                            right: 8px;
-                        }
-                    }
-                }
-
-                .closed {
-                    .menu-list {
-                        &:nth-child(1) {
-                            a {
-                                color: white;
-                            }
-                        }
-                    }
-                }
-            }
-
-            .arrow {
-                transition: transform 0.3s ease;
-                cursor: pointer;
-                transform: rotate(180deg);
-
-                &.rotate {
-                    transform: rotate(0);
-                }
-            }
-        }
 
         .desktop-menu {
             display: none !important;

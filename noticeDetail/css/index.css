@@ -104,6 +104,7 @@ label:hover {
 .notice-detail-page .content-section {
   width: 1080px;
   margin: 0 auto;
+  min-height: calc(100vh - 300px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,6 +112,7 @@ label:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 100px;
 }
 .notice-detail-page .content-section .content {
   padding-top: 24px;
@@ -208,19 +210,24 @@ label:hover {
   .notice-detail-page {
     padding-top: 110px;
   }
-  .notice-detail-page .notice-detail-top-section,
+  .notice-detail-page .event-detail-top-section,
   .notice-detail-page .content-section {
     width: 100%;
-    padding: 20px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+  }
+  .notice-detail-page .event-detail-top-section {
+    padding: 20px;
+  }
+  .notice-detail-page .content-section {
+    padding: 0 20px 80px 20px;
   }
   .notice-detail-page .content-section .content {
     padding-top: 27px;
     padding-bottom: 41px;
   }
   .notice-detail-page .content-section .content-file-link .content-file-content .content-file-text {
-    max-width: 400px;
+    max-width: 220px;
   }
   .notice-detail-page .content-section .btn-section {
     margin-top: 28px;

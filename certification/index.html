@@ -19,13 +19,24 @@
     <main class="certification-page">
 
         <section class="banner-section">
-            <img src="./assets/banner-img.png" alt="">
+            <picture>
+                <source
+                    srcset="./assets/banner-img-mb.png 1x, ./assets/banner-img-mb@2x.png 2x, ./assets/banner-img-mb@3x.png 3x"
+                    media="(max-width: 768px)">
+                <source
+                    srcset="./assets/banner-img-tb.png 1x, ./assets/banner-img-tb@2x.png 2x, ./assets/banner-img-tb@3x.png 3x"
+                    media="(max-width: 1440px)">
+                <img src="./assets/banner-img.png" srcset="./assets/banner-img@2x.png 2x, ./assets/banner-img@3x.png 3x"
+                    alt="">
+            </picture>
         </section>
         <section class="certification-section">
             <div class="left-box">
                 <p class="top-text">인증 및 수상</p>
-                <p class="middle-text">신뢰할 수 있는<br />전문성 있는 기업,<br />디엑스웍스</p>
-                <p class="bottom-text">디엑스웍스는 디지털 혁신(DX)<br />블록체인+X 기술로 디지털 신뢰 사회 실현의<br />역사를 새롭게 쓰고 있습니다.</p>
+                <p class="middle-text">신뢰할 수 있는<br class="pc-br" />전문성 있는 기업,<br />디엑스웍스</p>
+                <p class="bottom-text">디엑스웍스는 디지털 혁신(DX)<br class="pc-br" />블록체인+X 기술로 <br class="tb-br" /> 디지털 신뢰 사회
+                    실현의<br class="pc-br" />역사를 새롭게 쓰고
+                    있습니다.</p>
             </div>
             <div class="right-box">
                 <div class="certification-card">

@@ -92,8 +92,21 @@ label:hover {
   transition: 0.2s ease-in-out;
 }
 
+.certification-page .banner-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.certification-page .banner-section picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .certification-page .banner-section img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .certification-page .certification-section {
   width: 1200px;
@@ -235,7 +248,18 @@ label:hover {
           align-items: center;
 }
 
+.pc-br {
+  display: none;
+}
+
+.tb-br {
+  display: none;
+}
+
 @media screen and (max-width: 1440px) {
+  .certification-page .banner-section {
+    height: 407px;
+  }
   .certification-page .certification-section {
     width: 584px;
     -webkit-box-orient: vertical;
@@ -246,6 +270,13 @@ label:hover {
         flex-wrap: nowrap;
     row-gap: 64px;
     top: -300px;
+  }
+  .certification-page .certification-section .left-box {
+    width: 100%;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .certification-page .certification-section .right-box {
     width: auto;
@@ -318,10 +349,16 @@ label:hover {
             flex-direction: column-reverse;
     row-gap: 10px;
   }
+  .tb-br {
+    display: block !important;
+  }
 }
 @media screen and (max-width: 767px) {
+  .certification-page .banner-section {
+    height: 359px;
+  }
   .certification-page .certification-section {
-    width: 320px;
+    width: 340px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -380,5 +417,10 @@ label:hover {
   .mb-menu,
   .mb-br {
     display: none !important;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .pc-br {
+    display: block !important;
   }
 }

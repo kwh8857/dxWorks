@@ -99,6 +99,7 @@ label:hover {
   width: 100%;
 }
 .certification-page .banner-section picture {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -349,6 +349,7 @@ label {
             flex-wrap: nowrap;
             top: -290px;
             row-gap: 74px;
+            align-items: center;
 
             .left-box {
                 .top-text {
@@ -370,6 +371,7 @@ label {
                 width: auto;
                 column-gap: 12px;
                 row-gap: 32px;
+                justify-content: center;
 
                 .certification-card {
                     img {

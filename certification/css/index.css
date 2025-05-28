@@ -367,6 +367,9 @@ label:hover {
         flex-wrap: nowrap;
     top: -290px;
     row-gap: 74px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .certification-page .certification-section .left-box .top-text {
     font-size: 18px;
@@ -384,6 +387,9 @@ label:hover {
        -moz-column-gap: 12px;
             column-gap: 12px;
     row-gap: 32px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .certification-page .certification-section .right-box .certification-card img {
     width: 154px;

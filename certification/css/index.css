@@ -92,6 +92,9 @@ label:hover {
   transition: 0.2s ease-in-out;
 }
 
+.certification-page .banner-section img {
+  width: 100%;
+}
 .certification-page .certification-section {
   width: 1200px;
   margin: 0 auto;

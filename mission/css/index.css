@@ -660,7 +660,7 @@ label:hover {
     display: none !important;
   }
   .mission-page .mission-section1 {
-    width: 470px;
+    width: 100%;
   }
   .mission-page .mission-section1 .text-wrapper {
     padding-top: 344px;
@@ -704,6 +704,9 @@ label:hover {
   .mission-page .mission-section2 {
     margin-top: 180px;
   }
+  .mission-page .mission-section2 .text-box .text {
+    font-size: 24px;
+  }
   .mission-page .mission-section2 .img-wrapper {
     width: auto;
     -ms-flex-wrap: nowrap;
@@ -715,7 +718,9 @@ label:hover {
   }
   .mission-page .mission-section2 .img-wrapper .card {
     width: 320px;
-    height: 403px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .mission-page .mission-section2 .img-wrapper .card img {
     height: 242px;
@@ -723,7 +728,6 @@ label:hover {
   .mission-page .mission-section2 .img-wrapper .card .card-content {
     height: auto;
     padding: 16px;
-    padding-top: 38px;
   }
   .mission-page .mission-section2 .img-wrapper .card .card-content .sub-title {
     font-size: 14px;

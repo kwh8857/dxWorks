@@ -210,13 +210,13 @@ label:hover {
   .notice-detail-page {
     padding-top: 110px;
   }
-  .notice-detail-page .event-detail-top-section,
+  .notice-detail-page .notice-detail-top-section,
   .notice-detail-page .content-section {
     width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-  .notice-detail-page .event-detail-top-section {
+  .notice-detail-page .notice-detail-top-section {
     padding: 20px;
   }
   .notice-detail-page .content-section {

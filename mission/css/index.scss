@@ -635,12 +635,12 @@ label {
         }
 
         .mission-section1 {
-            width: 470px;
+            width: 100%;
 
             .text-wrapper {
                 // z-index: 999;
                 padding-top: 344px;
-                ;
+
 
                 .title-text {
                     font-size: 26px;
@@ -696,6 +696,12 @@ label {
         .mission-section2 {
             margin-top: 180px;
 
+            .text-box {
+                .text {
+                    font-size: 24px;
+                }
+            }
+
             .img-wrapper {
                 width: auto;
                 flex-wrap: nowrap;
@@ -703,7 +709,7 @@ label {
 
                 .card {
                     width: 320px;
-                    height: 403px;
+                    height: fit-content;
 
                     img {
                         height: 242px;
@@ -712,7 +718,7 @@ label {
                     .card-content {
                         height: auto;
                         padding: 16px;
-                        padding-top: 38px;
+                        // padding-top: 38px;
 
                         .sub-title {
                             font-size: 14px;

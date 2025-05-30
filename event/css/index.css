@@ -342,13 +342,15 @@ label:hover {
   }
   .event-page .event-lists-section .event-lists-wrapper .event-card-wrapper .event-card-box {
     width: 100%;
-    height: 288px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .event-page .event-lists-section .event-lists-wrapper .event-card-wrapper .event-card-box .event-img {
     height: 193px;
   }
   .event-page .event-lists-section .event-lists-wrapper .event-card-wrapper .event-card-box .event-content-box {
-    height: 95px;
+    height: 110px;
   }
   .event-page .pagination-section {
     width: 320px;

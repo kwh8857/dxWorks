@@ -334,14 +334,14 @@ label {
 
                     .event-card-box {
                         width: 100%;
-                        height: 288px;
+                        height: fit-content;
 
                         .event-img {
                             height: 193px;
                         }
 
                         .event-content-box {
-                            height: 95px;
+                            height: 110px;
                         }
                     }
                 }

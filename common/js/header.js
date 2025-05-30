@@ -76,11 +76,15 @@ const disableMobileNavDropdowns = () => {
   });
 };
 
-const createMobileHeader = () => {
+const createMobileHeader = (onCreated) => {
   const header = document.getElementById("header");
+  if (!header) return;
 
-  // 이미 모바일 메뉴가 있다면 초기화 방지
-  if (header.querySelector(".header-mobile-menu")) return;
+  // 이미 생성되어 있으면 콜백만 실행
+  if (header.querySelector(".header-mobile-menu")) {
+    if (typeof onCreated === "function") onCreated();
+    return;
+  }
 
   const nav = header.querySelector(".header-nav");
   const btnSection = header.querySelector(".header-btn-section");
@@ -95,7 +99,6 @@ const createMobileHeader = () => {
   `;
   mbmenu.addEventListener("click", toggleMobileMenu);
 
-  // 기존 요소 분리해서 모바일 메뉴 안으로 이동
   if (nav) {
     nav.remove();
     mobileMenuContainer.appendChild(nav);
@@ -108,6 +111,9 @@ const createMobileHeader = () => {
 
   header.appendChild(mbmenu);
   header.appendChild(mobileMenuContainer);
+
+  // ✅ 생성 완료 후 콜백 실행
+  if (typeof onCreated === "function") onCreated();
 };
 
 const createDesktopHeader = () => {
@@ -167,5 +173,26 @@ const updateScreenState = (isLoadEvent = false) => {
   return isMobile;
 };
 
-window.addEventListener("load", () => updateScreenState(true));
+const waitForElement = (selector, timeout = 3000) => {
+  return new Promise((resolve, reject) => {
+    const start = Date.now();
+    const interval = setInterval(() => {
+      const el = document.querySelector(selector);
+      if (el) {
+        clearInterval(interval);
+        resolve(el);
+      } else if (Date.now() - start > timeout) {
+        clearInterval(interval);
+        reject(new Error("Element not found: " + selector));
+      }
+    }, 50);
+  });
+};
+
+waitForElement("#header")
+  .then(() => {
+    updateScreenState(true); // 또는 createMobileHeader() 등 실행
+  })
+  .catch(console.warn);
+
 window.addEventListener("resize", () => updateScreenState());

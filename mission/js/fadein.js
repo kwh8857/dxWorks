@@ -1,37 +1,25 @@
-const fadeinElements = [
+const misstionArray = [
   {
-    el: document.getElementById("box-1"),
+    el: document.getElementById("section1-img-1"),
     delay: 0,
   },
   {
-    el: document.getElementById("box-2"),
+    el: document.getElementById("section1-img-2"),
     delay: 0.1,
   },
   {
-    el: document.getElementById("box-3"),
+    el: document.getElementById("section1-img-3"),
     delay: 0.2,
   },
   {
-    el: document.querySelector(".section5-img-1"),
-    delay: 0,
-  },
-  {
-    el: document.querySelector(".section5-img-2"),
-    delay: 0.1,
-  },
-  {
-    el: document.querySelector(".section5-img-3"),
+    el: document.getElementById("section1-img-4"),
     delay: 0.2,
   },
-  {
-    el: document.querySelector(".section5-img-4"),
-    delay: 0.3,
-  },
-  // document.querySelector(".overlay"),
 ];
 
 const handleScroll = ([entry], current, delay) => {
   if (entry.isIntersecting && current) {
+    console.log(current);
     Object.assign(current.style, {
       transitionProperty: "opacity, transform",
       transitionDuration: "0.7s",
@@ -60,6 +48,8 @@ const observer = (current, delay) => {
   intersectionObserver.observe(current);
 };
 
-fadeinElements.forEach(({ el, delay }) => {
+console.log("돌긴도냐");
+misstionArray.forEach(({ el, delay }) => {
+  console.log(el);
   observer(el, delay);
 });

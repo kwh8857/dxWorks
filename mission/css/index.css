@@ -276,22 +276,22 @@ label:hover {
 .mission-page .mission-section1 img {
   position: absolute;
 }
-.mission-page .mission-section1 .img1 {
+.mission-page .mission-section1 .section1-img-1 {
   width: 296px;
   top: 194px;
   left: 0;
 }
-.mission-page .mission-section1 .img2 {
+.mission-page .mission-section1 .section1-img-2 {
   width: 395px;
   top: 75px;
   right: 72px;
 }
-.mission-page .mission-section1 .img3 {
+.mission-page .mission-section1 .section1-img-3 {
   width: 397px;
   top: 365px;
   left: -130px;
 }
-.mission-page .mission-section1 .img4 {
+.mission-page .mission-section1 .section1-img-4 {
   width: 444px;
   top: 448px;
   right: -93px;
@@ -576,23 +576,23 @@ label:hover {
     width: 684px;
     margin-top: 80px;
   }
-  .mission-page .mission-section1 .img1 {
+  .mission-page .mission-section1 .section1-img-1 {
     width: 184px;
     height: 133px;
     left: 120px;
   }
-  .mission-page .mission-section1 .img2 {
+  .mission-page .mission-section1 .section1-img-2 {
     width: 244px;
     height: 194px;
     top: 70px;
   }
-  .mission-page .mission-section1 .img3 {
+  .mission-page .mission-section1 .section1-img-3 {
     width: 245px;
     height: 199px;
     left: 40px;
     top: 620px;
   }
-  .mission-page .mission-section1 .img4 {
+  .mission-page .mission-section1 .section1-img-4 {
     width: 275px;
     height: 218px;
     top: 650px;
@@ -677,25 +677,25 @@ label:hover {
   .mission-page .mission-section1 .text-wrapper .sub-text p .mb {
     display: block;
   }
-  .mission-page .mission-section1 .img1 {
+  .mission-page .mission-section1 .section1-img-1 {
     width: 188px;
     height: 133px;
     top: 250px;
     left: 0;
   }
-  .mission-page .mission-section1 .img2 {
+  .mission-page .mission-section1 .section1-img-2 {
     width: 244px;
     height: 191px;
     top: 115px;
     right: 0px;
   }
-  .mission-page .mission-section1 .img3 {
+  .mission-page .mission-section1 .section1-img-3 {
     width: 165px;
     height: 135px;
     top: 630px;
     left: 75px;
   }
-  .mission-page .mission-section1 .img4 {
+  .mission-page .mission-section1 .section1-img-4 {
     width: 186px;
     height: 148px;
     top: 689px;

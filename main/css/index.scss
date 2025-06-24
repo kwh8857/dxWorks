@@ -540,6 +540,7 @@ label {
         padding-bottom: 110px;
         padding-top: 167px;
         box-sizing: border-box;
+        position: relative;
 
         .section5-title-box {
             display: flex;
@@ -577,6 +578,37 @@ label {
                 justify-content: center;
                 align-items: center;
             }
+        }
+
+        .section5-img-list {
+            display: grid;
+            position: absolute;
+            grid-template-columns: repeat(4, 436px);
+            bottom: 141px;
+            justify-content: center;
+
+            &>img {
+                width: 100%;
+                position: relative;
+            }
+
+            &>img:nth-child(1) {
+                left: 300px;
+            }
+
+            &>img:nth-child(2) {
+                left: 100px;
+            }
+
+            &>img:nth-child(3) {
+                left: -100px;
+            }
+
+            &>img:nth-child(4) {
+                left: -300px;
+            }
+
+
         }
     }
 
@@ -840,6 +872,29 @@ label {
                     font-size: 24px;
                 }
             }
+
+            .section5-img-list {
+                grid-template-columns: repeat(4, 238px);
+                bottom: 100px;
+
+                &>img:nth-child(1) {
+                    left: 150px;
+                }
+
+                &>img:nth-child(2) {
+                    left: 50px;
+                }
+
+                &>img:nth-child(3) {
+                    left: -50px;
+                }
+
+                &>img:nth-child(4) {
+                    left: -150px;
+                }
+
+
+            }
         }
 
         .section6 {
@@ -1100,6 +1155,29 @@ label {
                         display: block;
                     }
                 }
+            }
+
+            .section5-img-list {
+                grid-template-columns: repeat(4, 105px);
+                bottom: 100px;
+
+                &>img:nth-child(1) {
+                    left: 75px;
+                }
+
+                &>img:nth-child(2) {
+                    left: 25px;
+                }
+
+                &>img:nth-child(3) {
+                    left: -25px;
+                }
+
+                &>img:nth-child(4) {
+                    left: -75px;
+                }
+
+
             }
         }
 

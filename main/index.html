@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="/common/footer/css/footer.css">
     <script src="/common/js/include.js"></script>
     <script type="module" src="/common/js/header.js" defer></script>
+    <script src="./js/animation.js" defer></script>
+    <script src="./js/fadein.js" defer></script>
     <!--  -->
 </head>
 
@@ -44,10 +46,18 @@
         </section>
         <section class="section2">
             <div class="section2-title-box">
-                <p class="left-title"><span>디지털 혁신(DX)</span>을 <span>블록체인+X</span> 기술로
-                    급변하는 환경에 대응 가능한
-                    디지털 플랫폼 생태계를 만듭니다.</p>
-                <div class="right-title">
+                <div class="left-title-wrapper">
+                    <p class="left-title" id="scrollText"><span class="color-span">디지털 혁신(DX)</span><span
+                            class="white-span">을</span> <span class="color-span">블록체인+X</span> <span
+                            class="white-span">기술로
+                            급변하는 환경에 대응 가능한
+                            디지털 플랫폼 생태계를 만듭니다.</span></p>
+                    <p class=" overlay"><span class="color-span">디지털 혁신(DX)</span><span class="white-span">을</span>
+                        <span class="color-span">블록체인+X</span> <span class="white-span">기술로
+                            급변하는 환경에 대응 가능한
+                            디지털 플랫폼 생태계를 만듭니다.</span></p>
+                </div>
+                <div class="right-title ">
                     <p class="title-text">웹 3.0 디지털 심화시대, 사람과 사람,<br class="mb-br" /> 사람과 세상을 연결하고<br />
                         새로운 혁신적 기술을 서비스화하기 위해<br class="pc-br" />
                         디지털 플랫폼 생태계를 만들어나갑니다.</p>
@@ -93,7 +103,7 @@
             </div>
             <div class="section3-right-box">
                 <div class="box">
-                    <div class="section3-card">
+                    <div class="section3-card " id="box-1">
                         <p class="card-title">R&BD</p>
                         <div class="card-bottom-box">
                             <a href="" class="arrow-btn">
@@ -104,7 +114,7 @@
                                 alt="card-img">
                         </div>
                     </div>
-                    <div class="section3-card">
+                    <div class="section3-card" id="box-2">
                         <p class="card-title">Other Tech</p>
                         <div class="card-bottom-box">
                             <a href="" class="arrow-btn">
@@ -116,7 +126,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="section3-card blockchain-card">
+                <div class="section3-card blockchain-card" id="box-3">
                     <p class="card-title">Blockchain+<br />X Tech</p>
                     <div class="card-bottom-box">
                         <a href="" class="arrow-btn">
@@ -148,20 +158,18 @@
                 </p>
                 <div class="blockchain-x"> Blockchain+X</div>
             </div>
-            <picture>
+            <picture class="section5-background-img">
                 <source media="(max-width: 767px)" srcset="
                     ./assets/section5/section5-img-mb.png 1x,
                     ./assets/section5/sectoin5-img-mb@2x.png 2x.    
                     ./assets/section5/sectoin5-img-mb@3x.png 3x.    
                 ">
-
                 <source media="(max-width: 1440px)" srcset="
                     ./assets/section5/section5-img-tb.png 1x,
                     ./assets/section5/section5-img-tb@2x.png 2x,
                     ./assets/section5/section5-img-tb@3x.png 3x
                     
                 ">
-
                 <source srcset="
                                 ./assets/section5/section5-img.png 1x,
                               ./assets/section5/section5-img@3x.png 3x,

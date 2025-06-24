@@ -339,15 +339,45 @@ label:hover {
   position: absolute;
   top: 100px;
 }
-.main-page .section2 .section2-title-box .left-title {
+.main-page .section2 .section2-title-box .left-title-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.main-page .section2 .section2-title-box .left-title-wrapper .left-title {
   font-weight: 700;
   font-size: 34px;
   white-space: pre-line;
   line-height: 140%;
-  color: white;
+  color: transparent;
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(50%, white), color-stop(50%, rgba(255, 255, 255, 0.6)), color-stop(50%, rgba(255, 255, 255, 0.1)));
+  background-image: linear-gradient(to bottom right, white 50%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.1) 50%);
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-transition: background-position 0.3s ease;
+  transition: background-position 0.3s ease;
+  position: relative;
 }
-.main-page .section2 .section2-title-box .left-title span {
-  color: #0095FF;
+.main-page .section2 .section2-title-box .left-title-wrapper .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: transparent;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 140%;
+}
+.main-page .section2 .section2-title-box .left-title-wrapper .overlay .color-span {
+  z-index: 2;
+  color: transparent;
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(50%, rgb(0, 149, 255)), color-stop(50%, rgba(255, 255, 255, 0.6)), color-stop(50%, rgba(255, 255, 255, 0.1)));
+  background-image: linear-gradient(to bottom right, rgb(0, 149, 255) 50%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.1) 50%);
+  background-size: 300% 300%;
+  background-position: 100% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-transition: background-position 0.3s ease;
+  transition: background-position 0.3s ease;
 }
 .main-page .section2 .section2-title-box .right-title {
   display: -webkit-box;
@@ -530,6 +560,25 @@ label:hover {
           box-sizing: border-box;
   background: -webkit-gradient(linear, left bottom, left top, from(#1A1B23), to(#000000));
   background: linear-gradient(to top, #1A1B23 0%, #000000 100%);
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+.main-page .section4::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 149, 255, 0.2)), to(#000));
+  background: linear-gradient(to top, rgba(0, 149, 255, 0.2) 0%, #000 100%);
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s ease, -webkit-transform 0.6s ease;
+  transition: opacity 0.6s ease, -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  transition: transform 0.6s ease, opacity 0.6s ease, -webkit-transform 0.6s ease;
+  z-index: 0;
 }
 .main-page .section4 .section4-title {
   color: white;
@@ -572,6 +621,15 @@ label:hover {
 .main-page .section4 .btn-box .white {
   color: black;
   background-color: white;
+}
+.main-page .section4 * {
+  position: relative;
+  z-index: 1;
+}
+.main-page .section4:hover::before {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 1;
 }
 .main-page .section5 {
   display: -webkit-box;
@@ -1065,7 +1123,12 @@ label:hover {
   .main-page .section2 {
     padding-top: 250px;
   }
-  .main-page .section2 .section2-title-box .left-title {
+  .main-page .section2 .section2-title-box .left-title-wrapper .left-title {
+    font-size: 26px;
+    white-space: unset;
+    width: 220px;
+  }
+  .main-page .section2 .section2-title-box .left-title-wrapper .overlay {
     font-size: 26px;
     white-space: unset;
     width: 220px;

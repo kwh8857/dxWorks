@@ -45,7 +45,6 @@ const handleScroll = ([entry], current, delay) => {
 };
 
 const observer = (current, delay) => {
-  console.log(current);
   Object.assign(current.style, {
     opacity: "0",
     transform: "translate3d(0, 30%, 0)",

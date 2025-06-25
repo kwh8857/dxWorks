@@ -12,6 +12,8 @@
     <script src="/common/js/include.js"></script>
     <script type="module" src="/common/js/header.js" defer></script>
     <script type="module" src="./js/fadein.js" defer></script>
+    <script type="module" src="./js/fadeleft.js" defer></script>
+    <script type="module" src="./js/faderight.js" defer></script>
     <!--  -->
 
 </head>
@@ -79,7 +81,7 @@
                 </p>
             </div>
             <div class="img-wrapper">
-                <div class="card">
+                <div class="card" id="card1">
                     <img src="./assets/section1/card1.png" srcset="
                         ./assets/section1/card1@2x.png 2x, 
                         ./assets/section1/card1@3x.png 3x" alt="card1">
@@ -90,7 +92,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" id="card2">
                     <img src="./assets/section1/card2.png" srcset="
                                         ./assets/section1/card2@2x.png 2x, 
                                         ./assets/section1/card2@3x.png 3x" alt="card1">
@@ -101,7 +103,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" id="card3">
                     <img src="./assets/section1/card3.png" srcset="
                                         ./assets/section1/card3@2x.png 2x, 
                                         ./assets/section1/card3@3x.png 3x" alt="card1">
@@ -112,7 +114,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" id="card4">
                     <img src="./assets/section1/card4.png" srcset="
                                         ./assets/section1/card4@2x.png 2x, 
                                         ./assets/section1/card4@3x.png 3x" alt="card1">
@@ -132,7 +134,7 @@
             </div>
             <div class="blockchan-info-wrapper">
                 <div class="blockchan-card">
-                    <div class="left-card">
+                    <div class="left-card" id="left-card1">
                         <p class="card-title">엔터프라이즈 블록체인 플랫폼</p>
                         <p class="card-sub-title">우리가 마주한 디지털 심화 시대와 마주하게 된 웹 3.0 시대,
                             비대면 환경과 디지털 경제활동의 확대로 새로운 삶의 방식과 새로운 디지
@@ -143,7 +145,7 @@
                             여 새로운 삶의 방식과 새로운 디지털 질서의 구현으로 신뢰기반
                             디지털 권리 보장을 통해 무한 가능성의 시대를 열어갑니다.</p>
                     </div>
-                    <div class="right-card">
+                    <div class="right-card" id="right-card1">
                         <picture>
                             <source srcset="./assets/section3/card1-mb.png"
                                 srcset="./assets/section3/card1-mb@2x.png 2x, ./assets/section3/card1-mb@3x.png 3x"
@@ -158,7 +160,7 @@
                     </div>
                 </div>
                 <div class="blockchan-card">
-                    <div class="left-card">
+                    <div class="left-card" id="right-card2">
                         <p class="card-title">마이크로 자격증명 도구
                             디지털(오픈) 배지 플랫폼</p>
                         <p class="card-sub-title">우리가 마주한 디지털 심화 시대와 마주하게 된 웹 3.0 시대,
@@ -170,7 +172,7 @@
                             여 새로운 삶의 방식과 새로운 디지털 질서의 구현으로 신뢰기반
                             디지털 권리 보장을 통해 무한 가능성의 시대를 열어갑니다.</p>
                     </div>
-                    <div class="right-card">
+                    <div class="right-card" id="left-card2">
                         <picture>
                             <source srcset="./assets/section3/card2-mb.png"
                                 srcset="./assets/section3/card2-mb@2x.png 2x, ./assets/section3/card2-mb@3x.png 3x"
@@ -185,7 +187,7 @@
                     </div>
                 </div>
                 <div class="blockchan-card">
-                    <div class="left-card">
+                    <div class="left-card" id="left-card3">
                         <p class="card-title">블록체인+X 데이터 거래 플랫폼 </p>
                         <p class="card-sub-title">새로운 디지털 혁신(DX) 기술을 접목 가장 먼저 서비스화 하는 혁신적 디
                             지털플랫폼 연구개발을 지향합니다.</p>
@@ -195,7 +197,7 @@
                             반에 걸쳐 체계적으로 운영하고, 블록체인 기술로 더 안전하고 편리한 서
                             비스를 제공합니다.</p>
                     </div>
-                    <div class="right-card">
+                    <div class="right-card" id="right-card3">
                         <picture>
                             <source srcset="./assets/section3/card3-mb.png"
                                 srcset="./assets/section3/card3-mb@2x.png 2x, ./assets/section3/card3-mb@3x.png 3x"

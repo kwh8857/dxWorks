@@ -1,36 +1,16 @@
 const misstionArray = [
   {
-    el: document.getElementById("section1-img-1"),
-    delay: 0,
-  },
-  {
-    el: document.getElementById("section1-img-2"),
+    el: document.getElementById("right-card1"),
     delay: 0.1,
   },
   {
-    el: document.getElementById("section1-img-3"),
-    delay: 0.2,
-  },
-  {
-    el: document.getElementById("section1-img-4"),
-    delay: 0.2,
-  },
-  {
-    el: document.getElementById("card1"), 
+    el: document.getElementById("right-card2"),
     delay: 0.1,
   },
   {
-    el: document.getElementById("card2"),
-    delay: 0.2,
-  },
-  {
-    el: document.getElementById("card3"),
+    el: document.getElementById("right-card3"),
     delay: 0.1,
-  },
-  {
-    el: document.getElementById("card4"),
-    delay: 0.2,
-  },
+  }
 ];
 const handleScroll = ([entry], current, delay,intersectionObserver) => {
   if (entry.isIntersecting && current) {
@@ -49,7 +29,7 @@ const handleScroll = ([entry], current, delay,intersectionObserver) => {
 const observer = (current, delay) => {
   Object.assign(current.style, {
     opacity: "0",
-    transform: "translate3d(0, 30%, 0)",
+    transform: "translate3d(10%, 0, 0)",
   });
 
   const intersectionObserver = new IntersectionObserver(

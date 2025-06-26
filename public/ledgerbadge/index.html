@@ -15,6 +15,8 @@
   <!--  -->
   <link rel="stylesheet" href="css/index.css">
   <script src="js/faq.js" defer></script>
+  <script type="module" src="./js/fadein.js" defer></script>
+  <script type="module" src="./js/faderight.js" defer></script>
 </head>
 
 <body>
@@ -25,18 +27,18 @@
         <div class="gradient-line"></div>
         <div class="badge-ledger-badge-top-content">
           <div class="badge-ledger-badge-top-left">
-            <div class="badge-ledger-badge-tag">
+            <div class="badge-ledger-badge-tag" id="badge-ledger-badge-tag">
               경험 비지니스 시대, 디지털 이력 증명을 한눈에
             </div>
-            <div class="badge-ledger-badge-title">
+            <div class="badge-ledger-badge-title" id="badge-ledger-badge-title">
               <span class="title-color"> DX Ledger Badge</span><br />
               디엑스레저 배지
             </div>
-            <div class="badge-ledger-badge-desc">
+            <div class="badge-ledger-badge-desc" id="badge-ledger-badge-desc">
               누구나 편리하게 블록체인 기반 디지털배지를 통해 <br />신뢰성을 확인하고, 발행 · 수여, 유통 · 검증할 수 있는 정보를 제공합니다.
             </div>
           </div>
-          <div class="badge-ledger-badge-top-right">
+          <div class="badge-ledger-badge-top-right" id="badge-ledger-badge-top-right">
             <img src="./assets/badge/dx-ledger.png"
               srcset="./assets/badge/dx-ledger@2x.png 2x, ./assets/badge/dx-ledger@3x.png 3x" alt="dx-ledger"
               class="badge-ledger-badge-top-right-img">
@@ -45,33 +47,34 @@
       </div>
       <div class="badge-ledger-badge-bottom">
         <div class="badge-ledger-badge-bottom-content">
-          <div class="badge-ledger-badge-bottom-tag">
+          <div class="badge-ledger-badge-bottom-tag" id="badge-ledger-badge-bottom-tag">
             DX Ledger Badge
           </div>
-          <div class="badge-ledger-badge-bottom-title">
+          <div class="badge-ledger-badge-bottom-title" id="badge-ledger-badge-bottom-title">
             교육 패러다임 디지털 혁신(DX) 에코시스템
           </div>
-          <div class="badge-ledger-badge-bottom-desc">학력과 학벌이 아닌 능력과 실력으로 평가받는 역량 중심의 디지털 혁신(DX) 서비스를 오픈배지로 제공 <br />
+          <div class="badge-ledger-badge-bottom-desc" id="badge-ledger-badge-bottom-desc">학력과 학벌이 아닌 능력과 실력으로 평가받는 역량
+            중심의 디지털 혁신(DX) 서비스를 오픈배지로 제공 <br />
             디지털 심화 시대 인재활용을 위한 새로운 디지털 Ecosystem을 만들어나갑니다.</div>
         </div>
         <img src="./assets/badge/ledger-badge.png"
           srcset="./assets/badge/ledger-badge@2x.png 2x, ./assets/badge/ledger-badge@3x.png 3x" alt="ledger-badge"
-          class="badge-ledger-badge-bottom-img">
+          class="badge-ledger-badge-bottom-img" id="badge-ledger-badge-bottom-img">
       </div>
     </section>
     <section class="badge-slogan-section">
       <div class="badge-slogan-section-content-wrapper">
         <div class="badge-slogan-section-content">
-          <div class="badge-slogan-section-title">
+          <div class="badge-slogan-section-title" id="badge-slogan-section-title">
             신뢰할 수 있는 <br />
             <span class="title-color">디엑스레저 배지</span>
           </div>
-          <div class="badge-slogan-section-desc">
+          <div class="badge-slogan-section-desc" id="badge-slogan-section-desc">
             Good Software 인증, Digital Innovation Awards 수상 등 <br />
             디엑스레저배지는 신뢰할 수 있는 제품입니다.
           </div>
         </div>
-        <div class="badge-slogan-section-img-section">
+        <div class="badge-slogan-section-img-section" id="badge-slogan-section-img-section">
           <div class="badge-slogan-section-img-wrapper">
             <img src="./assets/badge/good-software.png" alt="good-software"
               srcset="./assets/badge/good-software@2x.png 2x, ./assets/badge/good-software@3x.png 3x">
@@ -84,12 +87,12 @@
       </div>
     </section>
     <section class="badge-type-section">
-      <div class="badge-type-section-title">Open Badges Type</div>
+      <div class="badge-type-section-title" id="badge-type-section-title">Open Badges Type</div>
       <img src="./assets/badge/badge-type-edtech.png" alt="badge-type-edtech"
         srcset="./assets/badge/badge-type-edtech@2x.png 2x, ./assets/badge/badge-type-edtech@3x.png 3x"
-        class="badge-type-etech-img">
+        class="badge-type-etech-img" id="badge-type-etech-img">
       <div class="badge-type-list">
-        <div class="badge-type-list-item">
+        <div class="badge-type-list-item" id="badge-type-list-item-1">
           <img src="./assets/badge/badge-type-issuer.png" alt="badge-type-issuer"
             srcset="./assets/badge/badge-type-issuer@2x.png 2x, ./assets/badge/badge-type-issuer@3x.png 3x"
             class="badge-type-list-item-img">
@@ -101,7 +104,7 @@
             </div>
           </div>
         </div>
-        <div class="badge-type-list-item">
+        <div class="badge-type-list-item" id="badge-type-list-item-2">
           <img src="./assets/badge/badge-type-displayer.png" alt="badge-type-displayer"
             srcset="./assets/badge/badge-type-displayer@2x.png 2x, ./assets/badge/badge-type-displayer@3x.png 3x"
             class="badge-type-list-item-img">
@@ -111,7 +114,7 @@
               표시/전시기능 보유 </div>
           </div>
         </div>
-        <div class="badge-type-list-item">
+        <div class="badge-type-list-item" id="badge-type-list-item-3">
           <img src="./assets/badge/badge-type-host.png" alt="badge-type-host"
             srcset="./assets/badge/badge-type-host@2x.png 2x, ./assets/badge/badge-type-host@3x.png 3x"
             class="badge-type-list-item-img">
@@ -121,15 +124,15 @@
               (다른 시스템에서 인포트/익스포트 가능)</div>
           </div>
         </div>
-        <hr class="badge-type-list-item-hr" />
+        <hr class="badge-type-list-item-hr" id="badge-type-list-item-hr" />
       </div>
     </section>
     <section class="badge-product-section">
       <div class="badge-product-container">
-        <div class="badge-product-section-tag">제품 소개</div>
-        <div class="badge-product-section-title">손쉬운 사용, 손쉬운 관리</div>
+        <div class="badge-product-section-tag" id="badge-product-section-tag">제품 소개</div>
+        <div class="badge-product-section-title" id="badge-product-section-title">손쉬운 사용, 손쉬운 관리</div>
         <div class="badge-product-feature-list">
-          <div class="badge-product-feature-item">
+          <div class="badge-product-feature-item" id="badge-product-feature-item-1">
             <img class="badge-product-feature-item-icon" src="./assets/badge/product-icon.svg" alt="">
             <div class="badge-product-feature-item-content">
               <div class="badge-product-feature-item-title">손쉬운 디지털 배지 <br class="mb-br" /> 발행 서비스</div>
@@ -139,7 +142,7 @@
               </div>
             </div>
           </div>
-          <div class="badge-product-feature-item">
+          <div class="badge-product-feature-item" id="badge-product-feature-item-2">
             <img class="badge-product-feature-item-icon" src="./assets/badge/product-icon2.svg" alt="">
             <div class="badge-product-feature-item-content">
               <div class="badge-product-feature-item-title">디지털 배지 최고 <br class="mb-br" />관리자 서비스</div>
@@ -149,7 +152,7 @@
               </div>
             </div>
           </div>
-          <div class="badge-product-feature-item">
+          <div class="badge-product-feature-item" id="badge-product-feature-item-3">
             <img class="badge-product-feature-item-icon" src="./assets/badge/product-icon3.svg" alt="">
             <div class="badge-product-feature-item-content">
               <div class="badge-product-feature-item-title">사용자 백팩 서비스,<br class="mb-br" /> 데이터 백업 및 복구 서비스</div>
@@ -162,7 +165,7 @@
         </div>
 
         <div class="badge-product-info-list">
-          <div class="badge-product-info-item">
+          <div class="badge-product-info-item" id="badge-product-info-item-1">
             <div class="badge-product-info-item-title">사업분야</div>
             <div class="badge-product-info-item-desc">플랫폼과 서비스로 분류, <br />
               블록체인/DID, 클라우드 기반 플랫폼을 활용해<br />
@@ -176,7 +179,7 @@
               class="badge-product-info-item-img-mb">
 
           </div>
-          <div class="badge-product-info-item">
+          <div class="badge-product-info-item" id="badge-product-info-item-2">
             <div class="badge-product-info-item-title">사용자</div>
             <div class="badge-product-info-item-desc">교육기관과 기업으로 분류, <br />
               학교/대학교/사설학원 등에서 <br />
@@ -189,7 +192,7 @@
               srcset="./assets/badge/product-info-2-mb@2x.png 2x, ./assets/badge/product-info-2-mb@3x.png 3x"
               class="badge-product-info-item-img-mb">
           </div>
-          <div class="badge-product-info-item">
+          <div class="badge-product-info-item" id="badge-product-info-item-3">
             <div class="badge-product-info-item-title">국제표준</div>
             <div class="badge-product-info-item-desc">IMS 1EdTech Open Badge2.0/3.0 지원, <br />
               블록체인&DID 기반 서비스</div>
@@ -200,7 +203,7 @@
               srcset="./assets/badge/product-info-3-mb@2x.png 2x, ./assets/badge/product-info-3-mb@3x.png 3x"
               class="badge-product-info-item-img-mb">
           </div>
-          <div class="badge-product-info-item">
+          <div class="badge-product-info-item" id="badge-product-info-item-4">
             <div class="badge-product-info-item-title">확산/확대</div>
             <div class="badge-product-info-item-desc">블록체인/DID 기반 학습/자격/훈련 과정에 따른 <br />
               성과 인증, 앰블럼, 업적 성취, 기술, 품질 <br />
@@ -219,40 +222,40 @@
       <div class="badge-product-gradient"></div>
     </section>
     <section class="badge-slide-section">
-      <div class="badge-slide-tag">
+      <div class="badge-slide-tag" id="badge-slide-tag">
         활용 분야
       </div>
-      <div class="badge-slide-title">
+      <div class="badge-slide-title" id="badge-slide-title">
         다양한 곳에서 <br />
         디엑스레저 배지를 <br class="mb-br" /> 활용해보세요
       </div>
-      <div class="badge-slide-desc">
+      <div class="badge-slide-desc" id="badge-slide-desc">
         교육 수료인증 및 취업까지 다양한 곳에서 <br />
         디엑스레저 배지를 활용해보세요
       </div>
       <div class="badge-slide-list">
-        <div class="badge-slide-list-item">
+        <div class="badge-slide-list-item" id="badge-slide-list-item-1">
           <div class="badge-slide-list-item-title">교육 및 수료</div>
           <div class="badge-slide-list-item-desc">대학 및 교육기관 교육/수료에 대한 인증 및 증빙 등의 서비스</div>
           <img src="./assets/badge/badge-slide-1.png" alt="badge-slide-1"
             srcset="./assets/badge/badge-slide-1@2x.png 2x, ./assets/badge/badge-slide-1@3x.png 3x"
             class="badge-slide-list-item-img" />
         </div>
-        <div class="badge-slide-list-item">
+        <div class="badge-slide-list-item" id="badge-slide-list-item-2">
           <div class="badge-slide-list-item-title">인증 및 증빙</div>
           <div class="badge-slide-list-item-desc">기술, 품질 및 성과, 등급 등에 대한 인증 및 증빙 등의 서비스</div>
           <img src="./assets/badge/badge-slide-2.png" alt="badge-slide-2"
             srcset="./assets/badge/badge-slide-2@2x.png 2x, ./assets/badge/badge-slide-2@3x.png 3x"
             class="badge-slide-list-item-img" />
         </div>
-        <div class="badge-slide-list-item">
+        <div class="badge-slide-list-item" id="badge-slide-list-item-3">
           <div class="badge-slide-list-item-title">자기계발</div>
           <div class="badge-slide-list-item-desc">국가표준직문(NCS) 등 기반 자격 및 훈련 등에 대한 증명 등의 서비스</div>
           <img src="./assets/badge/badge-slide-3.png" alt="badge-slide-3"
             srcset="./assets/badge/badge-slide-3@2x.png 2x, ./assets/badge/badge-slide-3@3x.png 3x"
             class="badge-slide-list-item-img" />
         </div>
-        <div class="badge-slide-list-item">
+        <div class="badge-slide-list-item" id="badge-slide-list-item-4">
           <div class="badge-slide-list-item-title">학습 플랫폼</div>
           <div class="badge-slide-list-item-desc">온라인 플랫폼 디지털 학습 및 사회학습 수요 증가, 학습 게임화 등 배지 활용</div>
           <img src="./assets/badge/badge-slide-4.png" alt="badge-slide-4"
@@ -263,16 +266,16 @@
     </section>
     <section class="badge-nav-contract-section">
       <div class="badge-nav-contract-content">
-        <div class="badge-nav-contract-title">지금 상담을 통해 <br />
+        <div class="badge-nav-contract-title" id="badge-nav-contract-title">지금 상담을 통해 <br />
           디엑스레저 배지 도입을 시작해보세요</div>
-        <a href="/contact" class="badge-nav-contract-btn">도입 문의</a>
+        <a href="/contact" class="badge-nav-contract-btn" id="badge-nav-contract-btn">도입 문의</a>
       </div>
     </section>
     <section class="badge-faq-section">
       <div class="badge-faq-content">
-        <div class="badge-faq-tag">FAQ</div>
-        <div class="badge-faq-title">자주 묻는 질문</div>
-        <div class="badge-faq-search">
+        <div class="badge-faq-tag" id="badge-faq-tag">FAQ</div>
+        <div class="badge-faq-title" id="badge-faq-title">자주 묻는 질문</div>
+        <div class="badge-faq-search" id="badge-faq-search">
           <input type="text" placeholder="검색하기">
           <img src="./assets/badge/search.svg" alt="검색" class="badge-faq-search-icon">
         </div>

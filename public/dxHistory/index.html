@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="/common/footer/css/footer.css">
     <script type="module" src="/common/js/header.js" defer></script>
     <script src="/common/js/include.js" defer></script>
+    <script type="module" src="./js/fadeleft.js" defer></script>
+    <script type="module" src="./js/faderight.js" defer></script>
     <!--  -->
 </head>
 
@@ -25,15 +27,15 @@
         </section>
         <section class="dx-history-section">
             <div class="left-box">
-                <p class="top-text">DX 연혁</p>
-                <p class="middle-text">디엑스웍스는 오늘도
+                <p class="top-text" id="left-top-text">DX 연혁</p>
+                <p class="middle-text" id="left-middle-text">디엑스웍스는 오늘도
                     디지털 신뢰 사회 실현의
                     역사를 새롭게 쓰고 있습니다.</p>
-                <p class="bottom-text">디엑스웍스는 디지털 혁신(DX)
+                <p class="bottom-text" id="left-bottom-text">디엑스웍스는 디지털 혁신(DX)
                     블록체인+X 기술로 디지털 신뢰 사회 실현의
                     역사를 새롭게 쓰고 있습니다.</p>
             </div>
-            <div class="right-box">
+            <div class="right-box" id="right-box">
                 <div class="history-card hide-holder">
                     <button class="history-menu">
                         <div class="history-title">
@@ -334,11 +336,11 @@
         </section>
         <section class="section3">
             <div class="text-box">
-                <p class="top-text">Co-Creation / Co-Valuation</p>
-                <div class="middle-text">디엑스웍스다운 일하는<br /> 방식으로
+                <p class="top-text" id="top-text">Co-Creation / Co-Valuation</p>
+                <div class="middle-text" id="middle-text">디엑스웍스다운 일하는<br /> 방식으로
                     <span>디지털 신뢰 사회를<br /> 혁신(DX)</span> 합니다.
                 </div>
-                <div class="careers">Careers</div>
+                <div class="careers" id="careers">Careers</div>
             </div>
         </section>
         <div data-include-path="/common/footer/footer.html" data-include-replace></div>

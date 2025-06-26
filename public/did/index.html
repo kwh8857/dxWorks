@@ -11,10 +11,12 @@
   <link rel="stylesheet" href="/common/header/css/header.css">
   <link rel="stylesheet" href="/common/footer/css/footer.css">
   <script src="/common/js/include.js" defer></script>
+  <script type="module" src="/common/js/header.js" defer></script>
   <!--  -->
   <link rel="stylesheet" href="css/index.css">
-  <script src="js/header.js" defer></script>
   <script src="js/faq.js" defer></script>
+  <script type="module" src="./js/fadein.js" defer></script>
+  <script type="module" src="./js/faderight.js" defer></script>
 </head>
 
 <body>
@@ -25,20 +27,20 @@
         <div class="gradient-line"></div>
         <div class="did-ledger-did-top-content">
           <div class="did-ledger-did-top-left">
-            <div class="did-ledger-did-tag">
+            <div class="did-ledger-did-tag" id="did-ledger-did-tag">
               디지털 시대의 새로운 신뢰 기반, DX Ledger DID
             </div>
-            <div class="did-ledger-did-title">
+            <div class="did-ledger-did-title" id="did-ledger-did-title">
               <span class="title-color"> DX Ledger DID</span><br />
               디엑스레저 디아이디
             </div>
-            <div class="did-ledger-did-desc">
+            <div class="did-ledger-did-desc" id="did-ledger-did-desc">
               DX Ledger DID를 도입하여 디지털 신원의 <br class="mb-br" /> 새로운 시대를 선도하십시오. <br />
               첨단 기술과 신뢰성을 갖춘 디엑스웍스의 솔루션으로, <br />
               신원 관리 시스템을 한층 더 혁신적으로 <br class="mb-br" /> 강화할 수 있습니다. <br />
             </div>
           </div>
-          <div class="did-ledger-did-top-right">
+          <div class="did-ledger-did-top-right" id="did-ledger-did-top-right">
             <img src="./assets/did/dx-ledger.png"
               srcset="./assets/did/dx-ledger@2x.png 2x, ./assets/did/dx-ledger@3x.png 3x" alt="dx-ledger"
               class="did-ledger-did-top-right-img">
@@ -47,32 +49,33 @@
       </div>
       <div class="did-ledger-did-bottom">
         <div class="did-ledger-did-bottom-content">
-          <div class="did-ledger-did-bottom-tag">
+          <div class="did-ledger-did-bottom-tag" id="did-ledger-did-bottom-tag">
             DX Ledger DID
           </div>
-          <div class="did-ledger-did-bottom-title">교육 패러다임 디지털 혁신(DX) 에코시스템
+          <div class="did-ledger-did-bottom-title" id="did-ledger-did-bottom-title">교육 패러다임 디지털 혁신(DX) 에코시스템
           </div>
-          <div class="did-ledger-did-bottom-desc">학력과 학벌이 아닌 능력과 실력으로 평가받는 역량 중심의 디지털 혁신(DX) 서비스를 오픈배지로 제공 <br />
+          <div class="did-ledger-did-bottom-desc" id="did-ledger-did-bottom-desc">학력과 학벌이 아닌 능력과 실력으로 평가받는 역량 중심의 디지털
+            혁신(DX) 서비스를 오픈배지로 제공 <br />
             디지털 심화 시대 인재활용을 위한 새로운 디지털 Ecosystem을 만들어나갑니다.</div>
         </div>
         <img src="./assets/did/ledger-did.png"
           srcset="./assets/did/ledger-did@2x.png 2x, ./assets/did/ledger-did@3x.png 3x" alt="ledger-did"
-          class="did-ledger-did-bottom-img">
+          class="did-ledger-did-bottom-img" id="did-ledger-did-bottom-img">
       </div>
     </section>
     <section class="did-slogan-section">
       <div class="did-slogan-section-content-wrapper">
         <div class="did-slogan-section-content">
-          <div class="did-slogan-section-title">
+          <div class="did-slogan-section-title" id="did-slogan-section-title">
             신뢰할 수 있는 <br />
             <span class="title-color">디엑스레저 디아이디</span>
           </div>
-          <div class="did-slogan-section-desc">
+          <div class="did-slogan-section-desc" id="did-slogan-section-desc">
             Good Software 인증, Digital Innovation Awards 수상 등 <br />
             디엑스레저 디아이디는 신뢰할 수 있는 제품입니다.
           </div>
         </div>
-        <div class="did-slogan-section-img-section">
+        <div class="did-slogan-section-img-section" id="did-slogan-section-img-section">
           <div class="did-slogan-section-img-wrapper">
             <img src="./assets/did/good-software.png" alt="good-software"
               srcset="./assets/did/good-software@2x.png 2x, ./assets/did/good-software@3x.png 3x">
@@ -87,10 +90,10 @@
 
     <section class="did-product-section">
       <div class="did-product-container">
-        <div class="did-product-section-tag">제품 소개</div>
-        <div class="did-product-section-title">사용자 친화적인 사용성</div>
+        <div class="did-product-section-tag" id="did-product-section-tag">제품 소개</div>
+        <div class="did-product-section-title" id="did-product-section-title">사용자 친화적인 사용성</div>
         <div class="did-product-feature-list">
-          <div class="did-product-feature-item">
+          <div class="did-product-feature-item" id="did-product-feature-item-1">
             <img class="did-product-feature-item-icon" src="./assets/did/product-icon.svg" alt="">
             <div class="did-product-feature-item-content">
               <div class="did-product-feature-item-title">손쉬운 하이퍼레저 블록체인 노드 구축</div>
@@ -100,7 +103,7 @@
               </div>
             </div>
           </div>
-          <div class="did-product-feature-item">
+          <div class="did-product-feature-item" id="did-product-feature-item-2">
             <img class="did-product-feature-item-icon" src="./assets/did/product-icon2.svg" alt="">
             <div class="did-product-feature-item-content">
               <div class="did-product-feature-item-title">실시간 블록체인 모니터링 감시 및 추적</div>
@@ -110,7 +113,7 @@
               </div>
             </div>
           </div>
-          <div class="did-product-feature-item">
+          <div class="did-product-feature-item" id="did-product-feature-item-3">
             <img class="did-product-feature-item-icon" src="./assets/did/product-icon3.svg" alt="">
             <div class="did-product-feature-item-content">
               <div class="did-product-feature-item-title">스마트 컨트랙트 버전 및 연계 관리</div>
@@ -123,7 +126,7 @@
         </div>
 
         <div class="did-product-info-list">
-          <div class="did-product-info-item">
+          <div class="did-product-info-item" id="did-product-info-item-1">
             <div class="did-product-info-item-title">사업분야</div>
             <div class="did-product-info-item-desc">플랫폼과 서비스로 분류, <br />
               블록체인/DID, 클라우드 기반 플랫폼을 활용해<br />
@@ -137,7 +140,7 @@
               class="did-product-info-item-img-mb">
 
           </div>
-          <div class="did-product-info-item">
+          <div class="did-product-info-item" id="did-product-info-item-2">
             <div class="did-product-info-item-title">사용자</div>
             <div class="did-product-info-item-desc">교육기관과 기업으로 분류, <br />
               학교/대학교/사설학원 등에서 <br />
@@ -150,7 +153,7 @@
               srcset="./assets/did/product-info-2-mb@2x.png 2x, ./assets/did/product-info-2-mb@3x.png 3x"
               class="did-product-info-item-img-mb">
           </div>
-          <div class="did-product-info-item">
+          <div class="did-product-info-item" id="did-product-info-item-3">
             <div class="did-product-info-item-title">국제표준</div>
             <div class="did-product-info-item-desc">IMS 1EdTech Open Badge2.0/3.0 지원, <br />
               블록체인&DID 기반 서비스</div>
@@ -161,7 +164,7 @@
               srcset="./assets/did/product-info-3-mb@2x.png 2x, ./assets/did/product-info-3-mb@3x.png 3x"
               class="did-product-info-item-img-mb">
           </div>
-          <div class="did-product-info-item">
+          <div class="did-product-info-item" id="did-product-info-item-4">
             <div class="did-product-info-item-title">확산/확대</div>
             <div class="did-product-info-item-desc">블록체인/DID 기반 학습/자격/훈련 과정에 따른 <br />
               성과 인증, 앰블럼, 업적 성취, 기술, 품질 <br />
@@ -179,19 +182,19 @@
       <div class="did-product-gradient"></div>
     </section>
     <section class="did-slide-section">
-      <div class="did-slide-tag">
+      <div class="did-slide-tag" id="did-slide-tag">
         활용 분야
       </div>
-      <div class="did-slide-title">
+      <div class="did-slide-title" id="did-slide-title">
         다양한 곳에서 <br />
         디엑스레저 디아이디를 <br class="mb-br" /> 활용해보세요
       </div>
-      <div class="did-slide-desc">
+      <div class="did-slide-desc" id="did-slide-desc">
         신뢰 기반의 분산신원(DID)으로 <br />
         다양한 인증 환경에서 효율적이고 <br class="mb-br" /> 안전한 신원 검증을 실현할 수 있습니다.
       </div>
       <div class="did-slide-list">
-        <div class="did-slide-list-item">
+        <div class="did-slide-list-item" id="did-slide-list-item-1">
           <div class="did-slide-list-item-title">로그인 및 접근 인증</div>
           <div class="did-slide-list-item-desc">공공 포털, 사내 시스템, 교육 플랫폼 등에 <br />
             DID 기반 로그인으로 보안성과 편의성 향상</div>
@@ -199,14 +202,14 @@
             srcset="./assets/did/did-slide-1@2x.png 2x, ./assets/did/did-slide-1@3x.png 3x"
             class="did-slide-list-item-img" />
         </div>
-        <div class="did-slide-list-item">
+        <div class="did-slide-list-item" id="did-slide-list-item-2">
           <div class="did-slide-list-item-title">조직 간 신원 검증</div>
           <div class="did-slide-list-item-desc">기관 간 이직, 전학, 협력사 등록시 신원<br /> 재검증 없이 DID로 간편 확인</div>
           <img src="./assets/did/did-slide-2.png" alt="did-slide-2"
             srcset="./assets/did/did-slide-2@2x.png 2x, ./assets/did/did-slide-2@3x.png 3x"
             class="did-slide-list-item-img" />
         </div>
-        <div class="did-slide-list-item">
+        <div class="did-slide-list-item" id="did-slide-list-item-3">
           <div class="did-slide-list-item-title">전자증명 제출</div>
           <div class="did-slide-list-item-desc">학위, 수료, 자격 등 증명서를 Verifiable <br />
             Credential로 제출하고DID를 통해 진위 검증</div>
@@ -214,7 +217,7 @@
             srcset="./assets/did/did-slide-3@2x.png 2x, ./assets/did/did-slide-3@3x.png 3x"
             class="did-slide-list-item-img" />
         </div>
-        <div class="did-slide-list-item">
+        <div class="did-slide-list-item" id="did-slide-list-item-4">
           <div class="did-slide-list-item-title">디지털 여행 및 통관 신원</div>
           <div class="did-slide-list-item-desc">여권, 백신접종증명서 등 민감한 정보도 <br />DID 기반으로 안전하게 소지하고 제시</div>
           <img src="./assets/did/did-slide-4.png" alt="did-slide-4"
@@ -225,9 +228,9 @@
     </section>
     <section class="did-nav-contract-section">
       <div class="did-nav-contract-content">
-        <div class="did-nav-contract-title">지금 상담을 통해 <br />
+        <div class="did-nav-contract-title" id="did-nav-contract-title">지금 상담을 통해 <br />
           디엑스레저 디아이디 도입을 시작해보세요</div>
-        <a href="/contact" class="did-nav-contract-btn">도입 문의</a>
+        <a href="/contact" class="did-nav-contract-btn" id="did-nav-contract-btn">도입 문의</a>
       </div>
     </section>
 

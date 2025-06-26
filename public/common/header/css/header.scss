@@ -1,0 +1,218 @@
+/** 공통 헤더 **/
+.header-section {
+  z-index: 200;
+  background-color: black;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 56px;
+  box-sizing: border-box;
+
+  .header-logo {
+    width: 178px;
+
+    img {
+      width: 178px;
+    }
+  }
+
+  .header-nav {
+    .header-nav-list {
+      display: grid;
+      grid-template-columns: repeat(4, 190px);
+      align-items: center;
+      // gap: 32px;
+      padding: unset;
+
+      .header-nav-item {
+        position: relative;
+        display: grid;
+        height: 80px;
+        overflow: hidden;
+
+        .header-nav-link {
+          color: white;
+          font-size: 18px;
+          font-weight: 700;
+          height: 80px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+        }
+
+        .sub-nav-list {
+          width: 100%;
+          // display: none;
+          display: flex;
+          top: 100%;
+          left: 0;
+          background-color: black;
+          flex-direction: column;
+          position: absolute;
+
+          .sub-nav-link {
+            width: 100%;
+            // width: 209px;
+            height: 50px;
+            color: white;
+            font-size: 16px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+
+    }
+  }
+
+  .header-btn-section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    .header-btn-item {
+      color: white;
+      font-size: 14px;
+      font-weight: 700;
+
+      .header-lang-icon {
+        width: 21px;
+      }
+    }
+
+    &>hr {
+      height: 16px;
+      background-color: white;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1440px) {
+  .header-section {
+    padding: 0 20px;
+
+    .header-logo {
+      width: 120px;
+
+      img {
+        width: 120px;
+      }
+    }
+
+    .header-nav {
+      .header-nav-list {
+        grid-template-columns: repeat(4, 110px);
+
+        .header-nav-item {
+          .header-nav-link {
+            font-size: 14px;
+          }
+
+          .sub-nav-list {
+            .sub-nav-link {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+
+    .header-btn-section {
+      gap: 8px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-section {
+    .header-nav {
+      .header-nav-list {
+        .header-nav-item:hover {
+          overflow: visible;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-section {
+
+    &>.header-nav,
+    &>.header-btn-section {
+      display: none;
+    }
+
+    .header-mobile-menu {
+      position: fixed;
+      right: -100%;
+      top: 80px;
+      background-color: black;
+      width: 100%;
+      height: calc(100% - 80px);
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-sizing: border-box;
+      padding-bottom: 40px;
+      transition: right 0.2s ease-in-out;
+      overflow-x: hidden;
+
+      .header-nav {
+        .header-nav-list {
+          display: grid;
+          grid-template-columns: 1fr;
+          align-items: center;
+          justify-content: center;
+          gap: 1px;
+
+          .header-nav-item {
+            text-align: center;
+            display: grid;
+            height: 60px;
+            transition: height 0.2s ease-in-out;
+            width: 100%;
+
+            .header-nav-link {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 60px;
+              width: 100%;
+            }
+
+            .sub-nav-list {
+              position: unset;
+              background-color: #1A1B23;
+
+              .sub-nav-link {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+
+      .header-btn-section {
+        width: fit-content;
+        display: flex;
+        gap: 16px;
+        margin: 0 auto;
+      }
+    }
+
+    .active-mobile-menu {
+      right: 0;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>공지사항</title>
+    <!-- 공통  -->
+    <link rel="stylesheet" href="/common/header/css/header.css">
+    <link rel="stylesheet" href="/common/footer/css/footer.css">
+    <script type="module" src="/common/js/header.js" defer></script>
+    <script src="/common/js/include.js" defer></script>
+    <!--  -->
+</head>
+
+<body>
+    <div data-include-path="/common/header/header.html" data-include-replace></div>
+    <main class="notice-page">
+        <section class="banner-section">
+            <div class="banner-wrapper">
+                <div class="banner-title-box">
+                    <p class="banner-title">공지사항</p>
+                </div>
+                <div class="banner-img-box">
+                    <img src="./assets/banner-img.png" srcset="
+                            ./assets/banner-img@2x.png 2x,
+                            ./assets/banner-img@3x.png 3x
+                          " alt="notice-banner-img">
+                </div>
+            </div>
+        </section>
+        <section class="notice-lists-section">
+            <div class="notice-lists-wrapper">
+                <form onsubmit="" class="notice-search-form">
+                    <div class="notice-input-box">
+                        <input type="text" name="" onchange="" class="search-input" placeholder="검색하기">
+                        <img src="./assets/glass.svg" class="search-img" alt="">
+                    </div>
+                </form>
+
+                <div class="lists-box">
+                    <div class="list-box top-box">
+                        <div class="list-left-box">
+                            <p class="list-left-text">번호</p>
+                            <p class="list-left-text">제목</p>
+                        </div>
+                        <div class="list-right-box">
+                            <p class="list-right-text">첨부파일</p>
+                            <p class="list-view">조회수</p>
+                            <p class="list-right-text">일자</p>
+                        </div>
+                    </div>
+                    <a href="/noticeDetail/" class="list-box">
+                        <div class="list-left-box">
+                            <p class="list-number">10</p>
+                            <p class="list-title">2025년 추석연휴 고객센터 휴무
+                                안내123123123sdfsdfjsdljkfjlksdjflksjkldfjksdfjlkaskldsjakdjkasdjlkasdjlkalkjsdjkladsjkl
+                            </p>
+                        </div>
+                        <div class="list-right-box">
+                            <p class="list-file"><img src="./assets/file.svg" alt="file"></p>
+                            <p class="list-view">5,000</p>
+                            <p class="list-date">2025-01-01</p>
+                        </div>
+                    </a>
+                    <a href="/noticeDetail/" class="list-box">
+                        <div class="list-left-box">
+                            <p class="list-number">1000</p>
+                            <p class="list-title">2025년 추석연휴 고객센터 휴무 안내</p>
+                        </div>
+                        <div class="list-right-box">
+                            <p class="list-file"></p>
+                            <p class="list-view">10,000</p>
+                            <p class="list-date">2025-01-01</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="pagination-section">
+            <div class="pagination-btn-wrapper">
+                <button class="arrow-btn">
+                    <img src="./assets/left-arrow.svg" alt="left-arrow">
+                </button>
+                <button class="number-btn">
+                    <p class="number">1</p>
+                </button>
+                <button class="number-btn">
+                    <p class="number">2</p>
+                </button>
+                <button class="number-btn">
+                    <p class="number">3</p>
+                </button>
+                <button class="number-btn">
+                    <p class="number">4</p>
+                </button>
+                <button class="number-btn">
+                    <p class="number">5</p>
+                </button>
+                <button class="arrow-btn">
+                    <img src="./assets/right-arrow.svg" alt="right-arrow">
+                </button>
+            </div>
+        </section>
+        <div data-include-path="/common/footer/footer.html" data-include-replace></div>
+    </main>
+</body>
+
+</html>

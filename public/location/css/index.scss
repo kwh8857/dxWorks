@@ -1,0 +1,406 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pretendard",
+        sans-serif;
+    overflow: hidden;
+
+    h2,
+    ul,
+    p {
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        outline: none;
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+}
+
+.cont {
+    display: none;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    padding-top: 80px;
+    box-sizing: border-box;
+    background-color: black;
+    overflow-x: hidden;
+
+    /* 스크롤바 스타일 설정 */
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #333;
+        /* 스크롤바 색상 */
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: #000;
+        /* 트랙 배경색 */
+    }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input:focus {
+    outline: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+button,
+a,
+label {
+    padding: unset;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    border: none;
+    cursor: pointer;
+    background-color: unset;
+    color: black;
+    text-decoration: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        opacity: 0.7;
+        transition: 0.2s ease-in-out;
+    }
+}
+
+
+.location-page {
+
+
+
+    .banner-section {
+        height: 537px;
+        background-image: image-set(url(../assets/bannner/banner-img.png) 1x,
+                url(../assets/bannner/banner-img@2x.png) 2x,
+                url(../assets/bannner/banner-img@3x.png) 3x);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .map-section {
+        width: 1200px;
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        position: relative;
+        top: -250px;
+
+        .map-title-box {
+            margin-top: 83px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+
+            .map-color-text {
+                color: #0095FF;
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            .map-text {
+                font-size: 34px;
+                color: white;
+                line-height: 140%;
+                font-weight: 700;
+            }
+        }
+
+        .map-wrapper {
+            display: flex;
+            flex-direction: column;
+            row-gap: 112px;
+            margin-top: 83px;
+
+            .map-box {
+                display: flex;
+                column-gap: 40px;
+
+                .map-info-box {
+                    display: flex;
+                    flex-direction: column;
+                    width: 572px;
+
+                    .info-title {
+                        font-size: 26px;
+                        padding-bottom: 14px;
+                        border-bottom: 1px solid white;
+                        box-sizing: border-box;
+                        color: white;
+                    }
+
+                    .info-box {
+                        height: 100%;
+                        padding-top: 22px;
+                        box-sizing: border-box;
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 8px;
+                        color: white;
+
+                        .custom-box {
+                            display: flex;
+                            column-gap: 15px;
+
+                            .custom-title {
+                                width: 60px;
+                                font-weight: 700;
+                                font-size: 16px;
+                                white-space: nowrap;
+                            }
+
+                            .custom-content {
+                                font-weight: 400;
+                            }
+
+                            .custom-bus-box {
+                                display: flex;
+                                flex-direction: column;
+                                row-gap: 8px;
+
+                                .bus-number {
+                                    display: flex;
+                                    column-gap: 10px;
+
+                                    .number-box {
+                                        display: flex;
+                                        align-items: center;
+                                        column-gap: 5px;
+
+                                        .box {
+                                            width: 36px;
+                                            height: 24px;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            font-weight: 700;
+                                        }
+
+                                        .blue {
+                                            background-color: #0095FF;
+                                        }
+
+                                        .green {
+                                            background-color: #00CD0E;
+                                        }
+
+                                        .red {
+                                            background-color: #C10000;
+                                            ;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .address-copy-box {
+                            width: 110px;
+                            height: 40px;
+                            display: flex;
+                            margin-top: auto;
+                            align-items: center;
+                            column-gap: 11px;
+                            padding: 0px 15px;
+                            box-sizing: border-box;
+                            color: white;
+                            font-size: 15px;
+                            font-weight: 700;
+                            border: 1px solid white;
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+
+
+@media screen and (max-width:1440px) {
+
+
+    .location-page {
+
+
+        #daumRoughmapContainer1747978801926 {
+            width: 100% !important;
+            max-width: 100%;
+            height: auto !important;
+        }
+
+        #daumRoughmapContainer1747978801926 .root_daum_roughmap_landing {
+            width: 100% !important;
+        }
+
+        #daumRoughmapContainer1747978437077 {
+            width: 100% !important;
+            max-width: 100%;
+            height: auto !important;
+        }
+
+        #daumRoughmapContainer1747978437077 .root_daum_roughmap_landing {
+            width: 100% !important;
+        }
+
+        #daumRoughmapContainer1747978845759 {
+            width: 100% !important;
+            max-width: 100%;
+            height: auto !important;
+        }
+
+        #daumRoughmapContainer1747978845759 .root_daum_roughmap_landing {
+            width: 100% !important;
+        }
+
+        .map-section {
+            width: 720px;
+
+            .map-title-box {
+
+                .map-text {
+                    br {
+                        display: none;
+                    }
+                }
+            }
+
+            .map-wrapper {
+                .map-box {
+                    flex-direction: column;
+
+                    .map-info-box {
+                        width: 100%;
+                        margin-top: 16px;
+
+                        .info-box {
+                            .address-copy-box {
+                                margin-top: 31px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width:767px) {
+
+    .location-page {
+        .banner-section {
+            height: 300px;
+        }
+
+
+
+
+        .map-section {
+            width: auto;
+            margin-top: 150px;
+            padding: 0px 16px;
+            box-sizing: border-box;
+
+            .map-wrapper {
+                row-gap: 100px;
+
+                .map-box {
+                    .map-info-box {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .map-title-box {
+                width: 100%;
+                margin-top: 0px;
+                position: absolute;
+                top: -70px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                row-gap: 16px;
+
+                .map-text {
+                    font-size: 26px;
+
+                    br {
+                        display: none;
+                    }
+                }
+
+            }
+
+            .map-wrapper {
+                .map-info-box {
+                    .info-box {
+                        .custom-box {
+
+
+                            .custom-content {
+                                font-size: 16px;
+                                flex: 1;
+                            }
+
+                            .custom-bus-box {
+                                .bus-number {
+                                    flex-direction: column;
+                                    row-gap: 5px;
+                                }
+                            }
+                        }
+
+                        .address-copy-box {
+                            margin-top: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+@media screen and (min-width: 768px) {
+
+
+
+
+    .mb-menu,
+    .mb-br {
+        display: none !important;
+    }
+}

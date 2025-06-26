@@ -1,0 +1,397 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pretendard",
+        sans-serif;
+    overflow: hidden;
+
+    h2,
+    ul,
+    p {
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        outline: none;
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    padding-top: 80px;
+    box-sizing: border-box;
+    background-color: black;
+    overflow-x: hidden;
+
+    /* 스크롤바 스타일 설정 */
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #333;
+        /* 스크롤바 색상 */
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: #000;
+        /* 트랙 배경색 */
+    }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+
+input:focus {
+    outline: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+button,
+a,
+label {
+    padding: unset;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    border: none;
+    cursor: pointer;
+    background-color: unset;
+    color: black;
+    text-decoration: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        opacity: 0.7;
+        transition: 0.2s ease-in-out;
+    }
+}
+
+
+.dx-history-page {
+
+
+    .banner-section {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .dx-history-section {
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: -150px;
+        justify-content: space-between;
+        column-gap: 84px;
+
+        .left-box {
+            width: 401px;
+            display: flex;
+            margin-bottom: auto;
+            flex-direction: column;
+            row-gap: 8px;
+
+            .top-text {
+                font-size: 18px;
+                font-weight: 700;
+                color: #0095FF;
+            }
+
+            .middle-text,
+            .bottom-text {
+                white-space: pre-line;
+                color: white;
+            }
+
+            .middle-text {
+                line-height: 130%;
+                font-size: 34px;
+                font-weight: 700;
+            }
+
+            .bottom-text {
+                font-weight: 400;
+                line-height: 180%;
+            }
+        }
+
+        .right-box {
+            width: 715px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: auto;
+
+            .history-card {
+                display: flex;
+                flex-direction: column;
+
+                .history-menu {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    box-sizing: border-box;
+                    padding-top: 24px;
+                    padding-bottom: 8px;
+                    border-bottom: 1px solid #949494;
+
+                    .history-title {
+                        display: flex;
+                        column-gap: 16px;
+                        font-size: 20px;
+                        font-weight: 700;
+
+                        .year {
+                            color: #0095FF;
+                        }
+
+                        .text {
+                            color: white;
+                        }
+                    }
+
+                    .arrow {
+                        transition: all .2s ease-in-out;
+                        cursor: pointer;
+                    }
+
+                    .active-arrow {
+                        transform: rotate(180deg);
+                    }
+                }
+
+                .history-menu.hide-border {
+                    border-bottom: none;
+                }
+
+                .history-info-wrapper {
+                    width: 100%;
+                    box-sizing: border-box;
+                    color: white;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 26px;
+                    max-height: 0;
+                    overflow: hidden;
+                    padding: 0 28px;
+                    transition: max-height 0.4s ease, padding 0.4s ease;
+
+                    .history-info-box {
+                        display: flex;
+                        column-gap: 18px;
+
+                        .info-date {
+                            font-weight: 700;
+                            line-height: 190%;
+                        }
+
+                        .info-text {
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 200%;
+                            white-space: pre-line;
+                            text-align: left;
+                        }
+                    }
+                }
+
+                .show {
+                    max-height: 800px;
+                    padding: 28px;
+                    background-color: #1A1B23;
+                    border-top: 1px solid #0095FF;
+                }
+            }
+
+            .history-card.show {}
+        }
+
+    }
+
+    .section3 {
+        width: 100%;
+        height: 507px;
+        background-image: url("../assets/bg-img.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        display: flex;
+        align-items: center;
+
+        .text-box {
+            width: 1126px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            row-gap: 16px;
+
+            .top-text {
+                color: #0095FF;
+                font-size: 24px;
+                font-weight: 700;
+            }
+
+            .middle-text {
+                font-size: 34px;
+                font-weight: 700;
+                white-space: pre-line;
+                line-height: 140%;
+                color: white;
+
+                br {
+                    display: none;
+                }
+
+                span {
+                    color: #0095FF;
+                }
+            }
+
+            .careers {
+                width: 181px;
+                height: 52px;
+                color: white;
+                border: 1px solid white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:1440px) {
+
+
+    .dx-history-page {
+
+
+        .section3 {
+            .text-box {
+                width: auto;
+                align-items: center;
+
+                .middle-text {
+                    text-align: center;
+                }
+            }
+        }
+
+        .dx-history-section {
+            width: 720px;
+            row-gap: 64px;
+            flex-direction: column;
+            align-items: unset;
+        }
+    }
+
+
+}
+
+@media screen and (max-width:768px) {
+
+
+    .dx-history-page {
+
+
+
+
+
+        .desktop-menu {
+            display: none !important;
+        }
+
+        .dx-history-section {
+            width: 320px;
+            row-gap: 64px;
+            flex-direction: column;
+            align-items: unset;
+            top: 0;
+
+            .right-box {
+                width: 320px;
+
+                .history-card {
+                    .history-info-wrapper {
+                        .history-info-box {
+                            .info-text {
+                                white-space: unset;
+                                width: 287px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .section3 {
+            .text-box {
+                width: auto;
+                align-items: center;
+                row-gap: 24px;
+
+                .top-text {
+                    font-size: 18px;
+                }
+
+                .middle-text {
+                    text-align: center;
+                    font-size: 26px;
+                    white-space: unset;
+
+                    br {
+                        display: block;
+                    }
+                }
+
+                .careers {
+                    width: 181px;
+                    height: 51px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+
+
+    .mb-menu,
+    .mb-br {
+        display: none !important;
+    }
+}

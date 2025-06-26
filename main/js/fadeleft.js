@@ -1,31 +1,29 @@
-const misstionArray = [
+const mainLeftArray = [
   {
-    el: document.getElementById("left-card1"),
+    el: document.getElementById("section1-title-img"),
+    delay: 0.1,
+    trans: 5,
+  },
+  {
+    el: document.getElementById("section1-about-company"),
     delay: 0.1,
   },
   {
-    el: document.getElementById("left-card2"),
-    delay: 0.1,
-  },
-  {
-    el: document.getElementById("left-card3"),
-    delay: 0.1,
-  },
-  {
-    el: document.getElementById("section4-top-text"),
+    el: document.getElementById("section6-top-text"),
     delay: 0.1,
     trans: 2,
   },
   {
-    el: document.getElementById("section4-middle-text"),
+    el: document.getElementById("section6-middle-text"),
     delay: 0.1,
     trans: 2,
   },
   {
-    el: document.getElementById("section4-careers"),
+    el: document.getElementById("section6-careers"),
     delay: 0.1,
   },
 ];
+
 const handleScroll = ([entry], current, delay, intersectionObserver) => {
   if (entry.isIntersecting && current) {
     Object.assign(current.style, {
@@ -55,6 +53,6 @@ const observer = (current, delay, trans) => {
   intersectionObserver.observe(current);
 };
 
-misstionArray.forEach(({ el, delay }) => {
-  observer(el, delay);
+mainLeftArray.forEach(({ el, delay, trans }) => {
+  observer(el, delay, trans);
 });

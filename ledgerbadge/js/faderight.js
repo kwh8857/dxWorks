@@ -1,31 +1,14 @@
-const misstionArray = [
+const ledgerBadgeRightArray = [
   {
-    el: document.getElementById("left-card1"),
+    el: document.getElementById("badge-ledger-badge-top-right"),
     delay: 0.1,
   },
   {
-    el: document.getElementById("left-card2"),
-    delay: 0.1,
-  },
-  {
-    el: document.getElementById("left-card3"),
-    delay: 0.1,
-  },
-  {
-    el: document.getElementById("section4-top-text"),
-    delay: 0.1,
-    trans: 2,
-  },
-  {
-    el: document.getElementById("section4-middle-text"),
-    delay: 0.1,
-    trans: 2,
-  },
-  {
-    el: document.getElementById("section4-careers"),
-    delay: 0.1,
+    el: document.getElementById("badge-type-list-item-hr"),
+    delay: 0.3,
   },
 ];
+
 const handleScroll = ([entry], current, delay, intersectionObserver) => {
   if (entry.isIntersecting && current) {
     Object.assign(current.style, {
@@ -40,10 +23,10 @@ const handleScroll = ([entry], current, delay, intersectionObserver) => {
   }
 };
 
-const observer = (current, delay, trans) => {
+const observer = (current, delay) => {
   Object.assign(current.style, {
     opacity: "0",
-    transform: `translate3d(-${trans ? trans : 10}%, 0%, 0)`,
+    transform: "translate3d(10%, 0, 0)",
   });
 
   const intersectionObserver = new IntersectionObserver(
@@ -55,6 +38,6 @@ const observer = (current, delay, trans) => {
   intersectionObserver.observe(current);
 };
 
-misstionArray.forEach(({ el, delay }) => {
+ledgerBadgeRightArray.forEach(({ el, delay }) => {
   observer(el, delay);
 });

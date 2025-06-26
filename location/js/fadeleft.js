@@ -1,30 +1,21 @@
-const misstionArray = [
+const locationLeftArray = [
   {
-    el: document.getElementById("left-card1"),
+    el: document.getElementById("location-map-color-text"),
     delay: 0.1,
+    trans: 3,
   },
   {
-    el: document.getElementById("left-card2"),
+    el: document.getElementById("location-map-text"),
     delay: 0.1,
+    trans: 3,
   },
-  {
-    el: document.getElementById("left-card3"),
-    delay: 0.1,
-  },
-  {
-    el: document.getElementById("section4-top-text"),
-    delay: 0.1,
-    trans: 2,
-  },
-  {
-    el: document.getElementById("section4-middle-text"),
-    delay: 0.1,
-    trans: 2,
-  },
-  {
-    el: document.getElementById("section4-careers"),
-    delay: 0.1,
-  },
+  ...Array.from(
+    document.querySelectorAll(".root_daum_roughmap.root_daum_roughmap_landing")
+  ).map((el) => ({
+    el,
+    delay: 0.2,
+    trans: 6,
+  })),
 ];
 const handleScroll = ([entry], current, delay, intersectionObserver) => {
   if (entry.isIntersecting && current) {
@@ -55,6 +46,6 @@ const observer = (current, delay, trans) => {
   intersectionObserver.observe(current);
 };
 
-misstionArray.forEach(({ el, delay }) => {
-  observer(el, delay);
+locationLeftArray.forEach(({ el, delay, trans }) => {
+  observer(el, delay, trans);
 });

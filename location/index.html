@@ -16,6 +16,8 @@
     <!--  -->
     <script src="./js/index.js" defer></script>
     <script src="./js/map.js" defer></script>
+    <script type="module" src="./js/faderight.js" defer></script>
+    <script type="module" src="./js/fadeleft.js" defer></script>
 </head>
 
 <body>
@@ -27,18 +29,19 @@
         </section>
         <section class="map-section">
             <div class="map-title-box">
-                <p class="map-color-text">오시는 길</p>
-                <p class="map-text">
+                <p class="map-color-text" id="location-map-color-text">오시는 길</p>
+                <p class="map-text" id="location-map-text">
                     디엑스웍스<br />
                     오시는 길
                 </p>
             </div>
             <div class="map-wrapper">
                 <div class="map-box map">
-                    <div id="daumRoughmapContainer1747978437077" class="root_daum_roughmap root_daum_roughmap_landing ">
+                    <div id="daumRoughmapContainer1747978437077" class="root_daum_roughmap root_daum_roughmap_landing"
+                        id="location-map-box1">
 
                     </div>
-                    <div class="map-info-box">
+                    <div class="map-info-box" id="location-map-info-box1">
                         <p class="info-title">대구 본사</p>
                         <div class="info-box">
                             <div class="custom-box">
@@ -77,7 +80,7 @@
                     <div id="daumRoughmapContainer1747978801926" class="root_daum_roughmap root_daum_roughmap_landing">
 
                     </div>
-                    <div class="map-info-box">
+                    <div class="map-info-box" id="location-map-info-box2">
                         <p class="info-title">대구 플랫폼랩(기업부설연구소)</p>
                         <div class="info-box">
                             <div class="custom-box">
@@ -118,7 +121,7 @@
                     <div id="daumRoughmapContainer1747978845759" class="root_daum_roughmap root_daum_roughmap_landing">
                     </div>
 
-                    <div class="map-info-box">
+                    <div class="map-info-box" id="location-map-info-box3">
                         <p class="info-title">서울 서비스랩</p>
                         <div class="info-box">
                             <div class="custom-box">

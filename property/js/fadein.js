@@ -1,31 +1,10 @@
-const misstionArray = [
+const propertyArray = [
   {
-    el: document.getElementById("left-card1"),
-    delay: 0.1,
-  },
-  {
-    el: document.getElementById("left-card2"),
-    delay: 0.1,
-  },
-  {
-    el: document.getElementById("left-card3"),
-    delay: 0.1,
-  },
-  {
-    el: document.getElementById("section4-top-text"),
-    delay: 0.1,
-    trans: 2,
-  },
-  {
-    el: document.getElementById("section4-middle-text"),
-    delay: 0.1,
-    trans: 2,
-  },
-  {
-    el: document.getElementById("section4-careers"),
+    el: document.getElementById("property-search-form"),
     delay: 0.1,
   },
 ];
+
 const handleScroll = ([entry], current, delay, intersectionObserver) => {
   if (entry.isIntersecting && current) {
     Object.assign(current.style, {
@@ -43,7 +22,7 @@ const handleScroll = ([entry], current, delay, intersectionObserver) => {
 const observer = (current, delay, trans) => {
   Object.assign(current.style, {
     opacity: "0",
-    transform: `translate3d(-${trans ? trans : 10}%, 0%, 0)`,
+    transform: `translate3d(0%, ${trans ? trans : 30}%, 0)`,
   });
 
   const intersectionObserver = new IntersectionObserver(
@@ -55,6 +34,6 @@ const observer = (current, delay, trans) => {
   intersectionObserver.observe(current);
 };
 
-misstionArray.forEach(({ el, delay }) => {
-  observer(el, delay);
+propertyArray.forEach(({ el, delay, trans }) => {
+  observer(el, delay, trans);
 });

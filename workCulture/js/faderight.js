@@ -1,31 +1,38 @@
-const misstionArray = [
+const workRightArray = [
   {
-    el: document.getElementById("left-card1"),
+    el: document.getElementById("work-section2-info-title1"),
     delay: 0.1,
   },
   {
-    el: document.getElementById("left-card2"),
+    el: document.getElementById("work-section2-info-title2"),
     delay: 0.1,
   },
   {
-    el: document.getElementById("left-card3"),
+    el: document.getElementById("work-section2-info-title3"),
     delay: 0.1,
   },
   {
-    el: document.getElementById("section4-top-text"),
+    el: document.getElementById("work-section2-info-title4"),
     delay: 0.1,
-    trans: 2,
   },
   {
-    el: document.getElementById("section4-middle-text"),
+    el: document.getElementById("work-section2-info-lst1"),
     delay: 0.1,
-    trans: 2,
   },
   {
-    el: document.getElementById("section4-careers"),
+    el: document.getElementById("work-section2-info-lst2"),
+    delay: 0.1,
+  },
+  {
+    el: document.getElementById("work-section2-info-lst3"),
+    delay: 0.1,
+  },
+  {
+    el: document.getElementById("work-section2-info-lst4"),
     delay: 0.1,
   },
 ];
+
 const handleScroll = ([entry], current, delay, intersectionObserver) => {
   if (entry.isIntersecting && current) {
     Object.assign(current.style, {
@@ -40,10 +47,10 @@ const handleScroll = ([entry], current, delay, intersectionObserver) => {
   }
 };
 
-const observer = (current, delay, trans) => {
+const observer = (current, delay) => {
   Object.assign(current.style, {
     opacity: "0",
-    transform: `translate3d(-${trans ? trans : 10}%, 0%, 0)`,
+    transform: "translate3d(10%, 0, 0)",
   });
 
   const intersectionObserver = new IntersectionObserver(
@@ -55,6 +62,6 @@ const observer = (current, delay, trans) => {
   intersectionObserver.observe(current);
 };
 
-misstionArray.forEach(({ el, delay }) => {
+workRightArray.forEach(({ el, delay }) => {
   observer(el, delay);
 });

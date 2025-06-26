@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="/common/footer/css/footer.css">
   <script type="module" src="/common/js/header.js" defer></script>
   <script src="/common/js/include.js" defer></script>
+  <script type="module" src="./js/fadein.js" defer></script>
+  <script type="module" src="./js/faderight.js" defer></script>
   <!--  -->
   <link rel="stylesheet" href="css/index.css">
   <script src="js/faq.js" defer></script>
@@ -25,18 +27,18 @@
         <div class="gradient-line"></div>
         <div class="wallet-ledger-wallet-top-content">
           <div class="wallet-ledger-wallet-top-left">
-            <div class="wallet-ledger-wallet-tag">
+            <div class="wallet-ledger-wallet-tag" id="wallet-ledger-wallet-tag">
               디지털 신분증부터 자격까지, 지갑 하나에 담다
             </div>
-            <div class="wallet-ledger-wallet-title">
+            <div class="wallet-ledger-wallet-title" id="wallet-ledger-wallet-title">
               <span class="title-color"> DX Ledger Wallet</span><br />
               디엑스레저 월렛
             </div>
-            <div class="wallet-ledger-wallet-desc">
+            <div class="wallet-ledger-wallet-desc" id="wallet-ledger-wallet-desc">
               여러 기관에서 발급받은 디지털 ID, 자격증, 배지를 <br />한 곳에 보관하고, 필요할 때만 안전하게 인증할 수 있는<br />개인 중심 디지털 인증 지갑입니다.
             </div>
           </div>
-          <div class="wallet-ledger-wallet-top-right">
+          <div class="wallet-ledger-wallet-top-right" id="wallet-ledger-wallet-top-right">
             <img src="./assets/wallet/dx-ledger.png"
               srcset="./assets/wallet/dx-ledger@2x.png 2x, ./assets/wallet/dx-ledger@3x.png 3x" alt="dx-ledger"
               class="wallet-ledger-wallet-top-right-img">
@@ -45,12 +47,14 @@
       </div>
       <div class="wallet-ledger-wallet-bottom">
         <div class="wallet-ledger-wallet-bottom-content">
-          <div class="wallet-ledger-wallet-bottom-tag">
+          <div class="wallet-ledger-wallet-bottom-tag" id="wallet-ledger-wallet-bottom-tag">
             DX Ledger Wallet
           </div>
-          <div class="wallet-ledger-wallet-bottom-title">디지털 신원 기반 통합 인증 에코<br class="mb-br" />시스템
+          <div class="wallet-ledger-wallet-bottom-title" id="wallet-ledger-wallet-bottom-title">디지털 신원 기반 통합 인증 에코<br
+              class="mb-br" />시스템
           </div>
-          <div class="wallet-ledger-wallet-bottom-desc">단일 기관이 아닌 여러 출처의 디지털 ID와<br class="mb-br" /> 자격 정보를 통합
+          <div class="wallet-ledger-wallet-bottom-desc" id="wallet-ledger-wallet-bottom-desc">단일 기관이 아닌 여러 출처의 디지털
+            ID와<br class="mb-br" /> 자격 정보를 통합
             관리하고,<br />사용자가 직접 선택하여 인증할 수
             있는 <br class="mb-br" />
             자율형 디지털 인증 플랫폼입니다. <br />신원 인증, 출입, 전자서명, 증명 제출까지디지털 <br class="mb-br" />신뢰 사회를 위한 기반이 되는 지갑 서비스를 제공합니다.
@@ -58,16 +62,16 @@
         </div>
         <img src="./assets/wallet/ledger-wallet.png"
           srcset="./assets/wallet/ledger-wallet@2x.png 2x, ./assets/wallet/ledger-wallet@3x.png 3x" alt="ledger-wallet"
-          class="wallet-ledger-wallet-bottom-img">
+          class="wallet-ledger-wallet-bottom-img" id="wallet-ledger-wallet-bottom-img">
       </div>
     </section>
 
     <section class="wallet-product-section">
       <div class="wallet-product-container">
-        <div class="wallet-product-section-tag">제품 소개</div>
-        <div class="wallet-product-section-title">손쉬운 사용, 안전한 보관</div>
+        <div class="wallet-product-section-tag" id="wallet-product-section-tag">제품 소개</div>
+        <div class="wallet-product-section-title" id="wallet-product-section-title">손쉬운 사용, 안전한 보관</div>
         <div class="wallet-product-feature-list">
-          <div class="wallet-product-feature-item">
+          <div class="wallet-product-feature-item" id="wallet-product-feature-item-1">
             <img class="wallet-product-feature-item-icon" src="./assets/wallet/product-icon.svg" alt="">
             <div class="wallet-product-feature-item-content">
               <div class="wallet-product-feature-item-title">디지털 ID 저장 및 인증 서비스</div>
@@ -77,7 +81,7 @@
               </div>
             </div>
           </div>
-          <div class="wallet-product-feature-item">
+          <div class="wallet-product-feature-item" id="wallet-product-feature-item-2">
             <img class="wallet-product-feature-item-icon" src="./assets/wallet/product-icon2.svg" alt="">
             <div class="wallet-product-feature-item-content">
               <div class="wallet-product-feature-item-title">지갑 소유자 권한 관리 서비스</div>
@@ -87,7 +91,7 @@
               </div>
             </div>
           </div>
-          <div class="wallet-product-feature-item">
+          <div class="wallet-product-feature-item" id="wallet-product-feature-item-3">
             <img class="wallet-product-feature-item-icon" src="./assets/wallet/product-icon3.svg" alt="">
             <div class="wallet-product-feature-item-content">
               <div class="wallet-product-feature-item-title">백업 및 복구, 멀티 디바이스 연동 서비스</div>
@@ -100,7 +104,7 @@
         </div>
 
         <div class="wallet-product-info-list">
-          <div class="wallet-product-info-item">
+          <div class="wallet-product-info-item" id="wallet-product-info-item-1">
             <div class="wallet-product-info-item-title">사업분야</div>
             <div class="wallet-product-info-item-desc">디지털 신분증, 자격증, 배지 등 <br />
               다양한 신원정보를 통합 저장하고 <br />
@@ -115,7 +119,7 @@
               class="wallet-product-info-item-img-mb">
 
           </div>
-          <div class="wallet-product-info-item">
+          <div class="wallet-product-info-item" id="wallet-product-info-item-2">
             <div class="wallet-product-info-item-title">사용자</div>
             <div class="wallet-product-info-item-desc">개인 사용자 중심의 인증 환경 제공모바일 앱에서 <br />
               자격정보를 직접 관리하고 <br />
@@ -128,7 +132,7 @@
               srcset="./assets/wallet/product-info-2-mb@2x.png 2x, ./assets/wallet/product-info-2-mb@3x.png 3x"
               class="wallet-product-info-item-img-mb">
           </div>
-          <div class="wallet-product-info-item">
+          <div class="wallet-product-info-item" id="wallet-product-info-item-3">
             <div class="wallet-product-info-item-title">기술 표준 연계</div>
             <div class="wallet-product-info-item-desc">W3C DID / VC 및 다양한 글로벌 표준 <br />
               기반서드파티 시스템과의 연동을 고려한 구조 <br />
@@ -140,7 +144,7 @@
               srcset="./assets/wallet/product-info-3-mb@2x.png 2x, ./assets/wallet/product-info-3-mb@3x.png 3x"
               class="wallet-product-info-item-img-mb">
           </div>
-          <div class="wallet-product-info-item">
+          <div class="wallet-product-info-item" id="wallet-product-info-item-4">
             <div class="wallet-product-info-item-title">확장성과 활용성</div>
             <div class="wallet-product-info-item-desc">다기관·다용도 인증 처리 가능교육, 채용, <br />
               계약, 출입, 재직 증명 등 <br />
@@ -159,19 +163,19 @@
       <div class="wallet-product-gradient"></div>
     </section>
     <section class="wallet-slide-section">
-      <div class="wallet-slide-tag">
+      <div class="wallet-slide-tag" id="wallet-slide-tag">
         활용 분야
       </div>
-      <div class="wallet-slide-title">
+      <div class="wallet-slide-title" id="wallet-slide-title">
         다양한 곳에서 <br />
         디엑스레저 월렛을 <br class="mb-br" /> 활용해보세요
       </div>
-      <div class="wallet-slide-desc">
+      <div class="wallet-slide-desc" id="wallet-slide-desc">
         신원 인증, 자격 증명, 출입 통제 등다양한 상황에서 <br />
         디지털 월렛이 안전하고 효율적인 인증을 지원합니다.
       </div>
       <div class="wallet-slide-list">
-        <div class="wallet-slide-list-item">
+        <div class="wallet-slide-list-item" id="wallet-slide-list-item-1">
           <div class="wallet-slide-list-item-title">출입 및 신분 인증</div>
           <div class="wallet-slide-list-item-desc">직장, 캠퍼스, 공공시설 등에서QR, NFC, <br />
             생체인증 기반 출입 및 본인 확인 서비스</div>
@@ -179,14 +183,14 @@
             srcset="./assets/wallet/wallet-slide-1@2x.png 2x, ./assets/wallet/wallet-slide-1@3x.png 3x"
             class="wallet-slide-list-item-img" />
         </div>
-        <div class="wallet-slide-list-item">
+        <div class="wallet-slide-list-item" id="wallet-slide-list-item-2">
           <div class="wallet-slide-list-item-title">자격 및 신원 증명</div>
           <div class="wallet-slide-list-item-desc">재직 증명, 학생 증명, 수료 이력등<br /> 전자문서 기반 증명서 제출 및 진위 확인</div>
           <img src="./assets/wallet/wallet-slide-2.png" alt="wallet-slide-2"
             srcset="./assets/wallet/wallet-slide-2@2x.png 2x, ./assets/wallet/wallet-slide-2@3x.png 3x"
             class="wallet-slide-list-item-img" />
         </div>
-        <div class="wallet-slide-list-item">
+        <div class="wallet-slide-list-item" id="wallet-slide-list-item-3">
           <div class="wallet-slide-list-item-title">방문자 및 외부인 관리</div>
           <div class="wallet-slide-list-item-desc">기관 방문객의 사전 등록, 입장 권한 부여 등 <br />
             디지털 월렛을 통한 비대면 인증 처리</div>
@@ -194,7 +198,7 @@
             srcset="./assets/wallet/wallet-slide-3@2x.png 2x, ./assets/wallet/wallet-slide-3@3x.png 3x"
             class="wallet-slide-list-item-img" />
         </div>
-        <div class="wallet-slide-list-item">
+        <div class="wallet-slide-list-item" id="wallet-slide-list-item-4">
           <div class="wallet-slide-list-item-title">시스템 연동 인증</div>
           <div class="wallet-slide-list-item-desc">ERP, LMS, 민원 포털 등다양한 외부 <br /> 시스템 로그인/인증 수단으로 활용 가능</div>
           <img src="./assets/wallet/wallet-slide-4.png" alt="wallet-slide-4"
@@ -205,16 +209,16 @@
     </section>
     <section class="wallet-nav-contract-section">
       <div class="wallet-nav-contract-content">
-        <div class="wallet-nav-contract-title">지금 상담을 통해 <br />
+        <div class="wallet-nav-contract-title" id="wallet-nav-contract-title">지금 상담을 통해 <br />
           디엑스레저 월렛 도입을 시작해보세요</div>
-        <a href="/contact" class="wallet-nav-contract-btn">도입 문의</a>
+        <a href="/contact" class="wallet-nav-contract-btn" id="wallet-nav-contract-btn">도입 문의</a>
       </div>
     </section>
     <section class="wallet-faq-section">
       <div class="wallet-faq-content">
-        <div class="wallet-faq-tag">FAQ</div>
-        <div class="wallet-faq-title">자주 묻는 질문</div>
-        <div class="wallet-faq-search">
+        <div class="wallet-faq-tag" id="wallet-faq-tag">FAQ</div>
+        <div class="wallet-faq-title" id="wallet-faq-title">자주 묻는 질문</div>
+        <div class="wallet-faq-search" id="wallet-faq-search">
           <input type="text" placeholder="검색하기">
           <img src="./assets/wallet/search.svg" alt="검색" class="wallet-faq-search-icon">
         </div>

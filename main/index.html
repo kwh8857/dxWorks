@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="/common/footer/css/footer.css" defer>
     <script src="/common/js/include.js" defer></script>
     <script type="module" src="/common/js/header.js" defer></script>
-    <script src="./js/animation.js" defer></script>
-    <script src="./js/fadein.js" defer></script>
+    <script type="module" src="./js/animation.js" defer></script>
+    <script type="module" src="./js/fadein.js" defer></script>
+    <script type="module" src="./js/fadeleft.js" defer></script>
     <!--  -->
 </head>
 
@@ -21,7 +22,7 @@
     <main class="main-page">
         <section class="section1">
             <div class="section1-title-box">
-                <picture>
+                <picture id="section1-title-img">
                     <source media="(max-width: 767px)"
                         srcset="./assets/section1/section1-title-mb.png 1x, ./assets/section1/section1-title-mb@2x.png 2x, ./assets/section1/section1-title-mb@3x.png 3x ">
                     <source media="(max-width: 1440px)" srcset="./assets/section1/section1-title-tb.png 1x,
@@ -33,7 +34,7 @@
                     <img src="./assets/section1/section1-title.png"
                         srcset="./assets/section1/section1-title@2x.png 2x, ./assets/section1/section1-title@3x.png 3x">
                 </picture>
-                <div class="about-company">
+                <div class="about-company" id="section1-about-company">
                     About Company
                 </div>
             </div>
@@ -195,11 +196,11 @@
         </section>
         <section class="section6">
             <div class="text-box">
-                <p class="top-text">Co-Creation / Co-Valuation</p>
-                <div class="middle-text">디엑스웍스다운 일하는<br /> 방식으로
+                <p class="top-text" id="section6-top-text">Co-Creation / Co-Valuation</p>
+                <div class="middle-text" id="section6-middle-text">디엑스웍스다운 일하는<br /> 방식으로
                     <span>디지털 신뢰 사회를<br /> 혁신(DX)</span> 합니다.
                 </div>
-                <a class="careers" href="#">Careers</a>
+                <a class="careers" href="#" id="section6-careers">Careers</a>
             </div>
         </section>
         <div data-include-path="/common/footer/footer.html" data-include-replace></div>

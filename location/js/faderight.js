@@ -1,31 +1,21 @@
-const misstionArray = [
+const locationRightArray = [
   {
-    el: document.getElementById("left-card1"),
-    delay: 0.1,
-  },
-  {
-    el: document.getElementById("left-card2"),
-    delay: 0.1,
-  },
-  {
-    el: document.getElementById("left-card3"),
-    delay: 0.1,
-  },
-  {
-    el: document.getElementById("section4-top-text"),
+    el: document.getElementById("location-map-info-box1"),
     delay: 0.1,
     trans: 2,
   },
   {
-    el: document.getElementById("section4-middle-text"),
+    el: document.getElementById("location-map-info-box2"),
     delay: 0.1,
     trans: 2,
   },
   {
-    el: document.getElementById("section4-careers"),
+    el: document.getElementById("location-map-info-box3"),
     delay: 0.1,
+    trans: 2,
   },
 ];
+
 const handleScroll = ([entry], current, delay, intersectionObserver) => {
   if (entry.isIntersecting && current) {
     Object.assign(current.style, {
@@ -40,10 +30,10 @@ const handleScroll = ([entry], current, delay, intersectionObserver) => {
   }
 };
 
-const observer = (current, delay, trans) => {
+const observer = (current, delay) => {
   Object.assign(current.style, {
     opacity: "0",
-    transform: `translate3d(-${trans ? trans : 10}%, 0%, 0)`,
+    transform: "translate3d(10%, 0, 0)",
   });
 
   const intersectionObserver = new IntersectionObserver(
@@ -55,6 +45,6 @@ const observer = (current, delay, trans) => {
   intersectionObserver.observe(current);
 };
 
-misstionArray.forEach(({ el, delay }) => {
+locationRightArray.forEach(({ el, delay }) => {
   observer(el, delay);
 });

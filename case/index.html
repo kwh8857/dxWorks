@@ -15,6 +15,7 @@
     <!--  -->
     <script src="./js/index.js" defer></script>
     <script src="./js/modal.js" defer></script>
+    <script src="./js/fadein.js" defer></script>
 
 </head>
 
@@ -24,8 +25,8 @@
         <section class="section1">
             <div class="gradient-line"></div>
             <div class="section1-text-box">
-                <p class="title">디엑스웍스 성공사례</p>
-                <p class="sub-title">
+                <p class="title" id="case-title">디엑스웍스 성공사례</p>
+                <p class="sub-title" id="case-sub-title">
                     혁신된 디지털 플랫폼 서비스로 <br class="mb" />새로운 삶의 방식과 디지털 질서를 구현,<br />
                     더 안전하고 편리한 디지털 혁신 서비스를 제시하겠습니다.
                 </p>
@@ -44,11 +45,11 @@
         </section>
         <section id="rdb" class="rbd-section">
             <div class="rdb-title-wrapper">
-                <p class="title">R&BD</p>
-                <p class="sub-title">더 안전하고 편리한 디지털 혁신 서비스를 제시하겠습니다.</p>
+                <p class="title" id="rdb-title">R&BD</p>
+                <p class="sub-title" id="rdb-sub-title">더 안전하고 편리한 디지털 혁신 서비스를 제시하겠습니다.</p>
             </div>
             <div class="card-wrapper">
-                <div class="card">
+                <div class="card" id="rdb-card1">
                     <div class="text-box">
                         <p class="top-text">엔터프라이즈 블록체인 플랫폼</p>
                         <p class="center-text">DX Ledger | 디엑스렛저</p>
@@ -75,7 +76,7 @@
                         </picture>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" id="rdb-card2">
                     <div class="text-box">
                         <p class="top-text">블록체인 기반 교육·자격·훈련 디지털 증명</p>
                         <p class="center-text">디지털(오픈) 배지 플랫폼</p>
@@ -101,7 +102,7 @@
                         </picture>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" id="rdb-card3">
                     <div class="text-box">
                         <p class="top-text">블록체인/DID, 생체인증/신분증OCR 기반 디지털 증명</p>
                         <p class="center-text">신상조사 서비스/플랫폼</p>
@@ -127,7 +128,7 @@
                         </picture>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" id="rdb-card4">
                     <div class="text-box">
                         <p class="top-text">블록체인/DID/NFT 기반 수상/이력 등의 증명/진위여부 검증</p>
                         <p class="center-text">디지털 증명 플랫폼</p>
@@ -153,7 +154,7 @@
                         </picture>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" id="rdb-card5">
                     <div class="text-box">
                         <p class="top-text">Ideation(Idea+Action) 방법론 Idea 기획~구체화 협업지원</p>
                         <p class="center-text">아이데이션 협업시스템</p>
@@ -184,11 +185,11 @@
         <section id="blockchain" class="block-chain-section">
             <div class="block-chain-wrapper">
                 <div class="block-title-box">
-                    <p class="title">Blockchain+X Tech</p>
-                    <p class="sub-title">더 안전하고 편리한 디지털 혁신 서비스를 제시하겠습니다.</p>
+                    <p class="title" id="blockchain-title">Blockchain+X Tech</p>
+                    <p class="sub-title" id="blockchain-sub-title">더 안전하고 편리한 디지털 혁신 서비스를 제시하겠습니다.</p>
                 </div>
                 <div class="card-wrapper">
-                    <div class="card">
+                    <div class="card" id="blockchain-card1">
                         <div class="text-box">
                             <p class="top-text">블록체인 기반 교육·자격·훈련 디지털 증명</p>
                             <p class="center-text">디지털(오픈) 배지 플랫폼</p>
@@ -214,7 +215,7 @@
                             </picture>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" id="blockchain-card2">
                         <div class="text-box">
                             <p class="top-text">블록체인/DID, 생체인증/신분증OCR 기반 디지털 증명</p>
                             <p class="center-text">신상조사 서비스/플랫폼</p>
@@ -246,11 +247,11 @@
         <section id="ordertech" class="order-tech-section">
             <div class="ordertech-wrapper">
                 <div class="order-title-box">
-                    <p class="title">Other Tech</p>
-                    <p class="sub-title">더 안전하고 편리한 디지털 혁신 서비스를 제시하겠습니다.</p>
+                    <p class="title" id="ordertech-title">Other Tech</p>
+                    <p class="sub-title" id="ordertech-sub-title">더 안전하고 편리한 디지털 혁신 서비스를 제시하겠습니다.</p>
                 </div>
                 <div class="card-wrapper">
-                    <div class="card">
+                    <div class="card" id="ordertech-card1">
                         <div class="text-box">
                             <p class="top-text">블록체인 기반 교육·자격·훈련 디지털 증명</p>
                             <p class="center-text">디지털(오픈) 배지 플랫폼</p>
@@ -276,7 +277,7 @@
                             </picture>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" id="ordertech-card2">
                         <div class="text-box">
                             <p class="top-text">블록체인/DID, 생체인증/신분증OCR 기반 디지털 증명</p>
                             <p class="center-text">신상조사 서비스/플랫폼</p>

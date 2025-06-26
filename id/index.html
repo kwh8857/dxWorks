@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="css/index.css">
   <script type="module" src="./js/detail.js" defer></script>
   <script src="./js/faq.js" defer></script>
+  <script type="module" src="./js/number.js" defer></script>
+  <script type="module" src="./js/fadein.js" defer></script>
 </head>
 
 <body>
@@ -30,22 +32,23 @@
             srcset="./assets/id/dx-digital@2x.png 2x, ./assets/id/dx-digital@3x.png 3x" alt="dx-digital">
         </div>
         <div class="id-digital-id-top-content">
-          <div class="id-digital-id-tag">
+          <div class="id-digital-id-tag" id="id-digital-id-tag">
             신뢰 기반 디지털전환, 디지털아이디
           </div>
-          <div class="id-digital-id-title">
+          <div class="id-digital-id-title" id="id-digital-id-title">
             <span class="title-color"> DX Digital ID</span><br />
             디엑스 디지털 ID
           </div>
-          <div class="id-digital-id-desc">
+          <div class="id-digital-id-desc" id="id-digital-id-desc">
             디엑스 디지털 아이디는 블록체인 기반의 <br class="mb-br" />분산신원증명(DID) 기술로 구현된<br />차세대 모바일 신분증 서비스입니다.<br />사원증, 학생증, 방문증 등
             다양한 신분증을 안전하게
             통합하고, <br />QRCode, NFC,
             GPS, 안면인식을 통한 인증 기능으로 <br class="mb-br" />빠르고 정확한 신원 확인이 가능합니다.
           </div>
-          <a href="#" target="_blank" rel="noopener noreferrer" class="id-digital-id-top-download-btn">브로슈어
+          <a href="#" target="_blank" rel="noopener noreferrer" class="id-digital-id-top-download-btn"
+            id="id-digital-id-top-download-btn">브로슈어
             다운로드</a>
-          <div class="id-scroll-section">
+          <div class="id-scroll-section" id="id-scroll-section">
             <div class="id-scroll-section-img">
               <img src="./assets/id/scroll.svg" alt="scroll" class="scroll-img" />
             </div>
@@ -57,13 +60,13 @@
     </section>
     <section class="id-why-section">
       <div class="id-why-content">
-        <div class="id-why-tag">Why</div>
-        <div class="id-why-title">
+        <div class="id-why-tag" id="id-why-tag">Why</div>
+        <div class="id-why-title" id="id-why-title">
           복잡한 신분증관리, <br />
           <b>이런 경험 있으신가요?</b>
         </div>
       </div>
-      <div class="id-why-img">
+      <div class="id-why-img" id="id-why-img">
         <picture>
           <source srcset="./assets/id/why-img-mb.png 1x, ./assets/id/why-img-mb@2x.png 2x,
             ./assets/id/why-img-mb@3x.png 3x" alt="why-img-mb" media="(max-width: 768px)">
@@ -77,16 +80,16 @@
     </section>
     <section class="id-solution-section">
       <div class="id-solution-content">
-        <div class="id-solution-tag">Solution</div>
-        <div class="id-solution-title">
+        <div class="id-solution-tag" id="id-solution-tag">Solution</div>
+        <div class="id-solution-title" id="id-solution-title">
           간편하고 안전한 신원인증
           <br />
           <b>새로운 신원인증의 시작<br class="mb-br" /> <span class="title-color">DX Digital ID</span></b></div>
-        <div class="id-solution-desc">이제 번거로운 실물 신분증은 그만 <br />
+        <div class="id-solution-desc" id="id-solution-desc">이제 번거로운 실물 신분증은 그만 <br />
           디지털아이디를 통해 간편하고 안전하게<br class="mb-br" /> 본인 인증을 할 수 있습니다.</div>
       </div>
 
-      <picture class="id-solution-img">
+      <picture class="id-solution-img" id="id-solution-img">
         <source srcset="./assets/id/solution-img-mb.png 1x, ./assets/id/solution-img-mb@2x.png 2x,
           ./assets/id/solution-img-mb@3x.png 3x" alt="solution-img-mb" media="(max-width: 768px)">
         <img src="./assets/id/solution-img.png"
@@ -97,13 +100,13 @@
     </section>
     <section class="id-product-section">
       <div class="id-product-content">
-        <div class="id-product-tag">Product</div>
-        <div class="id-product-title">
+        <div class="id-product-tag" id="id-product-tag">Product</div>
+        <div class="id-product-title" id="id-product-title">
           디지털 아이디를 완성하는 <br />
           통합 플랫폼
         </div>
       </div>
-      <picture class="id-product-img">
+      <picture class="id-product-img" id="id-product-img">
         <source srcset=" ./assets/id/product-img-mb.png 1x, ./assets/id/product-img-mb@2x.png 2x,
           ./assets/id/product-img-mb@3x.png 3x" alt="product-img-mb" media="(max-width: 768px)">
         <source srcset="./assets/id/product-img-tb.png 1x, ./assets/id/product-img-tb@2x.png 2x,
@@ -114,12 +117,12 @@
     </section>
     <section class="id-detail-section" id="id-section-template">
       <div class="id-detail-content">
-        <div class="id-detail-tag">Detail</div>
+        <div class="id-detail-tag" id="id-detail-tag">Detail</div>
         <div class="id-detail-title" id="detail-title">하나의ID로 다양한
           서비스에 <br />연결되는
           유연한 디지털 신원인증
         </div>
-        <div class="id-detail-btn-list">
+        <div class="id-detail-btn-list" id="id-detail-btn-list">
           <button class="id-detail-btn-item detail-active-btn">
             신뢰할 수 있는 이력 관리
           </button>
@@ -152,12 +155,12 @@
     <section class="id-detail-container" id="id-container"></section>
     <section class="id-point-section">
       <div class="id-point-content">
-        <div class="id-point-tag">Point</div>
-        <div class="id-point-title">
+        <div class="id-point-tag" id="id-point-tag">Point</div>
+        <div class="id-point-title" id="id-point-title">
           디지털아이디의 주요 요소
         </div>
         <div class="id-point-list">
-          <div class="id-point-item">
+          <div class="id-point-item" id="id-point-item-1">
             <img src="./assets/id/point-1.svg" alt="point-1" class="id-point-item-img">
             <div class="id-point-item-content">
               <div class="id-point-item-title">다양한 디바이스 연동</div>
@@ -165,7 +168,7 @@
                 여러 환경에서 하나의 ID로 인증 가능</div>
             </div>
           </div>
-          <div class="id-point-item">
+          <div class="id-point-item" id="id-point-item-2">
             <img src="./assets/id/point-2.svg" alt="point-2" class="id-point-item-img">
             <div class="id-point-item-content">
               <div class="id-point-item-title">신원 정보 메타데이터</div>
@@ -173,28 +176,28 @@
                 필요한 신원 정보를 포함</div>
             </div>
           </div>
-          <div class="id-point-item">
+          <div class="id-point-item" id="id-point-item-3">
             <img src="./assets/id/point-3.svg" alt="point-3" class="id-point-item-img">
             <div class="id-point-item-content">
               <div class="id-point-item-title">발급 주체와 사용자</div>
               <div class="id-point-item-desc">디지털 ID는 기관이나 기업이 발급하며 <br />사용자는 지갑이나 앱에서 직접 관리</div>
             </div>
           </div>
-          <div class="id-point-item">
+          <div class="id-point-item" id="id-point-item-4">
             <img src="./assets/id/point-4.svg" alt="point-4" class="id-point-item-img">
             <div class="id-point-item-content">
               <div class="id-point-item-title">플랫폼 간 호환 인증</div>
               <div class="id-point-item-desc">웹사이트, 출입 시스템, 행정 서비스 등 <br />다양한 플랫폼에서 동일한 ID로 사용 가능</div>
             </div>
           </div>
-          <div class="id-point-item">
+          <div class="id-point-item" id="id-point-item-5">
             <img src="./assets/id/point-5.svg" alt="point-5" class="id-point-item-img">
             <div class="id-point-item-content">
               <div class="id-point-item-title">검증과 위변조 방지</div>
               <div class="id-point-item-desc">DID 기반 구조로 발급 정보의 진위 여부를 검증하고 <br />위변조를 방지하는 보안 기능 탑재</div>
             </div>
           </div>
-          <div class="id-point-item">
+          <div class="id-point-item" id="id-point-item-6">
             <img src="./assets/id/point-6.svg" alt="point-6" class="id-point-item-img">
             <div class="id-point-item-content">
               <div class="id-point-item-title">표준 기반 확장성</div>
@@ -207,13 +210,13 @@
     </section>
     <section class="id-effect-section">
       <div class="id-effect-content">
-        <div class="id-effect-tag">Effect</div>
-        <div class="id-effect-title">디지털 아이디를 도입하면 <br />
+        <div class="id-effect-tag" id="id-effect-tag">Effect</div>
+        <div class="id-effect-title" id="id-effect-title">디지털 아이디를 도입하면 <br />
           이렇게 달라집니다!</div>
         <div class="id-effect-list">
           <div class="id-effect-list-item">
             <div class="id-effect-list-item-title">
-              80%
+              <span id="id-effect-list-item-title-1">80</span>%
             </div>
             <div class="id-effect-list-item-content">
               기존 실물 신분증 확인대비 <br />
@@ -227,7 +230,7 @@
           </div>
           <div class="id-effect-list-item">
             <div class="id-effect-list-item-title">
-              90%
+              <span id="id-effect-list-item-title-2">90</span>%
             </div>
             <div class="id-effect-list-item-content">
               실물 분실·도용 가능성<br />90% 이상 감소
@@ -239,7 +242,7 @@
           </div>
           <div class="id-effect-list-item">
             <div class="id-effect-list-item-title">
-              -50%
+              -<span id="id-effect-list-item-title-3">50</span>%
             </div>
             <div class="id-effect-list-item-content">
               ID 발급·회수 관리에 드는 <br />
@@ -254,15 +257,15 @@
     </section>
     <section class="id-nav-contract-section">
       <div class="id-nav-contract-content">
-        <div class="id-nav-contract-title">지금 상담을 통해 <br />디지털 아이디 도입을 시작해보세요</div>
-        <a href="/contact" class="id-nav-contract-btn">도입 문의</a>
+        <div class="id-nav-contract-title" id="id-nav-contract-title">지금 상담을 통해 <br />디지털 아이디 도입을 시작해보세요</div>
+        <a href="/contact" class="id-nav-contract-btn" id="id-nav-contract-btn">도입 문의</a>
       </div>
     </section>
     <section class="id-faq-section">
       <div class="id-faq-content">
-        <div class="id-faq-tag">FAQ</div>
-        <div class="id-faq-title">자주 묻는 질문</div>
-        <div class="id-faq-search">
+        <div class="id-faq-tag" id="id-faq-tag">FAQ</div>
+        <div class="id-faq-title" id="id-faq-title">자주 묻는 질문</div>
+        <div class="id-faq-search" id="id-faq-search">
           <input type="text" placeholder="검색하기">
           <img src="./assets/id/search.svg" alt="검색" class="id-faq-search-icon">
         </div>

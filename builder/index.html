@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="/common/footer/css/footer.css">
   <script type="module" src="/common/js/header.js" defer></script>
   <script src="/common/js/include.js" defer></script>
+  <script type="module" src="./js/fadein.js" defer></script>
+  <script type="module" src="./js/faderight.js" defer></script>
   <!--  -->
 
   <script src="js/faq.js" defer></script>
@@ -25,18 +27,18 @@
         <div class="gradient-line"></div>
         <div class="builder-ledger-builder-top-content">
           <div class="builder-ledger-builder-top-left">
-            <div class="builder-ledger-builder-tag">
+            <div class="builder-ledger-builder-tag" id="builder-ledger-builder-tag">
               경험 비지니스 시대, 디지털 이력 증명을 한눈에
             </div>
-            <div class="builder-ledger-builder-title">
+            <div class="builder-ledger-builder-title" id="builder-ledger-builder-title">
               <span class="title-color"> DX Ledger Builder</span><br />
               디엑스레저 빌더
             </div>
-            <div class="builder-ledger-builder-desc">
+            <div class="builder-ledger-builder-desc" id="builder-ledger-builder-desc">
               누구나 편리하게 블록체인 기반 디지털배지를 통해 <br />신뢰성을 확인하고, 발행 · 수여, 유통 · 검증할 수 있는 정보를 제공합니다.
             </div>
           </div>
-          <div class="builder-ledger-builder-top-right">
+          <div class="builder-ledger-builder-top-right" id="builder-ledger-builder-top-right">
             <img src="./assets/builder/dx-ledger.png"
               srcset="./assets/builder/dx-ledger@2x.png 2x, ./assets/builder/dx-ledger@3x.png 3x" alt="dx-ledger"
               class="builder-ledger-builder-top-right-img">
@@ -45,34 +47,35 @@
       </div>
       <div class="builder-ledger-builder-bottom">
         <div class="builder-ledger-builder-bottom-content">
-          <div class="builder-ledger-builder-bottom-tag">
+          <div class="builder-ledger-builder-bottom-tag" id="builder-ledger-builder-bottom-tag">
             DX Ledger Builder
           </div>
-          <div class="builder-ledger-builder-bottom-title">
+          <div class="builder-ledger-builder-bottom-title" id="builder-ledger-builder-bottom-title">
             기업 맞춤형 블록체인 서비스
           </div>
-          <div class="builder-ledger-builder-bottom-desc">DID, 배지, NFT 등 다양한 디지털 자격·신원 정보를 <br class="mb-br" /> 블록체인
+          <div class="builder-ledger-builder-bottom-desc" id="builder-ledger-builder-bottom-desc">DID, 배지, NFT 등 다양한 디지털
+            자격·신원 정보를 <br class="mb-br" /> 블록체인
             기반으로 발급·관리할 수 있는 <br class="mb-br" /> 인프라 플랫폼입니다.<br /> Hyperledger 기반 네트워크 구축부터 <br class="mb-br" />스마트컨트랙트
             배포, 실시간 트랜잭션 모니터링까지 <br />지원하며, 다양한 산업 분야의 Web3.0 전환을 <br class="mb-br" />가속화합니다.</div>
         </div>
         <img src="./assets/builder/ledger-builder.png"
           srcset="./assets/builder/ledger-builder@2x.png 2x, ./assets/builder/ledger-builder@3x.png 3x"
-          alt="ledger-builder" class="builder-ledger-builder-bottom-img">
+          alt="ledger-builder" class="builder-ledger-builder-bottom-img" id="builder-ledger-builder-bottom-img">
       </div>
     </section>
     <section class="builder-slogan-section">
       <div class="builder-slogan-section-content-wrapper">
         <div class="builder-slogan-section-content">
-          <div class="builder-slogan-section-title">
+          <div class="builder-slogan-section-title" id="builder-slogan-section-title">
             신뢰할 수 있는 <br />
             <span class="title-color">디엑스레저 빌더</span>
           </div>
-          <div class="builder-slogan-section-desc">
+          <div class="builder-slogan-section-desc" id="builder-slogan-section-desc">
             Good Software 인증, Digital Innovation Awards 수상 등 <br />
             디엑스레저배지는 신뢰할 수 있는 제품입니다.
           </div>
         </div>
-        <div class="builder-slogan-section-img-section">
+        <div class="builder-slogan-section-img-section" id="builder-slogan-section-img-section">
           <div class="builder-slogan-section-img-wrapper">
             <img src="./assets/builder/good-software.png" alt="good-software"
               srcset="./assets/builder/good-software@2x.png 2x, ./assets/builder/good-software@3x.png 3x">
@@ -85,34 +88,35 @@
       </div>
     </section>
     <section class="builder-tech-section">
-      <div class="builder-tech-section-tag">기술</div>
-      <div class="builder-tech-section-title">디지털 혁신의 구현 기술 <br />
+      <div class="builder-tech-section-tag" id="builder-tech-section-tag">기술</div>
+      <div class="builder-tech-section-title" id="builder-tech-section-title">디지털 혁신의 구현 기술 <br />
         <b> Blockchain <span class="title-color">+ X</span></b></div>
-      <div class="builder-tech-section-desc">
+      <div class="builder-tech-section-desc" id="builder-tech-section-desc">
         블록체인+X는 웹3.0, 디지털 심화 시대 새로운 삶의 방식과 <br />
         새로운 디지털 질서(신뢰/ 자유/권리/공정 등)를 구현하는 디지털 혁신(DX) 기술 입니다. <br />모든 사람의 일상을 혁신된 '디지털 플랫폼 서비스'로 더 안전하고 편리한 '디지털 신뢰 사회'를
         실현합니다.
       </div>
 
       <div class="builder-tech-section-content-wrapper">
-        <div class="builder-tech-section-content-item">
+        <div class="builder-tech-section-content-item" id="builder-tech-section-content-item">
           Blockchain
         </div>
-        <img class="builder-tech-section-content-plus" src="./assets/builder/grey-plus.svg" alt="">
+        <img class="builder-tech-section-content-plus" src="./assets/builder/grey-plus.svg" alt=""
+          id="builder-tech-section-content-plus">
         <div class="builder-tech-lists">
-          <div class="builder-tech-list-item ai-item">
+          <div class="builder-tech-list-item ai-item" id="builder-tech-list-item-ai">
             <div class="builder-tech-list-item-title">AI</div>
             <div class="builder-tech-list-item-desc">
               인공지능
             </div>
           </div>
-          <div class="builder-tech-list-item bigdata-item">
+          <div class="builder-tech-list-item bigdata-item" id="builder-tech-list-item-bigdata">
             <div class="builder-tech-list-item-title">Bigdata</div>
             <div class="builder-tech-list-item-desc">
               빅데이터
             </div>
           </div>
-          <div class="builder-tech-list-item cloud-item">
+          <div class="builder-tech-list-item cloud-item" id="builder-tech-list-item-cloud">
             <div class="builder-tech-list-item-title">Cloud</div>
             <div class="builder-tech-list-item-desc">
               클라우드
@@ -122,10 +126,10 @@
     </section>
     <section class="builder-product-section">
       <div class="builder-product-container">
-        <div class="builder-product-section-tag">제품 소개</div>
-        <div class="builder-product-section-title">사용자 친화적인 사용성</div>
+        <div class="builder-product-section-tag" id="builder-product-section-tag">제품 소개</div>
+        <div class="builder-product-section-title" id="builder-product-section-title">사용자 친화적인 사용성</div>
         <div class="builder-product-feature-list">
-          <div class="builder-product-feature-item">
+          <div class="builder-product-feature-item" id="builder-product-feature-item-1">
             <img class="builder-product-feature-item-icon" src="./assets/builder/product-icon.svg" alt="">
             <div class="builder-product-feature-item-content">
               <div class="builder-product-feature-item-title">손쉬운 하이퍼레저 블록체인 노드 구축</div>
@@ -135,7 +139,7 @@
               </div>
             </div>
           </div>
-          <div class="builder-product-feature-item">
+          <div class="builder-product-feature-item" id="builder-product-feature-item-2">
             <img class="builder-product-feature-item-icon" src="./assets/builder/product-icon2.svg" alt="">
             <div class="builder-product-feature-item-content">
               <div class="builder-product-feature-item-title">실시간 블록체인 모니터링 감시 및 추적</div>
@@ -145,7 +149,7 @@
               </div>
             </div>
           </div>
-          <div class="builder-product-feature-item">
+          <div class="builder-product-feature-item" id="builder-product-feature-item-3">
             <img class="builder-product-feature-item-icon" src="./assets/builder/product-icon3.svg" alt="">
             <div class="builder-product-feature-item-content">
               <div class="builder-product-feature-item-title">스마트 컨트랙트 버전 및 연계 관리</div>
@@ -158,7 +162,7 @@
         </div>
 
         <div class="builder-product-info-list">
-          <div class="builder-product-info-item">
+          <div class="builder-product-info-item" id="builder-product-info-item-1">
             <div class="builder-product-info-item-title">사업분야</div>
             <div class="builder-product-info-item-desc">신원정보의 <b>자기주권적 관리<br class="mb-br" />(Self-Sovereign
                 Identity)</b> 제공 <br />
@@ -174,7 +178,7 @@
               class="builder-product-info-item-img-mb">
 
           </div>
-          <div class="builder-product-info-item">
+          <div class="builder-product-info-item" id="builder-product-info-item-2">
             <div class="builder-product-info-item-title">사용자</div>
             <div class="builder-product-info-item-desc"><b>개인 사용자 중심</b><br />스스로 생성한 DID를 통해 인증 및 증명 제출 <br />
               <b> 기관·플랫폼 운영자
@@ -186,7 +190,7 @@
               srcset="./assets/builder/product-info-2-mb@2x.png 2x, ./assets/builder/product-info-2-mb@3x.png 3x"
               class="builder-product-info-item-img-mb">
           </div>
-          <div class="builder-product-info-item">
+          <div class="builder-product-info-item" id="builder-product-info-item-3">
             <div class="builder-product-info-item-title">국제표준</div>
             <div class="builder-product-info-item-desc">W3C DID 표준(Decentralized Identifier) 준수<br />
               VC(Verifiable Credential),<br class="mb-br" /> VP(Presentation) 구조 지원<br />
@@ -199,7 +203,7 @@
               srcset="./assets/builder/product-info-3-mb@2x.png 2x, ./assets/builder/product-info-3-mb@3x.png 3x"
               class="builder-product-info-item-img-mb">
           </div>
-          <div class="builder-product-info-item">
+          <div class="builder-product-info-item" id="builder-product-info-item-4">
             <div class="builder-product-info-item-title">확산/확대</div>
             <div class="builder-product-info-item-desc">하나의 DID로 여러 기관·플랫폼 간 인증 연계 가능<br />
               실명 없이 개인정보 노출 최소화<br />
@@ -218,19 +222,19 @@
       <div class="builder-product-gradient"></div>
     </section>
     <section class="builder-slide-section">
-      <div class="builder-slide-tag">
+      <div class="builder-slide-tag" id="builder-slide-tag">
         활용 분야
       </div>
-      <div class="builder-slide-title">
+      <div class="builder-slide-title" id="builder-slide-title">
         다양한 곳에서 <br />
         디엑스레저 빌더를 <br class="mb-br" /> 활용해보세요
       </div>
-      <div class="builder-slide-desc">
+      <div class="builder-slide-desc" id="builder-slide-desc">
         교육 수료인증 및 취업까지 다양한 곳에서 <br />
         디엑스레저 빌더를 활용해보세요
       </div>
       <div class="builder-slide-list">
-        <div class="builder-slide-list-item">
+        <div class="builder-slide-list-item" id="builder-slide-list-item-1">
           <div class="builder-slide-list-item-title">금융 거래</div>
           <div class="builder-slide-list-item-desc">본인 인증, 각종 증명서 신청 등 처리,
             데이터 저장소 해킹 및 시스템 오류 <br />위험 감소</div>
@@ -238,21 +242,21 @@
             srcset="./assets/builder/builder-slide-1@2x.png 2x, ./assets/builder/builder-slide-1@3x.png 3x"
             class="builder-slide-list-item-img" />
         </div>
-        <div class="builder-slide-list-item">
+        <div class="builder-slide-list-item" id="builder-slide-list-item-2">
           <div class="builder-slide-list-item-title">출입 및 개폐</div>
           <div class="builder-slide-list-item-desc">전자 출입 및 디지털 증명 형태로 저장/활용</div>
           <img src="./assets/builder/builder-slide-2.png" alt="builder-slide-2"
             srcset="./assets/builder/builder-slide-2@2x.png 2x, ./assets/builder/builder-slide-2@3x.png 3x"
             class="builder-slide-list-item-img" />
         </div>
-        <div class="builder-slide-list-item">
+        <div class="builder-slide-list-item" id="builder-slide-list-item-3">
           <div class="builder-slide-list-item-title">채용 및 취업</div>
           <div class="builder-slide-list-item-desc">대학 재학/졸업 중명서, 각종 자격/훈련 증명서 등 제출</div>
           <img src="./assets/builder/builder-slide-3.png" alt="builder-slide-3"
             srcset="./assets/builder/builder-slide-3@2x.png 2x, ./assets/builder/builder-slide-3@3x.png 3x"
             class="builder-slide-list-item-img" />
         </div>
-        <div class="builder-slide-list-item">
+        <div class="builder-slide-list-item" id="builder-slide-list-item-4">
           <div class="builder-slide-list-item-title">물류 및 유통</div>
           <div class="builder-slide-list-item-desc">서류 행정 처리비용과 처리시간 절감 (이력 추적 및 실시간 가시성 제고 검증</div>
           <img src="./assets/builder/builder-slide-4.png" alt="builder-slide-4"
@@ -263,16 +267,16 @@
     </section>
     <section class="builder-nav-contract-section">
       <div class="builder-nav-contract-content">
-        <div class="builder-nav-contract-title">지금 상담을 통해 <br />
+        <div class="builder-nav-contract-title" id="builder-nav-contract-title">지금 상담을 통해 <br />
           디엑스레저 빌더 도입을 시작해보세요</div>
-        <a href="/contact" class="builder-nav-contract-btn">도입 문의</a>
+        <a href="/contact" class="builder-nav-contract-btn" id="builder-nav-contract-btn">도입 문의</a>
       </div>
     </section>
     <section class="builder-faq-section">
       <div class="builder-faq-content">
-        <div class="builder-faq-tag">FAQ</div>
-        <div class="builder-faq-title">자주 묻는 질문</div>
-        <div class="builder-faq-search">
+        <div class="builder-faq-tag" id="builder-faq-tag">FAQ</div>
+        <div class="builder-faq-title" id="builder-faq-title">자주 묻는 질문</div>
+        <div class="builder-faq-search" id="builder-faq-search">
           <input type="text" placeholder="검색하기">
           <img src="./assets/builder/search.svg" alt="검색" class="builder-faq-search-icon">
         </div>

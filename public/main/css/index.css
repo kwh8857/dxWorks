@@ -353,9 +353,7 @@ label:hover {
   line-height: 140%;
   color: white;
   opacity: 0.3;
-}
-.main-page .section2 .section2-title-box .left-title-wrapper .left-title > .blue-span {
-  color: #0095FF;
+  letter-spacing: -0.08em;
 }
 .main-page .section2 .section2-title-box .right-title {
   display: -webkit-box;

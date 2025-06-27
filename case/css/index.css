@@ -198,11 +198,7 @@ label:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 345px;
-  position: relative;
-  position: sticky;
-  top: 0px;
   background-color: black;
-  z-index: 10;
 }
 .success-page .section1 .gradient-line {
   position: absolute;
@@ -231,7 +227,6 @@ label:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 999;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -251,7 +246,7 @@ label:hover {
 .success-page .section1 .section1-text-box .sub-title .mb {
   display: none;
 }
-.success-page .section1 .menu-wrapper {
+.success-page .menu-wrapper {
   width: 100%;
   border-bottom: 1px solid #44464F;
   display: -webkit-box;
@@ -263,18 +258,24 @@ label:hover {
   -webkit-column-gap: 120px;
      -moz-column-gap: 120px;
           column-gap: 120px;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
 }
-.success-page .section1 .menu-wrapper p {
+.success-page .menu-wrapper p {
   padding-bottom: 12px;
   font-weight: 400;
   border-bottom: none;
 }
-.success-page .section1 .menu-wrapper p a {
+.success-page .menu-wrapper p a {
   color: white;
 }
-.success-page .section1 .menu-wrapper p.active {
+.success-page .menu-wrapper p.active {
   font-weight: 700;
   border-bottom: 2px solid #0095FF;
+}
+.success-page .is-stuck {
+  background-color: black;
 }
 .success-page .rbd-section {
   padding-top: 118px;
@@ -530,7 +531,7 @@ label:hover {
   .success-page .section1 .section1-text-box .sub-title .mb {
     display: block;
   }
-  .success-page .section1 .menu-wrapper {
+  .success-page .menu-wrapper {
     -webkit-column-gap: 24px;
        -moz-column-gap: 24px;
             column-gap: 24px;

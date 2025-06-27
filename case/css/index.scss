@@ -177,11 +177,7 @@ label {
         display: flex;
         flex-direction: column;
         height: 345px;
-        position: relative;
-        position: sticky;
-        top: 0px;
         background-color: black;
-        z-index: 10;
 
         .gradient-line {
             position: absolute;
@@ -204,7 +200,6 @@ label {
             display: flex;
             flex-direction: column;
             align-items: center;
-            z-index: 999;
             justify-content: center;
             row-gap: 16px;
             color: white;
@@ -226,29 +221,39 @@ label {
             }
         }
 
-        .menu-wrapper {
-            width: 100%;
-            border-bottom: 1px solid #44464F;
-            display: flex;
-            justify-content: center;
-            column-gap: 120px;
 
-            p {
-                padding-bottom: 12px;
-                font-weight: 400;
-                border-bottom: none;
 
-                a {
-                    color: white;
-                }
-            }
+    }
 
-            p.active {
-                font-weight: 700;
-                border-bottom: 2px solid #0095FF;
+    .menu-wrapper {
+        width: 100%;
+        border-bottom: 1px solid #44464F;
+        display: flex;
+        justify-content: center;
+        column-gap: 120px;
+        position: sticky;
+        top: 0px;
+        z-index: 10;
+
+
+        p {
+            padding-bottom: 12px;
+            font-weight: 400;
+            border-bottom: none;
+
+            a {
+                color: white;
             }
         }
 
+        p.active {
+            font-weight: 700;
+            border-bottom: 2px solid #0095FF;
+        }
+    }
+
+    .is-stuck {
+        background-color: black;
     }
 
     .rbd-section {
@@ -497,9 +502,11 @@ label {
                 }
             }
 
-            .menu-wrapper {
-                column-gap: 24px;
-            }
+
+        }
+
+        .menu-wrapper {
+            column-gap: 24px;
         }
 
         .rbd-section {

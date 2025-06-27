@@ -2,12 +2,13 @@ window.addEventListener("DOMContentLoaded", initSectionNavigation);
 
 function initSectionNavigation() {
   const menuItems = document.querySelectorAll(".menu-wrapper p");
-
+  const menuWrapper = document.querySelector(".menu-wrapper");
   if (!menuItems.length) return;
 
   bindMenuClickEvents(menuItems);
   setInitialActive(menuItems);
   initSectionObserver(menuItems); //  scrollspy 기능 추가
+  observeSticky(menuWrapper);
 }
 
 function bindMenuClickEvents(menuItems) {
@@ -57,7 +58,7 @@ function initSectionObserver(menuItems) {
   const observerOptions = {
     root: null,
     rootMargin: "0px",
-    threshold: 0.4, // 섹션이 40% 보이면 active 처리
+    threshold: 0.1, // 섹션이 40% 보이면 active 처리
   };
 
   const observer = new IntersectionObserver((entries) => {
@@ -78,4 +79,21 @@ function initSectionObserver(menuItems) {
     const section = document.getElementById(id);
     if (section) observer.observe(section);
   });
+}
+
+function observeSticky(menuWrapper) {
+  const sentinel = document.querySelector(".sticky-sentinel");
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.boundingClientRect.top < 0) {
+        menuWrapper.classList.add("is-stuck");
+      } else {
+        menuWrapper.classList.remove("is-stuck");
+      }
+    },
+    { threshold: [0] }
+  );
+
+  if (sentinel) observer.observe(sentinel);
 }

@@ -207,8 +207,47 @@ label {
         background-position: center;
         background-repeat: no-repeat;
         position: relative;
-        transition: background-image 0.4s ease-in-out;
         display: flex;
+        .mouse-scroll {
+                position: absolute;
+                width: 53px;
+                height: 78px;
+                border-radius: 42px;
+                display: flex;
+                flex-direction: column;
+                z-index: 50;
+                align-items: center;
+                justify-content: center;
+                row-gap: 5px;
+                background-color: #1d1f22;
+                bottom: 120px;
+                left: 50%;
+                transform: translate(-50%, );
+                color: white;
+        
+                .mouse-scroll-img-box {
+                    overflow: hidden;
+        
+                    .mouse-scroll-img {
+                        animation: scroll-spin 1.5s ease-in-out infinite;
+                    }
+                }
+        
+                .scroll-text {
+                    font-size: 10px;
+                    color: #F5F6F8;
+                    font-family: 'Montserrat', sans-serif;
+                }
+            }
+        &.fade-out {
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+        }
+
+        &.fade-in {
+            opacity: 1;
+            transition: opacity 0.2s ease-in-out;
+        }
 
         .hidden {
             display: none;
@@ -301,108 +340,109 @@ label {
             position: absolute;
         }
     }
-//         .section1 {
-//             height: 960px;
-//             position: relative;
-//             overflow: hidden;
-//             color:white;
-//             .slide {
-//   width: 100%; // 추가
-//   flex-shrink: 0; // 혹시 flex가 줄어드는 경우 방지
-// }
-//             .slider-viewport {
-//                 width: 100%;
-//                 height: 100%;
-//                 overflow: hidden;
-//                 position: relative;
-//             }
-    
-//             .slider-track {
-//                 display: flex;
-//                 height: 100%;
-//                 width: 300%; // 슬라이드 개수만큼 100% * N
-//                 transition: transform 0.5s ease-in-out;
-//             }
-    
-//             .slide {
-//                 flex: 0 0 100%;
-//                 display: flex;
-//                 justify-content: center;
-//                 align-items: center;
-//             }
-    
-//             .section1-title-box {
-//                 display: flex;
-//                 flex-direction: column;
-//                 row-gap: 24px;
-    
-//                 .section1-title {
-//                     width: 285px;
-//                     display: flex;
-//                     flex-direction: column;
-//                     row-gap: 24px;
-//                     align-items: center;
-//                 }
-    
-//                 .section1-main-text {
-//                     font-size: 32px;
-//                     font-weight: bold;
-//                     text-align: center;
-//                     line-height: 1.4;
-//                 }
-    
-//                 .section1-sub-text {
-//                     font-size: 16px;
-//                     line-height: 1.6;
-//                     text-align: center;
-//                 }
-    
-//                 .about-company {
-//                     font-size: 14px;
-//                     padding: 8px 16px;
-//                     background-color: #000;
-//                     color: #fff;
-//                     cursor: pointer;
-//                 }
-    
-//                 .section1-extra,
-//                 .section1-logo {
-//                     margin-top: 40px;
-//                     text-align: center;
-//                 }
-//             }
-    
-//             .pagination-btn-wrapper {
-//                 position: absolute;
-//                 bottom: 30px;
-//                 left: 50%;
-//                 transform: translateX(-50%);
-//                 display: flex;
-//                 align-items: center;
-//                 gap: 20px;
-//             }
-    
-//             .pagination-line {
-//                 width: 286px;
-//                 height: 3px;
-//                 background: #ccc;
-//                 position: relative;
-//             }
-    
-//             .pagination-highlight {
-//                 width: 146px;
-//                 height: 3px;
-//                 background-color: #000;
-//                 position: absolute;
-//                 top: 0;
-//                 left: 0;
-//                 transition: transform 0.3s ease;
-//             }
-    
-//             .mouse-scroll {
-//                 bottom: -90px;
-//             }
-//         }
+
+    //         .section1 {
+    //             height: 960px;
+    //             position: relative;
+    //             overflow: hidden;
+    //             color:white;
+    //             .slide {
+    //   width: 100%; // 추가
+    //   flex-shrink: 0; // 혹시 flex가 줄어드는 경우 방지
+    // }
+    //             .slider-viewport {
+    //                 width: 100%;
+    //                 height: 100%;
+    //                 overflow: hidden;
+    //                 position: relative;
+    //             }
+
+    //             .slider-track {
+    //                 display: flex;
+    //                 height: 100%;
+    //                 width: 300%; // 슬라이드 개수만큼 100% * N
+    //                 transition: transform 0.5s ease-in-out;
+    //             }
+
+    //             .slide {
+    //                 flex: 0 0 100%;
+    //                 display: flex;
+    //                 justify-content: center;
+    //                 align-items: center;
+    //             }
+
+    //             .section1-title-box {
+    //                 display: flex;
+    //                 flex-direction: column;
+    //                 row-gap: 24px;
+
+    //                 .section1-title {
+    //                     width: 285px;
+    //                     display: flex;
+    //                     flex-direction: column;
+    //                     row-gap: 24px;
+    //                     align-items: center;
+    //                 }
+
+    //                 .section1-main-text {
+    //                     font-size: 32px;
+    //                     font-weight: bold;
+    //                     text-align: center;
+    //                     line-height: 1.4;
+    //                 }
+
+    //                 .section1-sub-text {
+    //                     font-size: 16px;
+    //                     line-height: 1.6;
+    //                     text-align: center;
+    //                 }
+
+    //                 .about-company {
+    //                     font-size: 14px;
+    //                     padding: 8px 16px;
+    //                     background-color: #000;
+    //                     color: #fff;
+    //                     cursor: pointer;
+    //                 }
+
+    //                 .section1-extra,
+    //                 .section1-logo {
+    //                     margin-top: 40px;
+    //                     text-align: center;
+    //                 }
+    //             }
+
+    //             .pagination-btn-wrapper {
+    //                 position: absolute;
+    //                 bottom: 30px;
+    //                 left: 50%;
+    //                 transform: translateX(-50%);
+    //                 display: flex;
+    //                 align-items: center;
+    //                 gap: 20px;
+    //             }
+
+    //             .pagination-line {
+    //                 width: 286px;
+    //                 height: 3px;
+    //                 background: #ccc;
+    //                 position: relative;
+    //             }
+
+    //             .pagination-highlight {
+    //                 width: 146px;
+    //                 height: 3px;
+    //                 background-color: #000;
+    //                 position: absolute;
+    //                 top: 0;
+    //                 left: 0;
+    //                 transition: transform 0.3s ease;
+    //             }
+
+    //             .mouse-scroll {
+    //                 bottom: -90px;
+    //             }
+    //         }
     .section2 {
         display: flex;
         flex-direction: column;
@@ -1080,6 +1120,7 @@ label {
     .main-page {
         .section1 {
             height: 655px;
+
             .section1-title-box {
                 .section1-title {
                     width: 285px;

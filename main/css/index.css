@@ -238,11 +238,58 @@ label:hover {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  -webkit-transition: background-image 0.4s ease-in-out;
-  transition: background-image 0.4s ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.main-page .section1 .mouse-scroll {
+  position: absolute;
+  width: 53px;
+  height: 78px;
+  border-radius: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 50;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  row-gap: 5px;
+  background-color: #1d1f22;
+  bottom: 120px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  color: white;
+}
+.main-page .section1 .mouse-scroll .mouse-scroll-img-box {
+  overflow: hidden;
+}
+.main-page .section1 .mouse-scroll .mouse-scroll-img-box .mouse-scroll-img {
+  -webkit-animation: scroll-spin 1.5s ease-in-out infinite;
+          animation: scroll-spin 1.5s ease-in-out infinite;
+}
+.main-page .section1 .mouse-scroll .scroll-text {
+  font-size: 10px;
+  color: #F5F6F8;
+  font-family: "Montserrat", sans-serif;
+}
+.main-page .section1.fade-out {
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+.main-page .section1.fade-in {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 .main-page .section1 .hidden {
   display: none;

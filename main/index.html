@@ -13,6 +13,7 @@
     <script type="module" src="/common/js/header.js" defer></script>
     <script type="module" src="./js/animation.js" defer></script>
     <script type="module" src="./js/fadein.js" defer></script>
+    <script type="module" src="./js/index.js" defer></script>
     <script type="module" src="./js/fadeleft.js" defer></script>
     <!--  -->
 </head>
@@ -20,30 +21,51 @@
 <body>
     <div data-include-path="/common/header/header.html" data-include-replace></div>
     <main class="main-page">
-        <section class="section1">
+        <section class="section1" >
             <div class="section1-title-box">
-                <picture id="section1-title-img">
-                    <source media="(max-width: 767px)"
-                        srcset="./assets/section1/section1-title-mb.png 1x, ./assets/section1/section1-title-mb@2x.png 2x, ./assets/section1/section1-title-mb@3x.png 3x ">
-                    <source media="(max-width: 1440px)" srcset="./assets/section1/section1-title-tb.png 1x,
-                    ./assets/section1/section1-title-tb@2x.png 2x,./assets/section1/section1-title-tb@3x.png 3x">
-                    <source srcset="
-                    ./assets/section1/section1-title.png 1x, 
-                    ./assets/section1/section1-title@2x.png 2x, 
-                    ./assets/section1/section1-title@3x.png 3x">
-                    <img src="./assets/section1/section1-title.png"
-                        srcset="./assets/section1/section1-title@2x.png 2x, ./assets/section1/section1-title@3x.png 3x">
-                </picture>
+               <div class="section1-title">
+                <div class="section1-main-text">
+                    Blockchain + X로 여는 <br />
+                    신뢰의 디지털 미래
+                </div>
+                <div class="section1-sub-text">
+                    블록체인을 중심으로 다양한 기술을 결합해<br />
+                    디지털 신뢰를 실현하는 플랫폼을 만듭니다
+                </div>
                 <div class="about-company" id="section1-about-company">
                     About Company
                 </div>
+               </div>
+            <div class="section1-extra" ></div>
+
             </div>
-            <div class="mouse-scroll">
-                <div class="mouse-scroll-img-box">
-                    <img class="mouse-scroll-img" src="./assets/mouse/down-arrow.svg" alt="down-scroll">
+            <div class="pagination-btn-wrapper">
+                <button class="left-btn" >
+                    <img src="./assets/section1/left-arrow.svg" alt="left-arrow">
+                </button>
+            
+                <div class="pagination-indicator">
+                    <span id="currentIndex">01</span>
+                    <div class="pagination-line">
+                        <div class="pagination-highlight" ></div>
+                    </div>
+                    <button>
+                        <img src="./assets/section1/reproduction.svg" alt="">
+                    </button>
+                    <span id="totalCount">05</span>
                 </div>
-                <p class="scroll-text montserrat">SCROLL</p>
+            
+                <button class="right-btn">
+                    <img src="./assets/section1/right-arrow.svg" alt="right-arrow">
+                </button>
             </div>
+
+            <img src="./assets/section1/section1-logo.png" 
+                srcset="./assets/section1/section1-logo@2x.png 2x,
+                    ./assets/section1/section1-logo@3x.png 3x,
+                "
+                class="section1-logo"
+            alt="">
         </section>
         <section class="section2">
             <div class="section2-title-box">

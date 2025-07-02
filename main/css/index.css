@@ -234,33 +234,62 @@ label:hover {
 .main-page .section1 {
   width: 100%;
   height: 960px;
-  background-image: -webkit-image-set(url(../assets/section1/section1.png) 1x, url(../assets/section1/section1@2x.png) 2x, url(../assets/section1/section1@3x.png) 3x);
-  background-image: image-set(url(../assets/section1/section1.png) 1x, url(../assets/section1/section1@2x.png) 2x, url(../assets/section1/section1@3x.png) 3x);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-}
-.main-page .section1 .section1-title-box {
-  width: 1200px;
-  margin: 0 auto;
-  position: relative;
-  top: 190px;
+  -webkit-transition: background-image 0.4s ease-in-out;
+  transition: background-image 0.4s ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.main-page .section1 .hidden {
+  display: none;
+}
+.main-page .section1 .section1-title-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 170px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.main-page .section1 .section1-title-box .section1-extra {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+.main-page .section1 .section1-title-box .section1-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: 32px;
 }
-.main-page .section1 .section1-title-box .about-company {
+.main-page .section1 .section1-title-box .section1-title .section1-main-text {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 140%;
+  padding-bottom: 16px;
+}
+.main-page .section1 .section1-title-box .section1-title .section1-sub-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.main-page .section1 .section1-title-box .section1-title .about-company {
   width: 181px;
   height: 52px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 32px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -272,44 +301,59 @@ label:hover {
   font-size: 18px;
   font-weight: 700;
 }
-.main-page .section1 .mouse-scroll {
+.main-page .section1 .pagination-btn-wrapper {
   position: absolute;
-  width: 53px;
-  height: 78px;
-  border-radius: 42px;
+  bottom: 296px;
+  left: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  z-index: 50;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  row-gap: 5px;
-  background-color: #1d1f22;
-  bottom: 120px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  color: white;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
 }
-.main-page .section1 .mouse-scroll .mouse-scroll-img-box {
+.main-page .section1 .pagination-btn-wrapper .pagination-indicator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+.main-page .section1 .pagination-btn-wrapper .pagination-indicator .pagination-line {
+  width: 286px;
+  height: 1px;
+  background-color: #949494;
+  position: relative;
   overflow: hidden;
 }
-.main-page .section1 .mouse-scroll .mouse-scroll-img-box .mouse-scroll-img {
-  -webkit-animation: scroll-spin 1.5s ease-in-out infinite;
-          animation: scroll-spin 1.5s ease-in-out infinite;
+.main-page .section1 .pagination-btn-wrapper .pagination-indicator .pagination-line .pagination-highlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 146px;
+  height: 1px;
+  background-color: white;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
 }
-.main-page .section1 .mouse-scroll .scroll-text {
-  font-size: 10px;
-  color: #F5F6F8;
-  font-family: "Montserrat", sans-serif;
+.main-page .section1 .section1-logo {
+  width: 100%;
+  bottom: 0px;
+  position: absolute;
 }
 .main-page .section2 {
   display: -webkit-box;
@@ -874,7 +918,7 @@ label:hover {
   .main-page .section1 {
     height: 690px;
   }
-  .main-page .section1 .section1-title-box {
+  .main-page .section1 .section1-title-box .section1-title {
     width: 626px;
   }
   .main-page .section1 .mouse-scroll {
@@ -1048,7 +1092,7 @@ label:hover {
   .main-page .section1 {
     height: 655px;
   }
-  .main-page .section1 .section1-title-box {
+  .main-page .section1 .section1-title-box .section1-title {
     width: 285px;
     row-gap: 24px;
     -webkit-box-align: center;

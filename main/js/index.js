@@ -2,7 +2,7 @@ const section1 = document.querySelector(".section1");
 const prevBtn = document.querySelector(".left-btn");
 const nextBtn = document.querySelector(".right-btn");
 const currentIndexEl = document.getElementById("currentIndex");
-const titleBox = document.querySelector(".section1-title-box");
+const titleBox = document.querySelector(".fade-wrapper");
 const totalCountEl = document.getElementById("totalCount");
 const mainTextEl = document.querySelector(".section1-main-text");
 const subTextEl = document.querySelector(".section1-sub-text");
@@ -10,6 +10,7 @@ const aboutCompanyEl = document.querySelector(".about-company");
 const extraTextEl = document.querySelector(".section1-extra");
 const logoEl = document.querySelector(".section1-logo");
 const paginationHighlight = document.querySelector(".pagination-highlight");
+const fadeWrapper = document.querySelector(".fade-wrapper");
 
 const images = [
   {
@@ -51,17 +52,17 @@ let currentIndex = 0;
 const total = images.length;
 
 function applyFadeEffect(nextIndex) {
-  section1.classList.add("fade-out");
+  fadeWrapper.classList.add("fade-out");
 
   setTimeout(() => {
     currentIndex = nextIndex;
     updateSectionBackground();
 
-    section1.classList.remove("fade-out");
-    section1.classList.add("fade-in");
+    fadeWrapper.classList.remove("fade-out");
+    fadeWrapper.classList.add("fade-in");
 
     setTimeout(() => {
-      section1.classList.remove("fade-in");
+      fadeWrapper.classList.remove("fade-in");
     }, 200);
   }, 200);
 }

@@ -281,12 +281,12 @@ label:hover {
   color: #F5F6F8;
   font-family: "Montserrat", sans-serif;
 }
-.main-page .section1.fade-out {
+.main-page .section1 .fade-out {
   opacity: 0;
   -webkit-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
 }
-.main-page .section1.fade-in {
+.main-page .section1 .fade-in {
   opacity: 1;
   -webkit-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
@@ -295,6 +295,11 @@ label:hover {
   display: none;
 }
 .main-page .section1 .section1-title-box {
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.main-page .section1 .section1-title-box .fade-wrapper {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -305,11 +310,11 @@ label:hover {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.main-page .section1 .section1-title-box .section1-extra {
+.main-page .section1 .section1-title-box .fade-wrapper .section1-extra {
   -webkit-transform: translateY(-30px);
           transform: translateY(-30px);
 }
-.main-page .section1 .section1-title-box .section1-title {
+.main-page .section1 .section1-title-box .fade-wrapper .section1-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,18 +324,18 @@ label:hover {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.main-page .section1 .section1-title-box .section1-title .section1-main-text {
+.main-page .section1 .section1-title-box .fade-wrapper .section1-title .section1-main-text {
   font-weight: 700;
   font-size: 45px;
   line-height: 140%;
   padding-bottom: 16px;
 }
-.main-page .section1 .section1-title-box .section1-title .section1-sub-text {
+.main-page .section1 .section1-title-box .fade-wrapper .section1-title .section1-sub-text {
   font-size: 20px;
   font-weight: 400;
   line-height: 150%;
 }
-.main-page .section1 .section1-title-box .section1-title .about-company {
+.main-page .section1 .section1-title-box .fade-wrapper .section1-title .about-company {
   width: 181px;
   height: 52px;
   display: -webkit-box;

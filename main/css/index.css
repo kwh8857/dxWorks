@@ -233,7 +233,7 @@ label:hover {
 }
 .main-page .section1 {
   width: 100%;
-  height: 960px;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -241,6 +241,13 @@ label:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 100px;
+}
+.main-page .section1 .section1-video {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 .main-page .section1 .mouse-scroll {
   position: absolute;
@@ -263,7 +270,7 @@ label:hover {
           justify-content: center;
   row-gap: 5px;
   background-color: #1d1f22;
-  bottom: 120px;
+  bottom: 400px;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
@@ -296,8 +303,7 @@ label:hover {
 }
 .main-page .section1 .section1-title-box {
   width: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  z-index: 1;
 }
 .main-page .section1 .section1-title-box .fade-wrapper {
   width: 100%;
@@ -306,13 +312,13 @@ label:hover {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding-top: 170px;
+  padding-top: 70px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.main-page .section1 .section1-title-box .fade-wrapper .section1-extra {
-  -webkit-transform: translateY(-30px);
-          transform: translateY(-30px);
+.main-page .section1 .section1-title-box .fade-wrapper .section1-extra-2 {
+  -webkit-transform: translateY(-180px);
+          transform: translateY(-180px);
 }
 .main-page .section1 .section1-title-box .fade-wrapper .section1-title {
   display: -webkit-box;
@@ -354,8 +360,9 @@ label:hover {
   font-weight: 700;
 }
 .main-page .section1 .pagination-btn-wrapper {
+  z-index: 1;
   position: absolute;
-  bottom: 296px;
+  bottom: 496px;
   left: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -404,7 +411,7 @@ label:hover {
 }
 .main-page .section1 .section1-logo {
   width: 100%;
-  bottom: 0px;
+  bottom: 180px;
   position: absolute;
 }
 .main-page .section2 {
@@ -968,13 +975,60 @@ label:hover {
     display: none;
   }
   .main-page .section1 {
-    height: 690px;
+    height: 100vh;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-top: 110px;
   }
-  .main-page .section1 .section1-title-box .section1-title {
-    width: 626px;
+  .main-page .section1 .section1-title-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-page .section1 .section1-title-box .fade-wrapper {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 92px;
+  }
+  .main-page .section1 .section1-title-box .fade-wrapper .section1-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    z-index: 1;
+  }
+  .main-page .section1 .section1-title-box .fade-wrapper .section1-title .about-company {
+    margin: 0 auto;
+    margin-top: 32px;
+  }
+  .main-page .section1 .section1-title-box .fade-wrapper .section1-extra-2 {
+    z-index: 0;
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  .main-page .section1 .section1-title-box .fade1-wrapper {
+    width: 100%;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .main-page .section1 .pagination-btn-wrapper {
+    bottom: 190px;
+    z-index: 1;
+  }
+  .main-page .section1 .section1-logo {
+    bottom: 255px;
   }
   .main-page .section1 .mouse-scroll {
-    bottom: 10px;
+    bottom: 100px;
   }
   .main-page .section2 {
     padding-top: 79px;
@@ -1142,17 +1196,73 @@ label:hover {
     display: none;
   }
   .main-page .section1 {
-    height: 655px;
+    height: 100vh;
+    padding-top: 70px;
   }
-  .main-page .section1 .section1-title-box .section1-title {
-    width: 285px;
+  .main-page .section1 video {
+    height: 390px;
+  }
+  .main-page .section1 .section1-title-box .fade-wrapper {
+    row-gap: 42px;
+  }
+  .main-page .section1 .section1-title-box .fade-wrapper .section1-title {
     row-gap: 24px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    row-gap: unset;
+  }
+  .main-page .section1 .section1-title-box .fade-wrapper .section1-title .section1-main-text {
+    font-size: 30px;
+    padding-bottom: 8px;
+  }
+  .main-page .section1 .section1-title-box .fade-wrapper .section1-title .section1-sub-text {
+    font-size: 16px;
+  }
+  .main-page .section1 .section1-title-box .fade-wrapper .section1-extra-2 {
+    z-index: 0;
+    -webkit-transform: translateY(-70px);
+            transform: translateY(-70px);
+  }
+  .main-page .section1 .section1-title-box .section1-extra {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .main-page .section1 .mouse-scroll {
-    bottom: -90px;
+    bottom: 90px;
+  }
+  .main-page .section1 .mouse-scroll2 {
+    bottom: -30px;
+  }
+  .main-page .section1 .section1-logo {
+    bottom: 220px;
+  }
+  .main-page .section1 .pagination-btn-wrapper {
+    width: 320px;
+    bottom: 170px;
+  }
+  .main-page .section1 .pagination-btn-wrapper .pagination-indicator {
+    width: 320px;
+  }
+  .main-page .section1 .pagination-btn-wrapper .pagination-indicator .pagination-line {
+    width: 167px;
+  }
+  .main-page .section1 .pagination-btn-wrapper .pagination-indicator .pagination-line .pagination-highlight {
+    width: 90px;
+  }
+  .main-page .section1 .pagination-btn-wrapper2 {
+    bottom: 55px;
+  }
+  .main-page .section1 .pagination-btn-wrapper3 {
+    bottom: 20px;
+  }
+  .main-page .section1 .mouse-scroll3 {
+    bottom: -70px;
   }
   .main-page .section2 {
     padding-top: 250px;

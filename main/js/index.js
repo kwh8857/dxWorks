@@ -2,7 +2,7 @@ const section1 = document.querySelector(".section1");
 const prevBtn = document.querySelector(".left-btn");
 const nextBtn = document.querySelector(".right-btn");
 const currentIndexEl = document.getElementById("currentIndex");
-const sectionTitle = document.querySelector('.section1-title')
+const sectionTitle = document.querySelector(".section1-title");
 const titleBox = document.querySelector(".fade-wrapper");
 const totalCountEl = document.getElementById("totalCount");
 const mainTextEl = document.querySelector(".section1-main-text");
@@ -12,15 +12,14 @@ const extraTextEl = document.querySelector(".section1-extra");
 const logoEl = document.querySelector(".section1-logo");
 const paginationHighlight = document.querySelector(".pagination-highlight");
 const fadeWrapper = document.querySelector(".fade-wrapper");
-const paginationWrapper = document.querySelector('.pagination-btn-wrapper');
-const mouseScroll = document.querySelector('.mouse-scroll')
+const paginationWrapper = document.querySelector(".pagination-btn-wrapper");
 const images = [
   {
     video: "./assets/section1/section1-video.mp4",
     mainText: `Blockchain + X로 여는 <br/>신뢰의 디지털 미래`,
     subText: `블록체인을 중심으로 다양한 기술을 결합해<br/>디지털 신뢰를 실현하는 플랫폼을 만듭니다`,
     about: "About Company",
-    extraContent:null,
+    extraContent: null,
   },
   {
     img1x: "./assets/section1/section1-title2",
@@ -104,31 +103,20 @@ function updateSectionBackground() {
     `;
   }
 
-  if(currentIndex === 1){
-    paginationWrapper.classList.add('pagination-btn-wrapper2');
-    sectionTitle.classList.add('section1-title1')
-    extraTextEl.classList.add('section1-extra1')
-
-    mouseScroll.classList.add('mouse-scroll2')
-  }else{
-    paginationWrapper.classList.remove('pagination-btn-wrapper2')
-    mouseScroll.classList.remove("mouse-scroll2");
-    sectionTitle.classList.remove('section1-title1')
+  if (currentIndex === 1) {
+    sectionTitle.classList.add("section1-title1");
+    extraTextEl.classList.add("section1-extra1");
+  } else {
+    sectionTitle.classList.remove("section1-title1");
     extraTextEl.classList.remove("section1-extra1");
   }
 
-
-  if(currentIndex === 2){
-    paginationWrapper.classList.add("pagination-btn-wrapper3");
-    mouseScroll.classList.add("mouse-scroll3");
-    extraTextEl.classList.add("section1-extra-2")
-    section1.classList.add('section1-2')
-  }else{
-    paginationWrapper.classList.remove("pagination-btn-wrapper3");
-    mouseScroll.classList.remove("mouse-scroll3");
-    extraTextEl.classList.remove('section1-extra-2')
+  if (currentIndex === 2) {
+    extraTextEl.classList.add("section1-extra-2");
+    section1.classList.add("section1-2");
+  } else {
+    extraTextEl.classList.remove("section1-extra-2");
     section1.classList.remove("section1-2");
-
   }
   mainTextEl.innerHTML = mainText;
   subTextEl.innerHTML = subText;

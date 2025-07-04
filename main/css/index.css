@@ -313,6 +313,12 @@ label:hover {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-top: 20vh;
+  display: none;
+}
+.main-page .section1 .section1-title-box .section1-logo {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
 }
 .main-page .section1 .section1-title-box .fade-wrapper {
   width: 100%;
@@ -326,6 +332,8 @@ label:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  position: relative;
+  z-index: 10;
 }
 .main-page .section1 .section1-title-box .fade-wrapper .section1-extra {
   width: 796px;
@@ -335,7 +343,7 @@ label:hover {
 .main-page .section1 .section1-title-box .fade-wrapper .section1-extra img {
   width: 100%;
 }
-.main-page .section1 .section1-title-box .fade-wrapper .section1-extra-2 {
+.main-page .section1 .section1-title-box .fade-wrapper .section1-extra2 {
   -webkit-transform: translateY(-250px);
           transform: translateY(-250px);
 }
@@ -384,6 +392,13 @@ label:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.main-page .section1 .section1-title-box-2 {
+  background-image: -webkit-image-set(url("../assets/section1/section1-title2.png") 1x, url("../assets/section1/section1-title2@2x.png") 2x, url("../assets/section1/section1-title2@3x.png") 3x);
+  background-image: image-set(url("../assets/section1/section1-title2.png") 1x, url("../assets/section1/section1-title2@2x.png") 2x, url("../assets/section1/section1-title2@3x.png") 3x);
+}
+.main-page .section1 .active {
+  display: block;
 }
 .main-page .section1 .pagination-btn-wrapper {
   z-index: 1;
@@ -434,11 +449,6 @@ label:hover {
   transition: -webkit-transform 0.4s ease;
   transition: transform 0.4s ease;
   transition: transform 0.4s ease, -webkit-transform 0.4s ease;
-}
-.main-page .section1 .section1-logo {
-  width: 100%;
-  bottom: 0;
-  position: absolute;
 }
 .main-page .section2 {
   display: -webkit-box;
@@ -1065,7 +1075,7 @@ label:hover {
   .main-page .section1 .section1-title-box .fade-wrapper .section1-title1 {
     padding-top: 0px;
   }
-  .main-page .section1 .section1-title-box .fade-wrapper .section1-extra-2 {
+  .main-page .section1 .section1-title-box .fade-wrapper .section1-extra2 {
     z-index: 0;
     -webkit-transform: unset;
             transform: unset;
@@ -1289,7 +1299,7 @@ label:hover {
     margin: 0 auto;
     text-align: center;
   }
-  .main-page .section1 .section1-title-box .fade-wrapper .section1-extra-2 {
+  .main-page .section1 .section1-title-box .fade-wrapper .section1-extra2 {
     z-index: 0;
     width: 45vh;
     display: unset;

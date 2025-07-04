@@ -275,6 +275,13 @@ label {
             height: fit-content;
             box-sizing: border-box;
             padding-top: 20vh;
+            display: none;
+
+            .section1-logo {
+                width: 100%;
+                bottom: 0;
+                position: absolute;
+            }
 
             .fade-wrapper {
                 width: 100%;
@@ -282,6 +289,8 @@ label {
                 justify-content: space-around;
                 box-sizing: border-box;
                 align-items: flex-start;
+                position: relative;
+                z-index: 10;
 
                 .section1-extra {
                     width: 796px;
@@ -293,7 +302,7 @@ label {
                 }
 
 
-                .section1-extra-2 {
+                .section1-extra2 {
                     transform: translateY(-250px);
                 }
 
@@ -339,6 +348,16 @@ label {
             }
         }
 
+        .section1-title-box-2 {
+            background-image: image-set(url("../assets/section1/section1-title2.png") 1x,
+                    url("../assets/section1/section1-title2@2x.png") 2x,
+                    url("../assets/section1/section1-title2@3x.png") 3x);
+        }
+
+        .active {
+            display: block;
+        }
+
         .pagination-btn-wrapper {
             z-index: 1;
             position: absolute;
@@ -379,11 +398,7 @@ label {
 
 
 
-        .section1-logo {
-            width: 100%;
-            bottom: 0;
-            position: absolute;
-        }
+
     }
 
 
@@ -927,7 +942,7 @@ label {
                         padding-top: 0px;
                     }
 
-                    .section1-extra-2 {
+                    .section1-extra2 {
                         // min-width: 40%;
                         z-index: 0;
                         transform: unset;
@@ -960,6 +975,17 @@ label {
 
 
         }
+
+        // #section1-title-box-2 {
+        //     // background-image: url("../assets/section1/section1-bg.png");
+        //     // background-image: -webkit-image-set(url("../assets/section1/section1-bg.png") 1x,
+        //     //         url("../assets/section1/section1-bg@2x.png") 2x,
+        //     //         url("../assets/section1/section1-bg@3x.png") 3x);
+        //     background-image: image-set(url("../assets/section1/section1-bg.png") 1x,
+        //             url("../assets/section1/section1-bg@2x.png") 2x,
+        //             url("../assets/section1/section1-bg@3x.png") 3x);
+
+        // }
 
         .section2 {
             padding-top: 79px;
@@ -1184,7 +1210,7 @@ label {
                         }
                     }
 
-                    .section1-extra-2 {
+                    .section1-extra2 {
                         z-index: 0;
                         width: 45vh;
                         // transform: translateY(-70px);

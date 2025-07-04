@@ -19,6 +19,7 @@ const images = [
     mainText: `Blockchain + X로 여는 <br/>신뢰의 디지털 미래`,
     subText: `블록체인을 중심으로 다양한 기술을 결합해<br/>디지털 신뢰를 실현하는 플랫폼을 만듭니다`,
     about: "About Company",
+    link: "/mission",
     extraContent: null,
   },
   {
@@ -28,6 +29,7 @@ const images = [
     mainText: `2025 디엑스웍스<br/>혁신 프리미어 1000 선정`,
     subText: `블록체인을 중심으로 다양한 기술을 결합해<br/>디지털 신뢰를 실현하는 플랫폼을 만듭니다`,
     about: "Detail",
+    link: "/dxHistory",
     extraContent: `
       <picture>
   <source
@@ -46,6 +48,7 @@ const images = [
     subText: `혁신·경영·성장성 모두 검증된 기업<br/>
               벤처인증 · 이노비즈 · 메인비즈 인증 보유`,
     about: "Detail",
+    link: "/certification",
     extraContent: `
       <picture>
   <source
@@ -80,18 +83,26 @@ function applyFadeEffect(nextIndex) {
 }
 
 function updateSectionBackground() {
-  const { video, img1x, img2x, img3x, mainText, subText, about, extraContent } =
-    images[currentIndex];
+  const {
+    video,
+    img1x,
+    img2x,
+    img3x,
+    mainText,
+    subText,
+    about,
+    extraContent,
+    link,
+  } = images[currentIndex];
 
   const videoEl = document.querySelector(".section1-video");
 
   if (video) {
-    videoEl.src = video;
     videoEl.classList.remove("hidden");
     section1.style.backgroundImage = "none";
   } else {
-    videoEl.pause();
-    videoEl.src = "";
+    // videoEl.pause();
+    // videoEl.src = "";
     videoEl.classList.add("hidden");
 
     section1.style.backgroundImage = `
@@ -121,7 +132,7 @@ function updateSectionBackground() {
   mainTextEl.innerHTML = mainText;
   subTextEl.innerHTML = subText;
   aboutCompanyEl.innerHTML = about;
-
+  aboutCompanyEl.href = link;
   if (extraContent) {
     extraTextEl.innerHTML = extraContent;
     extraTextEl.classList.remove("hidden");
@@ -172,4 +183,23 @@ prevBtn.addEventListener("click", () => {
 nextBtn.addEventListener("click", () => {
   const nextIndex = currentIndex === total - 1 ? 0 : currentIndex + 1;
   applyFadeEffect(nextIndex);
+});
+
+const video = document.getElementById("section1-video");
+const reproductionBtn = document.getElementById("reproduction-btn");
+const btnImage = reproductionBtn.querySelector("img");
+
+let isPlaying = true; // 초기 상태 (autoplay로 시작하니까 true)
+
+reproductionBtn.addEventListener("click", () => {
+  if (isPlaying) {
+    video.pause();
+    btnImage.src = "./assets/section1/play.svg"; // play 아이콘
+    btnImage.alt = "play";
+  } else {
+    video.play();
+    btnImage.src = "./assets/section1/reproduction.svg"; // pause 아이콘
+    btnImage.alt = "pause";
+  }
+  isPlaying = !isPlaying;
 });

@@ -872,7 +872,8 @@ label {
         .section1 {
             height: calc(100vh - 80px);
             box-sizing: border-box;
-
+            max-height: 960px;
+            min-height: 500px;
 
             .section1-video {
                 top: 20vh;
@@ -944,7 +945,7 @@ label {
             }
 
             .pagination-btn-wrapper {
-                bottom: 10vh;
+                bottom: 18%;
                 z-index: 1;
             }
 
@@ -1139,6 +1140,8 @@ label {
     .main-page {
         .section1 {
             height: calc(100vh - 80px);
+            max-height: 960px;
+            min-height: 500px;
             padding-top: 5vh;
 
             video {

@@ -1004,6 +1004,8 @@ label:hover {
     height: calc(100vh - 80px);
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    max-height: 960px;
+    min-height: 500px;
   }
   .main-page .section1 .section1-video {
     top: 20vh;
@@ -1072,7 +1074,7 @@ label:hover {
     bottom: 0;
   }
   .main-page .section1 .pagination-btn-wrapper {
-    bottom: 10vh;
+    bottom: 18%;
     z-index: 1;
   }
   .main-page .section1 .section1-logo {
@@ -1248,6 +1250,8 @@ label:hover {
   }
   .main-page .section1 {
     height: calc(100vh - 80px);
+    max-height: 960px;
+    min-height: 500px;
     padding-top: 5vh;
   }
   .main-page .section1 video {

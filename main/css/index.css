@@ -264,6 +264,12 @@ label:hover {
   font-weight: 400;
   line-height: 150%;
 }
+.main-page .section1 .section1-title-box .fade-wrapper .section1-title .banner1-text {
+  max-width: 100vw;
+}
+.main-page .section1 .section1-title-box .fade-wrapper .section1-title .banner1-text > img {
+  width: 100%;
+}
 .main-page .section1 .section1-title-box .fade-wrapper .section1-title .about-company {
   width: 181px;
   height: 52px;
@@ -939,6 +945,10 @@ label:hover {
     margin: 0 auto;
     margin-top: 16px;
   }
+  .main-page .section1 .section1-title-box .fade-wrapper .section1-title .banner1-btn {
+    margin: unset;
+    margin-top: 16px;
+  }
   .main-page .section1 .section1-title-box .fade-wrapper .section1-title .section1-main-text {
     font-size: 30px;
   }
@@ -1150,6 +1160,7 @@ label:hover {
   }
   .main-page .section1 .section1-title-box .fade-wrapper {
     row-gap: 42px;
+    padding-bottom: 45vh;
   }
   .main-page .section1 .section1-title-box .fade-wrapper .section1-title {
     row-gap: 24px;
@@ -1164,6 +1175,10 @@ label:hover {
   }
   .main-page .section1 .section1-title-box .fade-wrapper .section1-title .section1-sub-text {
     font-size: 16px;
+  }
+  .main-page .section1 .section1-title-box .fade-wrapper .section1-title .banner1-btn {
+    margin: 0 auto;
+    margin-top: 16px;
   }
   .main-page .section1 .section1-title-box .fade-wrapper .section1-extra1 {
     display: -webkit-box;

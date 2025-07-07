@@ -92,99 +92,6 @@ label {
     }
 }
 
-/** 공통 헤더 **/
-.header-section {
-    z-index: 200;
-    background-color: black;
-    width: 100%;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 0 56px;
-    box-sizing: border-box;
-
-    .header-logo {
-        width: 178px;
-
-        img {
-            width: 100%;
-        }
-    }
-
-    .header-nav {
-        .header-nav-list {
-            display: grid;
-            grid-template-columns: repeat(4, 190px);
-            align-items: center;
-            // gap: 32px;
-            padding: unset;
-
-            .header-nav-item {
-                position: relative;
-                display: grid;
-                height: 80px;
-                overflow: hidden;
-
-                .header-nav-link {
-                    color: white;
-                    font-size: 18px;
-                    font-weight: 700;
-                    height: 80px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                }
-
-                .sub-nav-list {
-                    width: 100%;
-                    // display: none;
-                    display: flex;
-                    top: 100%;
-                    left: 0;
-                    background-color: black;
-                    flex-direction: column;
-                    position: absolute;
-
-                    .sub-nav-link {
-                        width: 100%;
-                        // width: 209px;
-                        height: 50px;
-                        color: white;
-                        font-size: 16px;
-                        font-weight: 700;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                    }
-                }
-            }
-
-        }
-    }
-
-    .header-btn-section {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-
-        .header-btn-item {
-            color: white;
-            font-size: 14px;
-            font-weight: 700;
-        }
-
-        &>hr {
-            height: 16px;
-            background-color: white;
-        }
-    }
-}
-
 @keyframes scroll-spin {
     0% {
         transform: translateY(-100px);
@@ -276,6 +183,9 @@ label {
             box-sizing: border-box;
             padding-top: 20vh;
             display: none;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
 
             .section1-logo {
                 width: 100%;
@@ -284,13 +194,14 @@ label {
             }
 
             .fade-wrapper {
-                width: 100%;
+                width: 1300px;
                 display: flex;
-                justify-content: space-around;
                 box-sizing: border-box;
                 align-items: flex-start;
+                justify-content: space-between;
                 position: relative;
                 z-index: 10;
+                margin: 0 auto;
 
                 .section1-extra {
                     width: 796px;
@@ -302,7 +213,7 @@ label {
                 }
 
 
-                .section1-extra-2 {
+                .section1-extra2 {
                     transform: translateY(-250px);
                 }
 
@@ -321,6 +232,14 @@ label {
                         font-size: 20px;
                         font-weight: 400;
                         line-height: 150%;
+                    }
+
+                    .banner1-text {
+                        max-width: 100vw;
+
+                        &>img {
+                            width: 100%;
+                        }
                     }
 
                     .about-company {
@@ -849,35 +768,7 @@ label {
 }
 
 @media screen and (max-width:1440px) {
-    .header-section {
-        padding: 0 20px;
 
-        .header-logo {
-            width: 120px;
-        }
-
-        .header-nav {
-            .header-nav-list {
-                grid-template-columns: repeat(4, 110px);
-
-                .header-nav-item {
-                    .header-nav-link {
-                        font-size: 14px;
-                    }
-
-                    .sub-nav-list {
-                        .sub-nav-link {
-                            font-size: 12px;
-                        }
-                    }
-                }
-            }
-        }
-
-        .header-btn-section {
-            gap: 8px;
-        }
-    }
 
     .main-page {
         .pc-br {
@@ -920,6 +811,11 @@ label {
                             margin-top: 16px;
                         }
 
+                        .banner1-btn {
+                            margin: unset;
+                            margin-top: 16px;
+                        }
+
                         .section1-main-text {
                             font-size: 30px;
                         }
@@ -942,7 +838,7 @@ label {
                         padding-top: 0px;
                     }
 
-                    .section1-extra-2 {
+                    .section1-extra2 {
                         // min-width: 40%;
                         z-index: 0;
                         transform: unset;
@@ -1178,6 +1074,7 @@ label {
 
                 .fade-wrapper {
                     row-gap: 42px;
+                    padding-bottom: 45vh;
 
                     .section1-title {
                         row-gap: 24px;
@@ -1193,7 +1090,10 @@ label {
                             font-size: 16px;
                         }
 
-                        .about-company {}
+                        .banner1-btn {
+                            margin: 0 auto;
+                            margin-top: 16px;
+                        }
                     }
 
                     .section1-extra1 {
@@ -1210,7 +1110,7 @@ label {
                         }
                     }
 
-                    .section1-extra-2 {
+                    .section1-extra2 {
                         z-index: 0;
                         width: 45vh;
                         // transform: translateY(-70px);

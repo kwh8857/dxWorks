@@ -265,6 +265,7 @@ label:hover {
   font-size: 45px;
   line-height: 140%;
   padding-bottom: 16px;
+  white-space: nowrap;
 }
 .main-page .section1 .section1-title-box .fade-wrapper .section1-title .section1-sub-text {
   font-size: 20px;

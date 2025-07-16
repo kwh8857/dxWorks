@@ -136,15 +136,22 @@ label:hover {
   display: -ms-flexbox;
   display: flex;
 }
-.main-page .section1 video {
-  position: absolute;
-  top: 0;
-}
 .main-page .section1 .section1-video {
   position: absolute;
-  left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
+  top: 0;
+  left: 0;
+  width: 100%;
+  mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(20%, rgb(0, 0, 0)), color-stop(80%, rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(20%, rgb(0, 0, 0)), color-stop(80%, rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
+  /* 흐릿함 추가하고 싶다면 blur도 */
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 .main-page .section1 .mouse-scroll {
   position: absolute;
@@ -262,6 +269,7 @@ label:hover {
 .main-page .section1 .section1-title-box .fade-wrapper .section1-title .section1-sub-text {
   font-size: 20px;
   font-weight: 400;
+  white-space: nowrap;
   line-height: 150%;
 }
 .main-page .section1 .section1-title-box .fade-wrapper .section1-title .banner1-text {
@@ -287,6 +295,11 @@ label:hover {
   color: white;
   font-size: 18px;
   font-weight: 700;
+}
+.main-page .section1 .section1-title-box .fade-wrapper .section1-title .ubuntu-text {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  line-height: 120%;
 }
 .main-page .section1 .section1-title-box .fade1-wrapper {
   width: 1000px;
@@ -906,6 +919,7 @@ label:hover {
   }
   .main-page .section1 .section1-video {
     top: 20vh;
+    left: 0;
   }
   .main-page .section1 .section1-title-box {
     -webkit-box-orient: vertical;
@@ -943,10 +957,6 @@ label:hover {
   }
   .main-page .section1 .section1-title-box .fade-wrapper .section1-title .about-company {
     margin: 0 auto;
-    margin-top: 16px;
-  }
-  .main-page .section1 .section1-title-box .fade-wrapper .section1-title .banner1-btn {
-    margin: unset;
     margin-top: 16px;
   }
   .main-page .section1 .section1-title-box .fade-wrapper .section1-title .section1-main-text {
@@ -1155,8 +1165,8 @@ label:hover {
     min-height: 500px;
     padding-top: 5vh;
   }
-  .main-page .section1 video {
-    height: 390px;
+  .main-page .section1 .section1-video {
+    top: 40vh;
   }
   .main-page .section1 .section1-title-box .fade-wrapper {
     row-gap: 42px;

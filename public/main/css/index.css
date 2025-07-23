@@ -911,11 +911,11 @@ label:hover {
     width: 45vh;
     display: unset;
   }
+  .main-page .section1 .section1-title-box .section1-logo {
+    bottom: 80px;
+  }
   .main-page .section1 .mouse-scroll {
     bottom: -100px;
-  }
-  .main-page .section1 .section1-logo {
-    bottom: 220px;
   }
   .main-page .section1 .pagination-btn-wrapper {
     bottom: 5vh;

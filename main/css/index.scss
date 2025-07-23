@@ -136,7 +136,6 @@ label {
                     rgba(0, 0, 0, 0) 100%);
 
             /* 흐릿함 추가하고 싶다면 blur도 */
-            filter: blur(1px);
             transform: scale(1.01);
         }
 
@@ -1141,7 +1140,9 @@ label {
 
 
 
-
+      .section1-logo {
+                bottom: 80px;
+            }
             }
 
             .mouse-scroll {
@@ -1152,9 +1153,7 @@ label {
             //     bottom: 50px;
             // }
 
-            .section1-logo {
-                bottom: 220px;
-            }
+      
 
             .pagination-btn-wrapper {
                 // width: 320px;

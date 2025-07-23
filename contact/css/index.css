@@ -3,8 +3,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Pretendard", sans-serif;
   overflow: hidden;
 }
@@ -39,8 +38,7 @@ button,
 a,
 label {
   padding: unset;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-appearance: none;
   border: none;
   cursor: pointer;
@@ -57,7 +55,6 @@ button:hover,
 a:hover,
 label:hover {
   opacity: 0.7;
-  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
@@ -66,8 +63,7 @@ label:hover {
   overflow-x: hidden;
   width: 100%;
   height: 100vh;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: white;
   /* 스크롤바 스타일 설정 */
 }
@@ -88,25 +84,15 @@ label:hover {
   height: 259px;
   background-color: black;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .contactus-page .banner-section .banner-wrapper {
   width: 1080px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 .contactus-page .banner-section .banner-wrapper .banner-title-box .banner-title {
   font-size: 45px;
@@ -120,19 +106,10 @@ label:hover {
 .contactus-page .contactus-section {
   height: 569px;
   background-color: #F5F6F8;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .contactus-page .contactus-section .contactus-wrapper {
   width: 1080px;
@@ -140,17 +117,11 @@ label:hover {
 }
 .contactus-page .contactus-section .contactus-wrapper .title-box {
   padding-bottom: 16px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-sizing: border-box;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-  -webkit-column-gap: 9px;
-     -moz-column-gap: 9px;
-          column-gap: 9px;
+  align-items: end;
+  -moz-column-gap: 9px;
+       column-gap: 9px;
   border-bottom: 1px solid #363840;
 }
 .contactus-page .contactus-section .contactus-wrapper .title-box .title {
@@ -162,43 +133,29 @@ label:hover {
   color: #0095FF;
 }
 .contactus-page .contactus-section .contactus-wrapper .info-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 16px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding-top: 18px;
 }
 .contactus-page .contactus-section .contactus-wrapper .info-wrapper .input-title {
   width: 80px;
   font-size: 14px;
   font-weight: 700;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-column-gap: 3px;
-     -moz-column-gap: 3px;
-          column-gap: 3px;
+  align-items: center;
+  -moz-column-gap: 3px;
+       column-gap: 3px;
 }
 .contactus-page .contactus-section .contactus-wrapper .info-wrapper .input-title .star {
   display: block;
   color: #0095FF;
 }
 .contactus-page .contactus-section .contactus-wrapper .info-wrapper .input-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 16px;
-     -moz-column-gap: 16px;
-          column-gap: 16px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
 }
 .contactus-page .contactus-section .contactus-wrapper .info-wrapper .input-box .input {
   width: 165px;
@@ -206,8 +163,7 @@ label:hover {
   border: 1px solid #DBDBDB;
   border-radius: 4px;
   padding: 0px 8px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .contactus-page .contactus-section .contactus-wrapper .info-wrapper .input-box .uploaded {
   border: 1px solid #66BFFF;
@@ -219,20 +175,13 @@ label:hover {
   width: 510px;
 }
 .contactus-page .contactus-section .contactus-wrapper .info-wrapper .input-box .textarea-title {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  align-items: start;
 }
 .contactus-page .contactus-section .contactus-wrapper .info-wrapper .input-box .number-input-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-column-gap: 6px;
-     -moz-column-gap: 6px;
-          column-gap: 6px;
+  align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
 }
 .contactus-page .contactus-section .contactus-wrapper .info-wrapper .input-box .number-input-box span {
   color: #888888;
@@ -245,13 +194,8 @@ label:hover {
 }
 .contactus-page .contactus-section .contactus-wrapper .info-wrapper .input-box .textarea-box {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 4px;
 }
 .contactus-page .contactus-section .contactus-wrapper .info-wrapper .input-box .textarea-box .content-input {
@@ -272,27 +216,16 @@ label:hover {
   background-color: #DBDBDB;
   font-size: 14px;
   font-weight: 700;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .contactus-page .terms-section {
   width: 1080px;
   margin: 0 auto;
   padding-top: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 12px;
 }
 .contactus-page .terms-section .title {
@@ -305,8 +238,7 @@ label:hover {
   background-color: #FBFBFB;
   border: 1px solid #DCD6D6;
   padding: 32px 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   overflow: hidden;
   overflow-y: scroll;
 }
@@ -317,8 +249,7 @@ label:hover {
   border-bottom: 1px solid #C3C3C3;
   padding-bottom: 10px;
   line-height: 150%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .contactus-page .terms-section .terms-box .terms-text {
   line-height: 150%;
@@ -327,15 +258,10 @@ label:hover {
   white-space: pre-line;
 }
 .contactus-page .terms-section .terms-check-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-column-gap: 9px;
-     -moz-column-gap: 9px;
-          column-gap: 9px;
+  align-items: center;
+  -moz-column-gap: 9px;
+       column-gap: 9px;
   margin-left: auto;
 }
 .contactus-page .terms-section .terms-check-box .box {
@@ -348,15 +274,9 @@ label:hover {
 .contactus-page .terms-section .terms-check-box .checked {
   background-color: #0095FF;
   border: 1px solid #0095FF;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .contactus-page .terms-section .terms-check-box .terms-check-text {
   font-size: 16px;
@@ -366,34 +286,22 @@ label:hover {
   color: #0095FF;
 }
 .contactus-page .receipt-btn-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 1080px;
   margin: 0 auto;
   padding-top: 60px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-column-gap: 14px;
-     -moz-column-gap: 14px;
-          column-gap: 14px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  box-sizing: border-box;
+  -moz-column-gap: 14px;
+       column-gap: 14px;
+  justify-content: center;
   padding-bottom: 120px;
 }
 .contactus-page .receipt-btn-section .btn {
   width: 208px;
   height: 52px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-size: 18px;
   font-weight: 700;
 }
@@ -410,9 +318,7 @@ label:hover {
   .contactus-page .banner-section .banner-wrapper {
     width: 100%;
     margin: unset;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .contactus-page .banner-section .banner-wrapper .banner-title-box {
     z-index: 1;
@@ -434,9 +340,7 @@ label:hover {
   .contactus-page .banner-section .banner-wrapper {
     width: 100%;
     margin: unset;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .contactus-page .banner-section .banner-wrapper .banner-title-box {
     z-index: 1;
@@ -455,13 +359,8 @@ label:hover {
     width: 320px;
   }
   .contactus-page .contactus-section .contactus-wrapper .title-box {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: unset;
-        -ms-flex-align: unset;
-            align-items: unset;
+    flex-direction: column;
+    align-items: unset;
     row-gap: 4px;
   }
   .contactus-page .contactus-section .contactus-wrapper .title-box .sub-title {
@@ -469,14 +368,11 @@ label:hover {
     line-height: 150%;
   }
   .contactus-page .contactus-section .contactus-wrapper .info-wrapper .file-input-box {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .contactus-page .contactus-section .contactus-wrapper .info-wrapper .input-box {
-    -webkit-column-gap: unset;
-       -moz-column-gap: unset;
-            column-gap: unset;
+    -moz-column-gap: unset;
+         column-gap: unset;
   }
   .contactus-page .contactus-section .contactus-wrapper .info-wrapper .input-box .input-title {
     width: 60px;
@@ -513,4 +409,4 @@ label:hover {
     width: 320px;
     padding-top: 40px;
   }
-}
+}/*# sourceMappingURL=index.css.map */

@@ -3,8 +3,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Pretendard", sans-serif;
   overflow: hidden;
 }
@@ -31,8 +30,7 @@ main {
   width: 100%;
   height: 100vh;
   padding-top: 80px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   overflow-x: hidden;
   background-color: black;
   /* 스크롤바 스타일 설정 */
@@ -70,8 +68,7 @@ button,
 a,
 label {
   padding: unset;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-appearance: none;
   border: none;
   cursor: pointer;
@@ -88,7 +85,6 @@ button:hover,
 a:hover,
 label:hover {
   opacity: 0.7;
-  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
@@ -99,27 +95,17 @@ label:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  align-items: end;
   padding-bottom: 48px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .property-page .banner-section .banner-title-box {
   width: 1200px;
   margin: 0 auto;
   font-weight: 700;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 8px;
 }
 .property-page .banner-section .banner-title-box .color-text {
@@ -139,23 +125,14 @@ label:hover {
 .property-page .property-section .property-wrapper {
   width: 1200px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 31px;
 }
 .property-page .property-section .property-wrapper .search-form {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  justify-content: end;
   position: relative;
 }
 .property-page .property-section .property-wrapper .search-form .search-input {
@@ -163,26 +140,10 @@ label:hover {
   height: 56px;
   border-radius: 4px;
   padding: 16px 14px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: 1px solid #DBDBDB;
 }
-.property-page .property-section .property-wrapper .search-form .search-input::-webkit-input-placeholder {
-  font-size: 14px;
-  color: #949494;
-  font-weight: 400;
-}
 .property-page .property-section .property-wrapper .search-form .search-input::-moz-placeholder {
-  font-size: 14px;
-  color: #949494;
-  font-weight: 400;
-}
-.property-page .property-section .property-wrapper .search-form .search-input:-ms-input-placeholder {
-  font-size: 14px;
-  color: #949494;
-  font-weight: 400;
-}
-.property-page .property-section .property-wrapper .search-form .search-input::-ms-input-placeholder {
   font-size: 14px;
   color: #949494;
   font-weight: 400;
@@ -196,30 +157,21 @@ label:hover {
   position: absolute;
   right: 14px;
   top: 50%;
-  -webkit-transform: translate(0%, -50%);
-          transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
 }
 .property-page .property-section .property-wrapper .lists-wrapper {
   border-top: 1px solid black;
 }
 .property-page .property-section .property-wrapper .lists-wrapper .lists-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 .property-page .property-section .property-wrapper .lists-wrapper .lists-ul .list {
   display: grid;
   border-bottom: 1px solid #DCDEE4;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 24px 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   grid-template-columns: 30px 500px 150px 346px 93px;
   gap: 20px;
   font-size: 16px;
@@ -228,18 +180,11 @@ label:hover {
   font-weight: 700;
 }
 .property-page .property-section .property-wrapper .lists-wrapper .lists-ul .list .center-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 11px;
-     -moz-column-gap: 11px;
-          column-gap: 11px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -moz-column-gap: 11px;
+       column-gap: 11px;
+  align-items: center;
+  justify-content: center;
 }
 .property-page .property-section .property-wrapper .lists-wrapper .lists-ul .list .center-box .register {
   width: 44px;
@@ -247,15 +192,9 @@ label:hover {
   background-color: #0095FF;
   color: white;
   font-weight: 400;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .property-page .property-section .property-wrapper .lists-wrapper .lists-ul .list .center-box .status-type {
   background-color: rgb(68, 70, 79);
@@ -264,12 +203,8 @@ label:hover {
   font-weight: 400;
 }
 .property-page .property-section .property-wrapper .lists-wrapper .lists-ul .list .country-number {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-align: center;
 }
 .property-page .property-section .property-wrapper .lists-wrapper .lists-ul .list .register-btn {
@@ -278,48 +213,28 @@ label:hover {
   background-color: #F5F6F8;
   font-size: 14px;
   font-weight: 400;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .property-page .pagination-btn-section {
   padding-bottom: 116px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: white;
 }
 .property-page .pagination-btn-section .pagination-btn-box {
   width: 1200px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-column-gap: 4px;
-     -moz-column-gap: 4px;
-          column-gap: 4px;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
 }
 .property-page .pagination-btn-section .pagination-btn-box button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .property-page .pagination-btn-section .pagination-btn-box .arrow-btn {
   width: 20px;
@@ -348,12 +263,8 @@ label:hover {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1000;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .property-modal .property-modal-content {
   position: relative;
@@ -370,18 +281,11 @@ label:hover {
   background-color: white;
   width: 40px;
   height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 22px;
   font-weight: 500;
   color: black;
@@ -390,12 +294,8 @@ label:hover {
 
 @media screen and (max-width: 1440px) {
   .property-page .banner-section {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     height: 231px;
     padding-bottom: unset;
   }
@@ -408,22 +308,14 @@ label:hover {
   }
   .property-page .property-section .property-wrapper {
     padding: 0 20px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     width: 100%;
   }
   .property-page .property-section .property-wrapper .lists-wrapper .lists-ul .list {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 8px;
   }
   .property-page .property-section .property-wrapper .lists-wrapper .lists-ul .list .list-title {
@@ -446,12 +338,8 @@ label:hover {
 @media screen and (max-width: 767px) {
   .property-page .banner-section {
     margin-top: 50px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   .property-page .banner-section .banner-title-box {
     width: auto;
@@ -485,4 +373,4 @@ label:hover {
   .mb-br {
     display: none !important;
   }
-}
+}/*# sourceMappingURL=index.css.map */

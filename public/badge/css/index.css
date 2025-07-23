@@ -3,8 +3,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Pretendard", sans-serif;
   background-color: black;
   overflow: hidden;
@@ -14,8 +13,7 @@ button,
 a,
 label {
   padding: unset;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-appearance: none;
   border: none;
   cursor: pointer;
@@ -32,61 +30,28 @@ button:hover,
 a:hover,
 label:hover {
   opacity: 0.7;
-  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-@-webkit-keyframes scroll-spin {
-  0% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-  }
-  50% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(100px);
-            transform: translateY(100px);
+    transform: translateY(0);
   }
 }
 @keyframes scroll-spin {
   0% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    transform: translateY(-100px);
   }
   50% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(100px);
-            transform: translateY(100px);
+    transform: translateY(100px);
   }
 }
 .badge-page {
@@ -95,8 +60,7 @@ label:hover {
   width: 100%;
   height: 100vh;
   padding-top: 80px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .badge-page::-webkit-scrollbar {
   width: 8px;
@@ -118,30 +82,20 @@ label:hover {
 .badge-page .badge-digital-badge-section .badge-digital-badge-top {
   position: relative;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 .badge-page .badge-digital-badge-section .badge-digital-badge-top .gradient-line {
   position: absolute;
   top: 45%;
   /* 가운데 정렬 */
   left: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 100%;
   height: 120px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 195, 255, 0)), color-stop(50%, rgba(0, 195, 255, 0.6)), to(rgba(0, 195, 255, 0)));
   background: linear-gradient(to bottom, rgba(0, 195, 255, 0) 0%, rgba(0, 195, 255, 0.6) 50%, rgba(0, 195, 255, 0) 100%);
-  -webkit-filter: blur(10px);
-          filter: blur(10px);
+  filter: blur(10px);
   z-index: 1;
   pointer-events: none;
 }
@@ -157,7 +111,6 @@ label:hover {
   left: 0;
   width: 100%;
   height: 300px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(40%, rgba(0, 0, 0, 0.6)), color-stop(80%, rgb(0, 0, 0)), to(rgb(0, 0, 0)));
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 40%, rgb(0, 0, 0) 80%, rgb(0, 0, 0) 100%);
   pointer-events: none;
   z-index: 2;
@@ -171,16 +124,9 @@ label:hover {
   text-align: center;
   justify-self: flex-end;
   margin-top: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 .badge-page .badge-digital-badge-section .badge-digital-badge-top .badge-digital-badge-top-content .badge-digital-badge-tag {
   font-size: 24px;
@@ -210,31 +156,16 @@ label:hover {
   font-size: 18px;
   font-weight: 700;
   border: solid 1px white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin: 24px 0 50px;
 }
 .badge-page .badge-digital-badge-section .badge-digital-badge-top .badge-digital-badge-top-content .badge-scroll-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   row-gap: 5px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 40%;
@@ -245,8 +176,7 @@ label:hover {
   overflow: hidden;
 }
 .badge-page .badge-digital-badge-section .badge-digital-badge-top .badge-digital-badge-top-content .badge-scroll-section .badge-scroll-section-img .scroll-img {
-  -webkit-animation: scroll-spin 1.5s ease-in-out infinite;
-          animation: scroll-spin 1.5s ease-in-out infinite;
+  animation: scroll-spin 1.5s ease-in-out infinite;
 }
 .badge-page .badge-digital-badge-section .badge-digital-badge-top .badge-digital-badge-top-content .badge-scroll-section .badge-scroll-section-text {
   color: white;
@@ -255,30 +185,16 @@ label:hover {
   font-family: "Montserrat", sans-serif;
 }
 .badge-page .badge-digital-badge-section .badge-digital-badge-bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   row-gap: 16px;
   padding: 76px 0 109px;
 }
 .badge-page .badge-digital-badge-section .badge-digital-badge-bottom .badge-digital-badge-bottom-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 .badge-page .badge-digital-badge-section .badge-digital-badge-bottom .badge-digital-badge-bottom-content .badge-digital-badge-bottom-tag {
   font-size: 24px;
@@ -300,29 +216,15 @@ label:hover {
 }
 .badge-page .badge-why-section {
   padding: 156px 0 274px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   row-gap: 48px;
 }
 .badge-page .badge-why-section .badge-why-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 .badge-page .badge-why-section .badge-why-content .badge-why-tag {
   font-size: 24px;
@@ -337,30 +239,16 @@ label:hover {
 }
 .badge-page .badge-solution-section {
   padding-bottom: 178px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   row-gap: 41px;
   position: relative;
 }
 .badge-page .badge-solution-section .badge-solution-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   row-gap: 8px;
 }
@@ -393,41 +281,24 @@ label:hover {
   bottom: 30%;
   /* 가운데 정렬 */
   left: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 100%;
   height: 120px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 195, 255, 0)), color-stop(50%, rgba(0, 195, 255, 0.6)), to(rgba(0, 195, 255, 0)));
   background: linear-gradient(to bottom, rgba(0, 195, 255, 0) 0%, rgba(0, 195, 255, 0.6) 50%, rgba(0, 195, 255, 0) 100%);
-  -webkit-filter: blur(10px);
-          filter: blur(10px);
+  filter: blur(10px);
   z-index: 1;
   pointer-events: none;
 }
 .badge-page .badge-product-section {
   padding-bottom: 179px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 .badge-page .badge-product-section .badge-product-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   row-gap: 12px;
 }
 .badge-page .badge-product-section .badge-product-content .badge-product-tag {
@@ -444,13 +315,9 @@ label:hover {
 }
 .badge-page .badge-detail-section {
   padding: 167px 0 180px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-color: #F5F6F8;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .badge-page .badge-detail-section .badge-detail-content {
   width: 450px;
@@ -483,21 +350,15 @@ label:hover {
   font-weight: 700;
   color: black;
   border-radius: 50px;
-  -webkit-box-shadow: 0px 1.75px 17.46px rgba(0, 0, 0, 0.13);
-          box-shadow: 0px 1.75px 17.46px rgba(0, 0, 0, 0.13);
+  box-shadow: 0px 1.75px 17.46px rgba(0, 0, 0, 0.13);
 }
 .badge-page .badge-detail-section .badge-detail-content .badge-detail-btn-list .detail-active-btn {
   background-color: #00C3FF;
   color: white;
 }
 .badge-page .badge-detail-section .badge-detail-content .badge-detail-desc {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 4px;
 }
 .badge-page .badge-detail-section .badge-detail-content .badge-detail-desc .badge-detail-desc-title {
@@ -525,35 +386,20 @@ label:hover {
   z-index: 0;
 }
 .badge-page .badge-detail-section .detail-img-wrapper .now-detail-img {
-  -webkit-animation: fadeIn 0.3s ease-in-out forwards;
-          animation: fadeIn 0.3s ease-in-out forwards;
+  animation: fadeIn 0.3s ease-in-out forwards;
   z-index: 1;
 }
 .badge-page .badge-point-section {
   padding: 137px 0 187px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   background-color: white;
 }
 .badge-page .badge-point-section .badge-point-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 .badge-page .badge-point-section .badge-point-content .badge-point-tag {
   font-size: 24px;
@@ -573,29 +419,18 @@ label:hover {
   margin-top: 32px;
 }
 .badge-page .badge-point-section .badge-point-content .badge-point-list .badge-point-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-column-gap: 16px;
-     -moz-column-gap: 16px;
-          column-gap: 16px;
+  align-items: center;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
   background-color: #1A1B23;
   border-radius: 10px;
   padding: 26px 28px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .badge-page .badge-point-section .badge-point-content .badge-point-list .badge-point-item .badge-point-item-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 4px;
 }
 .badge-page .badge-point-section .badge-point-content .badge-point-list .badge-point-item .badge-point-item-content .badge-point-item-title {
@@ -611,29 +446,15 @@ label:hover {
 }
 .badge-page .badge-interview-section {
   padding: 106px 0 107px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   background-color: #F5F6F8;
 }
 .badge-page .badge-interview-section .badge-interview-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 .badge-page .badge-interview-section .badge-interview-content .badge-interview-tag {
   font-size: 24px;
@@ -649,56 +470,39 @@ label:hover {
 }
 .badge-page .badge-interview-section .badge-interview-content .badge-interview-wrapper {
   margin-top: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-column-gap: 48px;
-     -moz-column-gap: 48px;
-          column-gap: 48px;
+  align-items: center;
+  -moz-column-gap: 48px;
+       column-gap: 48px;
 }
 .badge-page .badge-interview-section .badge-interview-content .badge-interview-wrapper > button {
   width: 45px;
   height: 45px;
 }
 .badge-page .badge-interview-section .badge-interview-content .badge-interview-wrapper .badge-interview-btn-next {
-  -webkit-transform: scale(-1);
-          transform: scale(-1);
+  transform: scale(-1);
 }
 .badge-page .badge-interview-section .badge-interview-content .badge-interview-wrapper .badge-interview-list-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
   height: 519px;
   width: 1031px;
 }
 .badge-page .badge-interview-section .badge-interview-content .badge-interview-wrapper .badge-interview-list-container .badge-interview-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   will-change: transform;
 }
 .badge-page .badge-interview-section .badge-interview-content .badge-interview-wrapper .badge-interview-list-container .badge-interview-list .badge-interview-item {
   min-width: 100%;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 .badge-page .badge-interview-section .badge-interview-content .badge-interview-page {
   margin-top: 43px;
   display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-column-gap: 16px;
-     -moz-column-gap: 16px;
-          column-gap: 16px;
+  align-items: center;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
   grid-template-columns: repeat(3, 13px);
 }
 .badge-page .badge-interview-section .badge-interview-content .badge-interview-page .badge-interview-page-item {
@@ -712,31 +516,15 @@ label:hover {
 }
 .badge-page .badge-effect-section {
   padding: 109px 0 158px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .badge-page .badge-effect-section .badge-effect-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 .badge-page .badge-effect-section .badge-effect-content .badge-effect-tag {
   font-size: 24px;
@@ -759,24 +547,15 @@ label:hover {
 }
 .badge-page .badge-effect-section .badge-effect-content .badge-effect-list .badge-effect-list-item {
   height: 519px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(5%, rgba(0, 195, 255, 0.5)), color-stop(30%, rgba(0, 195, 255, 0))), #0A0E1A;
   background: linear-gradient(to top, rgba(0, 195, 255, 0.5) 5%, rgba(0, 195, 255, 0) 30%), #0A0E1A;
   /* 메인 백그라운드 컬러 */
   border-radius: 12px;
   padding: 30px;
   color: white;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-sizing: border-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .badge-page .badge-effect-section .badge-effect-content .badge-effect-list .badge-effect-list-item .badge-effect-list-item-title {
   font-size: 80px;
@@ -803,19 +582,10 @@ label:hover {
 .badge-page .badge-nav-contract-section {
   width: 100%;
   height: 477px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: -webkit-image-set(url(../assets/badge/contract-nav-img.png) 1x, url(../assets/badge/contract-nav-img@2x.png) 2x, url(../assets/badge/contract-nav-img@3x.png) 3x);
   background-image: image-set(url(../assets/badge/contract-nav-img.png) 1x, url(../assets/badge/contract-nav-img@2x.png) 2x, url(../assets/badge/contract-nav-img@3x.png) 3x);
   background-size: cover;
@@ -835,15 +605,9 @@ label:hover {
   margin-top: 24px;
   width: 181px;
   height: 52px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: white;
   font-size: 18px;
   font-weight: 700;
@@ -852,19 +616,11 @@ label:hover {
 .badge-page .badge-faq-section {
   width: 100%;
   min-height: 1000px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 110px 0 169px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   background-color: white;
 }
 .badge-page .badge-faq-section .badge-faq-content {
@@ -886,20 +642,12 @@ label:hover {
   height: 50px;
   border: 1px solid #DBDBDB;
   padding: 0 16px 0 18px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-sizing: border-box;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-column-gap: 20px;
-     -moz-column-gap: 20px;
-          column-gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }
 .badge-page .badge-faq-section .badge-faq-content .badge-faq-search input {
   width: 100%;
@@ -916,33 +664,21 @@ label:hover {
   width: 100%;
   max-height: 64px;
   overflow: hidden;
-  -webkit-transition: max-height 0.2s ease-in-out;
   transition: max-height 0.2s ease-in-out;
 }
 .badge-page .badge-faq-section .badge-faq-content .badge-faq-list .badge-faq-list-item .badge-faq-list-item-title-wrapper {
   width: 100%;
   height: 64px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   border-bottom: solid 1px #DBDBDB;
 }
 .badge-page .badge-faq-section .badge-faq-content .badge-faq-list .badge-faq-list-item .badge-faq-list-item-title-wrapper .badge-faq-list-item-title-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-column-gap: 8px;
-     -moz-column-gap: 8px;
-          column-gap: 8px;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
 }
 .badge-page .badge-faq-section .badge-faq-content .badge-faq-list .badge-faq-list-item .badge-faq-list-item-title-wrapper .badge-faq-list-item-title-section .badge-faq-list-item-title {
   font-size: 14px;
@@ -958,19 +694,14 @@ label:hover {
   overflow: hidden;
   padding: 20px;
   /* 항상 유지 */
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .badge-page .badge-faq-section .badge-faq-content .badge-faq-list > .active {
   max-height: 1000px;
 }
 .badge-page .badge-faq-section .badge-faq-content .badge-faq-list > .active .badge-faq-list-item-title-wrapper .badge-faq-list-item-btn {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: -webkit-transform 0.2s ease;
+  transform: rotate(180deg);
   transition: transform 0.2s ease;
-  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
 @media screen and (max-width: 1440px) {
@@ -991,16 +722,9 @@ label:hover {
     text-align: center;
     justify-self: flex-end;
     margin-top: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .badge-page .badge-digital-badge-section .badge-digital-badge-top .badge-digital-badge-top-content .badge-digital-badge-tag {
     font-size: 24px;
@@ -1030,31 +754,16 @@ label:hover {
     font-size: 18px;
     font-weight: 700;
     border: solid 1px white;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     margin: 24px 0 50px;
   }
   .badge-page .badge-digital-badge-section .badge-digital-badge-top .badge-digital-badge-top-content .badge-scroll-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     row-gap: 5px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 40%;
@@ -1065,8 +774,7 @@ label:hover {
     overflow: hidden;
   }
   .badge-page .badge-digital-badge-section .badge-digital-badge-top .badge-digital-badge-top-content .badge-scroll-section .badge-scroll-section-img .scroll-img {
-    -webkit-animation: scroll-spin 1.5s ease-in-out infinite;
-            animation: scroll-spin 1.5s ease-in-out infinite;
+    animation: scroll-spin 1.5s ease-in-out infinite;
   }
   .badge-page .badge-digital-badge-section .badge-digital-badge-top .badge-digital-badge-top-content .badge-scroll-section .badge-scroll-section-text {
     color: white;
@@ -1076,16 +784,9 @@ label:hover {
   }
   .badge-page .badge-detail-section {
     padding: 186px 0 156px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .badge-page .badge-detail-section .badge-detail-content {
     width: 710px;
@@ -1099,25 +800,17 @@ label:hover {
   }
   .badge-page .badge-detail-section .badge-detail-content .badge-detail-btn-list {
     margin: 32px 0 48px;
-    -webkit-column-gap: 16px;
-       -moz-column-gap: 16px;
-            column-gap: 16px;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
     grid-template-columns: 200px 207px 200px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .badge-page .badge-detail-section .badge-detail-content .badge-detail-btn-list .badge-detail-btn-item {
     font-size: 18px;
   }
   .badge-page .badge-detail-section .badge-detail-content .badge-detail-desc {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     row-gap: 4px;
   }
   .badge-page .badge-detail-section .badge-detail-content .badge-detail-desc .badge-detail-desc-title {
@@ -1147,15 +840,10 @@ label:hover {
   }
   .badge-page .badge-interview-section .badge-interview-content .badge-interview-wrapper {
     margin-top: 32px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-column-gap: 48px;
-       -moz-column-gap: 48px;
-            column-gap: 48px;
+    align-items: center;
+    -moz-column-gap: 48px;
+         column-gap: 48px;
   }
   .badge-page .badge-interview-section .badge-interview-content .badge-interview-wrapper .badge-interview-list-container {
     height: 644px;
@@ -1252,30 +940,16 @@ label:hover {
     font-size: 14px;
   }
   .badge-page .badge-digital-badge-section .badge-digital-badge-bottom {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     row-gap: 16px;
     padding: 76px 0 109px;
   }
   .badge-page .badge-digital-badge-section .badge-digital-badge-bottom .badge-digital-badge-bottom-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .badge-page .badge-digital-badge-section .badge-digital-badge-bottom .badge-digital-badge-bottom-content .badge-digital-badge-bottom-tag {
     font-size: 24px;
@@ -1327,14 +1001,9 @@ label:hover {
     padding: 177px 20px;
     width: 100%;
     height: 1069px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: unset;
-        -ms-flex-pack: unset;
-            justify-content: unset;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: unset;
     row-gap: 16px;
   }
   .badge-page .badge-detail-section .badge-detail-content {
@@ -1397,13 +1066,8 @@ label:hover {
     width: 45px;
   }
   .badge-page .badge-point-section .badge-point-content .badge-point-list .badge-point-item .badge-point-item-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     row-gap: 15px;
     padding-top: 8px;
   }
@@ -1429,18 +1093,13 @@ label:hover {
     display: none;
   }
   .badge-page .badge-interview-section .badge-interview-content .badge-interview-wrapper .badge-interview-list-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
     overflow: scroll;
     height: 439px;
     width: 100vw;
     padding: 0 20px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
@@ -1451,18 +1110,14 @@ label:hover {
     /* Chrome, Safari, Opera */
   }
   .badge-page .badge-interview-section .badge-interview-content .badge-interview-wrapper .badge-interview-list-container .badge-interview-list {
-    -webkit-transform: unset !important;
-            transform: unset !important;
-    -webkit-column-gap: 8px;
-       -moz-column-gap: 8px;
-            column-gap: 8px;
+    transform: unset !important;
+    -moz-column-gap: 8px;
+         column-gap: 8px;
   }
   .badge-page .badge-interview-section .badge-interview-content .badge-interview-wrapper .badge-interview-list-container .badge-interview-list .badge-interview-item {
-    min-width: -webkit-fit-content;
     min-width: -moz-fit-content;
     min-width: fit-content;
-    -ms-flex-negative: unset;
-        flex-shrink: unset;
+    flex-shrink: unset;
   }
   .badge-page .badge-interview-section .badge-interview-content .badge-interview-page {
     margin-top: 32px;
@@ -1506,7 +1161,6 @@ label:hover {
     font-size: 30px;
   }
   .badge-page .badge-faq-section {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     padding: 100px 0;
@@ -1524,11 +1178,10 @@ label:hover {
   .badge-page .badge-faq-section .badge-faq-content .badge-faq-search {
     width: 100%;
     padding: 0 12px;
-    -webkit-column-gap: 10px;
-       -moz-column-gap: 10px;
-            column-gap: 10px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
   }
   .mb-br {
     display: block;
   }
-}
+}/*# sourceMappingURL=index.css.map */

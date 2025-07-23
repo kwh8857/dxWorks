@@ -3,8 +3,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Pretendard", sans-serif;
   overflow: hidden;
 }
@@ -18,8 +17,7 @@ button,
 a,
 label {
   padding: unset;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-appearance: none;
   border: none;
   cursor: pointer;
@@ -36,7 +34,6 @@ button:hover,
 a:hover,
 label:hover {
   opacity: 0.7;
-  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
@@ -44,8 +41,7 @@ label:hover {
   width: 100%;
   height: 100vh;
   padding-top: 80px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: white;
   overflow-x: hidden;
   /* 스크롤바 스타일 설정 */
@@ -67,25 +63,15 @@ label:hover {
   height: 259px;
   background-color: black;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .event-page .banner-section .banner-wrapper {
   width: 1080px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 .event-page .banner-section .banner-wrapper .banner-title-box .banner-title {
   font-size: 45px;
@@ -103,49 +89,27 @@ label:hover {
 .event-page .event-lists-section .event-lists-wrapper {
   width: 1080px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 30px;
 }
 .event-page .event-lists-section .event-lists-wrapper .event-search-form .event-input-box {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  justify-content: end;
 }
 .event-page .event-lists-section .event-lists-wrapper .event-search-form .event-input-box .search-input {
   width: 316px;
   height: 56px;
   border-radius: 4.22px;
   padding: 16px 14px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: 1px solid #DBDBDB;
 }
 .event-page .event-lists-section .event-lists-wrapper .event-search-form .event-input-box .search-input:focus {
   outline: none;
 }
-.event-page .event-lists-section .event-lists-wrapper .event-search-form .event-input-box .search-input::-webkit-input-placeholder {
-  font-size: 14px;
-  color: #DBDBDB;
-}
 .event-page .event-lists-section .event-lists-wrapper .event-search-form .event-input-box .search-input::-moz-placeholder {
-  font-size: 14px;
-  color: #DBDBDB;
-}
-.event-page .event-lists-section .event-lists-wrapper .event-search-form .event-input-box .search-input:-ms-input-placeholder {
-  font-size: 14px;
-  color: #DBDBDB;
-}
-.event-page .event-lists-section .event-lists-wrapper .event-search-form .event-input-box .search-input::-ms-input-placeholder {
   font-size: 14px;
   color: #DBDBDB;
 }
@@ -156,30 +120,19 @@ label:hover {
 .event-page .event-lists-section .event-lists-wrapper .event-search-form .event-input-box .search-img {
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .event-page .event-lists-section .event-lists-wrapper .event-card-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 14px;
 }
 .event-page .event-lists-section .event-lists-wrapper .event-card-wrapper .event-card-box {
   width: 350px;
   height: 298px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 .event-page .event-lists-section .event-lists-wrapper .event-card-wrapper .event-card-box .event-img {
   width: 100%;
@@ -191,15 +144,9 @@ label:hover {
   height: 98px;
   padding: 19px 24px;
   background-color: #F5F6F8;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-sizing: border-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 4px;
 }
 .event-page .event-lists-section .event-lists-wrapper .event-card-wrapper .event-card-box .event-content-box .content-title {
@@ -230,31 +177,18 @@ label:hover {
   margin-bottom: 100px;
 }
 .event-page .pagination-section .pagination-btn-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-column-gap: 4px;
-     -moz-column-gap: 4px;
-          column-gap: 4px;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
 }
 .event-page .pagination-section .pagination-btn-wrapper .number-btn {
   width: 29px;
   height: 29px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 2px;
   border: 1px solid #D9D9D9;
 }
@@ -268,17 +202,14 @@ label:hover {
   .event-page .banner-section .banner-wrapper {
     width: 100%;
     margin: unset;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .event-page .banner-section .banner-wrapper .banner-title-box {
     z-index: 1;
   }
   .event-page .event-lists-section .event-lists-wrapper {
     width: 682px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
   }
   .event-page .event-lists-section .event-lists-wrapper .event-search-form .search-input-box .search-input {
     width: 316px;
@@ -287,8 +218,7 @@ label:hover {
   .event-page .event-lists-section .event-lists-wrapper .event-search-form .search-input-box .search-img {
     position: absolute;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
   .event-page .event-lists-section .event-lists-wrapper .event-card-wrapper {
     gap: 10px;
@@ -304,9 +234,7 @@ label:hover {
   .event-page .banner-section .banner-wrapper {
     width: 100%;
     margin: unset;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .event-page .banner-section .banner-wrapper .banner-title-box {
     z-index: 1;
@@ -323,8 +251,7 @@ label:hover {
   }
   .event-page .event-lists-section .event-lists-wrapper {
     width: 100%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     padding: 0 20px;
   }
   .event-page .event-lists-section .event-lists-wrapper .event-search-form .event-input-box .search-input {
@@ -334,15 +261,13 @@ label:hover {
   .event-page .event-lists-section .event-lists-wrapper .event-search-form .event-input-box .search-img {
     position: absolute;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
   .event-page .event-lists-section .event-lists-wrapper .event-card-wrapper {
     gap: 10px;
   }
   .event-page .event-lists-section .event-lists-wrapper .event-card-wrapper .event-card-box {
     width: 100%;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
@@ -355,4 +280,4 @@ label:hover {
   .event-page .pagination-section {
     width: 320px;
   }
-}
+}/*# sourceMappingURL=index.css.map */

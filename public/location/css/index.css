@@ -3,8 +3,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Pretendard", sans-serif;
   overflow: hidden;
 }
@@ -35,8 +34,7 @@ main {
   width: 100%;
   height: 100vh;
   padding-top: 80px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: black;
   overflow-x: hidden;
   /* 스크롤바 스타일 설정 */
@@ -74,8 +72,7 @@ button,
 a,
 label {
   padding: unset;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-appearance: none;
   border: none;
   cursor: pointer;
@@ -92,7 +89,6 @@ button:hover,
 a:hover,
 label:hover {
   opacity: 0.7;
-  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
@@ -106,26 +102,16 @@ label:hover {
 }
 .location-page .map-section {
   width: 1200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   position: relative;
   top: -250px;
 }
 .location-page .map-section .map-title-box {
   margin-top: 83px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 8px;
 }
 .location-page .map-section .map-title-box .map-color-text {
@@ -140,64 +126,41 @@ label:hover {
   font-weight: 700;
 }
 .location-page .map-section .map-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 112px;
   margin-top: 83px;
 }
 .location-page .map-section .map-wrapper .map-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 40px;
-     -moz-column-gap: 40px;
-          column-gap: 40px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
 }
 .location-page .map-section .map-wrapper .map-box .map-info-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 572px;
 }
 .location-page .map-section .map-wrapper .map-box .map-info-box .info-title {
   font-size: 26px;
   padding-bottom: 14px;
   border-bottom: 1px solid white;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: white;
 }
 .location-page .map-section .map-wrapper .map-box .map-info-box .info-box {
   height: 100%;
   padding-top: 22px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-sizing: border-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 8px;
   color: white;
 }
 .location-page .map-section .map-wrapper .map-box .map-info-box .info-box .custom-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 15px;
-     -moz-column-gap: 15px;
-          column-gap: 15px;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
 }
 .location-page .map-section .map-wrapper .map-box .map-info-box .info-box .custom-box .custom-title {
   width: 60px;
@@ -209,46 +172,27 @@ label:hover {
   font-weight: 400;
 }
 .location-page .map-section .map-wrapper .map-box .map-info-box .info-box .custom-box .custom-bus-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 8px;
 }
 .location-page .map-section .map-wrapper .map-box .map-info-box .info-box .custom-box .custom-bus-box .bus-number {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 10px;
-     -moz-column-gap: 10px;
-          column-gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
 .location-page .map-section .map-wrapper .map-box .map-info-box .info-box .custom-box .custom-bus-box .bus-number .number-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-column-gap: 5px;
-     -moz-column-gap: 5px;
-          column-gap: 5px;
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
 }
 .location-page .map-section .map-wrapper .map-box .map-info-box .info-box .custom-box .custom-bus-box .bus-number .number-box .box {
   width: 36px;
   height: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-weight: 700;
 }
 .location-page .map-section .map-wrapper .map-box .map-info-box .info-box .custom-box .custom-bus-box .bus-number .number-box .blue {
@@ -263,19 +207,13 @@ label:hover {
 .location-page .map-section .map-wrapper .map-box .map-info-box .info-box .address-copy-box {
   width: 110px;
   height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-column-gap: 11px;
-     -moz-column-gap: 11px;
-          column-gap: 11px;
+  align-items: center;
+  -moz-column-gap: 11px;
+       column-gap: 11px;
   padding: 0px 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: white;
   font-size: 15px;
   font-weight: 700;
@@ -314,10 +252,7 @@ label:hover {
     display: none;
   }
   .location-page .map-section .map-wrapper .map-box {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .location-page .map-section .map-wrapper .map-box .map-info-box {
     width: 100%;
@@ -335,8 +270,7 @@ label:hover {
     width: auto;
     margin-top: 150px;
     padding: 0px 16px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
   }
   .location-page .map-section .map-wrapper {
     row-gap: 100px;
@@ -350,8 +284,7 @@ label:hover {
     position: absolute;
     top: -70px;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
     row-gap: 16px;
   }
@@ -363,15 +296,10 @@ label:hover {
   }
   .location-page .map-section .map-wrapper .map-info-box .info-box .custom-box .custom-content {
     font-size: 16px;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    flex: 1;
   }
   .location-page .map-section .map-wrapper .map-info-box .info-box .custom-box .custom-bus-box .bus-number {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     row-gap: 5px;
   }
   .location-page .map-section .map-wrapper .map-info-box .info-box .address-copy-box {
@@ -383,4 +311,4 @@ label:hover {
   .mb-br {
     display: none !important;
   }
-}
+}/*# sourceMappingURL=index.css.map */

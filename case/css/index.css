@@ -4,8 +4,7 @@ body {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Pretendard", sans-serif;
   overflow: hidden;
   overflow: hidden;
@@ -33,8 +32,7 @@ main {
   width: 100%;
   height: 100vh;
   padding-top: 80px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   overflow-x: hidden;
   background-color: black;
   scroll-behavior: smooth;
@@ -73,8 +71,7 @@ button,
 a,
 label {
   padding: unset;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-appearance: none;
   border: none;
   cursor: pointer;
@@ -91,7 +88,6 @@ button:hover,
 a:hover,
 label:hover {
   opacity: 0.7;
-  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
@@ -100,14 +96,10 @@ label:hover {
 }
 .success-page .card-wrapper {
   width: 1328px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-column-gap: 16px;
-     -moz-column-gap: 16px;
-          column-gap: 16px;
+  flex-wrap: wrap;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
   row-gap: 24px;
   margin: 0 auto;
 }
@@ -115,29 +107,17 @@ label:hover {
   width: 656px;
   height: 526px;
   border: 1px solid #5C6770;
-  -webkit-box-shadow: 0px 4px 20px rgba(41, 91, 255, 0.6);
-          box-shadow: 0px 4px 20px rgba(41, 91, 255, 0.6);
+  box-shadow: 0px 4px 20px rgba(41, 91, 255, 0.6);
   padding: 24px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-sizing: border-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 48px;
   border-radius: 8px;
 }
 .success-page .card-wrapper .card .text-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 10px;
   color: white;
 }
@@ -154,27 +134,16 @@ label:hover {
   line-height: 150%;
 }
 .success-page .card-wrapper .card .img-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 24px;
 }
 .success-page .card-wrapper .card .img-box .show-link {
   width: 133px;
   height: 52px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: white;
   font-size: 17px;
   font-weight: 700;
@@ -190,13 +159,8 @@ label:hover {
      object-fit: cover;
 }
 .success-page .section1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   height: 345px;
   background-color: black;
 }
@@ -204,32 +168,20 @@ label:hover {
   position: absolute;
   top: 50%;
   left: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 100%;
   height: 384px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(60, 106, 178, 0)), color-stop(50%, rgba(60, 106, 178, 0.5)), to(rgba(60, 106, 178, 0)));
   background: linear-gradient(to bottom, rgba(60, 106, 178, 0) 0%, rgba(60, 106, 178, 0.5) 50%, rgba(60, 106, 178, 0) 100%);
-  -webkit-filter: blur(12px);
-          filter: blur(12px);
+  filter: blur(12px);
   z-index: 0;
   pointer-events: none;
 }
 .success-page .section1 .section1-text-box {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   row-gap: 16px;
   color: white;
 }
@@ -249,15 +201,10 @@ label:hover {
 .success-page .menu-wrapper {
   width: 100%;
   border-bottom: 1px solid #44464F;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-column-gap: 120px;
-     -moz-column-gap: 120px;
-          column-gap: 120px;
+  justify-content: center;
+  -moz-column-gap: 120px;
+       column-gap: 120px;
   position: sticky;
   top: 0px;
   z-index: 10;
@@ -279,29 +226,16 @@ label:hover {
 }
 .success-page .rbd-section {
   padding-top: 118px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-sizing: border-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 24px;
 }
 .success-page .rbd-section .rdb-title-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 24px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .success-page .rbd-section .rdb-title-wrapper .title {
   color: white;
@@ -316,12 +250,8 @@ label:hover {
 .success-page .block-chain-section {
   width: 100%;
   background-color: #1A1B23;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   row-gap: 24px;
   padding-top: 153px;
   padding-bottom: 122px;
@@ -330,27 +260,15 @@ label:hover {
 .success-page .block-chain-section .block-chain-wrapper {
   width: 1328px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 24px;
 }
 .success-page .block-chain-section .block-chain-wrapper .block-title-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: white;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
   row-gap: 8px;
 }
 .success-page .block-chain-section .block-chain-wrapper .block-title-box .title {
@@ -363,12 +281,8 @@ label:hover {
 }
 .success-page .order-tech-section {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   row-gap: 24px;
   padding-top: 106px;
   padding-bottom: 336px;
@@ -377,27 +291,15 @@ label:hover {
 .success-page .order-tech-section .ordertech-wrapper {
   width: 1328px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 24px;
 }
 .success-page .order-tech-section .ordertech-wrapper .order-title-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: white;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
   row-gap: 8px;
 }
 .success-page .order-tech-section .ordertech-wrapper .order-title-box .title {
@@ -420,15 +322,9 @@ label:hover {
   display: none;
 }
 .modal.show {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .modal .modal-content {
   width: 656px;
@@ -436,8 +332,7 @@ label:hover {
   background-color: black;
   border-radius: 10px;
   overflow-x: hidden;
-  -webkit-box-shadow: 0px 4px 20px rgba(41, 91, 255, 0.6);
-          box-shadow: 0px 4px 20px rgba(41, 91, 255, 0.6);
+  box-shadow: 0px 4px 20px rgba(41, 91, 255, 0.6);
   /* 스크롤바 스타일 설정 */
 }
 .modal .modal-content::-webkit-scrollbar {
@@ -456,16 +351,10 @@ label:hover {
 @media screen and (max-width: 1440px) {
   .success-page .card-wrapper {
     width: auto;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-wrap: nowrap;
+    flex-direction: column;
     row-gap: 24px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
 }
 @media screen and (max-width: 768px) {
@@ -474,16 +363,10 @@ label:hover {
   }
   .success-page .card-wrapper {
     width: 100%;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-wrap: nowrap;
+    flex-direction: column;
     row-gap: 16px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .success-page .card-wrapper .card {
     width: 100%;
@@ -515,9 +398,7 @@ label:hover {
   .success-page .card-wrapper .card .img-box .show-link {
     width: 100%;
     font-size: 18px;
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
+    order: 3;
   }
   .success-page .section1 {
     height: 297px;
@@ -532,9 +413,8 @@ label:hover {
     display: block;
   }
   .success-page .menu-wrapper {
-    -webkit-column-gap: 24px;
-       -moz-column-gap: 24px;
-            column-gap: 24px;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
   }
   .success-page .rbd-section .rdb-title-wrapper {
     row-gap: 2px;
@@ -578,4 +458,4 @@ label:hover {
   .mb-br {
     display: none !important;
   }
-}
+}/*# sourceMappingURL=index.css.map */

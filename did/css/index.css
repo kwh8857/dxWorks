@@ -3,8 +3,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Pretendard", sans-serif;
   background-color: black;
   overflow: hidden;
@@ -14,8 +13,7 @@ button,
 a,
 label {
   padding: unset;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-appearance: none;
   border: none;
   cursor: pointer;
@@ -32,7 +30,6 @@ button:hover,
 a:hover,
 label:hover {
   opacity: 0.7;
-  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
@@ -42,8 +39,7 @@ label:hover {
   width: 100%;
   height: 100vh;
   padding-top: 80px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .did-page::-webkit-scrollbar {
   width: 8px;
@@ -69,30 +65,21 @@ label:hover {
   top: 50%;
   /* 가운데 정렬 */
   left: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 100%;
   height: 200px;
   /* 높이 넉넉히 줘야 blur 효과 적용됨 */
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(241, 155, 75, 0)), color-stop(50%, rgba(241, 155, 75, 0.5)), to(rgba(241, 155, 75, 0)));
   background: linear-gradient(to bottom, rgba(241, 155, 75, 0) 0%, rgba(241, 155, 75, 0.5) 50%, rgba(241, 155, 75, 0) 100%);
-  -webkit-filter: blur(12px);
-          filter: blur(12px);
+  filter: blur(12px);
   z-index: 0;
   pointer-events: none;
 }
 .did-page .did-ledger-did-section .did-ledger-did-top .did-ledger-did-top-content {
   width: 1238px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   position: relative;
   z-index: 1;
 }
@@ -119,30 +106,16 @@ label:hover {
   color: #ABB3BA;
 }
 .did-page .did-ledger-did-section .did-ledger-did-bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   row-gap: 16px;
   padding: 76px 0 109px;
 }
 .did-page .did-ledger-did-section .did-ledger-did-bottom .did-ledger-did-bottom-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 .did-page .did-ledger-did-section .did-ledger-did-bottom .did-ledger-did-bottom-content .did-ledger-did-bottom-tag {
   font-size: 24px;
@@ -171,15 +144,9 @@ label:hover {
   width: 1218px;
   height: 100%;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 .did-page .did-slogan-section .did-slogan-section-content-wrapper .did-slogan-section-content .did-slogan-section-title {
   font-size: 34px;
@@ -197,17 +164,13 @@ label:hover {
   color: white;
 }
 .did-page .did-slogan-section .did-slogan-section-content-wrapper .did-slogan-section-img-section .did-slogan-section-img-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .did-page .did-slogan-section .did-slogan-section-content-wrapper .did-slogan-section-img-section .did-slogan-section-img-wrapper > img:nth-child(1) {
-  -webkit-transform: translateX(180px);
-          transform: translateX(180px);
+  transform: translateX(180px);
 }
 .did-page .did-slogan-section .did-slogan-section-content-wrapper .did-slogan-section-img-section .did-slogan-section-img-wrapper > img:nth-child(2) {
-  -webkit-transform: translateX(100px);
-          transform: translateX(100px);
+  transform: translateX(100px);
 }
 .did-page .did-slogan-section .did-slogan-section-content-wrapper .did-slogan-section-img-section .did-slogan-section-img-desc {
   font-size: 14px;
@@ -215,8 +178,7 @@ label:hover {
   line-height: 150%;
   color: white;
   text-align: right;
-  -webkit-transform: translateY(-30px);
-          transform: translateY(-30px);
+  transform: translateY(-30px);
 }
 .did-page .did-product-section {
   padding-top: 180px;
@@ -224,19 +186,10 @@ label:hover {
   position: relative;
 }
 .did-page .did-product-section .did-product-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   max-width: 1218px;
   margin: 0 auto;
 }
@@ -254,39 +207,23 @@ label:hover {
 }
 .did-page .did-product-section .did-product-container .did-product-feature-list {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   row-gap: 10px;
 }
 .did-page .did-product-section .did-product-container .did-product-feature-list .did-product-feature-item {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-column-gap: 10px;
-     -moz-column-gap: 10px;
-          column-gap: 10px;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
   background-color: #1A1B23;
   padding: 27px 29px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-column-gap: 30px;
-     -moz-column-gap: 30px;
-          column-gap: 30px;
+  box-sizing: border-box;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 .did-page .did-product-section .did-product-container .did-product-feature-list .did-product-feature-item .did-product-feature-item-content .did-product-feature-item-title {
   font-size: 24px;
@@ -312,11 +249,9 @@ label:hover {
   position: relative;
   background-color: black;
   padding: 0 24px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 10px;
-  -webkit-box-shadow: 0 4px 30px 0px rgba(255, 130, 0, 0.48);
-          box-shadow: 0 4px 30px 0px rgba(255, 130, 0, 0.48);
+  box-shadow: 0 4px 30px 0px rgba(255, 130, 0, 0.48);
 }
 .did-page .did-product-section .did-product-container .did-product-info-list .did-product-info-item .did-product-info-item-title {
   font-size: 24px;
@@ -325,15 +260,9 @@ label:hover {
   color: black;
   width: 142px;
   height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   position: relative;
@@ -359,29 +288,18 @@ label:hover {
   left: 0;
   width: 100vw;
   height: 300px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 130, 0, 0.4)), color-stop(40%, rgba(255, 130, 0, 0.2)), to(rgba(255, 130, 0, 0)));
   background: linear-gradient(to top, rgba(255, 130, 0, 0.4) 0%, rgba(255, 130, 0, 0.2) 40%, rgba(255, 130, 0, 0) 100%);
   pointer-events: none;
   z-index: 0;
-  -webkit-filter: blur(40px);
-          filter: blur(40px);
+  filter: blur(40px);
   /* 살짝만 블러 처리 */
 }
 .did-page .did-slide-section {
   padding: 156px 0 158px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: white;
 }
 .did-page .did-slide-section .did-slide-tag {
@@ -410,13 +328,11 @@ label:hover {
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(4, 368px);
-  -webkit-column-gap: 16px;
-     -moz-column-gap: 16px;
-          column-gap: 16px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
   overflow-y: hidden;
   padding: 0 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -ms-overflow-style: none;
   /* IE, Edge */
   scrollbar-width: none;
@@ -430,19 +346,11 @@ label:hover {
   overflow: hidden;
   position: relative;
   border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
   padding: 45px 30px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   row-gap: 2px;
   height: 465px;
 }
@@ -453,7 +361,6 @@ label:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4)));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.4) 100%);
   border-radius: 10px;
   z-index: 1;
@@ -483,19 +390,10 @@ label:hover {
 .did-page .did-nav-contract-section {
   width: 100%;
   height: 477px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: -webkit-image-set(url(../assets/did/contract-nav-img.png) 1x, url(../assets/did/contract-nav-img@2x.png) 2x, url(../assets/did/contract-nav-img@3x.png) 3x);
   background-image: image-set(url(../assets/did/contract-nav-img.png) 1x, url(../assets/did/contract-nav-img@2x.png) 2x, url(../assets/did/contract-nav-img@3x.png) 3x);
   background-size: cover;
@@ -515,15 +413,9 @@ label:hover {
   margin-top: 24px;
   width: 181px;
   height: 52px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: white;
   font-size: 18px;
   font-weight: 700;
@@ -532,19 +424,11 @@ label:hover {
 .did-page .did-faq-section {
   width: 100%;
   min-height: 1000px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 110px 0 169px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   background-color: white;
 }
 .did-page .did-faq-section .did-faq-content {
@@ -566,20 +450,12 @@ label:hover {
   height: 50px;
   border: 1px solid #DBDBDB;
   padding: 0 16px 0 18px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-sizing: border-box;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-column-gap: 20px;
-     -moz-column-gap: 20px;
-          column-gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }
 .did-page .did-faq-section .did-faq-content .did-faq-search input {
   width: 100%;
@@ -596,33 +472,21 @@ label:hover {
   width: 100%;
   max-height: 64px;
   overflow: hidden;
-  -webkit-transition: max-height 0.2s ease-in-out;
   transition: max-height 0.2s ease-in-out;
 }
 .did-page .did-faq-section .did-faq-content .did-faq-list .did-faq-list-item .did-faq-list-item-title-wrapper {
   width: 100%;
   height: 64px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   border-bottom: solid 1px #DBDBDB;
 }
 .did-page .did-faq-section .did-faq-content .did-faq-list .did-faq-list-item .did-faq-list-item-title-wrapper .did-faq-list-item-title-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-column-gap: 8px;
-     -moz-column-gap: 8px;
-          column-gap: 8px;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
 }
 .did-page .did-faq-section .did-faq-content .did-faq-list .did-faq-list-item .did-faq-list-item-title-wrapper .did-faq-list-item-title-section .did-faq-list-item-title {
   font-size: 14px;
@@ -638,19 +502,14 @@ label:hover {
   overflow: hidden;
   padding: 20px;
   /* 항상 유지 */
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .did-page .did-faq-section .did-faq-content .did-faq-list > .active {
   max-height: 1000px;
 }
 .did-page .did-faq-section .did-faq-content .did-faq-list > .active .did-faq-list-item-title-wrapper .did-faq-list-item-btn {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: -webkit-transform 0.2s ease;
+  transform: rotate(180deg);
   transition: transform 0.2s ease;
-  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
 @media screen and (max-width: 1440px) {
@@ -659,10 +518,7 @@ label:hover {
   }
   .did-page .did-ledger-did-section .did-ledger-did-top .did-ledger-did-top-content {
     width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .did-page .did-ledger-did-section .did-ledger-did-top .did-ledger-did-top-content .did-ledger-did-top-left {
     text-align: center;
@@ -675,16 +531,9 @@ label:hover {
     padding: 240px 0 200px;
   }
   .did-page .did-ledger-did-section .did-ledger-did-bottom .did-ledger-did-bottom-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .did-page .did-ledger-did-section .did-ledger-did-bottom .did-ledger-did-bottom-img {
     width: 636px;
@@ -694,13 +543,8 @@ label:hover {
   }
   .did-page .did-slogan-section .did-slogan-section-content-wrapper {
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
   }
   .did-page .did-slogan-section .did-slogan-section-content-wrapper .did-slogan-section-content {
     text-align: center;
@@ -709,12 +553,10 @@ label:hover {
     height: 493px;
   }
   .did-page .did-slogan-section .did-slogan-section-content-wrapper .did-slogan-section-img-section .did-slogan-section-img-wrapper > img:nth-child(1) {
-    -webkit-transform: translateX(40px);
-            transform: translateX(40px);
+    transform: translateX(40px);
   }
   .did-page .did-slogan-section .did-slogan-section-content-wrapper .did-slogan-section-img-section .did-slogan-section-img-wrapper > img:nth-child(2) {
-    -webkit-transform: translateX(-40px);
-            transform: translateX(-40px);
+    transform: translateX(-40px);
   }
   .did-page .did-slogan-section .did-slogan-section-content-wrapper .did-slogan-section-img-section .did-slogan-section-img-desc {
     font-size: 14px;
@@ -722,8 +564,7 @@ label:hover {
     line-height: 150%;
     color: white;
     text-align: right;
-    -webkit-transform: translate(-130px, -30px);
-            transform: translate(-130px, -30px);
+    transform: translate(-130px, -30px);
   }
   .did-page .did-product-section {
     padding-top: 120px;
@@ -753,27 +594,17 @@ label:hover {
   }
   .did-page .did-slide-section .did-slide-list {
     margin-top: 62px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
   }
   .did-page .did-slide-section .did-slide-list .did-slide-list-item {
     overflow: hidden;
     position: relative;
     border-radius: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
     padding: 45px 30px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     row-gap: 2px;
     height: 465px;
   }
@@ -784,7 +615,6 @@ label:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4)));
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.4) 100%);
     border-radius: 10px;
     z-index: 1;
@@ -893,13 +723,8 @@ label:hover {
   }
   .did-page .did-slogan-section .did-slogan-section-content-wrapper {
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
   }
   .did-page .did-slogan-section .did-slogan-section-content-wrapper .did-slogan-section-content .did-slogan-section-title {
     font-size: 30px;
@@ -911,18 +736,13 @@ label:hover {
     height: 493px;
   }
   .did-page .did-slogan-section .did-slogan-section-content-wrapper .did-slogan-section-img-section .did-slogan-section-img-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .did-page .did-slogan-section .did-slogan-section-content-wrapper .did-slogan-section-img-section .did-slogan-section-img-wrapper > img:nth-child(1) {
-    -webkit-transform: unset;
-            transform: unset;
+    transform: unset;
   }
   .did-page .did-slogan-section .did-slogan-section-content-wrapper .did-slogan-section-img-section .did-slogan-section-img-wrapper > img:nth-child(2) {
-    -webkit-transform: translateY(-70px);
-            transform: translateY(-70px);
+    transform: translateY(-70px);
   }
   .did-page .did-slogan-section .did-slogan-section-content-wrapper .did-slogan-section-img-section .did-slogan-section-img-desc {
     font-size: 14px;
@@ -930,8 +750,7 @@ label:hover {
     line-height: 150%;
     color: white;
     text-align: center;
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    transform: translateY(-100px);
   }
   .did-page .did-tech-section {
     padding: 180px 0 264px;
@@ -970,24 +789,14 @@ label:hover {
   }
   .did-page .did-product-section .did-product-container .did-product-feature-list .did-product-feature-item {
     padding: 30px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     text-align: center;
     row-gap: 14px;
   }
   .did-page .did-product-section .did-product-container .did-product-feature-list .did-product-feature-item .did-product-feature-item-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .did-page .did-product-section .did-product-container .did-product-feature-list .did-product-feature-item .did-product-feature-item-content .did-product-feature-item-title {
     width: 230px;
@@ -1034,13 +843,10 @@ label:hover {
   .did-page .did-slide-section .did-slide-list {
     margin-top: 24px;
     grid-template-columns: repeat(4, 320px);
-    -webkit-column-gap: 10px;
-       -moz-column-gap: 10px;
-            column-gap: 10px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
     overflow-y: hidden;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
   }
   .did-page .did-slide-section .did-slide-list .did-slide-list-item {
     padding: 16px;
@@ -1065,7 +871,6 @@ label:hover {
     font-size: 30px;
   }
   .did-page .did-faq-section {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     padding: 100px 0;
@@ -1083,11 +888,10 @@ label:hover {
   .did-page .did-faq-section .did-faq-content .did-faq-search {
     width: 100%;
     padding: 0 12px;
-    -webkit-column-gap: 10px;
-       -moz-column-gap: 10px;
-            column-gap: 10px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
   }
   .mb-br {
     display: block;
   }
-}
+}/*# sourceMappingURL=index.css.map */

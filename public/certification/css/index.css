@@ -3,8 +3,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Pretendard", sans-serif;
   overflow: hidden;
 }
@@ -31,8 +30,7 @@ main {
   width: 100%;
   height: 100vh;
   padding-top: 80px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: black;
   overflow-x: hidden;
   /* 스크롤바 스타일 설정 */
@@ -70,8 +68,7 @@ button,
 a,
 label {
   padding: unset;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-appearance: none;
   border: none;
   cursor: pointer;
@@ -88,20 +85,15 @@ button:hover,
 a:hover,
 label:hover {
   opacity: 0.7;
-  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
 .certification-page .banner-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
 .certification-page .banner-section picture {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .certification-page .banner-section img {
@@ -112,24 +104,15 @@ label:hover {
 .certification-page .certification-section {
   width: 1200px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   position: relative;
   top: -170px;
 }
 .certification-page .certification-section .left-box {
   width: 339px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 8px;
 }
 .certification-page .certification-section .left-box .top-text {
@@ -151,34 +134,20 @@ label:hover {
 }
 .certification-page .certification-section .right-box {
   width: 777px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-column-gap: 24px;
-     -moz-column-gap: 24px;
-          column-gap: 24px;
+  flex-wrap: wrap;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
   row-gap: 54px;
 }
 .certification-page .certification-section .right-box .certification-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 8px;
 }
 .certification-page .certification-section .right-box .certification-card .text-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 2px;
   font-size: 13px;
   font-weight: 700;
@@ -196,23 +165,14 @@ label:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .certification-page .section3 .text-box {
   width: 1126px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 16px;
 }
 .certification-page .section3 .text-box .top-text {
@@ -238,15 +198,9 @@ label:hover {
   height: 52px;
   color: white;
   border: 1px solid white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .pc-br {
@@ -263,27 +217,20 @@ label:hover {
   }
   .certification-page .certification-section {
     width: 584px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     row-gap: 64px;
     top: -300px;
   }
   .certification-page .certification-section .left-box {
     width: 100%;
     text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .certification-page .certification-section .right-box {
     width: auto;
-    -webkit-column-gap: 16px;
-       -moz-column-gap: 16px;
-            column-gap: 16px;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
     row-gap: 32px;
   }
   .certification-page .certification-section .right-box .certification-card img {
@@ -292,9 +239,7 @@ label:hover {
   }
   .certification-page .section3 .text-box {
     width: auto;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .certification-page .section3 .text-box .middle-text {
     text-align: center;
@@ -304,27 +249,18 @@ label:hover {
   }
   .certification-page .footer-section .footer-nav-list {
     margin: 24px 0 12px;
-    -webkit-column-gap: 16px;
-       -moz-column-gap: 16px;
-            column-gap: 16px;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
   }
   .certification-page .footer-section .footer-content-container {
     margin-bottom: 28px;
   }
   .certification-page .footer-section .footer-content-container .footer-content-list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .certification-page .footer-section .footer-content-container .footer-content-list .footer-content-list-col {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     row-gap: 6px;
   }
   .certification-page .footer-section .footer-content-container .footer-content-list .footer-content-list-col .footer-content-list-item {
@@ -336,18 +272,11 @@ label:hover {
   }
   .certification-page .footer-section .footer-content-container .footer-content-list .footer-content-list-col .footer-content-list-item .footer-content-list-item-desc {
     font-weight: 400;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    flex: 1;
   }
   .certification-page .footer-section .footer-bottom-wrapper {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    align-items: flex-start;
+    flex-direction: column-reverse;
     row-gap: 10px;
   }
   .tb-br {
@@ -360,17 +289,11 @@ label:hover {
   }
   .certification-page .certification-section {
     width: 340px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     top: -290px;
     row-gap: 74px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .certification-page .certification-section .left-box .top-text {
     font-size: 18px;
@@ -384,13 +307,10 @@ label:hover {
   }
   .certification-page .certification-section .right-box {
     width: auto;
-    -webkit-column-gap: 12px;
-       -moz-column-gap: 12px;
-            column-gap: 12px;
+    -moz-column-gap: 12px;
+         column-gap: 12px;
     row-gap: 32px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .certification-page .certification-section .right-box .certification-card img {
     width: 154px;
@@ -398,9 +318,7 @@ label:hover {
   }
   .certification-page .section3 .text-box {
     width: auto;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     row-gap: 24px;
   }
   .certification-page .section3 .text-box .top-text {
@@ -430,4 +348,4 @@ label:hover {
   .pc-br {
     display: block !important;
   }
-}
+}/*# sourceMappingURL=index.css.map */

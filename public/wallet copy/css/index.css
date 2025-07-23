@@ -3,8 +3,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Pretendard", sans-serif;
   background-color: black;
   overflow: hidden;
@@ -14,8 +13,7 @@ button,
 a,
 label {
   padding: unset;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-appearance: none;
   border: none;
   cursor: pointer;
@@ -32,7 +30,6 @@ button:hover,
 a:hover,
 label:hover {
   opacity: 0.7;
-  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
@@ -42,8 +39,7 @@ label:hover {
   width: 100%;
   height: 100vh;
   padding-top: 80px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .wallet-page::-webkit-scrollbar {
   width: 8px;
@@ -68,29 +64,20 @@ label:hover {
   position: absolute;
   top: 50%;
   left: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 100%;
   height: 200px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 224, 216, 0)), color-stop(50%, rgba(0, 224, 216, 0.5)), to(rgba(0, 224, 216, 0)));
   background: linear-gradient(to bottom, rgba(0, 224, 216, 0) 0%, rgba(0, 224, 216, 0.5) 50%, rgba(0, 224, 216, 0) 100%);
-  -webkit-filter: blur(12px);
-          filter: blur(12px);
+  filter: blur(12px);
   z-index: 0;
   pointer-events: none;
 }
 .wallet-page .wallet-ledger-wallet-section .wallet-ledger-wallet-top .wallet-ledger-wallet-top-content {
   width: 1238px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   position: relative;
   z-index: 1;
 }
@@ -117,30 +104,16 @@ label:hover {
   color: #ABB3BA;
 }
 .wallet-page .wallet-ledger-wallet-section .wallet-ledger-wallet-bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   row-gap: 16px;
   padding: 76px 0 109px;
 }
 .wallet-page .wallet-ledger-wallet-section .wallet-ledger-wallet-bottom .wallet-ledger-wallet-bottom-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 .wallet-page .wallet-ledger-wallet-section .wallet-ledger-wallet-bottom .wallet-ledger-wallet-bottom-content .wallet-ledger-wallet-bottom-tag {
   font-size: 24px;
@@ -166,19 +139,10 @@ label:hover {
   position: relative;
 }
 .wallet-page .wallet-product-section .wallet-product-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   max-width: 1218px;
   margin: 0 auto;
 }
@@ -196,39 +160,23 @@ label:hover {
 }
 .wallet-page .wallet-product-section .wallet-product-container .wallet-product-feature-list {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   row-gap: 10px;
 }
 .wallet-page .wallet-product-section .wallet-product-container .wallet-product-feature-list .wallet-product-feature-item {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-column-gap: 10px;
-     -moz-column-gap: 10px;
-          column-gap: 10px;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
   background-color: #1A1B23;
   padding: 27px 29px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-column-gap: 30px;
-     -moz-column-gap: 30px;
-          column-gap: 30px;
+  box-sizing: border-box;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 .wallet-page .wallet-product-section .wallet-product-container .wallet-product-feature-list .wallet-product-feature-item .wallet-product-feature-item-content .wallet-product-feature-item-title {
   font-size: 24px;
@@ -254,11 +202,9 @@ label:hover {
   position: relative;
   background-color: black;
   padding: 0 24px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 10px;
-  -webkit-box-shadow: 0 4px 30px 0px rgba(0, 224, 216, 0.48);
-          box-shadow: 0 4px 30px 0px rgba(0, 224, 216, 0.48);
+  box-shadow: 0 4px 30px 0px rgba(0, 224, 216, 0.48);
 }
 .wallet-page .wallet-product-section .wallet-product-container .wallet-product-info-list .wallet-product-info-item .wallet-product-info-item-title {
   font-size: 24px;
@@ -266,21 +212,14 @@ label:hover {
   background-color: #00E0D8;
   color: black;
   height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   position: relative;
   z-index: 2;
   padding: 0 16px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   white-space: nowrap;
@@ -305,29 +244,18 @@ label:hover {
   left: 0;
   width: 100vw;
   height: 300px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 224, 216, 0.4)), color-stop(40%, rgba(0, 224, 216, 0.2)), to(rgba(0, 224, 216, 0)));
   background: linear-gradient(to top, rgba(0, 224, 216, 0.4) 0%, rgba(0, 224, 216, 0.2) 40%, rgba(0, 224, 216, 0) 100%);
   pointer-events: none;
   z-index: 0;
-  -webkit-filter: blur(40px);
-          filter: blur(40px);
+  filter: blur(40px);
   /* 살짝만 블러 처리 */
 }
 .wallet-page .wallet-slide-section {
   padding: 156px 0 158px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: white;
 }
 .wallet-page .wallet-slide-section .wallet-slide-tag {
@@ -356,13 +284,11 @@ label:hover {
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(4, 368px);
-  -webkit-column-gap: 16px;
-     -moz-column-gap: 16px;
-          column-gap: 16px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
   overflow-y: hidden;
   padding: 0 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -ms-overflow-style: none;
   /* IE, Edge */
   scrollbar-width: none;
@@ -376,19 +302,11 @@ label:hover {
   overflow: hidden;
   position: relative;
   border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
   padding: 45px 30px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   row-gap: 2px;
   height: 465px;
 }
@@ -399,7 +317,6 @@ label:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4)));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.4) 100%);
   border-radius: 10px;
   z-index: 1;
@@ -429,19 +346,10 @@ label:hover {
 .wallet-page .wallet-nav-contract-section {
   width: 100%;
   height: 477px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: -webkit-image-set(url(../assets/wallet/contract-nav-img.png) 1x, url(../assets/wallet/contract-nav-img@2x.png) 2x, url(../assets/wallet/contract-nav-img@3x.png) 3x);
   background-image: image-set(url(../assets/wallet/contract-nav-img.png) 1x, url(../assets/wallet/contract-nav-img@2x.png) 2x, url(../assets/wallet/contract-nav-img@3x.png) 3x);
   background-size: cover;
@@ -461,15 +369,9 @@ label:hover {
   margin-top: 24px;
   width: 181px;
   height: 52px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: white;
   font-size: 18px;
   font-weight: 700;
@@ -478,19 +380,11 @@ label:hover {
 .wallet-page .wallet-faq-section {
   width: 100%;
   min-height: 1000px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 110px 0 169px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   background-color: white;
 }
 .wallet-page .wallet-faq-section .wallet-faq-content {
@@ -512,20 +406,12 @@ label:hover {
   height: 50px;
   border: 1px solid #DBDBDB;
   padding: 0 16px 0 18px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-sizing: border-box;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-column-gap: 20px;
-     -moz-column-gap: 20px;
-          column-gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }
 .wallet-page .wallet-faq-section .wallet-faq-content .wallet-faq-search input {
   width: 100%;
@@ -542,33 +428,21 @@ label:hover {
   width: 100%;
   max-height: 64px;
   overflow: hidden;
-  -webkit-transition: max-height 0.2s ease-in-out;
   transition: max-height 0.2s ease-in-out;
 }
 .wallet-page .wallet-faq-section .wallet-faq-content .wallet-faq-list .wallet-faq-list-item .wallet-faq-list-item-title-wrapper {
   width: 100%;
   height: 64px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   border-bottom: solid 1px #DBDBDB;
 }
 .wallet-page .wallet-faq-section .wallet-faq-content .wallet-faq-list .wallet-faq-list-item .wallet-faq-list-item-title-wrapper .wallet-faq-list-item-title-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-column-gap: 8px;
-     -moz-column-gap: 8px;
-          column-gap: 8px;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
 }
 .wallet-page .wallet-faq-section .wallet-faq-content .wallet-faq-list .wallet-faq-list-item .wallet-faq-list-item-title-wrapper .wallet-faq-list-item-title-section .wallet-faq-list-item-title {
   font-size: 14px;
@@ -584,19 +458,14 @@ label:hover {
   overflow: hidden;
   padding: 20px;
   /* 항상 유지 */
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .wallet-page .wallet-faq-section .wallet-faq-content .wallet-faq-list > .active {
   max-height: 1000px;
 }
 .wallet-page .wallet-faq-section .wallet-faq-content .wallet-faq-list > .active .wallet-faq-list-item-title-wrapper .wallet-faq-list-item-btn {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: -webkit-transform 0.2s ease;
+  transform: rotate(180deg);
   transition: transform 0.2s ease;
-  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
 @media screen and (max-width: 1440px) {
@@ -605,10 +474,7 @@ label:hover {
   }
   .wallet-page .wallet-ledger-wallet-section .wallet-ledger-wallet-top .wallet-ledger-wallet-top-content {
     width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .wallet-page .wallet-ledger-wallet-section .wallet-ledger-wallet-top .wallet-ledger-wallet-top-content .wallet-ledger-wallet-top-left {
     text-align: center;
@@ -621,16 +487,9 @@ label:hover {
     padding: 240px 0 200px;
   }
   .wallet-page .wallet-ledger-wallet-section .wallet-ledger-wallet-bottom .wallet-ledger-wallet-bottom-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .wallet-page .wallet-ledger-wallet-section .wallet-ledger-wallet-bottom .wallet-ledger-wallet-bottom-img {
     width: 636px;
@@ -663,27 +522,17 @@ label:hover {
   }
   .wallet-page .wallet-slide-section .wallet-slide-list {
     margin-top: 62px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
   }
   .wallet-page .wallet-slide-section .wallet-slide-list .wallet-slide-list-item {
     overflow: hidden;
     position: relative;
     border-radius: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
     padding: 45px 30px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     row-gap: 2px;
     height: 465px;
   }
@@ -694,7 +543,6 @@ label:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4)));
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.4) 100%);
     border-radius: 10px;
     z-index: 1;
@@ -815,24 +663,14 @@ label:hover {
   }
   .wallet-page .wallet-product-section .wallet-product-container .wallet-product-feature-list .wallet-product-feature-item {
     padding: 30px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     text-align: center;
     row-gap: 14px;
   }
   .wallet-page .wallet-product-section .wallet-product-container .wallet-product-feature-list .wallet-product-feature-item .wallet-product-feature-item-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .wallet-page .wallet-product-section .wallet-product-container .wallet-product-feature-list .wallet-product-feature-item .wallet-product-feature-item-content .wallet-product-feature-item-title {
     width: 230px;
@@ -879,13 +717,10 @@ label:hover {
   .wallet-page .wallet-slide-section .wallet-slide-list {
     margin-top: 24px;
     grid-template-columns: repeat(4, 320px);
-    -webkit-column-gap: 10px;
-       -moz-column-gap: 10px;
-            column-gap: 10px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
     overflow-y: hidden;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
   }
   .wallet-page .wallet-slide-section .wallet-slide-list .wallet-slide-list-item {
     padding: 16px;
@@ -910,7 +745,6 @@ label:hover {
     font-size: 30px;
   }
   .wallet-page .wallet-faq-section {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     padding: 100px 0;
@@ -928,11 +762,10 @@ label:hover {
   .wallet-page .wallet-faq-section .wallet-faq-content .wallet-faq-search {
     width: 100%;
     padding: 0 12px;
-    -webkit-column-gap: 10px;
-       -moz-column-gap: 10px;
-            column-gap: 10px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
   }
   .mb-br {
     display: block;
   }
-}
+}/*# sourceMappingURL=index.css.map */

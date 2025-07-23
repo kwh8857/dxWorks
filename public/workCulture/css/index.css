@@ -3,8 +3,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Pretendard", sans-serif;
   overflow: hidden;
 }
@@ -31,8 +30,7 @@ main {
   width: 100%;
   height: 100vh;
   padding-top: 80px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: black;
   overflow-x: hidden;
   /* 스크롤바 스타일 설정 */
@@ -70,8 +68,7 @@ button,
 a,
 label {
   padding: unset;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-appearance: none;
   border: none;
   cursor: pointer;
@@ -88,7 +85,6 @@ button:hover,
 a:hover,
 label:hover {
   opacity: 0.7;
-  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
@@ -105,21 +101,13 @@ label:hover {
   margin: 0 auto;
   position: relative;
   top: -150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 90px;
-     -moz-column-gap: 90px;
-          column-gap: 90px;
+  -moz-column-gap: 90px;
+       column-gap: 90px;
 }
 .work-culture-page .card-section .left-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 8px;
 }
 .work-culture-page .card-section .left-box .top-text {
@@ -140,12 +128,9 @@ label:hover {
 }
 .work-culture-page .card-section .right-box {
   width: 872px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 16px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .work-culture-page .card-section .right-box .card {
   width: 244px;
@@ -153,18 +138,10 @@ label:hover {
   background-color: #1A1B23;
   border-radius: 8px;
   padding: 21px 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: space-between;
 }
 .work-culture-page .card-section .right-box .card .color-text {
   color: #0095FF;
@@ -180,23 +157,13 @@ label:hover {
 }
 .work-culture-page .section2 {
   width: 1200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 0 auto;
 }
 .work-culture-page .section2 .title-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 47px;
 }
 .work-culture-page .section2 .title-wrapper .section2-title {
@@ -215,38 +182,22 @@ label:hover {
 }
 .work-culture-page .section2 .section2-info-wrapper {
   margin-top: 124px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 100px;
 }
 .work-culture-page .section2 .section2-info-wrapper .section2-info-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 48px;
-     -moz-column-gap: 48px;
-          column-gap: 48px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -moz-column-gap: 48px;
+       column-gap: 48px;
+  align-items: center;
 }
 .work-culture-page .section2 .section2-info-wrapper .section2-info-card .info-text-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 16px;
-  -webkit-column-gap: 48px;
-     -moz-column-gap: 48px;
-          column-gap: 48px;
+  -moz-column-gap: 48px;
+       column-gap: 48px;
 }
 .work-culture-page .section2 .section2-info-wrapper .section2-info-card .info-text-box .info-title {
   color: white;
@@ -258,13 +209,8 @@ label:hover {
   color: #0095FF;
 }
 .work-culture-page .section2 .section2-info-wrapper .section2-info-card .info-text-box .info-lists {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 4px;
 }
 .work-culture-page .section2 .section2-info-wrapper .section2-info-card .info-text-box .info-lists .info-list {
@@ -279,24 +225,15 @@ label:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .work-culture-page .employment-section .employment-link-box {
   width: 1200px;
   margin: 0 auto;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 10px;
 }
 .work-culture-page .employment-section .employment-link-box .top-text {
@@ -315,26 +252,17 @@ label:hover {
   width: 238px;
   height: 44px;
   color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0px 17px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-weight: 700;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 1440px) {
   .work-culture-page .card-section {
     width: 720px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     row-gap: 48px;
     top: -250px;
   }
@@ -364,26 +292,19 @@ label:hover {
     row-gap: 109px;
   }
   .work-culture-page .section2 .section2-info-wrapper .section2-info-card {
-    -webkit-column-gap: unset;
-       -moz-column-gap: unset;
-            column-gap: unset;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -moz-column-gap: unset;
+         column-gap: unset;
+    flex-direction: column;
     row-gap: 24px;
   }
   .work-culture-page .section2 .section2-info-wrapper .section2-info-card img {
     width: 100%;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
   .work-culture-page .section2 .section2-info-wrapper .section2-info-card .info-text-box {
     width: 100%;
-    -webkit-column-gap: unset;
-       -moz-column-gap: unset;
-            column-gap: unset;
+    -moz-column-gap: unset;
+         column-gap: unset;
   }
   .work-culture-page .employment-section .employment-link-box {
     width: 720px;
@@ -405,8 +326,7 @@ label:hover {
     row-gap: 71px;
   }
   .work-culture-page .card-section .left-box {
-    -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
     text-align: center;
   }
   .work-culture-page .card-section .left-box .center-text {
@@ -418,12 +338,8 @@ label:hover {
   }
   .work-culture-page .card-section .right-box {
     width: 100%;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-wrap: nowrap;
+    flex-direction: column;
   }
   .work-culture-page .card-section .right-box .card {
     width: 100%;
@@ -468,12 +384,8 @@ label:hover {
   }
   .work-culture-page .employment-section .employment-link-box {
     width: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     row-gap: 24px;
   }
@@ -490,9 +402,7 @@ label:hover {
     width: 181px;
     height: 52px;
     font-size: 18px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .work-culture-page .employment-section .employment-link-box .link-btn img {
     display: none;
@@ -506,4 +416,4 @@ label:hover {
   .mb-br {
     display: none !important;
   }
-}
+}/*# sourceMappingURL=index.css.map */
